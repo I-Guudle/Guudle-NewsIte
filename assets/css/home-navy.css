@@ -1,0 +1,501 @@
+/* ═══ Guudle Homepage — Navy Blue Visual System ═══
+   Content unchanged — typography, cards, sections refined */
+
+.home-navy-refined {
+  --navy-primary: #37474F;
+  --navy-mid: #455A64;
+  --navy-light: #546E7A;
+  --navy-accent: #10A5F5;
+  --navy-surface: #F5F7FA;
+  --navy-border: rgba(55, 71, 79, 0.1);
+  --navy-shadow: 0 8px 32px rgba(55, 71, 79, 0.08);
+  --navy-shadow-hover: 0 24px 48px rgba(55, 71, 79, 0.14);
+  font-size: 16px;
+}
+
+/* ─── Typography scale (balanced, not oversized) ─── */
+.home-navy-refined .saas-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.25rem) !important;
+  line-height: 1.12 !important;
+}
+
+.home-navy-refined main h2 {
+  font-size: clamp(1.75rem, 3.2vw, 2.625rem) !important;
+  line-height: 1.18 !important;
+  letter-spacing: -0.02em;
+  color: var(--text-heading, #0F172A) !important;
+}
+
+.home-navy-refined main h3 {
+  font-size: clamp(1.125rem, 1.8vw, 1.375rem) !important;
+  line-height: 1.3 !important;
+}
+
+.home-navy-refined main h4 {
+  font-size: 1rem !important;
+}
+
+.home-navy-refined main p.text-xl,
+.home-navy-refined main p.text-lg {
+  font-size: 1.0625rem !important;
+  line-height: 1.65 !important;
+}
+
+.home-navy-refined main p.text-2xl,
+.home-navy-refined main p.text-3xl {
+  font-size: 1.125rem !important;
+}
+
+.home-navy-refined main .text-6xl,
+.home-navy-refined main .text-5xl.font-black {
+  font-size: clamp(2rem, 3.5vw, 2.75rem) !important;
+}
+
+.home-navy-refined main .text-4xl.font-black {
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem) !important;
+}
+
+/* ─── Navy gradient text (replace rainbow accents) ─── */
+.home-navy-refined main [class*="bg-clip-text"][class*="text-transparent"] {
+  background: none !important;
+  color: #001F54 !important;
+}
+
+/* ─── Section backgrounds — alternating navy rhythm ─── */
+.home-navy-refined #services {
+  background: #ffffff !important;
+}
+
+.home-navy-refined #services .srv-expertise__card-title,
+.home-navy-refined #services .srv-expertise__cta-title {
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54 !important;
+}
+
+.home-navy-refined #services .srv-expertise__card-desc,
+.home-navy-refined #services .srv-expertise__cta-desc {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.home-navy-refined #mobile-app-section {
+  background: linear-gradient(180deg, var(--navy-surface) 0%, #ffffff 50%, var(--navy-surface) 100%) !important;
+}
+
+.home-navy-refined #what-we-serve,
+.home-navy-refined #home-industries {
+  background: #F3F6FB !important;
+}
+
+.home-navy-refined #home-industries .indw-intro__title,
+.home-navy-refined #home-industries .indw-acc__title,
+.home-navy-refined #home-industries .indw-tech-head h3,
+.home-navy-refined #home-industries .indw-cta__title,
+.home-navy-refined #home-industries .indw-acc__link,
+.home-navy-refined #home-industries .indw-cta__ghost {
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A !important;
+}
+
+.home-navy-refined #home-industries .indw-intro__lead,
+.home-navy-refined #home-industries .indw-panel__note,
+.home-navy-refined #home-industries .indw-acc__panel p,
+.home-navy-refined #home-industries .indw-tech-head p,
+.home-navy-refined #home-industries .indw-cta__desc,
+.home-navy-refined #home-industries .indw-tabs__btn:not(.is-active) {
+  color: #334155 !important;
+  -webkit-text-fill-color: #334155 !important;
+}
+
+.home-navy-refined #home-industries .indw-acc__label,
+.home-navy-refined #home-industries .indw-intro__accent {
+  color: #0F766E !important;
+  -webkit-text-fill-color: #0F766E !important;
+}
+
+.home-navy-refined #home-industries .indw-tags span {
+  color: #123D6A !important;
+  -webkit-text-fill-color: #123D6A !important;
+}
+
+.home-navy-refined #home-industries .indw-tabs__btn.is-active,
+.home-navy-refined #home-industries .indw-cta__primary {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.home-navy-refined #ai-services-section {
+  background: #F3F6FB !important;
+  color: inherit !important;
+}
+
+/* AI bento — aqua titles, white descriptions (beat navy text overrides) */
+.home-navy-refined #ai-services-section .aib-tile__label,
+.home-navy-refined #ai-services-section .aib-tile h3,
+.home-navy-refined #ai-services-section .aib-hub__eyebrow,
+.home-navy-refined #ai-services-section .aib-hub__title,
+.home-navy-refined #ai-services-section .aib-hub__pillar h4 {
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54 !important;
+}
+
+.home-navy-refined #ai-services-section .aib-tile > p,
+.home-navy-refined #ai-services-section .aib-tile__row p,
+.home-navy-refined #ai-services-section .aib-tile__list li,
+.home-navy-refined #ai-services-section .aib-tile__chips span,
+.home-navy-refined #ai-services-section .aib-hub__tag,
+.home-navy-refined #ai-services-section .aib-hub__pillar p {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.home-navy-refined #tech-stack-section {
+  background: linear-gradient(180deg, var(--navy-surface) 0%, #ffffff 100%) !important;
+}
+
+/* ─── Section badges / labels ─── */
+.home-navy-refined main span[class*="uppercase"][class*="tracking-"] {
+  font-size: 0.6875rem !important;
+  letter-spacing: 0.12em !important;
+  color: var(--navy-primary) !important;
+  background: rgba(55, 71, 79, 0.06) !important;
+  border-color: rgba(55, 71, 79, 0.12) !important;
+}
+
+/* ─── Premium service & feature cards ─── */
+.home-navy-refined main a.group.relative.bg-white,
+.home-navy-refined main .group.relative.bg-white.rounded-3xl,
+.home-navy-refined main .group.relative.bg-white.rounded-2xl,
+.home-navy-refined main .group.bg-white.rounded-2xl,
+.home-navy-refined main .group.bg-white.rounded-3xl {
+  background: #ffffff !important;
+  border: 1px solid var(--navy-border) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: var(--navy-shadow) !important;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.4s ease,
+              border-color 0.3s ease !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-navy-refined main a.group.relative.bg-white::before,
+.home-navy-refined main .group.relative.bg-white.rounded-3xl::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy-primary), var(--navy-mid), var(--navy-accent));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.home-navy-refined main a.group.relative.bg-white:hover,
+.home-navy-refined main .group.relative.bg-white.rounded-3xl:hover,
+.home-navy-refined main .group.relative.bg-white.rounded-2xl:hover {
+  border-color: rgba(55, 71, 79, 0.22) !important;
+  box-shadow: var(--navy-shadow-hover) !important;
+  transform: translateY(-6px) !important;
+}
+
+.home-navy-refined main a.group.relative.bg-white:hover::before,
+.home-navy-refined main .group.relative.bg-white.rounded-3xl:hover::before {
+  opacity: 1;
+}
+
+/* Icon boxes — unified navy gradient */
+.home-navy-refined main .w-20.h-20[class*="rounded"],
+.home-navy-refined main .w-16.h-16[class*="rounded"],
+.home-navy-refined main .w-24.h-24[class*="rounded"],
+.home-navy-refined main .w-14.h-14[class*="rounded"] {
+  background: linear-gradient(145deg, var(--navy-primary), var(--navy-mid)) !important;
+  box-shadow: 0 8px 24px rgba(55, 71, 79, 0.2) !important;
+}
+
+.home-navy-refined main .w-20.h-20 i,
+.home-navy-refined main .w-16.h-16 i,
+.home-navy-refined main .w-24.h-24 i,
+.home-navy-refined main .w-14.h-14 i {
+  color: #ffffff !important;
+}
+
+/* Card titles hover — navy */
+.home-navy-refined main h3.group-hover\:text-teal-600,
+.home-navy-refined main h3.group-hover\:text-cyan-600,
+.home-navy-refined main h3.group-hover\:text-pink-600,
+.home-navy-refined main h3.group-hover\:text-indigo-600,
+.home-navy-refined main h3.group-hover\:text-purple-600,
+.home-navy-refined main h3.group-hover\:text-blue-600,
+.home-navy-refined main h3.group-hover\:text-green-600,
+.home-navy-refined main h3.group-hover\:text-orange-600,
+.home-navy-refined main h3.group-hover\:text-amber-600 {
+  transition: color 0.3s ease;
+}
+
+.home-navy-refined main a.group:hover h3 {
+  color: var(--navy-accent) !important;
+}
+
+/* Learn more links — navy */
+.home-navy-refined main .text-teal-600,
+.home-navy-refined main .text-cyan-600,
+.home-navy-refined main .text-pink-600,
+.home-navy-refined main .text-indigo-600,
+.home-navy-refined main .text-purple-600,
+.home-navy-refined main .text-blue-600,
+.home-navy-refined main .text-green-600,
+.home-navy-refined main .text-orange-600,
+.home-navy-refined main .text-amber-600,
+.home-navy-refined main .text-navy-600 {
+  color: var(--navy-mid) !important;
+}
+
+.home-navy-refined main a.group:hover .font-semibold,
+.home-navy-refined main a.group:hover span[class*="font-bold"]:not([class*="text-white"]) {
+  color: var(--navy-accent) !important;
+}
+
+/* Arrow circles on cards */
+.home-navy-refined main [class*="rounded-full"][class*="bg-gradient-to-r"] {
+  background: linear-gradient(135deg, var(--navy-primary), var(--navy-mid)) !important;
+}
+
+/* ─── Stats cards ─── */
+.home-navy-refined main .dev-stat-card,
+.home-navy-refined #mobile-app-section .border-2.border-cyan-100,
+.home-navy-refined #mobile-app-section .border-2.border-teal-100,
+.home-navy-refined #mobile-app-section .border-2.border-blue-100 {
+  border-color: var(--navy-border) !important;
+  background: #fff !important;
+  border-radius: 1rem !important;
+  box-shadow: var(--navy-shadow) !important;
+}
+
+.home-navy-refined main .text-cyan-700,
+.home-navy-refined main .text-teal-700,
+.home-navy-refined main .text-blue-700 {
+  color: var(--navy-mid) !important;
+}
+
+/* ─── CTA buttons — navy ─── */
+.home-navy-refined main a[class*="from-navy-600"],
+.home-navy-refined main a[class*="from-cyan-500"],
+.home-navy-refined main a[class*="from-teal-500"] {
+  background: linear-gradient(135deg, var(--navy-primary), var(--navy-mid)) !important;
+  border: none !important;
+  color: #fff !important;
+  font-size: 0.9375rem !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 8px 24px rgba(55, 71, 79, 0.25) !important;
+}
+
+.home-navy-refined main a[class*="from-navy-600"]:hover,
+.home-navy-refined main a[class*="from-cyan-500"]:hover {
+  background: linear-gradient(135deg, var(--navy-mid), var(--navy-light)) !important;
+  transform: translateY(-2px);
+}
+
+.home-navy-refined main .border-cyan-500,
+.home-navy-refined main .border-2.border-cyan-500 {
+  border-color: var(--navy-primary) !important;
+  color: var(--navy-primary) !important;
+}
+
+.home-navy-refined main .border-cyan-500:hover {
+  background: var(--navy-primary) !important;
+  color: #fff !important;
+}
+
+/* ─── Tech stack tabs ─── */
+.home-navy-refined .tech-tab-btn.active {
+  background: linear-gradient(135deg, var(--navy-primary), var(--navy-mid)) !important;
+  color: #fff !important;
+  box-shadow: 0 6px 20px rgba(55, 71, 79, 0.2) !important;
+}
+
+.home-navy-refined .tech-tab-btn:hover:not(.active) {
+  background: rgba(55, 71, 79, 0.06) !important;
+  color: var(--navy-primary) !important;
+}
+
+.home-navy-refined .capabilities-skill-box {
+  border-color: var(--navy-border) !important;
+  border-radius: 1rem !important;
+}
+
+.home-navy-refined .capabilities-skill-box:hover {
+  border-color: rgba(55, 71, 79, 0.25) !important;
+}
+
+.home-navy-refined .capabilities-skill-box .w-20.h-20 {
+  background: linear-gradient(145deg, var(--navy-primary), var(--navy-mid)) !important;
+}
+
+/* ─── Why Choose Us — bright neutral sections ─── */
+.home-navy-refined section[class*="from-navy-900"],
+.home-navy-refined section[class*="to-teal-900"],
+.home-navy-refined #why-guudle {
+  background: linear-gradient(180deg, var(--navy-surface) 0%, #ffffff 100%) !important;
+  color: var(--navy-primary) !important;
+}
+
+.home-navy-refined #why-guudle h2,
+.home-navy-refined #why-guudle h3 {
+  color: var(--navy-primary) !important;
+}
+
+.home-navy-refined #why-guudle p,
+.home-navy-refined #why-guudle .text-gray-200,
+.home-navy-refined #why-guudle .text-gray-300 {
+  color: var(--navy-light) !important;
+}
+
+.home-navy-refined section[class*="from-navy-900"] .bg-white\/10,
+.home-navy-refined #ai-services-section .bg-white\/10,
+.home-navy-refined #why-guudle .bg-white\/10 {
+  background: rgba(55, 71, 79, 0.06) !important;
+  border-color: rgba(55, 71, 79, 0.12) !important;
+  color: var(--navy-primary) !important;
+}
+
+/* AI section image placeholders — neutral, not dark gradient */
+.home-navy-refined .ai-hero-placeholder,
+.home-navy-refined #ai-services-section [class*="object-cover"] {
+  background: linear-gradient(180deg, #F8FAFC 0%, #E2E8F0 100%) !important;
+}
+
+/* ─── Particles & parallax blobs — navy only ─── */
+.home-navy-refined .particle {
+  background: rgba(16, 165, 245, 0.35) !important;
+}
+
+.home-navy-refined [class*="bg-cyan-500"],
+.home-navy-refined [class*="bg-teal-500"] {
+  background-color: rgba(55, 71, 79, 0.08) !important;
+}
+
+/* ─── Feature list checkmarks ─── */
+.home-navy-refined main [class*="bg-cyan-100"],
+.home-navy-refined main [class*="bg-teal-100"],
+.home-navy-refined main [class*="bg-blue-100"],
+.home-navy-refined main [class*="bg-navy-100"] {
+  background: rgba(55, 71, 79, 0.08) !important;
+  border-color: rgba(55, 71, 79, 0.12) !important;
+}
+
+.home-navy-refined main [class*="text-cyan-600"],
+.home-navy-refined main .fa-check.text-cyan-600 {
+  color: var(--navy-accent) !important;
+}
+
+.home-navy-refined main .group\/item:hover [class*="bg-cyan-100"],
+.home-navy-refined main .group\/item:hover [class*="bg-teal-100"] {
+  background: var(--navy-primary) !important;
+}
+
+.home-navy-refined main .group\/item:hover .fa-check {
+  color: #fff !important;
+}
+
+/* ─── Hero refinements — dark hero only (light hero excluded) ─── */
+.home-navy-refined .saas-hero:not(.saas-hero--light) .saas-hero-mesh {
+  background:
+    radial-gradient(ellipse 90% 70% at 70% 20%, rgba(18, 61, 106, 0.35) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 20% 80%, rgba(16, 165, 245, 0.12) 0%, transparent 50%),
+    linear-gradient(165deg, #37474F 0%, #455A64 45%, #37474F 100%) !important;
+}
+
+.home-navy-refined .saas-hero:not(.saas-hero--light) .saas-glow {
+  background-color: rgba(18, 61, 106, 0.4) !important;
+}
+
+.home-navy-refined .saas-hero:not(.saas-hero--light) h1 span[class*="bg-clip-text"] {
+  background: none !important;
+  color: #ffffff !important;
+}
+
+/* Light hero — keep vivid styling, no navy overrides */
+.home-navy-refined .saas-hero--light .hero-gradient-text {
+  background: none !important;
+  color: #001F54 !important;
+  }
+
+.home-navy-refined .saas-hero--light h1 {
+  font-size: clamp(2rem, 4.5vw, 3.25rem) !important;
+  color: #0F172A !important;
+}
+
+.home-navy-refined .saas-hero--light .hero-cta-primary {
+  background: #001F54 !important;
+  box-shadow: 0 8px 22px rgba(0, 31, 84, 0.16) !important;
+}
+
+.home-navy-refined .saas-hero:not(.saas-hero--light) .saas-btn-primary {
+  background: linear-gradient(135deg, var(--navy-accent), var(--navy-mid)) !important;
+  box-shadow: 0 8px 28px rgba(55, 71, 79, 0.35) !important;
+}
+
+.home-navy-refined .saas-hero:not(.saas-hero--light) .hero-enter span[class*="bg-cyan"] {
+  background-color: var(--navy-accent) !important;
+}
+
+.home-navy-refined .saas-dashboard .text-cyan {
+  color: #93C5FD !important;
+}
+
+/* ─── Yellow accent dots → navy gold ─── */
+.home-navy-refined main .bg-yellow-400 {
+  background-color: var(--navy-accent) !important;
+}
+
+.home-navy-refined main .text-yellow-400 {
+  color: #FBBF24 !important;
+}
+
+/* ─── Section padding rhythm ─── */
+.home-navy-refined main > section {
+  padding-top: clamp(4rem, 8vw, 6rem) !important;
+  padding-bottom: clamp(4rem, 8vw, 6rem) !important;
+}
+
+.home-navy-refined #services,
+.home-navy-refined #mobile-app-section {
+  padding-top: clamp(5rem, 9vw, 7rem) !important;
+  padding-bottom: clamp(5rem, 9vw, 7rem) !important;
+}
+
+/* ─── Inner info boxes ─── */
+.home-navy-refined main [class*="from-gray-50"][class*="rounded-2xl"],
+.home-navy-refined main [class*="to-cyan-50"] {
+  background: var(--navy-surface) !important;
+  border-color: var(--navy-border) !important;
+}
+
+/* ─── Emergency CTA phone button ─── */
+.home-navy-refined a[href^="tel:"] {
+  background: linear-gradient(135deg, var(--navy-accent), var(--navy-mid)) !important;
+  font-size: 0.9375rem !important;
+}
+
+/* ─── Footer area on homepage inherits from components ─── */
+.home-navy-refined .mobile-sticky-cta .saas-btn-primary {
+  background: linear-gradient(135deg, var(--navy-primary), var(--navy-mid)) !important;
+}
+
+@media (max-width: 640px) {
+  .home-navy-refined main h2 {
+    font-size: 1.625rem !important;
+  }
+  .home-navy-refined .saas-hero h1 {
+    font-size: 1.875rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-navy-refined main a.group:hover,
+  .home-navy-refined main .group:hover {
+    transform: none !important;
+  }
+}

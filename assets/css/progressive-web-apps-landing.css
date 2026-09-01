@@ -1,0 +1,105 @@
+/* ═══ Progressive Web Apps — pwa ═══ */
+.slp-page[data-slp-prefix="pwa"] {
+  --slp-primary: #10A5F5; --slp-secondary: #10B981; --slp-accent: #10A5F5;
+}
+.pwa-hero {
+  position: relative; min-height: 100vh; min-height: 100dvh;
+  background: linear-gradient(155deg, #042f2e 0%, #0c4a6e 40%, #064e3b 75%, #0F172A 100%);
+  overflow: hidden;
+}
+.pwa-hero__mesh {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 18% 22%, rgba(16,165,245,0.3), transparent 55%),
+    radial-gradient(ellipse 55% 50% at 82% 28%, rgba(16,185,129,0.26), transparent 50%),
+    radial-gradient(ellipse 50% 45% at 50% 100%, rgba(16, 165, 245,0.2), transparent 55%);
+  animation: pwa-mesh 18s ease-in-out infinite alternate;
+}
+@keyframes pwa-mesh { 0% { transform: scale(1); } 100% { transform: scale(1.05); } }
+
+.pwa-phone {
+  position: relative; max-width: 280px; margin: 0 auto;
+  border-radius: 2rem; padding: 0.75rem;
+  background: linear-gradient(145deg, rgba(255,255,255,0.14), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.16); box-shadow: 0 40px 80px rgba(0,0,0,0.45);
+}
+.pwa-phone__screen { border-radius: 1.5rem; overflow: hidden; background: #0F172A; min-height: 360px; }
+.pwa-phone__status { display: flex; justify-content: space-between; padding: 0.6rem 1rem; font-size: 0.65rem; color: rgba(255,255,255,0.6); }
+.pwa-phone__content { padding: 1rem; }
+.pwa-lighthouse-ring {
+  width: 5rem; height: 5rem; border-radius: 50%; margin: 0 auto 1rem;
+  display: grid; place-items: center; font-family: var(--font-display);
+  font-size: 1.5rem; font-weight: 800; color: #fff;
+  background: conic-gradient(#10B981 0deg 324deg, rgba(255,255,255,0.1) 324deg);
+  position: relative;
+}
+.pwa-lighthouse-ring::before {
+  content: ''; position: absolute; inset: 6px; border-radius: 50%; background: #0F172A;
+}
+.pwa-lighthouse-ring span { position: relative; z-index: 1; }
+
+.pwa-lighthouse-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+@media (min-width: 640px) { .pwa-lighthouse-grid { grid-template-columns: repeat(4, 1fr); } }
+.pwa-lighthouse-card {
+  padding: 1.5rem; border-radius: 1.125rem; background: #fff; border: 1px solid #E2E8F0;
+  text-align: center; transition: transform 0.3s, box-shadow 0.3s;
+}
+.pwa-lighthouse-card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(16,165,245,0.12); }
+.pwa-lighthouse-card__score {
+  font-family: var(--font-display); font-size: 2.25rem; font-weight: 800; line-height: 1;
+}
+.pwa-lighthouse-card__score--green { color: #10B981; }
+.pwa-lighthouse-card__score--amber { color: #F59E0B; }
+.pwa-lighthouse-card__bar {
+  height: 0.35rem; border-radius: 999px; background: #E2E8F0; margin-top: 0.75rem; overflow: hidden;
+}
+.pwa-lighthouse-card__bar span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--slp-primary), var(--slp-secondary)); }
+
+.pwa-offline-demo {
+  padding: 2rem; border-radius: 1.25rem; background: #fff; border: 1px solid #E2E8F0;
+  box-shadow: 0 16px 48px rgba(15,23,42,0.08);
+}
+.pwa-toggle {
+  display: inline-flex; align-items: center; gap: 0.75rem; padding: 0.5rem;
+  border-radius: 999px; background: #F1F5F9; border: 1px solid #E2E8F0; margin-bottom: 1.5rem;
+}
+.pwa-toggle__btn {
+  padding: 0.5rem 1.25rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700;
+  border: none; cursor: pointer; background: transparent; color: var(--text-muted, #64748B); transition: all 0.3s;
+}
+.pwa-toggle__btn.is-active { background: linear-gradient(135deg, var(--slp-primary), var(--slp-secondary)); color: #fff; box-shadow: 0 4px 16px rgba(16,165,245,0.35); }
+.pwa-demo-app {
+  border-radius: 0.85rem; overflow: hidden; border: 1px solid #E2E8F0; min-height: 220px;
+  transition: filter 0.4s, opacity 0.4s;
+}
+.pwa-demo-app.is-offline { filter: grayscale(0.6); }
+.pwa-demo-app__header {
+  padding: 0.75rem 1rem; background: linear-gradient(135deg, var(--slp-primary), var(--slp-secondary));
+  color: #fff; font-size: 0.8rem; font-weight: 700; display: flex; align-items: center; justify-content: space-between;
+}
+.pwa-demo-app__banner {
+  padding: 0.5rem 1rem; font-size: 0.72rem; font-weight: 700; text-align: center;
+  background: #FEF3C7; color: #92400E; display: none;
+}
+.pwa-demo-app.is-offline .pwa-demo-app__banner { display: block; }
+.pwa-demo-app__body { padding: 1rem; background: #F8FAFC; }
+.pwa-demo-skeleton { height: 0.65rem; border-radius: 0.25rem; background: #E2E8F0; margin-bottom: 0.5rem; animation: pwa-pulse 1.5s ease-in-out infinite; }
+.pwa-demo-skeleton--short { width: 60%; }
+@keyframes pwa-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+.pwa-metrics { display: grid; gap: 1rem; }
+@media (min-width: 640px) { .pwa-metrics { grid-template-columns: repeat(3, 1fr); } }
+.pwa-metric {
+  padding: 1.25rem; border-radius: 1rem; background: #fff; border: 1px solid #E2E8F0;
+  display: flex; align-items: center; gap: 1rem;
+}
+.pwa-metric__icon {
+  width: 2.75rem; height: 2.75rem; border-radius: 0.75rem; flex-shrink: 0;
+  display: grid; place-items: center; color: #fff; font-size: 1rem;
+  background: linear-gradient(135deg, var(--slp-primary), var(--slp-secondary));
+}
+.pwa-metric__val { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--slp-primary); }
+
+.pwa-parallax .slp-parallax__overlay {
+  background: linear-gradient(135deg, rgba(4,47,46,0.9) 0%, rgba(12,74,110,0.6) 50%, rgba(16,165,245,0.4) 100%);
+}

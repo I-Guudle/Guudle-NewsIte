@@ -1,0 +1,191 @@
+/* ═══ DevOps — Enterprise Landing ═══ */
+.slp-page[data-slp-prefix="dvo"] {
+  --slp-primary: #10A5F5;
+  --slp-secondary: #10A5F5;
+  --slp-accent: #38BDF8;
+  --dvo-blue: #10A5F5;
+  --dvo-cyan: #10A5F5;
+  --dvo-dark: #0F172A;
+  --dvo-light: #F8FAFC;
+}
+.dvo-display { font-family: var(--font-display); }
+.dvo-gradient-text {
+  background: linear-gradient(135deg, #60A5FA, #10A5F5 50%, #10A5F5);
+  }
+.dvo-hero {
+  position: relative; min-height: 100vh; min-height: 100dvh;
+  background: linear-gradient(155deg, #0F172A 0%, #1e3a5f 35%, #0c4a6e 70%, #0F172A 100%);
+  overflow: hidden;
+}
+.dvo-hero__mesh {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 75% 65% at 18% 22%, rgba(16, 165, 245,0.32), transparent 55%),
+    radial-gradient(ellipse 55% 50% at 82% 28%, rgba(16,165,245,0.26), transparent 50%),
+    radial-gradient(ellipse 50% 45% at 50% 100%, rgba(56,189,248,0.18), transparent 55%);
+  animation: dvo-mesh 20s ease-in-out infinite alternate;
+}
+.dvo-hero__grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 52px 52px;
+  mask-image: radial-gradient(ellipse 85% 75% at 50% 35%, #000 20%, transparent 75%);
+}
+@keyframes dvo-mesh { 0% { transform: scale(1); } 100% { transform: scale(1.06) translate(-2%, 1%); } }
+.dvo-glass { background: rgba(255,255,255,0.07); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.12); }
+.dvo-badge {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.4rem 0.95rem; font-size: 0.72rem; font-weight: 800;
+  letter-spacing: 0.08em; text-transform: uppercase; border-radius: 999px;
+  color: var(--dvo-cyan); background: rgba(16,165,245,0.1); border: 1px solid rgba(16,165,245,0.25);
+}
+.dvo-section-head { text-align: center; max-width: 42rem; margin: 0 auto 3.5rem; }
+.dvo-wave { display: block; width: 100%; line-height: 0; margin-top: -1px; }
+
+/* CI/CD pipeline hero cluster */
+.dvo-pipeline-hero {
+  position: relative; max-width: 540px; margin: 0 auto; min-height: 400px;
+}
+.dvo-pipeline-hero__card {
+  border-radius: 1.25rem; overflow: hidden;
+  background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 40px 80px rgba(0,0,0,0.45);
+}
+.dvo-pipeline-hero__bar { display: flex; gap: 0.35rem; padding: 0.75rem 1rem; background: rgba(0,0,0,0.35); }
+.dvo-pipeline-hero__body { padding: 1.25rem; }
+.dvo-pipeline-hero__stages { display: flex; gap: 0.35rem; margin-bottom: 1rem; }
+.dvo-pipeline-hero__stage {
+  flex: 1; padding: 0.5rem 0.35rem; border-radius: 0.5rem; text-align: center;
+  font-size: 0.58rem; font-weight: 700; color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+  transition: background 0.3s, color 0.3s;
+}
+.dvo-pipeline-hero__stage.is-active {
+  background: linear-gradient(135deg, rgba(16, 165, 245,0.5), rgba(16,165,245,0.4));
+  color: #fff; border-color: rgba(56,189,248,0.4);
+}
+.dvo-pipeline-hero__stage i { display: block; font-size: 0.85rem; margin-bottom: 0.25rem; }
+.dvo-pipeline-hero__log {
+  font-family: ui-monospace, monospace; font-size: 0.62rem; line-height: 1.6;
+  padding: 0.75rem; border-radius: 0.5rem; background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.06); color: rgba(255,255,255,0.65);
+  max-height: 7rem; overflow: hidden;
+}
+.dvo-pipeline-hero__log .ok { color: #4ADE80; }
+.dvo-pipeline-hero__log .run { color: #38BDF8; }
+.dvo-float {
+  position: absolute; padding: 0.65rem 0.9rem; border-radius: 0.75rem;
+  animation: dvo-float 7s ease-in-out infinite;
+}
+.dvo-float--1 { top: 0; right: -0.5rem; }
+.dvo-float--2 { bottom: 1.5rem; left: -1rem; animation-delay: -3s; }
+@keyframes dvo-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+/* Pipeline stages diagram */
+.dvo-stages {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem;
+  position: relative;
+}
+.dvo-stages__item {
+  padding: 1.5rem 1rem; border-radius: 1rem; text-align: center;
+  background: #fff; border: 1px solid #E2E8F0;
+  transition: transform 0.35s, box-shadow 0.35s, border-color 0.35s;
+  position: relative;
+}
+.dvo-stages__item::after {
+  content: '\f054'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
+  position: absolute; right: -0.65rem; top: 50%; transform: translateY(-50%);
+  color: #CBD5E1; font-size: 0.65rem; z-index: 2;
+}
+.dvo-stages__item:last-child::after { display: none; }
+.dvo-stages__item:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(16, 165, 245,0.1); border-color: rgba(16, 165, 245,0.3); }
+.dvo-stages__icon {
+  width: 2.75rem; height: 2.75rem; border-radius: 50%; margin: 0 auto 0.75rem;
+  display: grid; place-items: center; color: #fff; font-size: 1rem;
+  background: linear-gradient(135deg, var(--dvo-blue), var(--dvo-cyan));
+}
+
+/* Cloud architecture */
+.dvo-cloud-arch {
+  position: relative; padding: 2rem; border-radius: 1.25rem;
+  background: linear-gradient(145deg, #0F172A, #1e3a5f);
+  border: 1px solid rgba(255,255,255,0.1); min-height: 360px;
+}
+.dvo-cloud-arch__layer {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-bottom: 1.25rem;
+}
+.dvo-cloud-arch__node {
+  padding: 0.55rem 0.85rem; border-radius: 0.6rem; font-size: 0.72rem; font-weight: 700;
+  color: #fff; display: flex; align-items: center; gap: 0.4rem;
+  background: rgba(255,255,255,0.08); border: 1px solid rgba(56,189,248,0.3);
+  transition: transform 0.3s, border-color 0.3s;
+}
+.dvo-cloud-arch__node:hover { transform: scale(1.05); border-color: #38BDF8; }
+.dvo-cloud-arch__node i { color: var(--dvo-cyan); }
+.dvo-cloud-arch__label {
+  text-align: center; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em;
+  text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 0.65rem;
+}
+
+/* Monitoring dashboard mockup */
+.dvo-monitor {
+  border-radius: 1.25rem; overflow: hidden; background: #fff; border: 1px solid #E2E8F0;
+  box-shadow: 0 24px 48px rgba(15,23,42,0.1);
+}
+.dvo-monitor__head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.85rem 1.25rem; background: #0F172A; color: #fff;
+}
+.dvo-monitor__body { padding: 1.25rem; }
+.dvo-monitor__kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; margin-bottom: 1rem; }
+.dvo-monitor__kpi {
+  padding: 0.75rem; border-radius: 0.65rem; text-align: center;
+  background: var(--dvo-light); border: 1px solid #E2E8F0;
+}
+.dvo-monitor__kpi strong { display: block; font-family: var(--font-display); font-size: 1.25rem; color: var(--dvo-blue); }
+.dvo-monitor__kpi span { font-size: 0.65rem; color: #64748B; }
+.dvo-monitor__chart {
+  height: 5rem; display: flex; align-items: flex-end; gap: 0.35rem;
+  padding: 0.5rem; border-radius: 0.65rem; background: var(--dvo-light);
+}
+.dvo-monitor__bar {
+  flex: 1; border-radius: 0.25rem 0.25rem 0 0;
+  background: linear-gradient(180deg, var(--dvo-cyan), var(--dvo-blue));
+  animation: dvo-bar-grow 2s ease-out forwards; transform-origin: bottom; transform: scaleY(0);
+}
+@keyframes dvo-bar-grow { to { transform: scaleY(1); } }
+
+.dvo-feature {
+  padding: 1.5rem; border-radius: 1.125rem; background: #fff; border: 1px solid #E2E8F0;
+  transition: transform 0.35s, box-shadow 0.35s; height: 100%;
+}
+.dvo-feature:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(16, 165, 245,0.1); }
+.dvo-feature__icon {
+  width: 2.75rem; height: 2.75rem; border-radius: 0.75rem;
+  display: grid; place-items: center; font-size: 1.1rem; color: #fff; margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--dvo-blue), var(--dvo-cyan));
+}
+.dvo-tech-section {
+  background: linear-gradient(160deg, #0F172A, #1e293b 50%, #0F172A);
+  position: relative; overflow: hidden;
+}
+.dvo-tech-cat {
+  padding: 1.5rem; border-radius: 1.125rem;
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+}
+.dvo-tech-cat h3 { color: #fff; font-weight: 700; margin-bottom: 0.85rem; }
+.dvo-tech-chip {
+  display: inline-block; padding: 0.4rem 0.85rem; margin: 0.2rem;
+  font-size: 0.78rem; font-weight: 600; border-radius: 999px;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.85);
+}
+.dvo-parallax .slp-parallax__overlay {
+  background: linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,58,95,0.6) 50%, rgba(16, 165, 245,0.45) 100%);
+}
+.slp-page[data-slp-prefix="dvo"] .slp-faq-item.is-open { border-color: rgba(16, 165, 245,0.35); }
+
+@media (prefers-reduced-motion: reduce) {
+  .dvo-hero__mesh, .dvo-float, .dvo-monitor__bar { animation: none !important; }
+}

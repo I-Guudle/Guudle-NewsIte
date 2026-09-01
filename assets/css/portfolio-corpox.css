@@ -1,0 +1,321 @@
+/* Portfolio — Corpox design system (matches enterprise-mobile master template) */
+
+.cpox-portfolio-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  padding: 0.75rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 8px 32px rgba(11, 31, 58, 0.06);
+}
+.cpox-portfolio-filter.is-stuck {
+  position: sticky;
+  top: 4.5rem;
+  z-index: 40;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 56rem;
+}
+.cpox-portfolio-filter__btn {
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.cpox-portfolio-filter__btn:hover { color: var(--cpox-navy); }
+.cpox-portfolio-filter__btn.active,
+.cpox-portfolio-filter__btn[aria-pressed="true"] {
+  color: #fff;
+  background: linear-gradient(135deg, var(--cpox-navy), var(--cpox-navy-light));
+  box-shadow: 0 6px 18px rgba(11, 31, 58, 0.22);
+}
+
+.cpox-portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+@media (min-width: 640px) { .cpox-portfolio-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .cpox-portfolio-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.cpox-portfolio-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 12px 36px rgba(11, 31, 58, 0.07);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.cpox-portfolio-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 48px rgba(11, 31, 58, 0.12);
+}
+.cpox-portfolio-card.pf-hidden { display: none; }
+
+.cpox-portfolio-card__thumb {
+  position: relative;
+  display: block;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f1f5f9, #e2e8f0);
+}
+.cpox-portfolio-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+.cpox-portfolio-card:hover .cpox-portfolio-card__thumb img { transform: scale(1.04); }
+
+.cpox-portfolio-card__browser {
+  position: absolute;
+  top: 0.65rem;
+  left: 0.65rem;
+  right: 0.65rem;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #64748b;
+  z-index: 2;
+}
+.cpox-portfolio-card__browser span {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #cbd5e1;
+}
+.cpox-portfolio-card__browser span:nth-child(1) { background: #f87171; }
+.cpox-portfolio-card__browser span:nth-child(2) { background: #fbbf24; }
+.cpox-portfolio-card__browser span:nth-child(3) { background: #34d399; }
+.cpox-portfolio-card__browser em {
+  margin-left: auto;
+  font-style: normal;
+  max-width: 55%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cpox-portfolio-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(11, 31, 58, 0.55);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 3;
+}
+.cpox-portfolio-card__thumb:hover .cpox-portfolio-card__overlay { opacity: 1; }
+
+.cpox-portfolio-card__body { padding: 1.25rem 1.35rem 1.35rem; flex: 1; display: flex; flex-direction: column; }
+.cpox-portfolio-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.65rem;
+}
+.cpox-portfolio-card__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(11, 31, 58, 0.06);
+  color: var(--cpox-navy);
+}
+.cpox-portfolio-card__title {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--cpox-navy);
+  margin-bottom: 0.45rem;
+  line-height: 1.3;
+}
+.cpox-portfolio-card__desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--cpox-muted);
+  margin-bottom: 0.85rem;
+  flex: 1;
+}
+.cpox-portfolio-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+.cpox-portfolio-card__chip {
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.35rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  background: #f1f5f9;
+  color: #475569;
+}
+.cpox-portfolio-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+.cpox-portfolio-card__actions .cpox-cta__btn {
+  padding: 0.55rem 1rem;
+  font-size: 0.78rem;
+}
+
+.cpox-portfolio-footnote {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.88rem;
+  color: var(--cpox-muted);
+}
+.cpox-portfolio-footnote i { color: #10A5F5; margin-right: 0.35rem; }
+
+.cpox-portfolio-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+}
+@media (min-width: 640px) { .cpox-portfolio-services { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1024px) { .cpox-portfolio-services { grid-template-columns: repeat(5, 1fr); } }
+.cpox-portfolio-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.25rem 0.85rem;
+  border-radius: 0.85rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  text-decoration: none;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+.cpox-portfolio-service:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(11, 31, 58, 0.1);
+  border-color: #cbd5e1;
+}
+.cpox-portfolio-service__icon {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.75rem;
+  display: grid;
+  place-items: center;
+  font-size: 1rem;
+  color: #fff;
+  background: linear-gradient(135deg, var(--cpox-navy), var(--cpox-navy-light));
+  margin-bottom: 0.65rem;
+}
+.cpox-portfolio-service h3 {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--cpox-navy);
+  line-height: 1.35;
+}
+
+.cpox-portfolio-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.cpox-portfolio-marquee__track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: cpoxPfMarquee 42s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cpox-portfolio-marquee__track { animation: none; flex-wrap: wrap; width: 100%; justify-content: center; }
+}
+@keyframes cpoxPfMarquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.cpox-portfolio-marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--cpox-navy);
+  white-space: nowrap;
+}
+.cpox-portfolio-marquee__mark {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, var(--cpox-navy), #10A5F5);
+}
+
+/* Project detail modal — corpox styled */
+.cpox-pf-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+.cpox-pf-modal[hidden] { display: none; }
+.cpox-pf-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 31, 58, 0.65);
+  backdrop-filter: blur(6px);
+}
+.cpox-pf-modal__panel {
+  position: relative;
+  width: min(720px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 32px 64px rgba(11, 31, 58, 0.25);
+}
+.cpox-pf-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  cursor: pointer;
+  color: var(--cpox-navy);
+}
+body.cpox-pf-modal-open { overflow: hidden; }

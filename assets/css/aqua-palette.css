@@ -1,0 +1,231 @@
+/**
+ * Guudle brand cyan — single source of truth (#10A5F5)
+ */
+
+:root {
+  --aqua-primary: #10A5F5;
+  --aqua-dark: #0D84C4;
+  --aqua-light: #E6F4FE;
+  --aqua-hover: #0E96E8;
+  --aqua-gradient-start: #3DB8F7;
+  --aqua-gradient-end: #0A7BC4;
+  --aqua-accent: #10A5F5;
+  --aqua-rgb: 16, 165, 245;
+  --aqua-accent-rgb: 16, 165, 245;
+  --aqua-dark-rgb: 13, 132, 196;
+
+  --aqua-gradient: linear-gradient(
+    135deg,
+    var(--aqua-gradient-start) 0%,
+    var(--aqua-primary) 48%,
+    var(--aqua-gradient-end) 100%
+  );
+  --aqua-gradient-h: linear-gradient(
+    90deg,
+    var(--aqua-gradient-start),
+    var(--aqua-primary),
+    var(--aqua-gradient-end)
+  );
+  --aqua-glow: radial-gradient(
+    ellipse at center,
+    rgba(var(--aqua-rgb), 0.22) 0%,
+    transparent 70%
+  );
+  --aqua-shadow: 0 4px 20px rgba(var(--aqua-rgb), 0.28);
+  --aqua-shadow-hover: 0 8px 28px rgba(var(--aqua-rgb), 0.38);
+  --aqua-focus-ring: 0 0 0 3px rgba(var(--aqua-rgb), 0.35);
+
+  --brand-accent: var(--aqua-primary);
+  --brand-accent-hover: var(--aqua-hover);
+  --brand-accent-soft: rgba(var(--aqua-rgb), 0.1);
+  --brand-accent-border: rgba(var(--aqua-rgb), 0.35);
+  --brand-cta-bg: var(--aqua-primary);
+  --brand-cta-hover: var(--aqua-hover);
+  --brand-cta-active: var(--aqua-dark);
+  --brand-cta-shadow: var(--aqua-shadow);
+  --brand-cta-shadow-hover: var(--aqua-shadow-hover);
+  --nav-accent: var(--aqua-primary);
+  --nav-accent-soft: rgba(var(--aqua-rgb), 0.1);
+  --nav-accent-border: rgba(var(--aqua-rgb), 0.28);
+  --nav-cta-bg: var(--aqua-primary);
+  --nav-cta-hover: var(--aqua-hover);
+  --text-link: #0D84C4;
+  --text-link-hover: var(--aqua-primary);
+  --royal-blue: var(--aqua-primary);
+  --cyan: var(--aqua-primary);
+  --corp-accent: var(--aqua-primary);
+  --corp-accent-2: var(--aqua-accent);
+  --svc-accent: var(--aqua-primary);
+  --svc-accent-soft: var(--brand-accent-soft);
+  --slp-accent: var(--aqua-primary);
+  --mkt-accent: var(--aqua-primary);
+  --mkt-accent2: var(--aqua-accent);
+}
+
+/* ─── Primary buttons — #10A5F5 + white text ─── */
+.btn-primary,
+.svc-btn-primary,
+.mkt-btn--primary,
+.mkt-btn.mkt-btn--primary,
+.corp-btn--primary,
+.hero-cta-primary,
+.sp-btn-primary,
+.slp-btn-primary,
+.pre-btn--primary,
+.ent-faq__btn--primary,
+.nav-cta-btn--appointment,
+.ct-btn--primary,
+.tsf-result-cta,
+.tsf-btn-next,
+.guudle-offer-btn--primary,
+.home-parallax-immersive__btn--primary,
+.srv-expertise__cta-btn--primary,
+.ind-featured__btn {
+  background: var(--aqua-primary) !important;
+  background-image: none !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: var(--aqua-shadow);
+  transition: background 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.btn-primary:hover,
+.svc-btn-primary:hover,
+.mkt-btn--primary:hover,
+.hero-cta-primary:hover,
+.nav-cta-btn--appointment:hover,
+.ct-btn--primary:hover,
+.tsf-result-cta:hover,
+.tsf-btn-next:hover,
+.guudle-offer-btn--primary:hover,
+.home-parallax-immersive__btn--primary:hover {
+  background: var(--aqua-hover) !important;
+  box-shadow: var(--aqua-shadow-hover);
+}
+
+.btn-primary:active,
+.nav-cta-btn--appointment:active,
+.mkt-btn--primary:active {
+  background: var(--aqua-dark) !important;
+}
+
+.btn-primary:focus-visible,
+.mkt-btn--primary:focus-visible,
+.nav-cta-btn--appointment:focus-visible,
+.tsf-btn:focus-visible,
+.guudle-offer-btn:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--aqua-primary);
+  outline-offset: 2px;
+}
+
+#site-header .site-nav__link.is-active,
+#site-header .mega-nav__trigger.is-active {
+  color: var(--aqua-primary) !important;
+}
+
+.text-teal-400,
+.text-teal-500,
+.text-teal-600,
+.text-teal-700,
+.text-cyan-400,
+.text-cyan-500,
+.text-cyan-600,
+.text-cyan-700 {
+  color: var(--aqua-primary) !important;
+}
+
+.bg-teal-50,
+.bg-teal-100,
+.bg-cyan-50,
+.bg-cyan-100 {
+  background-color: var(--aqua-light) !important;
+}
+
+.bg-teal-500,
+.bg-teal-600,
+.bg-cyan-500,
+.bg-cyan-600 {
+  background-color: var(--aqua-primary) !important;
+}
+
+.border-teal-100,
+.border-teal-200,
+.border-teal-500,
+.border-cyan-100,
+.border-cyan-500 {
+  border-color: rgba(var(--aqua-rgb), 0.35) !important;
+}
+
+.from-teal-500,
+.from-teal-600,
+.from-cyan-500,
+.from-cyan-600 {
+  --tw-gradient-from: var(--aqua-gradient-start) !important;
+}
+
+.via-teal-500,
+.via-teal-600,
+.via-cyan-500,
+.via-cyan-600 {
+  --tw-gradient-via: var(--aqua-primary) !important;
+}
+
+.to-teal-500,
+.to-teal-600,
+.to-teal-900,
+.to-cyan-500,
+.to-cyan-600 {
+  --tw-gradient-to: var(--aqua-gradient-end) !important;
+}
+
+.progress-bar,
+.tsf-mobile-progress__fill,
+.tsf-step-item.is-complete .tsf-step-marker,
+.tsf-step-item.is-active .tsf-step-marker {
+  background: var(--aqua-gradient-h) !important;
+}
+
+.badge-aqua,
+.tsf-badge,
+.tsf-match-badge {
+  background: rgba(var(--aqua-rgb), 0.12);
+  border: 1px solid rgba(var(--aqua-rgb), 0.35);
+  color: var(--aqua-dark);
+}
+
+.cpox-industry-card__icon,
+.cpox-industry-card__accent,
+.svc-cap-card--teal,
+.devproc-card--teal {
+  --svc-cap-accent: var(--aqua-primary);
+  color: var(--aqua-primary);
+}
+
+.cpox-industry-head__accent,
+.hero-gradient-text {
+  background: var(--aqua-gradient) !important;
+  color: #001F54 !important;
+}
+
+.form-control:focus,
+.tsf-other-input:focus,
+.guudle-offer-input:focus {
+  border-color: var(--aqua-primary) !important;
+  box-shadow: var(--aqua-focus-ring) !important;
+}
+
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: var(--aqua-primary) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-primary,
+  .hero-cta-primary,
+  .nav-cta-btn--appointment {
+    transition: none;
+  }
+}

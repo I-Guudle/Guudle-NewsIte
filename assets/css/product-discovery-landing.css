@@ -1,0 +1,76 @@
+/* ═══ Product Discovery — pds ═══ */
+.slp-page[data-slp-prefix="pds"] {
+  --slp-primary: #EC4899; --slp-secondary: #546E7A; --slp-accent: #8B5CF6;
+}
+.pds-hero {
+  position: relative; min-height: 100vh; min-height: 100dvh;
+  background: linear-gradient(155deg, #1a0a2e 0%, #3b0764 40%, #581c87 75%, #1e1b4b 100%);
+  overflow: hidden;
+}
+.pds-hero__mesh {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 20% 25%, rgba(236,72,153,0.28), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 80% 30%, rgba(124,58,237,0.24), transparent 50%),
+    radial-gradient(ellipse 45% 40% at 55% 95%, rgba(139,92,246,0.18), transparent 55%);
+  animation: pds-mesh 18s ease-in-out infinite alternate;
+}
+@keyframes pds-mesh { 0% { transform: scale(1); } 100% { transform: scale(1.05) translate(-1%, 2%); } }
+
+.pds-workshop {
+  position: relative; max-width: 520px; margin: 0 auto; min-height: 380px;
+}
+.pds-workshop__board {
+  border-radius: 1.25rem; overflow: hidden;
+  background: linear-gradient(145deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04));
+  border: 1px solid rgba(255,255,255,0.14); box-shadow: 0 40px 80px rgba(0,0,0,0.45);
+}
+.pds-workshop__bar { display: flex; gap: 0.35rem; padding: 0.75rem 1rem; background: rgba(0,0,0,0.35); }
+.pds-workshop__dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; }
+.pds-workshop__body { padding: 1.25rem; }
+.pds-sticky { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-bottom: 1rem; }
+.pds-sticky-note {
+  padding: 0.65rem; border-radius: 0.35rem; font-size: 0.65rem; font-weight: 700; color: #1e1b4b;
+  animation: pds-float 6s ease-in-out infinite;
+}
+.pds-sticky-note--1 { background: #FDE68A; animation-delay: 0s; }
+.pds-sticky-note--2 { background: #A7F3D0; animation-delay: -2s; }
+.pds-sticky-note--3 { background: #FBCFE8; animation-delay: -4s; }
+@keyframes pds-float { 0%,100% { transform: rotate(-1deg) translateY(0); } 50% { transform: rotate(1deg) translateY(-6px); } }
+.pds-workshop__lane { display: flex; gap: 0.4rem; align-items: flex-end; height: 3.5rem; }
+.pds-workshop__lane span { flex: 1; border-radius: 0.3rem 0.3rem 0 0; background: linear-gradient(180deg, var(--slp-accent), var(--slp-primary)); }
+
+.pds-journey { display: grid; gap: 1rem; }
+@media (min-width: 768px) { .pds-journey { grid-template-columns: repeat(5, 1fr); } }
+.pds-journey-card {
+  position: relative; padding: 1.25rem; border-radius: 1rem; background: #fff;
+  border: 1px solid #E2E8F0; text-align: center; transition: transform 0.3s, box-shadow 0.3s;
+}
+.pds-journey-card:hover { transform: translateY(-6px); box-shadow: 0 16px 36px rgba(236,72,153,0.12); }
+.pds-journey-card__step {
+  width: 2rem; height: 2rem; border-radius: 50%; margin: 0 auto 0.75rem;
+  display: grid; place-items: center; font-size: 0.75rem; font-weight: 800; color: #fff;
+  background: linear-gradient(135deg, var(--slp-primary), var(--slp-secondary));
+}
+.pds-journey-card::after {
+  content: ''; position: absolute; top: 50%; right: -0.5rem; width: 1rem; height: 2px;
+  background: linear-gradient(90deg, var(--slp-primary), transparent); display: none;
+}
+@media (min-width: 768px) {
+  .pds-journey-card:not(:last-child)::after { display: block; }
+  .pds-journey-card:last-child::after { display: none; }
+}
+
+.pds-framework { display: grid; gap: 1rem; }
+@media (min-width: 640px) { .pds-framework { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .pds-framework { grid-template-columns: repeat(3, 1fr); } }
+.pds-framework-cell {
+  padding: 1.5rem; border-radius: 1rem; background: #fff; border: 1px solid #E2E8F0;
+  border-top: 3px solid var(--slp-primary); transition: transform 0.3s;
+}
+.pds-framework-cell:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(124,58,237,0.1); }
+.pds-framework-cell__num { font-family: var(--font-display); font-size: 2rem; font-weight: 800; color: rgba(236,72,153,0.2); line-height: 1; }
+
+.pds-parallax .slp-parallax__overlay {
+  background: linear-gradient(135deg, rgba(26,10,46,0.9) 0%, rgba(88,28,135,0.6) 50%, rgba(236,72,153,0.4) 100%);
+}

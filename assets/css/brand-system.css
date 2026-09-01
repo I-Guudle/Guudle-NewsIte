@@ -1,0 +1,128 @@
+/**
+ * Guudle Enterprise Brand System — #0A2540 navy identity
+ */
+
+:root {
+  --brand-navy: #001F54;
+  --brand-navy-hover: #0B1F3A;
+  --brand-navy-active: #06142e;
+  --brand-navy-soft: rgba(0, 31, 84, 0.08);
+  --brand-navy-border: rgba(0, 31, 84, 0.18);
+  --brand-navy-muted: #425466;
+  --brand-cta-bg: #001F54;
+  --brand-cta-hover: #0B1F3A;
+  --brand-cta-active: #06142e;
+  --brand-cta-shadow: 0 8px 22px rgba(0, 31, 84, 0.16);
+  --brand-cta-shadow-hover: 0 10px 26px rgba(0, 31, 84, 0.2);
+
+  --nav-accent: var(--aqua-primary, #10A5F5);
+  --nav-accent-soft: rgba(16, 165, 245, 0.1);
+  --nav-accent-border: rgba(16, 165, 245, 0.28);
+}
+
+/* ─── Primary buttons (site-wide) ─── */
+.btn-primary,
+.svc-btn-primary,
+.mkt-btn--primary,
+.mkt-btn.mkt-btn--primary,
+.corp-btn--primary,
+.corp-btn.corp-btn--primary,
+.hero-cta-primary,
+.sp-btn-primary,
+.slp-btn-primary,
+.pre-btn--primary,
+.ent-faq__btn--primary,
+.nav-cta-btn--appointment,
+.ct-btn--primary,
+.wa-btn-primary,
+.mob-btn-primary,
+.mvp-btn-primary,
+.csd-btn-primary,
+.wbd-btn-primary,
+.and-btn-primary,
+.ios-btn-primary,
+.saas-btn-primary,
+.msl-btn-primary {
+  background: var(--brand-cta-bg) !important;
+  background-image: none !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: var(--brand-cta-shadow);
+  transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover,
+.svc-btn-primary:hover,
+.mkt-btn--primary:hover,
+.mkt-btn.mkt-btn--primary:hover,
+.corp-btn--primary:hover,
+.hero-cta-primary:hover,
+.sp-btn-primary:hover,
+.slp-btn-primary:hover,
+.pre-btn--primary:hover,
+.nav-cta-btn--appointment:hover,
+.ct-btn--primary:hover,
+.saas-btn-primary:hover,
+.msl-btn-primary:hover {
+  background: var(--brand-cta-hover) !important;
+  box-shadow: var(--brand-cta-shadow-hover);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active,
+.svc-btn-primary:active,
+.mkt-btn--primary:active,
+.nav-cta-btn--appointment:active,
+.ct-btn--primary:active {
+  background: var(--brand-cta-active) !important;
+  transform: translateY(0);
+}
+
+.btn-primary:focus-visible,
+.svc-btn-primary:focus-visible,
+.mkt-btn--primary:focus-visible,
+.nav-cta-btn--appointment:focus-visible {
+  outline: 2px solid var(--aqua-primary, #10A5F5);
+  outline-offset: 2px;
+}
+
+/* ─── Parallax background layers ─── */
+.guudle-parallax-layer,
+.slp-parallax__bg,
+.svc-parallax__bg,
+.mkt-parallax__bg,
+[data-parallax-bg] {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+  transform: translate3d(0, 0, 0) scale(1.08);
+  backface-visibility: hidden;
+}
+
+.guudle-parallax-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.guudle-parallax-section > .guudle-parallax-layer,
+.guudle-parallax-section > .slp-parallax__bg,
+.guudle-parallax-section > .svc-parallax__bg {
+  position: absolute;
+  inset: -8% 0;
+  height: 116%;
+  width: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guudle-parallax-layer,
+  .slp-parallax__bg,
+  .svc-parallax__bg,
+  .mkt-parallax__bg,
+  [data-parallax-bg] {
+    transform: none !important;
+    will-change: auto;
+  }
+}

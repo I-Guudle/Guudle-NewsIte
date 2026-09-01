@@ -1,0 +1,603 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Guudle Enterprise Design System — last-loaded visual source of truth
+   Clean typography. Solid colors. Strong hierarchy. Minimal decoration.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.guudle-site {
+  --ent-navy: #001F54;
+  --ent-deep: #0B1F3A;
+  --ent-ink: #0f172a;
+  --ent-muted: #475569;
+  --ent-line: rgba(0, 31, 84, 0.12);
+  --ent-off: #f7f8fb;
+  --ent-white: #ffffff;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Poppins', 'Inter', system-ui, sans-serif;
+  --text-heading: #001F54;
+  --text-body: #475569;
+  --text-link: #001F54;
+  --text-link-hover: #0B1F3A;
+  --brand-cta-bg: #001F54;
+  --brand-cta-hover: #0B1F3A;
+  --nav-cta-bg: #001F54;
+  --nav-cta-hover: #0B1F3A;
+  --nav-accent: #001F54;
+  --aqua-primary: #001F54;
+  --cma-accent: #001F54;
+  background: var(--ent-white);
+  color: var(--ent-muted);
+  font-family: var(--font-sans);
+}
+
+.guudle-site h1,
+.guudle-site h2,
+.guudle-site .font-display {
+  font-family: var(--font-display);
+  color: var(--ent-navy);
+  letter-spacing: -0.03em;
+}
+
+.guudle-site h3,
+.guudle-site h4,
+.guudle-site h5,
+.guudle-site h6 {
+  font-family: var(--font-sans);
+  color: var(--ent-deep);
+}
+
+/* ── Zero gradient typography ── */
+.guudle-site .bg-clip-text,
+.guudle-site .text-transparent,
+.guudle-site [class*="gradient-text"],
+.guudle-site .hero-gradient-text,
+.guudle-site .hero-stat-num,
+.guudle-site .slp-gradient-text,
+.guudle-site .svc-gradient-text,
+.guudle-site .hta-char--hl,
+.guudle-site [style*="background-clip: text"],
+.guudle-site [style*="-webkit-background-clip:text"] {
+  background: none !important;
+  background-image: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: #001F54 !important;
+  color: #001F54 !important;
+  text-shadow: none !important;
+  filter: none !important;
+  animation: none !important;
+}
+
+.guudle-site .saas-hero:not(.saas-hero--light) .hero-gradient-text,
+.guudle-site .svc-hero-parallax [class*="gradient-text"],
+.guudle-site .cpox-cta [class*="gradient-text"],
+.guudle-site .ow-cta [class*="gradient-text"],
+.guudle-site .svc-display {
+  color: inherit !important;
+  -webkit-text-fill-color: currentColor !important;
+}
+
+.guudle-site .srv-expertise__card-title,
+.guudle-site .srv-expertise__cta-title,
+.guudle-site .aib-tile__label,
+.guudle-site .aib-tile h3,
+.guudle-site .aib-hub__title,
+.guudle-site .cma-title span,
+.guudle-site h2 span[style*="10A5F5"],
+.guudle-site h1 span[style*="10A5F5"],
+.guudle-site .cpox-accent {
+  color: #001F54 !important;
+  background: none !important;
+  -webkit-text-fill-color: #001F54 !important;
+}
+
+/* ── Hide decorative effects (keep hero aurora / beam) ── */
+.guudle-site .hero-contact-card__glow,
+.guudle-site .hero-contact-aura,
+.guudle-site .cma-parallax__orb,
+.guudle-site .cma-parallax__ambient,
+.guudle-site .home-parallax-immersive__glow,
+.guudle-site .hta-root.hta-done::after,
+.guudle-site .hta-underline,
+.guudle-site .ind-v3__card-shine,
+.guudle-site .ind-v3__card-glow {
+  display: none !important;
+}
+
+.guudle-site .hero-dot-grid {
+  background-image:
+    linear-gradient(rgba(0, 31, 84, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 31, 84, 0.045) 1px, transparent 1px) !important;
+  background-size: 48px 48px !important;
+  opacity: 0.9;
+  mask-image: radial-gradient(ellipse 80% 70% at 70% 40%, #000 20%, transparent 75%);
+}
+
+/* ── Hero family — previous light mint / lilac wash + aurora ── */
+:root {
+  --hero-wash: linear-gradient(165deg, #FAFBFC 0%, #F5F3FF 35%, #ECFDF5 70%, #F0FDFA 100%);
+}
+
+.saas-hero,
+.saas-hero--light,
+.ow-hero,
+.ft-hero,
+.bo-hero,
+.corp-hero,
+.ct-hero,
+.hp-hero,
+.csd-hero,
+[data-svc-hero],
+main > section:first-of-type {
+  position: relative;
+  background: var(--hero-wash) !important;
+  overflow: hidden;
+}
+
+.saas-hero::before,
+.saas-hero--light::before,
+.ow-hero::before,
+.ft-hero::before,
+.bo-hero::before,
+.corp-hero::before,
+.ct-hero::before,
+.hp-hero::before,
+[data-svc-hero]::before,
+main > section:first-of-type::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 520px 520px at 92% -8%, rgba(167, 139, 250, 0.38), transparent 70%),
+    radial-gradient(ellipse 420px 420px at 6% 108%, rgba(16, 165, 245, 0.32), transparent 70%),
+    radial-gradient(ellipse 360px 360px at 42% 48%, rgba(244, 114, 182, 0.16), transparent 70%);
+}
+
+.hero-aurora,
+.hero-beam {
+  display: block !important;
+  z-index: 0;
+}
+
+.saas-hero > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot-grid),
+.ow-hero > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot-grid),
+.ft-hero > *:not(.ft-hero__grid),
+.corp-hero > *:not(.corp-hero-mesh):not(.corp-hero-glow),
+.ct-hero > *:not(.ct-hero-grid):not(.ct-hero-orb):not(.ct-hero-float),
+.bo-hero > .bo-hero__inner,
+main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot-grid) {
+  position: relative;
+  z-index: 1;
+}
+
+.guudle-site .saas-hero,
+.guudle-site .saas-hero--light,
+.guudle-site .ow-hero,
+.guudle-site .ft-hero,
+.guudle-site .bo-hero,
+.guudle-site .corp-hero,
+.guudle-site .ct-hero,
+.guudle-site [data-svc-hero].saas-hero {
+  background: var(--hero-wash) !important;
+  color: #001F54;
+  min-height: unset;
+}
+
+.bo-hero,
+.ct-hero,
+.corp-hero {
+  color: #001F54 !important;
+}
+
+.bo-hero h1,
+.bo-hero .bo-hero__title,
+.bo-hero .bo-hero__lead,
+.bo-hero .bo-hero__crumb,
+.bo-hero .bo-hero__crumb a,
+.ct-hero h1,
+.ct-hero .ct-hero-title,
+.ct-hero .ct-hero-sub,
+.corp-hero h1,
+.corp-hero .corp-hero-title,
+.corp-hero .corp-hero-sub {
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54 !important;
+}
+
+.bo-hero .bo-hero__lead,
+.ct-hero .ct-hero-sub,
+.corp-hero .corp-hero-sub {
+  color: #475569 !important;
+  -webkit-text-fill-color: #475569 !important;
+}
+
+.guudle-site main > section:first-of-type.pt-32,
+.guudle-site main > section:first-of-type.ct-hero {
+  background: var(--hero-wash) !important;
+}
+
+.guudle-site .saas-hero h1,
+.guudle-site .hero-title,
+.guudle-site .hero-title-navy,
+.guudle-site .ow-hero h1,
+.guudle-site .ft-hero h1,
+.guudle-site [data-svc-hero] h1 {
+  font-family: var(--font-display) !important;
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54 !important;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+  background: none !important;
+}
+
+.guudle-site .hero-title-navy__line::after,
+.guudle-site .hero-underline::after {
+  background: #001F54 !important;
+  background-image: none !important;
+}
+
+.guudle-site .hero-badge,
+.guudle-site .hero-badge--navy,
+.guudle-site .ow-eyebrow,
+.guudle-site .ft-eyebrow,
+.guudle-site .cma-badge,
+.guudle-site .svc-badge,
+.guudle-site .hp-hero__eyebrow {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: #001F54 !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+}
+
+.guudle-site .hero-badge__div,
+.guudle-site .hero-badge__rating {
+  display: none !important;
+}
+
+.guudle-site .hp-hero__eyebrow::before {
+  content: "";
+  width: 1.6rem;
+  height: 1px;
+  background: #001F54;
+  display: inline-block;
+}
+
+/* ── Buttons ── */
+.guudle-site .hero-cta-primary,
+.guudle-site .hero-cta-navy-primary,
+.guudle-site .hero-contact-submit,
+.guudle-site .hp-btn--navy,
+.guudle-site .hp-btn--primary,
+.guudle-site .ow-btn--primary,
+.guudle-site .ft-btn--primary,
+.guudle-site .ft-btn--navy,
+.guudle-site .btn-primary,
+.guudle-site .svc-btn-primary,
+.guudle-site .slp-btn-primary,
+.guudle-site .saas-btn-primary,
+.guudle-site .ai-btn-primary,
+.guudle-site .home-parallax-immersive__btn--primary,
+.guudle-site a.hero-cta-navy-primary,
+.guudle-site button[type="submit"].hero-contact-submit {
+  background: #001F54 !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  border: 1px solid #001F54 !important;
+  box-shadow: 0 8px 22px rgba(0, 31, 84, 0.16) !important;
+  backdrop-filter: none !important;
+}
+
+.guudle-site .hero-cta-primary:hover,
+.guudle-site .hero-cta-navy-primary:hover,
+.guudle-site .btn-primary:hover,
+.guudle-site .svc-btn-primary:hover,
+.guudle-site .slp-btn-primary:hover,
+.guudle-site .hero-contact-submit:hover {
+  background: #0B1F3A !important;
+  color: #ffffff !important;
+}
+
+.guudle-site .hero-cta-secondary,
+.guudle-site .hero-cta-navy-secondary,
+.guudle-site .hp-btn--outline,
+.guudle-site .ow-btn--ghost,
+.guudle-site .ow-btn--line,
+.guudle-site .ft-btn--ghost,
+.guudle-site .ft-btn--line,
+.guudle-site .svc-btn-ghost,
+.guudle-site .home-parallax-immersive__btn--ghost {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #001F54 !important;
+  border: 1px solid rgba(0, 31, 84, 0.22) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+.guudle-site .hero-cta-secondary:hover,
+.guudle-site .hero-cta-navy-secondary:hover {
+  background: #f8fafc !important;
+  color: #001F54 !important;
+  border-color: rgba(0, 31, 84, 0.4) !important;
+}
+
+.guudle-site .hero-cta-secondary i,
+.guudle-site .hero-cta-navy-secondary i {
+  color: #001F54 !important;
+}
+
+/* ── Cards ── */
+.guudle-site .hero-enterprise-card,
+.guudle-site .hero-feature,
+.guudle-site .hero-contact-card,
+.guudle-site .svc-feature,
+.guudle-site .svc-why-card,
+.guudle-site .svc-case,
+.guudle-site .slp-testimonial,
+.guudle-site .cma-card,
+.guudle-site .glass-card,
+.guudle-site .ow-card,
+.guudle-site article.hero-enterprise-card {
+  background: #ffffff !important;
+  background-image: none !important;
+  border: 1px solid rgba(0, 31, 84, 0.1) !important;
+  box-shadow: 0 8px 24px rgba(0, 31, 84, 0.05) !important;
+  backdrop-filter: none !important;
+  color: #0f172a;
+}
+
+.guudle-site .hero-enterprise-card__icon,
+.guudle-site .hero-feature__icon {
+  background: rgba(0, 31, 84, 0.06) !important;
+  color: #001F54 !important;
+  box-shadow: none !important;
+}
+
+.guudle-site .hero-enterprise-card__icon i,
+.guudle-site .hero-feature__icon i {
+  color: #001F54 !important;
+}
+
+/* ── Section backgrounds: white / off-white only ── */
+.guudle-site .bg-slate-50,
+.guudle-site .bg-gray-50,
+.guudle-site .bg-slate-100,
+.guudle-site .cpox-section--gray,
+.guudle-site .cma-parallax--grey {
+  background-color: #f7f8fb !important;
+}
+
+.guudle-site .saas-plat__title--light,
+.guudle-site .saas-plat__type-label,
+.guudle-site .crm-why__title--light,
+.guudle-site .crm-why__benefit-text,
+.guudle-site .erp-why__title--light,
+.guudle-site .erp-why__benefit-text,
+.guudle-site .erp-why__tech-title,
+.guudle-site .erp-why__why-item p {
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54 !important;
+}
+
+.guudle-site .saas-plat__lead--light,
+.guudle-site .crm-why__lead--light,
+.guudle-site .erp-why__lead--light {
+  color: #475569 !important;
+}
+
+/* ── Mega menu ── */
+.guudle-site .mega-panel {
+  background: #ffffff !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid rgba(0, 31, 84, 0.1) !important;
+  box-shadow: 0 18px 48px rgba(0, 31, 84, 0.1) !important;
+}
+
+.guudle-site .mega-panel-heading,
+.guudle-site .mega-cat-title {
+  color: #001F54 !important;
+  background: none !important;
+  -webkit-text-fill-color: #001F54 !important;
+}
+
+.guudle-site .site-nav .btn-primary,
+.guudle-site .site-nav a[href*="contact"] {
+  box-shadow: none;
+}
+
+/* ── Image treatment ── */
+.guudle-site img:not(.site-logo) {
+  max-width: 100%;
+}
+
+.guudle-site .ent-stage img,
+.guudle-site .hp-stage img {
+  border-radius: 0.75rem;
+}
+
+/* ── Product stage (shared hero visual language) ── */
+.ent-stage {
+  position: relative;
+  min-height: 17rem;
+  border: 1px solid rgba(0, 31, 84, 0.1);
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 18px 40px rgba(0, 31, 84, 0.08);
+  overflow: hidden;
+}
+
+.ent-stage__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid rgba(0, 31, 84, 0.08);
+  background: #f7f8fb;
+}
+
+.ent-stage__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: rgba(0, 31, 84, 0.18);
+}
+
+.ent-stage__url {
+  flex: 1;
+  height: 1.35rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(0, 31, 84, 0.1);
+  font-size: 0.68rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  padding: 0 0.7rem;
+}
+
+.ent-stage__body {
+  display: grid;
+  grid-template-columns: 4.5rem 1fr;
+  min-height: 14rem;
+}
+
+.ent-stage__rail {
+  background: #001F54;
+}
+
+.ent-stage__main {
+  padding: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.ent-stage__row {
+  height: 0.7rem;
+  border-radius: 999px;
+  background: rgba(0, 31, 84, 0.08);
+}
+
+.ent-stage__row--wide { width: 88%; }
+.ent-stage__row--mid { width: 64%; }
+.ent-stage__row--short { width: 42%; }
+
+.ent-stage__panel {
+  border: 1px solid rgba(0, 31, 84, 0.08);
+  border-radius: 0.6rem;
+  min-height: 5.5rem;
+  background: #f7f8fb;
+}
+
+.ent-stage--phone {
+  max-width: 16rem;
+  margin: 0 auto;
+  border-radius: 1.6rem;
+}
+
+.ent-stage--phone .ent-stage__body {
+  grid-template-columns: 1fr;
+}
+
+.ent-stage__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.ent-stage__chip {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #001F54;
+  border: 1px solid rgba(0, 31, 84, 0.16);
+  border-radius: 999px;
+  padding: 0.28rem 0.6rem;
+  background: #fff;
+}
+
+.ent-stage__label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #001F54;
+  margin: 0 0 0.55rem;
+}
+
+.saas-hero .ent-stage-wrap {
+  margin-top: 2rem;
+}
+
+.hero-premium--center .ent-stage-wrap {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1024px) {
+  .hero-premium--split .ent-stage-wrap {
+    margin-top: 0;
+  }
+}
+
+/* ── Parallax overlays: no colorful gradients ── */
+.guudle-site .cma-parallax__overlay--light {
+  background: rgba(255, 255, 255, 0.94) !important;
+}
+
+.guudle-site .cma-parallax__overlay--grey {
+  background: rgba(247, 248, 251, 0.94) !important;
+}
+
+.guudle-site .hp-parallax__veil,
+.guudle-site .home-parallax-immersive__overlay {
+  background: rgba(255, 255, 255, 0.88) !important;
+}
+
+.guudle-site .home-parallax-immersive__title,
+.guudle-site .home-parallax-immersive__eyebrow {
+  color: #001F54 !important;
+}
+
+.guudle-site .home-parallax-immersive__lead {
+  color: #475569 !important;
+}
+
+.guudle-site .home-parallax-immersive__card {
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 31, 84, 0.1) !important;
+  box-shadow: 0 12px 32px rgba(0, 31, 84, 0.06) !important;
+}
+
+/* ── Motion ── */
+@media (prefers-reduced-motion: reduce) {
+  .guudle-site *,
+  .guudle-site *::before,
+  .guudle-site *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .guudle-site .saas-hero h1,
+  .guudle-site [data-svc-hero] h1 {
+    font-size: clamp(1.85rem, 8vw, 2.5rem) !important;
+  }
+  .guudle-site .hero-cta-primary,
+  .guudle-site .hero-cta-navy-primary,
+  .guudle-site .hero-cta-secondary,
+  .guudle-site .hero-cta-navy-secondary {
+    width: auto;
+  }
+}

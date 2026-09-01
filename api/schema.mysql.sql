@@ -1,0 +1,35 @@
+-- Guudle IT Solutions — Client inquiry / lead capture (MySQL 8+)
+-- Run: mysql -u user -p guudle_site < api/schema.mysql.sql
+
+CREATE TABLE IF NOT EXISTS inquiries (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  full_name VARCHAR(150) NOT NULL,
+  company_name VARCHAR(200) NULL,
+  job_title VARCHAR(120) NULL,
+  email VARCHAR(255) NOT NULL,
+  phone VARCHAR(50) NULL,
+  country VARCHAR(100) NULL,
+  preferred_contact VARCHAR(50) NULL,
+  services JSON NULL,
+  project_title VARCHAR(255) NULL,
+  project_description TEXT NULL,
+  business_objectives TEXT NULL,
+  target_audience TEXT NULL,
+  current_challenges TEXT NULL,
+  desired_features TEXT NULL,
+  budget VARCHAR(80) NULL,
+  timeline VARCHAR(80) NULL,
+  preferred_tech TEXT NULL,
+  existing_url VARCHAR(500) NULL,
+  additional_notes TEXT NULL,
+  file_paths JSON NULL,
+  ip_address VARCHAR(45) NULL,
+  user_agent VARCHAR(500) NULL,
+  lead_status ENUM('new','contacted','qualified','proposal','closed','spam') NOT NULL DEFAULT 'new',
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id),
+  INDEX idx_inquiries_email (email),
+  INDEX idx_inquiries_status (lead_status),
+  INDEX idx_inquiries_created (created_at)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;

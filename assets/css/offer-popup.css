@@ -1,0 +1,510 @@
+/* ── Guudle Enterprise Offer Popup ── */
+.guudle-offer-open {
+  overflow: hidden;
+}
+
+.guudle-offer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  background: rgba(10, 37, 64, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+}
+
+.guudle-offer-backdrop.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.guudle-offer-modal {
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  width: min(700px, calc(100vw - 2rem));
+  max-height: min(90vh, 720px);
+  transform: translate(-50%, -50%) scale(0.92);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s cubic-bezier(0.34, 1.4, 0.64, 1), opacity 0.35s ease, visibility 0.35s ease;
+  pointer-events: none;
+}
+
+.guudle-offer-modal.is-visible {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.guudle-offer-modal--exit {
+  width: min(520px, calc(100vw - 2rem));
+}
+
+.guudle-offer-panel {
+  position: relative;
+  background: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 32px 64px rgba(10, 37, 64, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.08) inset;
+  overflow: hidden;
+  max-height: min(90vh, 720px);
+  display: flex;
+  flex-direction: column;
+}
+
+.guudle-offer-panel__particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.guudle-offer-panel__particles span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(16, 165, 245, 0.35);
+  animation: guudle-offer-float 6s ease-in-out infinite;
+}
+
+.guudle-offer-panel__particles span:nth-child(1) { top: 12%; left: 8%; animation-delay: 0s; }
+.guudle-offer-panel__particles span:nth-child(2) { top: 22%; right: 14%; animation-delay: 1.2s; width: 4px; height: 4px; }
+.guudle-offer-panel__particles span:nth-child(3) { bottom: 30%; left: 18%; animation-delay: 2.4s; }
+.guudle-offer-panel__particles span:nth-child(4) { bottom: 18%; right: 22%; animation-delay: 0.8s; width: 5px; height: 5px; }
+.guudle-offer-panel__particles span:nth-child(5) { top: 45%; left: 42%; animation-delay: 3s; opacity: 0.5; }
+
+@keyframes guudle-offer-float {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.4; }
+  50% { transform: translateY(-12px) scale(1.15); opacity: 0.85; }
+}
+
+.guudle-offer-close {
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  z-index: 5;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 0.65rem;
+  background: rgba(10, 37, 64, 0.06);
+  color: #475569;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.guudle-offer-close:hover {
+  background: rgba(10, 37, 64, 0.12);
+  color: #0b1f3a;
+  transform: scale(1.05);
+}
+
+.guudle-offer-close:focus-visible {
+  outline: 2px solid #10A5F5;
+  outline-offset: 2px;
+}
+
+.guudle-offer-body {
+  position: relative;
+  z-index: 1;
+  padding: 1.75rem 1.75rem 1.5rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.guudle-offer-logo {
+  display: block;
+  height: 2rem;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.guudle-offer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0f766e;
+  background: rgba(16, 165, 245, 0.14);
+  border: 1px solid rgba(16, 165, 245, 0.35);
+  margin-bottom: 0.75rem;
+}
+
+.guudle-offer-title {
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 800;
+  line-height: 1.2;
+  color: #0b1f3a;
+  margin: 0 0 0.65rem;
+}
+
+.guudle-offer-title em {
+  font-style: normal;
+  color: #10A5F5;
+}
+
+.guudle-offer-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0 0 1rem;
+}
+
+.guudle-offer-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .guudle-offer-layout {
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+  }
+}
+
+.guudle-offer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.guudle-offer-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: #334155;
+}
+
+.guudle-offer-list li i {
+  color: #10A5F5;
+  margin-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+.guudle-offer-art {
+  display: none;
+  position: relative;
+  min-height: 160px;
+  border-radius: 1rem;
+  background: linear-gradient(145deg, #0b1f3a 0%, #134e63 55%, #10A5F5 100%);
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .guudle-offer-art { display: block; }
+}
+
+.guudle-offer-art__glow {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(circle at 30% 30%, rgba(16, 165, 245, 0.45), transparent 55%);
+}
+
+.guudle-offer-art__icon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.guudle-offer-art__rings {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.08) 0 30%, transparent 31%),
+    radial-gradient(circle at 70% 70%, rgba(255, 255, 255, 0.06) 0 45%, transparent 46%);
+}
+
+.guudle-offer-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+.guudle-offer-trust strong {
+  display: block;
+  width: 100%;
+  font-size: 0.78rem;
+  color: #0b1f3a;
+  margin-bottom: 0.15rem;
+}
+
+.guudle-offer-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.guudle-offer-trust span i {
+  color: #f59e0b;
+  font-size: 0.65rem;
+}
+
+.guudle-offer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.15rem;
+}
+
+.guudle-offer-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.7rem 1.15rem;
+  border-radius: 0.75rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.guudle-offer-btn:focus-visible {
+  outline: 2px solid #10A5F5;
+  outline-offset: 2px;
+}
+
+.guudle-offer-btn--primary {
+  color: #fff;
+  background: linear-gradient(135deg, #0b1f3a, #10A5F5);
+  box-shadow: 0 8px 24px rgba(13, 148, 136, 0.35);
+  animation: guudle-offer-glow 3s ease-in-out infinite;
+}
+
+.guudle-offer-btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(13, 148, 136, 0.45);
+}
+
+.guudle-offer-btn--ghost {
+  color: #0b1f3a;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+}
+
+.guudle-offer-btn--ghost:hover {
+  background: #e2e8f0;
+}
+
+@keyframes guudle-offer-glow {
+  0%, 100% { box-shadow: 0 8px 24px rgba(13, 148, 136, 0.35); }
+  50% { box-shadow: 0 8px 32px rgba(16, 165, 245, 0.5); }
+}
+
+.guudle-offer-expiry {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.85rem;
+}
+
+.guudle-offer-expiry strong {
+  color: #10A5F5;
+}
+
+.guudle-offer-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1.75rem 1.15rem;
+  border-top: 1px solid #f1f5f9;
+  position: relative;
+  z-index: 1;
+}
+
+.guudle-offer-dismiss {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.78rem;
+  color: #64748b;
+  cursor: pointer;
+  user-select: none;
+}
+
+.guudle-offer-dismiss input {
+  accent-color: #10A5F5;
+  width: 1rem;
+  height: 1rem;
+}
+
+.guudle-offer-nothanks {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.guudle-offer-nothanks:hover { color: #64748b; }
+
+/* Form view */
+.guudle-offer-form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+@media (min-width: 520px) {
+  .guudle-offer-form-grid--2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.guudle-offer-field label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.3rem;
+}
+
+.guudle-offer-field input,
+.guudle-offer-field select,
+.guudle-offer-field textarea {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.6rem;
+  font-size: 0.85rem;
+  color: #0b1f3a;
+  background: #fff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.guudle-offer-field input:focus,
+.guudle-offer-field select:focus,
+.guudle-offer-field textarea:focus {
+  outline: none;
+  border-color: #10A5F5;
+  box-shadow: 0 0 0 3px rgba(16, 165, 245, 0.2);
+}
+
+.guudle-offer-field--full { grid-column: 1 / -1; }
+
+.guudle-offer-success {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.guudle-offer-success__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.guudle-offer-success h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0b1f3a;
+  margin: 0 0 0.5rem;
+}
+
+.guudle-offer-success p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.guudle-offer-view[hidden] { display: none !important; }
+
+/* Exit intent */
+.guudle-offer-exit-list {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.guudle-offer-exit-list li {
+  font-size: 0.85rem;
+  color: #334155;
+  display: flex;
+  gap: 0.45rem;
+}
+
+.guudle-offer-exit-list li i { color: #10A5F5; }
+
+/* Mobile bottom sheet */
+@media (max-width: 639px) {
+  .guudle-offer-modal {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    max-height: 88vh;
+    transform: translateY(100%);
+    border-radius: 0;
+  }
+
+  .guudle-offer-modal.is-visible {
+    transform: translateY(0);
+  }
+
+  .guudle-offer-panel {
+    border-radius: 1.25rem 1.25rem 0 0;
+    max-height: 88vh;
+  }
+
+  .guudle-offer-body {
+    padding: 1.25rem 1.25rem 1rem;
+  }
+
+  .guudle-offer-actions {
+    flex-direction: column;
+  }
+
+  .guudle-offer-btn {
+    width: 100%;
+  }
+
+  .guudle-offer-footer {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.65rem 1.25rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .guudle-offer-modal,
+  .guudle-offer-backdrop,
+  .guudle-offer-btn--primary,
+  .guudle-offer-panel__particles span {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}

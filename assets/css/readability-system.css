@@ -1,0 +1,288 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Guudle Readability & Background Overlay System
+   Ensures text never blends into background images (WCAG 2.2 AA)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Overlay presets */
+  --overlay-dark-hero: linear-gradient(
+    135deg,
+    rgba(10, 37, 64, 0.72) 0%,
+    rgba(10, 22, 40, 0.58) 45%,
+    rgba(10, 37, 64, 0.68) 100%
+  );
+  --overlay-dark-strong: linear-gradient(
+    180deg,
+    rgba(10, 22, 40, 0.65) 0%,
+    rgba(10, 37, 64, 0.55) 50%,
+    rgba(10, 22, 40, 0.62) 100%
+  );
+  --overlay-light-hero: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.94) 0%,
+    rgba(248, 250, 252, 0.88) 48%,
+    rgba(255, 255, 255, 0.92) 100%
+  );
+  --overlay-light-soft: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.12) 100%
+  );
+  --text-shadow-hero: 0 2px 20px rgba(0, 0, 0, 0.35), 0 1px 3px rgba(0, 0, 0, 0.25);
+  --text-shadow-hero-subtle: 0 1px 12px rgba(0, 0, 0, 0.28);
+}
+
+/* ─── Background image quality baseline ─── */
+.guudle-parallax-layer,
+.slp-parallax__bg,
+.svc-parallax__bg,
+.mkt-parallax__bg,
+.ind-hero__bg,
+.ref-hero__bg,
+[data-parallax-bg],
+.hero-bg,
+.corp-hero-bg {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* ─── Dark overlay heroes (white text) ─── */
+.svc-hero-parallax__overlay,
+.svc-hero-parallax .slp-parallax__overlay,
+.ind-hero__overlay,
+.ref-hero__overlay,
+.mkt-hero-parallax__overlay,
+.mkt-hero-parallax .slp-parallax__overlay,
+.home-parallax-immersive__overlay,
+.corp-hero--image::before,
+.hero--image::before {
+  background: var(--overlay-dark-hero) !important;
+}
+
+/* Parallax sections with white text — minimum readable overlay */
+.guudle-parallax-section:has(.text-white) .slp-parallax__overlay,
+.guudle-parallax-section:has(h1.text-white) .slp-parallax__overlay,
+.svc-hero-parallax .slp-parallax__overlay {
+  background: var(--overlay-dark-hero) !important;
+}
+
+/* Light overlay heroes (dark text) */
+.svc-hero--bg-image .svc-hero__overlay,
+.slp-parallax--light .slp-parallax__overlay {
+  background: var(--overlay-light-hero) !important;
+}
+
+/* ─── Hero typography on dark backgrounds ─── */
+.svc-hero-parallax,
+.ind-hero,
+.ref-hero,
+.mkt-hero-parallax,
+.home-parallax-immersive,
+.corp-hero--dark,
+.hero-navy-dark {
+  color: var(--text-inverse);
+}
+
+.svc-hero-parallax h1,
+.svc-hero-parallax .svc-display,
+.ind-hero__title,
+.ref-hero__title,
+.mkt-hero-parallax h1,
+.home-parallax-immersive h1,
+.home-parallax-immersive h2,
+.corp-hero--dark h1 {
+  color: var(--text-inverse) !important;
+  text-shadow: var(--text-shadow-hero);
+}
+
+.svc-hero-parallax p,
+.ind-hero__lead,
+.ref-hero__lead,
+.mkt-hero-parallax p,
+.home-parallax-immersive p {
+  color: var(--text-inverse-muted) !important;
+  text-shadow: var(--text-shadow-hero-subtle);
+}
+
+.svc-hero-parallax nav,
+.svc-hero-parallax nav a {
+  color: var(--text-inverse-muted) !important;
+  text-shadow: var(--text-shadow-hero-subtle);
+}
+
+.svc-hero-parallax nav a:hover {
+  color: var(--text-inverse) !important;
+}
+
+/* ─── Parallax content sections (light text on image) ─── */
+.px-section::after {
+  background: var(--px-overlay, var(--overlay-light-hero)) !important;
+}
+
+/* Strengthen light overlays when section uses dark headings on busy images */
+.px-section h2,
+.px-section h3 {
+  color: var(--text-heading);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.px-section p {
+  color: var(--text-body);
+}
+
+/* ─── Cards & content blocks — guaranteed contrast ─── */
+.guudle-site .glass-card,
+.guudle-site .svc-feature,
+.guudle-site .svc-case,
+.guudle-site .svc-why-card,
+.guudle-site .svc-testimonial,
+.guudle-site .svc-benefit,
+.guudle-site .corp-card,
+.guudle-site .mkt-card,
+.guudle-site .sp-card,
+.guudle-site .slp-testimonial,
+.guudle-site .ref-card,
+.guudle-site .ind-card {
+  background: #FFFFFF;
+  color: var(--text-body);
+}
+
+.guudle-site .glass-card h2,
+.guudle-site .glass-card h3,
+.guudle-site .svc-feature__title,
+.guudle-site .svc-case h3,
+.guudle-site .svc-why-card h3,
+.guudle-site .corp-card h3,
+.guudle-site .ref-card__title,
+.guudle-site .ind-card__title {
+  color: var(--text-heading) !important;
+}
+
+.guudle-site .glass-card p,
+.guudle-site .svc-feature__desc,
+.guudle-site .svc-case p,
+.guudle-site .svc-why-card p,
+.guudle-site .corp-card p {
+  color: var(--text-body) !important;
+}
+
+/* Dark cards (intentional) — keep white text */
+.mob-maint,
+.mob-maint h3,
+.mob-maint h4,
+.mob-maint p,
+.mob-maint .mob-maint__title,
+.mob-maint .mob-maint__lead,
+.mob-maint__item h4,
+.mob-maint__item p {
+  color: #ffffff !important;
+}
+
+.cs-case-visual,
+.cs-case-visual-inner {
+  color: inherit;
+}
+
+/* ─── Dashboard & page headers ─── */
+.corp-hero-title,
+.corp-section-head h2,
+.ct-form-header h2,
+.sp-section-title,
+.svc-section-head h2,
+.slp-section-head h2,
+.cs-page-hero h1,
+.pf-hero h1 {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--text-heading);
+  line-height: var(--leading-display);
+  letter-spacing: var(--tracking-display);
+}
+
+.corp-hero-sub,
+.svc-section-head p,
+.slp-section-head p,
+.cs-page-hero p {
+  color: var(--text-muted);
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-loose);
+  max-width: 42rem;
+}
+
+.corp-hero,
+.sp-hero,
+.ct-hero {
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--brand-bg, #F5F7FA) 100%);
+}
+
+/* ─── CTA & testimonial bands on images ─── */
+.svc-cta--image::before,
+.mkt-cta--image::before,
+.ct-cta--image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--overlay-dark-strong);
+  z-index: 0;
+}
+
+.svc-cta--image > *,
+.mkt-cta--image > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ─── Section headings on alternating backgrounds ─── */
+.guudle-site main section.bg-white h2,
+.guudle-site main section.bg-white h3,
+.guudle-site main section[id^="svc-"] h2 {
+  color: var(--text-heading);
+}
+
+.guudle-site main section.bg-white p,
+.guudle-site main section[id^="svc-"] p {
+  color: var(--text-body);
+}
+
+/* Prevent white text leaking onto light sections */
+.guudle-site main section.bg-white .text-white:not(.svc-btn-primary):not(.hero-cta-primary):not(.corp-btn--primary):not(.mkt-btn--primary):not(.cs-cta-btn--primary):not(.btn-primary):not([class*="mob-maint"]):not(.home-parallax-immersive *):not(.cs-case-visual *):not(.svc-hero-parallax *):not(.ind-hero *):not(.ref-hero *) {
+  color: var(--text-heading) !important;
+  text-shadow: none !important;
+}
+
+.guudle-site main section.bg-white .text-white\/80,
+.guudle-site main section.bg-white .text-white\/75,
+.guudle-site main section.bg-slate-50 .text-white\/80 {
+  color: var(--text-body) !important;
+  text-shadow: none !important;
+}
+
+/* ─── Footer (dark surface) ─── */
+.site-footer,
+.site-footer h2,
+.site-footer h3,
+.site-footer h4 {
+  color: var(--text-inverse) !important;
+  text-shadow: none;
+}
+
+.site-footer p,
+.site-footer li,
+.site-footer a:not(:hover) {
+  color: var(--text-inverse-muted) !important;
+}
+
+/* ─── Focus states (keyboard accessibility) ─── */
+.guudle-site a:focus-visible,
+.guudle-site button:focus-visible,
+.guudle-site [tabindex]:focus-visible {
+  outline: 2px solid var(--text-link, #0A2540);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mob-maint::before {
+    animation: none !important;
+  }
+}

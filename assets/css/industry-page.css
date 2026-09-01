@@ -1,0 +1,215 @@
+/* Industry landing pages — pages/industries/*.html */
+
+.gind-page {
+  --gind-navy: #001F54;
+  --gind-deep: #0B1F3A;
+  --gind-muted: #475569;
+  --gind-line: rgba(0, 31, 84, 0.12);
+  --gind-off: #f7f8fb;
+}
+
+.gind-page .slp-sticky-nav {
+  top: var(--site-header-height, 64px);
+  z-index: 35;
+}
+
+.gind-page .slp-sticky-nav__link.is-active,
+.gind-page .slp-sticky-nav__link:hover {
+  color: var(--gind-navy);
+  background: rgba(0, 31, 84, 0.08);
+}
+
+.gind-page section[id] {
+  scroll-margin-top: 7.5rem;
+}
+
+.gind-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gind-navy);
+}
+
+.gind-kicker--on-dark { color: rgba(255, 255, 255, 0.78); }
+
+.gind-title {
+  font-family: var(--font-display, 'Poppins', sans-serif);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--gind-navy);
+  margin: 0 0 1rem;
+}
+
+.gind-title--light { color: #fff !important; }
+
+.gind-lead {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--gind-muted);
+  margin: 0 0 1rem;
+  max-width: 42rem;
+}
+
+.gind-section { padding: 4.5rem 0; background: #fff; }
+.gind-section--mute { background: var(--gind-off); }
+
+.gind-head { max-width: 44rem; margin: 0 auto 2.5rem; text-align: center; }
+.gind-head--left { text-align: left; margin-left: 0; }
+
+.gind-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.gind-pills li {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--gind-line);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--gind-navy);
+  background: #fff;
+}
+
+.gind-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .gind-grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .gind-grid--3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1100px) {
+  .gind-grid--4 { grid-template-columns: repeat(4, 1fr); }
+}
+
+.gind-card {
+  padding: 1.4rem 1.25rem;
+  background: #fff;
+  border: 1px solid var(--gind-line);
+  border-radius: 1rem;
+}
+
+.gind-card h3 {
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 0 0 0.45rem;
+  color: var(--gind-navy);
+}
+
+.gind-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--gind-muted);
+}
+
+.gind-num {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: rgba(0, 31, 84, 0.45);
+  margin-bottom: 0.7rem;
+}
+
+.gind-related a,
+.gind-others a {
+  display: block;
+  padding: 1.15rem 1.2rem;
+  background: #fff;
+  border: 1px solid var(--gind-line);
+  border-radius: 0.9rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.gind-related a:hover,
+.gind-others a:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 31, 84, 0.28);
+  box-shadow: 0 12px 26px rgba(0, 31, 84, 0.07);
+}
+
+.gind-related h3,
+.gind-others h3 {
+  font-size: 0.98rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+  color: var(--gind-navy);
+}
+
+.gind-related p,
+.gind-others p {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+  color: var(--gind-muted);
+}
+
+.gind-cta {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.gind-cta__bg {
+  position: absolute;
+  inset: -12% 0;
+  height: 124%;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.gind-cta__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(155deg, rgba(11, 31, 58, 0.92) 0%, rgba(0, 31, 84, 0.94) 100%);
+}
+
+.gind-cta__content { position: relative; z-index: 2; }
+
+.gind-cta__lead {
+  margin: 0 auto 1.5rem;
+  max-width: 36rem;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.gind-cta .gind-title { color: #fff !important; }
+.gind-cta .gind-kicker { color: rgba(255, 255, 255, 0.78) !important; }
+
+.gind-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+
+.gind-ghost:hover { background: rgba(255, 255, 255, 0.1); }
+
+.gind-page a:focus-visible,
+.gind-page button:focus-visible {
+  outline: 2px solid var(--gind-navy);
+  outline-offset: 3px;
+}
+
+.gind-cta a:focus-visible { outline-color: #fff; }

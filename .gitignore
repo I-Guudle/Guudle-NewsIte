@@ -1,0 +1,48 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Live local Supabase browser config (publishable key)
+assets/js/supabase-config.local.js
+
+# PHP local database/mail config
+api/config.php
+**/config.php
+!**/config.example.php
+
+# Credential / key material
+*.pem
+*.key
+*.p12
+*.crt
+credentials.json
+service-account.json
+id_rsa
+id_ed25519
+secrets.*
+
+# Dependencies
+node_modules/
+vendor/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temp / build
+*.log
+dist/
+build/
+coverage/
+.cache/
+.tmp/
+
+# Local payloads
+body.txt
+database/_sql_payload.json
+
+# Local agent/session working files
+.superpowers/

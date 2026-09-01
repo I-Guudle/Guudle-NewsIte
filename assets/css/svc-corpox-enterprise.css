@@ -1,0 +1,628 @@
+/**
+ * Corpox-inspired enterprise page — glass hero, overlap cards, service grids
+ * Used on enterprise-solutions.html (header/nav via components.js)
+ */
+
+.svc-corpox-page {
+  --cx-purple: #7C3AED;
+  --cx-purple-soft: rgba(124, 58, 237, 0.1);
+  --cx-purple-light: #EDE9FE;
+  --cx-navy: #0A2540;
+  --cx-muted: #64748B;
+  --cx-border: #E2E8F0;
+  --cx-ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ─── Hero glass card (Corpox left-aligned) ─── */
+.svc-corpox-page .ref-hero {
+  justify-content: flex-start;
+  padding-left: max(1rem, calc((100% - 80rem) / 2 + 1rem));
+  padding-right: 1rem;
+}
+
+.svc-corpox-page .ref-hero__glass {
+  text-align: left;
+  margin: 0;
+  width: min(100%, 580px);
+}
+
+.corpox-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cx-purple);
+  background: var(--cx-purple-soft);
+  margin-bottom: 1rem;
+}
+
+.corpox-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.corpox-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.corpox-hero__btn--primary {
+  background: linear-gradient(135deg, #A855F7, var(--cx-purple));
+  color: #fff !important;
+  box-shadow: 0 8px 28px rgba(124, 58, 237, 0.35);
+}
+
+.corpox-hero__btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(124, 58, 237, 0.45);
+}
+
+.corpox-hero__btn--outline {
+  color: var(--cx-navy) !important;
+  border: 1px solid var(--cx-border);
+  background: #fff;
+}
+
+.corpox-hero__btn--outline:hover {
+  border-color: var(--cx-purple);
+  color: var(--cx-purple) !important;
+}
+
+@media (max-width: 767px) {
+  .svc-corpox-page .ref-hero {
+    justify-content: center;
+    padding-left: 1rem;
+  }
+
+  .svc-corpox-page .ref-hero__glass {
+    text-align: center;
+  }
+
+  .corpox-hero__actions {
+    justify-content: center;
+  }
+}
+
+.svc-corpox-page .slp-sticky-nav__link:hover,
+.svc-corpox-page .slp-sticky-nav__link.is-active {
+  color: var(--cx-purple);
+  background: var(--cx-purple-soft);
+}
+
+.svc-corpox-page .slp-sticky-nav {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--cx-border);
+}
+
+/* ─── Page title band (Service Details style) ─── */
+.corpox-band {
+  position: relative;
+  padding: 3.5rem 1rem 4rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.corpox-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--cx-purple-light) 0%, #fff 72%);
+  border-radius: 0 0 50% 50% / 0 0 8% 8%;
+  z-index: 0;
+}
+
+.corpox-band__inner {
+  position: relative;
+  z-index: 1;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.corpox-band__eyebrow {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cx-purple);
+  margin-bottom: 0.75rem;
+}
+
+.corpox-band__title {
+  font-family: var(--font-display, 'Poppins', sans-serif);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  color: var(--cx-navy);
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.corpox-band__lead {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--cx-muted);
+  margin: 0;
+}
+
+.corpox-band--compact {
+  padding: 2.5rem 1rem 3rem;
+}
+
+.corpox-stats {
+  background: #fff;
+  border-top: 1px solid var(--cx-border);
+  border-bottom: 1px solid var(--cx-border);
+  padding: 2.5rem 1rem;
+}
+
+.corpox-stats__grid {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .corpox-stats__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.corpox-stats__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.corpox-stats__icon {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background: var(--cx-purple-soft);
+  color: var(--cx-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+}
+
+.corpox-stats__num {
+  display: block;
+  font-family: var(--font-display, 'Poppins', sans-serif);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--cx-navy);
+  line-height: 1.1;
+}
+
+.corpox-stats__label {
+  display: block;
+  font-size: 0.8125rem;
+  color: var(--cx-muted);
+  margin-top: 0.15rem;
+}
+
+/* ─── Why / service detail cards (2×2 white grid) ─── */
+.svc-corpox-page .svc-why-bento {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .svc-corpox-page .svc-why-bento {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.svc-corpox-page .svc-why-card {
+  background: #fff !important;
+  border: 1px solid var(--cx-border) !important;
+  border-radius: 1rem !important;
+  padding: 2rem 1.75rem !important;
+  box-shadow: 0 8px 32px rgba(10, 37, 64, 0.06) !important;
+  text-align: left !important;
+  transition: transform 0.35s var(--cx-ease), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.svc-corpox-page .svc-why-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(124, 58, 237, 0.25) !important;
+  box-shadow: 0 16px 48px rgba(124, 58, 237, 0.1) !important;
+}
+
+.svc-corpox-page .svc-why-card__icon {
+  width: 3.25rem !important;
+  height: 3.25rem !important;
+  border-radius: 0.875rem !important;
+  background: linear-gradient(135deg, #A855F7, var(--cx-purple)) !important;
+  color: #fff !important;
+  font-size: 1.25rem !important;
+  margin-bottom: 1.25rem !important;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.25);
+}
+
+.svc-corpox-page .svc-why-card:nth-child(2) .svc-why-card__icon {
+  background: linear-gradient(135deg, #3B82F6, #2563EB) !important;
+}
+
+.svc-corpox-page .svc-why-card:nth-child(3) .svc-why-card__icon {
+  background: linear-gradient(135deg, #10B981, #059669) !important;
+}
+
+.svc-corpox-page .svc-why-card:nth-child(4) .svc-why-card__icon {
+  background: linear-gradient(135deg, #F97316, #EA580C) !important;
+}
+
+.svc-corpox-page .svc-why-card h3 {
+  font-family: var(--font-display, 'Poppins', sans-serif);
+  font-size: 1.125rem !important;
+  font-weight: 800 !important;
+  color: var(--cx-navy) !important;
+  margin-bottom: 0.65rem !important;
+}
+
+.svc-corpox-page .svc-why-card p {
+  color: var(--cx-muted) !important;
+  font-size: 0.875rem !important;
+  line-height: 1.65 !important;
+  margin-bottom: 1rem !important;
+}
+
+.svc-corpox-page .svc-why-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--cx-purple);
+  text-decoration: none;
+  transition: gap 0.2s ease;
+}
+
+.svc-corpox-page .svc-why-card__link:hover {
+  gap: 0.55rem;
+}
+
+/* ─── Features — service grid with check lists ─── */
+.svc-corpox-page .svc-features-section {
+  background: #F8FAFC !important;
+  position: relative;
+}
+
+.svc-corpox-page .svc-features-ambient {
+  display: none;
+}
+
+.svc-corpox-page .svc-features-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .svc-corpox-page .svc-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.svc-corpox-page .svc-feature {
+  background: #fff !important;
+  border: 1px solid var(--cx-border) !important;
+  border-radius: 1rem !important;
+  padding: 2rem 1.75rem !important;
+  box-shadow: 0 8px 28px rgba(10, 37, 64, 0.05) !important;
+  text-align: left !important;
+}
+
+.svc-corpox-page .svc-feature:hover {
+  transform: translateY(-4px);
+  border-color: rgba(124, 58, 237, 0.2) !important;
+  box-shadow: 0 14px 40px rgba(124, 58, 237, 0.08) !important;
+}
+
+.svc-corpox-page .svc-feature__icon {
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 0.75rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.svc-corpox-page .svc-feature:nth-child(1) .svc-feature__icon { background: linear-gradient(135deg, #A855F7, #7C3AED) !important; }
+.svc-corpox-page .svc-feature:nth-child(2) .svc-feature__icon { background: linear-gradient(135deg, #3B82F6, #2563EB) !important; }
+.svc-corpox-page .svc-feature:nth-child(3) .svc-feature__icon { background: linear-gradient(135deg, #10B981, #059669) !important; }
+.svc-corpox-page .svc-feature:nth-child(4) .svc-feature__icon { background: linear-gradient(135deg, #10A5F5, #10A5F5) !important; }
+.svc-corpox-page .svc-feature:nth-child(5) .svc-feature__icon { background: linear-gradient(135deg, #F97316, #EA580C) !important; }
+.svc-corpox-page .svc-feature:nth-child(6) .svc-feature__icon { background: linear-gradient(135deg, #EC4899, #DB2777) !important; }
+
+.svc-corpox-page .svc-feature__title {
+  font-family: var(--font-display, 'Poppins', sans-serif);
+  font-size: 1.0625rem !important;
+  font-weight: 800 !important;
+  color: var(--cx-navy) !important;
+}
+
+.svc-corpox-page .svc-feature__desc {
+  color: var(--cx-muted) !important;
+  font-size: 0.875rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* ─── Section heads ─── */
+.svc-corpox-page .svc-section-head h2,
+.svc-corpox-page .svc-features-head h2,
+.svc-corpox-page .devproc-title {
+  font-family: var(--font-display, 'Poppins', sans-serif);
+  color: var(--cx-navy) !important;
+}
+
+.svc-corpox-page .svc-section-head p,
+.svc-corpox-page .svc-features-lead,
+.svc-corpox-page .devproc-lead {
+  color: var(--cx-muted) !important;
+}
+
+.svc-corpox-page .svc-section-head span[class*="rounded-full"],
+.svc-corpox-page .svc-features-badge {
+  color: var(--cx-purple) !important;
+  background: var(--cx-purple-soft) !important;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+}
+
+/* ─── Benefits — core values (centered circles) ─── */
+.svc-corpox-page #svc-benefits {
+  background: linear-gradient(180deg, #fff 0%, var(--cx-purple-light) 100%) !important;
+}
+
+.svc-corpox-page .svc-benefit {
+  background: #fff !important;
+  border: 1px solid var(--cx-border) !important;
+  border-radius: 1rem !important;
+  padding: 2rem 1.5rem !important;
+  text-align: center !important;
+  box-shadow: 0 8px 28px rgba(10, 37, 64, 0.05) !important;
+}
+
+.svc-corpox-page .svc-benefit__icon {
+  width: 4rem !important;
+  height: 4rem !important;
+  border-radius: 50% !important;
+  margin: 0 auto 1.25rem !important;
+  background: var(--cx-purple-soft) !important;
+  color: var(--cx-purple) !important;
+  font-size: 1.35rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: none !important;
+}
+
+.svc-corpox-page .svc-benefit h3 {
+  color: var(--cx-navy) !important;
+  font-family: var(--font-display, 'Poppins', sans-serif);
+}
+
+.svc-corpox-page .svc-benefit p {
+  color: var(--cx-muted) !important;
+}
+
+/* ─── Tech stack ─── */
+.svc-corpox-page .svc-tech-item {
+  background: #fff;
+  border: 1px solid var(--cx-border);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  text-align: center;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.svc-corpox-page .svc-tech-item:hover {
+  border-color: var(--cx-purple);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.1);
+}
+
+.svc-corpox-page .svc-tech-item i {
+  color: var(--cx-purple);
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* ─── Case studies — portfolio cards ─── */
+.svc-corpox-page .svc-case {
+  background: #fff !important;
+  border: 1px solid var(--cx-border) !important;
+  border-radius: 1rem !important;
+  overflow: hidden !important;
+  box-shadow: 0 12px 40px rgba(10, 37, 64, 0.08) !important;
+  padding: 0 !important;
+}
+
+.svc-corpox-page .svc-case__img {
+  position: relative;
+  overflow: hidden;
+}
+
+.svc-corpox-page .svc-case__img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s var(--cx-ease);
+}
+
+.svc-corpox-page .svc-case:hover .svc-case__img img {
+  transform: scale(1.04);
+}
+
+.svc-corpox-page .svc-case__body {
+  padding: 1.5rem;
+}
+
+.svc-corpox-page .svc-case__tag {
+  background: var(--cx-purple-soft) !important;
+  color: var(--cx-purple) !important;
+  font-weight: 700;
+}
+
+.svc-corpox-page .svc-case h3 {
+  color: var(--cx-navy) !important;
+}
+
+.svc-corpox-page .svc-case p {
+  color: var(--cx-muted) !important;
+}
+
+/* ─── Industries ─── */
+.svc-corpox-page .svc-industry {
+  background: #fff !important;
+  border: 1px solid var(--cx-border) !important;
+  border-radius: 0.875rem !important;
+  box-shadow: 0 4px 16px rgba(10, 37, 64, 0.04) !important;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.svc-corpox-page .svc-industry:hover {
+  border-color: rgba(124, 58, 237, 0.3);
+  transform: translateY(-3px);
+}
+
+.svc-corpox-page .svc-industry__icon {
+  background: var(--cx-purple-soft) !important;
+  color: var(--cx-purple) !important;
+}
+
+.svc-corpox-page .svc-industry h3 {
+  color: var(--cx-navy) !important;
+}
+
+.svc-corpox-page .svc-industry p {
+  color: var(--cx-muted) !important;
+}
+
+/* ─── Testimonials ─── */
+.svc-corpox-page #svc-testimonials {
+  background: #fff !important;
+}
+
+.svc-corpox-page .svc-testimonial {
+  background: #fff !important;
+  border: 1px solid var(--cx-border) !important;
+  border-radius: 1rem !important;
+  box-shadow: 0 8px 32px rgba(10, 37, 64, 0.06) !important;
+}
+
+.svc-corpox-page .svc-testimonial__stars {
+  color: #F59E0B;
+}
+
+.svc-corpox-page .svc-testimonial__quote {
+  color: var(--cx-muted) !important;
+}
+
+.svc-corpox-page .svc-testimonial__author strong {
+  color: var(--cx-navy) !important;
+}
+
+/* ─── CTA ─── */
+.svc-corpox-page .svc-cta {
+  background: linear-gradient(135deg, #6D28D9 0%, var(--cx-purple) 50%, #2563EB 100%) !important;
+}
+
+.svc-corpox-page .svc-cta h2 {
+  color: #fff !important;
+}
+
+.svc-corpox-page .svc-cta p {
+  color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.svc-corpox-page .svc-cta .svc-btn-primary {
+  background: #fff !important;
+  color: var(--cx-purple) !important;
+}
+
+.svc-corpox-page .svc-cta .svc-btn-ghost {
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* ─── Contact ─── */
+.svc-corpox-page #svc-contact {
+  background: #F8FAFC !important;
+}
+
+.svc-corpox-page .svc-contact-aside {
+  background: linear-gradient(145deg, var(--cx-navy), #1e1b4b) !important;
+  border-radius: 1rem !important;
+  border: none !important;
+}
+
+.svc-corpox-page .svc-contact-aside h2 {
+  color: #fff !important;
+}
+
+.svc-corpox-page .svc-contact-aside p,
+.svc-corpox-page .svc-contact-aside li {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+.svc-corpox-page #svc-contact-form button[type="submit"] {
+  background: linear-gradient(135deg, var(--cx-purple), #6D28D9) !important;
+}
+
+.svc-corpox-page .svc-related__link:hover {
+  color: var(--cx-purple) !important;
+  border-color: var(--cx-purple);
+}
+
+.svc-corpox-page #svc-trust {
+  background: #fff;
+}
+
+.svc-corpox-page .svc-trust-item i {
+  color: var(--cx-purple) !important;
+}
+
+/* FAQ purple accents */
+.svc-corpox-page .ent-faq__eyebrow,
+.svc-corpox-page .ent-faq__support-icon {
+  color: var(--cx-purple);
+}
+
+.svc-corpox-page .ent-faq__item.is-open {
+  border-color: rgba(124, 58, 237, 0.35);
+}
+
+.svc-corpox-page .ent-faq__item.is-open .ent-faq__icon {
+  background: var(--cx-purple);
+}
+
+.svc-corpox-page .ent-faq__btn--primary {
+  background: var(--cx-purple) !important;
+  color: #fff !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svc-corpox-page .svc-why-card:hover,
+  .svc-corpox-page .svc-feature:hover,
+  .svc-corpox-page .svc-case:hover .svc-case__img img {
+    transform: none;
+  }
+}

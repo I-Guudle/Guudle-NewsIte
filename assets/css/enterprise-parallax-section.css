@@ -1,0 +1,251 @@
+/**
+ * Enterprise Parallax Section — mandatory mid-page full-width band
+ * Heights: 700px desktop · 550px tablet · 450px mobile
+ */
+
+.ent-parallax {
+  position: relative;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.ent-parallax__bg {
+  position: absolute;
+  inset: -8%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  will-change: transform;
+}
+
+@media (max-width: 1024px) {
+  .ent-parallax {
+    min-height: 550px;
+  }
+  .ent-parallax__bg {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 640px) {
+  .ent-parallax {
+    min-height: 450px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ent-parallax__bg {
+    background-attachment: scroll;
+  }
+  .ent-parallax__float {
+    animation: none !important;
+  }
+}
+
+.ent-parallax__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(11, 31, 58, 0.88) 0%,
+    rgba(8, 145, 178, 0.55) 45%,
+    rgba(11, 31, 58, 0.92) 100%
+  );
+  z-index: 1;
+}
+
+.ent-parallax__mesh {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, #000 20%, transparent 75%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ent-parallax__floats {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.ent-parallax__float {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.75rem;
+  font-weight: 600;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 0 24px rgba(16, 165, 245, 0.15);
+  animation: ent-parallax-float 6s ease-in-out infinite;
+}
+
+.ent-parallax__float i {
+  color: #22d3ee;
+  font-size: 0.85rem;
+}
+
+.ent-parallax__float em {
+  font-style: normal;
+}
+
+.ent-parallax__float--1 { top: 18%; left: 8%; animation-delay: 0s; }
+.ent-parallax__float--2 { top: 22%; right: 10%; animation-delay: 1.2s; }
+.ent-parallax__float--3 { bottom: 24%; left: 12%; animation-delay: 2.4s; }
+.ent-parallax__float--4 { bottom: 20%; right: 8%; animation-delay: 3.6s; }
+
+@keyframes ent-parallax-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.ent-parallax__svg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.ent-parallax__svg--top { top: 0; }
+.ent-parallax__svg--bottom { bottom: 0; }
+
+.ent-parallax__inner {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.ent-parallax__glass {
+  position: relative;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    0 24px 64px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 48px rgba(16, 165, 245, 0.12);
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (min-width: 640px) {
+  .ent-parallax__glass {
+    padding: 3rem 3.5rem;
+  }
+}
+
+.ent-parallax__glass-glow {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%;
+  height: 80%;
+  background: radial-gradient(ellipse, rgba(16, 165, 245, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.ent-parallax__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1.25rem;
+  border-radius: 999px;
+  background: rgba(16, 165, 245, 0.15);
+  border: 1px solid rgba(34, 211, 238, 0.35);
+  color: #67e8f9;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.ent-parallax__title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.ent-parallax__accent {
+  background: linear-gradient(90deg, #22d3ee, #38bdf8, #67e8f9);
+  color: #001F54;
+}
+
+.ent-parallax__lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 42rem;
+  margin: 0 auto 1.75rem;
+}
+
+.ent-parallax__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.ent-parallax__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.ent-parallax__btn--primary {
+  background: linear-gradient(135deg, #0891b2 0%, #0ea5e9 50%, #06b6d4 100%);
+  color: #fff;
+  box-shadow: 0 8px 28px rgba(8, 145, 178, 0.45);
+}
+
+.ent-parallax__btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px rgba(8, 145, 178, 0.55);
+}
+
+.ent-parallax__btn--ghost {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #fff;
+}
+
+.ent-parallax__btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-2px);
+}
+
+.ent-parallax__btn:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 3px;
+}

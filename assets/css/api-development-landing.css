@@ -1,0 +1,88 @@
+/* ═══ API Development — api ═══ */
+.slp-page[data-slp-prefix="api"] {
+  --slp-primary: #10A5F5; --slp-secondary: #4F46E5; --slp-accent: #10A5F5;
+}
+.api-hero {
+  position: relative; min-height: 100vh; min-height: 100dvh;
+  background: linear-gradient(155deg, #0F172A 0%, #1e3a5f 35%, #312e81 70%, #0F172A 100%);
+  overflow: hidden;
+}
+.api-hero__mesh {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 75% 65% at 18% 22%, rgba(16, 165, 245,0.32), transparent 55%),
+    radial-gradient(ellipse 55% 50% at 82% 28%, rgba(79,70,229,0.26), transparent 50%),
+    radial-gradient(ellipse 50% 45% at 50% 100%, rgba(16,165,245,0.18), transparent 55%);
+  animation: api-mesh 20s ease-in-out infinite alternate;
+}
+@keyframes api-mesh { 0% { transform: scale(1); } 100% { transform: scale(1.06) translate(-2%, 1%); } }
+
+.api-diagram {
+  position: relative; min-height: 420px; padding: 2rem;
+  border-radius: 1.25rem; background: linear-gradient(145deg, #F8FAFC, #EFF6FF);
+  border: 1px solid #E2E8F0; overflow: hidden;
+}
+.api-diagram__lines {
+  position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;
+}
+.api-diagram__line {
+  stroke: rgba(16, 165, 245,0.25); stroke-width: 2; fill: none;
+  stroke-dasharray: 6 4; animation: api-dash 20s linear infinite;
+}
+.api-diagram__line.is-active { stroke: var(--slp-primary); stroke-width: 2.5; stroke-dasharray: none; }
+@keyframes api-dash { to { stroke-dashoffset: -100; } }
+
+.api-node {
+  position: absolute; z-index: 1; padding: 0.85rem 1.1rem; border-radius: 0.85rem;
+  background: #fff; border: 2px solid #E2E8F0; font-size: 0.75rem; font-weight: 700;
+  box-shadow: 0 8px 24px rgba(15,23,42,0.08); cursor: pointer;
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+.api-node:hover, .api-node.is-active {
+  transform: scale(1.05); border-color: var(--slp-primary);
+  box-shadow: 0 12px 32px rgba(16, 165, 245,0.2);
+}
+.api-node__method {
+  display: inline-block; padding: 0.15rem 0.45rem; border-radius: 0.25rem;
+  font-size: 0.6rem; font-weight: 800; margin-right: 0.35rem; color: #fff;
+}
+.api-node__method--get { background: #10B981; }
+.api-node__method--post { background: #10A5F5; }
+.api-node__method--put { background: #F59E0B; }
+.api-node__method--delete { background: #EF4444; }
+.api-node--client { top: 8%; left: 5%; }
+.api-node--gateway { top: 8%; left: 42%; }
+.api-node--auth { top: 42%; left: 5%; }
+.api-node--users { top: 42%; right: 5%; }
+.api-node--orders { bottom: 8%; left: 20%; }
+.api-node--payments { bottom: 8%; right: 20%; }
+.api-node--db { bottom: 8%; left: 42%; }
+
+.api-console {
+  border-radius: 1.25rem; overflow: hidden;
+  background: #0F172A; border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.35);
+}
+.api-console__bar {
+  display: flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1rem;
+  background: rgba(0,0,0,0.4); border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.api-console__dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; }
+.api-console__body { padding: 1.25rem; font-family: 'Consolas', 'Monaco', monospace; font-size: 0.78rem; line-height: 1.7; color: #94A3B8; min-height: 280px; }
+.api-console__prompt { color: var(--slp-accent); }
+.api-console__method { color: #10B981; font-weight: 700; }
+.api-console__url { color: #A78BFA; }
+.api-console__key { color: #F472B6; }
+.api-console__val { color: #FDE68A; }
+.api-console__response { color: #6EE7B7; margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.08); }
+
+.api-parallax .slp-parallax__overlay {
+  background: linear-gradient(135deg, rgba(15,23,42,0.88) 0%, rgba(30,58,95,0.55) 50%, rgba(16, 165, 245,0.45) 100%);
+}
+
+@media (max-width: 767px) {
+  .api-diagram { min-height: 520px; }
+  .api-node { font-size: 0.65rem; padding: 0.6rem 0.8rem; }
+  .api-node--gateway { left: 30%; }
+  .api-node--db { left: 30%; }
+}

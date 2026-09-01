@@ -1,0 +1,10 @@
+/**
+ * Soften conflicting hero-enter opacity on titles owned by HTA
+ * (legacy CSS kept for other hero blocks)
+ */
+.hta-root.hero-enter,
+.hta-root.aos-init {
+  opacity: unset;
+  transform: unset;
+  animation: none;
+}

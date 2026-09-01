@@ -1,0 +1,5 @@
+config.php
+uploads/*
+!uploads/.gitignore
+rate-limit/*
+!rate-limit/.gitignore

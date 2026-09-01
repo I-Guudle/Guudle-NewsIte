@@ -1,0 +1,77 @@
+/**
+
+ * Navigation lock — canonical header on ALL pages.
+
+ */
+
+
+
+#site-header.site-nav--split {
+
+  --site-header-height: 64px;
+
+}
+
+
+
+@media (min-width: 1280px) {
+
+  #site-header.site-nav--split {
+
+    --site-header-height: 118px;
+
+  }
+
+}
+
+
+
+#site-header.site-nav--premium.nav-at-top.site-nav--split {
+
+  background: transparent !important;
+
+  backdrop-filter: none !important;
+
+  -webkit-backdrop-filter: none !important;
+
+  border-bottom-color: transparent !important;
+
+  box-shadow: none !important;
+
+}
+
+
+
+#site-header.site-nav--premium.nav-scrolled.site-nav--split {
+
+  background: var(--nav-glass-bg, rgba(255, 255, 255, 0.72)) !important;
+
+  backdrop-filter: var(--nav-glass-blur, blur(20px) saturate(1.35)) !important;
+
+  -webkit-backdrop-filter: var(--nav-glass-blur, blur(20px) saturate(1.35)) !important;
+
+  border-bottom: 1px solid var(--nav-glass-border, rgba(10, 37, 64, 0.08)) !important;
+
+  box-shadow: var(--nav-glass-shadow, 0 8px 32px rgba(10, 37, 64, 0.08)) !important;
+
+}
+
+
+
+#site-header.site-nav--split .nav-cta-btn--appointment {
+
+  background: var(--aqua-primary, #10A5F5) !important;
+
+  color: #fff !important;
+
+}
+
+
+
+#site-header.site-nav--split .nav-cta-btn--appointment:hover {
+
+  background: var(--aqua-hover, #0E96E8) !important;
+
+}
+
+

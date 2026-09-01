@@ -1,0 +1,230 @@
+/* Guudle IT Solutions — AI Multi-Agent landing (Tailwind supplements) */
+.ma-page {
+  font-family: var(--font-sans);
+}
+
+.ma-page .font-display {
+  font-family: var(--font-display);
+}
+
+/* Preloader */
+.ma-preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: linear-gradient(165deg, #37474f 0%, #2e3440 100%);
+  display: grid;
+  place-items: center;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.ma-preloader.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.ma-preloader__mark span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #10A5F5;
+  margin-right: 6px;
+  animation: ma-pulse 1.2s ease-in-out infinite;
+}
+
+.ma-preloader__mark span:nth-child(2) { animation-delay: 0.15s; }
+.ma-preloader__mark span:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes ma-pulse {
+  0%, 100% { transform: scale(0.85); opacity: 0.5; }
+  50% { transform: scale(1.15); opacity: 1; }
+}
+
+.ma-preloader__bar {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.ma-preloader__bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #10A5F5, #10A5F5);
+  border-radius: inherit;
+  transition: width 0.2s ease;
+}
+
+/* Marquee */
+.ma-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.ma-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: ma-marquee-scroll var(--speed, 20s) linear infinite;
+}
+
+.ma-marquee[data-pause-on-hover="true"]:hover .ma-marquee__track {
+  animation-play-state: paused;
+}
+
+@keyframes ma-marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Reveal */
+.ma-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.ma-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero shapes */
+.ma-grid-pattern {
+  background-image:
+    linear-gradient(rgba(16, 165, 245, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16, 165, 245, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Animated moving lines */
+.ma-moving-line {
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  height: 60%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.ma-moving-line.right { right: 0; }
+.ma-moving-line.left { left: 0; }
+
+.ma-moving-line::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent, #10A5F5, transparent);
+  animation: ma-line-move 2.5s ease-in-out infinite;
+}
+
+@keyframes ma-line-move {
+  0%, 100% { transform: translateY(-100%); }
+  50% { transform: translateY(100%); }
+}
+
+/* AI model carousel center */
+.ma-model-carousel .swiper-slide {
+  opacity: 0.45;
+  transform: scale(0.82);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.ma-model-carousel .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Sticky cards */
+.ma-sticky-card {
+  position: sticky;
+  top: 6rem;
+}
+
+/* Step tabs */
+.ma-step-tab .tab-progress,
+.ma-timed-tab .tab-progress {
+  display: block;
+  height: 2px;
+  background: #e2e8f0;
+  margin-top: 0.75rem;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ma-timed-tab.active .tab-progress::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #10A5F5;
+  animation: ma-tab-progress var(--tab-duration, 6s) linear forwards;
+}
+
+@keyframes ma-tab-progress {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Agent cards hover */
+.ma-agent-card:hover .ma-agent-card__overlay {
+  background: rgba(55, 71, 79, 0.75);
+}
+
+/* Back to top */
+.ma-back-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 900;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #10A5F5;
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 24px rgba(16, 165, 245, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.ma-back-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.ma-back-top:hover {
+  background: #455A64;
+}
+
+/* Accordion */
+.ma-accordion-btn[aria-expanded="true"] .ma-accordion-icon {
+  transform: rotate(180deg);
+}
+
+.ma-accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s ease;
+}
+
+.ma-accordion-panel.is-open {
+  grid-template-rows: 1fr;
+}
+
+.ma-accordion-panel > div {
+  overflow: hidden;
+}
+
+/* Swiper pagination override */
+.ma-review-carousel .swiper-pagination-bullet-active {
+  background: #10A5F5;
+}

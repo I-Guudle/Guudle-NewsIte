@@ -1,0 +1,930 @@
+/**
+ * Guudle Unified Design System — bright, premium, enterprise-neutral.
+ * Loaded last on every page. Overrides page-specific colored backgrounds.
+ */
+
+:root {
+  --brand-bg: #F5F7FA;
+  --brand-bg-alt: #FAFBFC;
+  --brand-surface: #FFFFFF;
+
+  /* Typography — WCAG 2.2 AA (see typography.css) */
+  --text-heading: #0A2540;
+  --text-subheading: #334155;
+  --text-body: #475569;
+  --text-muted: #64748B;
+  --text-link: #10A5F5;
+  --text-link-hover: #10A5F5;
+  --text-inverse: #FFFFFF;
+  --text-inverse-muted: rgba(255, 255, 255, 0.82);
+
+  --brand-text: var(--text-heading);
+  --brand-text-muted: var(--text-muted);
+  --brand-text-light: var(--text-muted);
+  --brand-charcoal: #334155;
+  --brand-slate: var(--text-heading);
+  --brand-slate-mid: var(--text-subheading);
+  --brand-accent: #10A5F5;
+  --brand-accent-hover: #10A5F5;
+  --brand-accent-soft: rgba(16, 165, 245, 0.1);
+  --brand-border: #E2E8F0;
+  --brand-border-light: #ECEFF1;
+  --brand-shadow: 0 4px 24px rgba(16, 165, 245, 0.08);
+  --brand-shadow-hover: 0 12px 40px rgba(16, 165, 245, 0.12);
+  --brand-section-alt: #F8FAFC;
+  --brand-cta-bg: #10A5F5;
+  --brand-cta-hover: #10A5F5;
+
+  /* Legacy aliases → neutral palette */
+  --navy: var(--brand-slate);
+  --deep-blue: var(--brand-slate-mid);
+  --royal-blue: var(--brand-accent);
+  --navy-primary: var(--brand-slate);
+  --navy-mid: var(--brand-slate-mid);
+  --navy-light: var(--brand-text-muted);
+  --navy-accent: var(--brand-accent);
+  --navy-surface: var(--brand-bg);
+  --sp-navy: var(--brand-text);
+  --sp-deep: var(--brand-slate-mid);
+  --sp-royal: var(--brand-accent);
+  --sp-text: var(--brand-text);
+  --sp-gray: var(--brand-bg);
+  --corp-accent: var(--brand-accent);
+  --corp-accent-2: var(--brand-accent-hover);
+  --mkt-accent: var(--brand-accent);
+  --mkt-accent2: #10A5F5;
+  --mkt-navy: var(--brand-text);
+  --svc-navy: var(--brand-text);
+  --svc-navy-deep: var(--brand-charcoal);
+  --svc-light: var(--brand-section-alt);
+  --svc-accent: var(--brand-accent);
+  --svc-accent-soft: var(--brand-accent-soft);
+  --svc-hero-bg: var(--brand-bg);
+  --slp-primary: var(--brand-accent);
+  --slp-secondary: var(--brand-slate-mid);
+  --slp-accent: var(--brand-accent);
+}
+
+/* ─── Base shell: bright & clean ─── */
+html {
+  background: var(--brand-bg);
+}
+
+body,
+.service-page,
+.corp-page,
+.mkt-page,
+.slp-page,
+.home-saas,
+.home-navy-refined,
+.guudle-site {
+  background-color: var(--brand-bg) !important;
+  color: var(--brand-text) !important;
+}
+
+main {
+  background: transparent;
+}
+
+/* ─── Neutralize Tailwind dark gradient sections on homepage ─── */
+.bg-gradient-to-br.from-navy-900,
+.bg-gradient-to-br.from-navy-800,
+[class*="from-navy-900"],
+[class*="via-navy-800"],
+[class*="to-teal-900"],
+#why-guudle.bg-gradient-to-br {
+  background: var(--brand-surface) !important;
+  background-image: none !important;
+  color: var(--brand-text) !important;
+}
+
+#why-guudle h2,
+#why-guudle h3,
+#why-guudle p {
+  color: inherit !important;
+}
+
+/* ─── Home dark sections → light neutral ─── */
+.home-navy-refined #why-guudle,
+.sp-section-navy,
+.sp-card-navy,
+.hero-navy {
+  background: var(--brand-surface) !important;
+  background-image: none !important;
+  color: var(--brand-text) !important;
+}
+
+.home-navy-refined #ai-services-section {
+  background: #F3F6FB !important;
+  background-image: none !important;
+  color: inherit !important;
+}
+
+.home-navy-refined #ai-services-section .aib-tile__label,
+.home-navy-refined #ai-services-section .aib-tile h3,
+.home-navy-refined #ai-services-section .aib-hub__eyebrow,
+.home-navy-refined #ai-services-section .aib-hub__title,
+.home-navy-refined #ai-services-section .aib-hub__pillar h4 {
+  color: #00DBFF !important;
+  -webkit-text-fill-color: #00DBFF !important;
+}
+
+.home-navy-refined #ai-services-section .aib-tile > p,
+.home-navy-refined #ai-services-section .aib-tile__row p,
+.home-navy-refined #ai-services-section .aib-tile__list li,
+.home-navy-refined #ai-services-section .aib-tile__chips span,
+.home-navy-refined #ai-services-section .aib-hub__tag,
+.home-navy-refined #ai-services-section .aib-hub__pillar p {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.home-navy-refined #services,
+.home-navy-refined #tech-stack-section,
+.home-navy-refined #mobile-app-section {
+  background: transparent !important;
+}
+
+.home-navy-refined #what-we-serve {
+  background: var(--brand-surface) !important;
+}
+
+.home-navy-refined #home-industries {
+  background: #F3F6FB !important;
+}
+
+.guudle-site #home-industries .indw-intro__title,
+.guudle-site #home-industries .indw-acc__title,
+.guudle-site #home-industries .indw-tech-head h3,
+.guudle-site #home-industries .indw-cta__title,
+.guudle-site #home-industries .indw-acc__link,
+.guudle-site #home-industries .indw-cta__ghost {
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A !important;
+}
+
+.guudle-site #home-industries .indw-intro__lead,
+.guudle-site #home-industries .indw-panel__note,
+.guudle-site #home-industries .indw-acc__panel p,
+.guudle-site #home-industries .indw-tech-head p,
+.guudle-site #home-industries .indw-cta__desc,
+.guudle-site #home-industries .indw-tabs__btn:not(.is-active) {
+  color: #334155 !important;
+  -webkit-text-fill-color: #334155 !important;
+}
+
+.guudle-site #home-industries .indw-acc__label,
+.guudle-site #home-industries .indw-intro__accent {
+  color: #0F766E !important;
+  -webkit-text-fill-color: #0F766E !important;
+}
+
+.guudle-site #home-industries .indw-tags span {
+  color: #123D6A !important;
+  -webkit-text-fill-color: #123D6A !important;
+}
+
+.guudle-site #home-industries .indw-tabs__btn.is-active,
+.guudle-site #home-industries .indw-cta__primary {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Subtle decorative blurs only — not page backgrounds */
+.home-navy-refined .absolute.bg-gradient-to-br,
+.home-navy-refined .absolute.bg-gradient-to-tl {
+  opacity: 0.35 !important;
+}
+
+/* ─── Service page sections: light alternating rhythm ─── */
+.svc-benefits:not(.guudle-benefits),
+.svc-cta,
+.svc-contact-aside,
+.slp-contact-aside,
+.slp-cta-bg {
+  background: var(--brand-surface) !important;
+  background-image: none !important;
+  color: var(--brand-text) !important;
+}
+
+.svc-benefits:not(.guudle-benefits) {
+  border-top: 1px solid var(--brand-border);
+  border-bottom: 1px solid var(--brand-border);
+}
+
+.svc-cta {
+  background: linear-gradient(180deg, var(--brand-bg) 0%, var(--brand-surface) 100%) !important;
+  border-top: 1px solid var(--brand-border);
+}
+
+.svc-cta h2,
+.svc-cta p {
+  color: var(--brand-text) !important;
+}
+
+.svc-cta p {
+  color: var(--brand-text-muted) !important;
+}
+
+.svc-benefit {
+  background: var(--brand-section-alt) !important;
+  border: 1px solid var(--brand-border) !important;
+  color: var(--brand-text) !important;
+}
+
+.svc-benefit p {
+  color: var(--brand-text-muted) !important;
+}
+
+.svc-benefit:hover {
+  background: var(--brand-surface) !important;
+  box-shadow: var(--brand-shadow-hover) !important;
+}
+
+.svc-contact-aside,
+.slp-contact-aside {
+  background: var(--brand-section-alt) !important;
+  border: 1px solid var(--brand-border) !important;
+  color: var(--brand-text) !important;
+}
+
+.svc-contact-aside p,
+.svc-contact-aside li,
+.slp-contact-aside p,
+.slp-contact-aside li {
+  color: var(--brand-text-muted) !important;
+}
+
+.svc-contact-aside h2,
+.slp-contact-aside h2 {
+  color: var(--brand-text) !important;
+}
+
+/* Hero: keep image + readable overlay (only dark area allowed) */
+.svc-hero--bg-image .svc-hero__overlay {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.92) 0%, rgba(245, 247, 250, 0.88) 45%, rgba(255, 255, 255, 0.75) 100%) !important;
+}
+
+.svc-hero--bg-image::before {
+  opacity: 0.22 !important;
+}
+
+.svc-hero--bg-image .svc-display,
+.svc-hero--bg-image h1,
+.svc-hero--bg-image p,
+.svc-hero--bg-image .svc-badge,
+.svc-hero--bg-image nav {
+  color: var(--brand-text) !important;
+}
+
+.svc-hero--bg-image .svc-gradient-text {
+  background: linear-gradient(135deg, var(--brand-slate) 0%, var(--brand-accent) 100%) !important;
+  }
+
+.svc-hero--bg-image .svc-btn-ghost {
+  color: var(--brand-text) !important;
+  border-color: var(--brand-border) !important;
+  background: var(--brand-surface) !important;
+}
+
+.slp-scroll-hint {
+  color: var(--brand-text-muted) !important;
+}
+
+/* Per-theme dark hero vars → neutral */
+.slp-page[data-svc-theme] {
+  --svc-hero-bg: var(--brand-bg);
+  --svc-accent: var(--brand-accent);
+}
+
+/* ─── Cards & surfaces ─── */
+.sp-card,
+.corp-card,
+.mkt-card,
+.glass-card,
+.svc-feature,
+.svc-case,
+.svc-testimonial,
+.svc-why-card {
+  background: var(--brand-surface) !important;
+  border-color: var(--brand-border) !important;
+}
+
+section[style*="background:var(--svc-light)"],
+section[id^="svc-"]:nth-child(even) {
+  /* light gray alt sections handled by generator classes */
+}
+
+/* ─── Buttons ─── */
+.corp-btn--primary,
+.mkt-btn--primary,
+.hero-cta-primary,
+.sp-btn-primary,
+.btn-primary,
+.svc-btn-primary {
+  background: var(--brand-cta-bg) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+
+.corp-btn--primary:hover,
+.mkt-btn--primary:hover,
+.hero-cta-primary:hover,
+.svc-btn-primary:hover {
+  background: var(--brand-cta-hover) !important;
+}
+
+.corp-btn--outline,
+.mkt-btn--outline,
+.mkt-btn--ghost {
+  border-color: var(--brand-border) !important;
+  color: var(--brand-text) !important;
+  background: var(--brand-surface) !important;
+}
+
+/* Corp / marketing inline accent icons */
+.corp-card-icon[style],
+.corp-eco-link i[style] {
+  background: var(--brand-cta-bg) !important;
+}
+
+.corp-stat-val,
+.sp-gradient-text {
+  color: var(--brand-accent) !important;
+}
+
+/* ─── Corp pages ─── */
+.corp-page {
+  background: var(--brand-bg) !important;
+}
+
+.corp-section--gray {
+  background: var(--brand-section-alt) !important;
+}
+
+.corp-hero {
+  background: linear-gradient(180deg, var(--brand-surface) 0%, var(--brand-bg) 100%) !important;
+}
+
+.corp-hero-glow {
+  opacity: 0.15 !important;
+  background: var(--brand-accent-soft) !important;
+}
+
+/* ─── Footer (dark footer is intentional for contrast) ─── */
+.site-footer,
+#chatbot-messages {
+  background: var(--brand-charcoal) !important;
+}
+
+.corp-subnav {
+  top: var(--site-header-height, 64px) !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+@media (min-width: 1280px) {
+  .corp-subnav {
+    top: var(--site-header-height, 118px) !important;
+  }
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar-track {
+  background: var(--brand-bg) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B0BEC5 !important;
+}
+
+/* ─── Kill page-specific saturated section backgrounds ─── */
+[class*="bg-green-"],
+[class*="bg-red-"],
+[class*="bg-purple-"],
+[class*="bg-emerald-"],
+[class*="bg-teal-900"],
+[class*="bg-navy-900"],
+[class*="bg-navy-800"] {
+  /* Tailwind utilities on content sections — neutralize via specificity below */
+}
+
+section.bg-green-500,
+section.bg-red-500,
+.bg-gradient-to-br.from-teal-500,
+.bg-gradient-to-r.from-teal-500 {
+  background: var(--brand-section-alt) !important;
+  background-image: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Typography color system — site-wide enforcement
+   ═══════════════════════════════════════════════════════════ */
+
+.guudle-site h1,
+.guudle-site h2,
+.guudle-site h3,
+.guudle-site .type-h1,
+.guudle-site .type-h2,
+.guudle-site .type-h3,
+.guudle-site .corp-hero-title,
+.guudle-site .svc-display.text-3xl,
+.guudle-site .svc-display.text-4xl,
+.guudle-site .svc-display.text-5xl,
+.guudle-site .svc-display.text-6xl,
+.guudle-site main .font-display.text-4xl,
+.guudle-site main .font-display.text-5xl,
+.guudle-site .cs-section-head h2,
+.guudle-site .mkt-sec-head h2,
+.guudle-site .corp-section-head h2 {
+  color: var(--text-heading) !important;
+}
+
+.guudle-site h4,
+.guudle-site h5,
+.guudle-site h6,
+.guudle-site .type-h4 {
+  color: var(--text-subheading) !important;
+}
+
+.guudle-site p,
+.guudle-site .type-body,
+.guudle-site .type-body-lg,
+.guudle-site li:not(.site-footer li):not(#site-header li) {
+  color: var(--text-body);
+}
+
+.guudle-site .text-slate-600,
+.guudle-site .text-gray-600 {
+  color: var(--text-body) !important;
+}
+
+.guudle-site .text-slate-500,
+.guudle-site .text-gray-500,
+.guudle-site .text-slate-400,
+.guudle-site .text-gray-400 {
+  color: var(--text-muted) !important;
+}
+
+.guudle-site .text-slate-800,
+.guudle-site .text-slate-900,
+.guudle-site .text-gray-800,
+.guudle-site .text-gray-900 {
+  color: var(--text-heading) !important;
+}
+
+.guudle-site .text-slate-700,
+.guudle-site .text-gray-700 {
+  color: var(--text-subheading) !important;
+}
+
+/* Hero & page titles */
+.guudle-site .hero-title,
+.guudle-site .saas-hero--light h1,
+.guudle-site .svc-hero--bg-image h1 {
+  color: var(--text-heading) !important;
+}
+
+.guudle-site .saas-hero--light p,
+.guudle-site .svc-hero--bg-image p,
+.guudle-site .hero-contact-card__sub {
+  color: var(--text-body) !important;
+}
+
+/* Cards & feature blocks */
+.guudle-site .svc-feature h3,
+.guudle-site .svc-benefit h3,
+.guudle-site .svc-case-title,
+.guudle-site .corp-card h3,
+.guudle-site .home-why-card h3,
+.guudle-site .cs-case-title {
+  color: var(--text-heading) !important;
+}
+
+.guudle-site .svc-feature p,
+.guudle-site .svc-benefit p,
+.guudle-site .svc-testimonial__quote,
+.guudle-site .home-why-card p {
+  color: var(--text-body) !important;
+}
+
+/* Forms */
+.guudle-site label,
+.guudle-site .slp-form-input,
+.guudle-site .hero-contact-input,
+.guudle-site .ct-form label {
+  color: var(--text-subheading);
+}
+
+.guudle-site input::placeholder,
+.guudle-site textarea::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 1 !important;
+}
+
+.guudle-site .slp-form-input,
+.guudle-site .hero-contact-input {
+  color: var(--text-body) !important;
+}
+
+/* FAQ */
+.guudle-site .slp-faq-trigger,
+.guudle-site .mkt-faq__item button {
+  color: var(--text-heading) !important;
+}
+
+.guudle-site .slp-faq-panel__inner,
+.guudle-site .mkt-faq__item p {
+  color: var(--text-body) !important;
+}
+
+/* Breadcrumbs on light backgrounds */
+.guudle-site .svc-hero--bg-image nav,
+.guudle-site .cs-bc {
+  color: var(--text-muted) !important;
+}
+
+.guudle-site .svc-hero--bg-image nav a:hover {
+  color: var(--text-heading) !important;
+}
+
+/* Legacy glass cards → light readable surfaces */
+.guudle-site .glass-card,
+.guudle-site .glass {
+  background: var(--brand-surface) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  border: 1px solid var(--brand-border) !important;
+  box-shadow: var(--brand-shadow) !important;
+  color: var(--text-body) !important;
+}
+
+.guudle-site .glass-card p,
+.guudle-site .glass-card h2,
+.guudle-site .glass-card h3,
+.guudle-site .glass h3 {
+  color: inherit;
+}
+
+.guudle-site .glass-card h2,
+.guudle-site .glass-card .font-bold,
+.guudle-site .glass-card .font-semibold {
+  color: var(--text-heading) !important;
+}
+
+/* Parallax service hero — white text on dark overlay (intentional) */
+.svc-hero-parallax,
+.svc-hero-parallax h1,
+.svc-hero-parallax h2,
+.svc-hero-parallax p,
+.svc-hero-parallax nav,
+.svc-hero-parallax .svc-display {
+  color: #fff !important;
+}
+
+.svc-hero-parallax p { color: rgba(255, 255, 255, 0.9) !important; }
+
+.svc-hero-parallax .slp-value-pill {
+  color: rgba(255, 255, 255, 0.92) !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+/* Image-backed parallax band — white text intentional */
+.home-parallax-immersive .text-white,
+.home-parallax-immersive .text-white\/75,
+.home-parallax-immersive .text-white\/90,
+.home-parallax-immersive h2,
+.home-parallax-immersive--v2 .home-parallax-immersive__title,
+.home-parallax-immersive--v2 .home-parallax-immersive__lead,
+.home-parallax-immersive--v2 .home-parallax-immersive__stats li {
+  color: var(--text-inverse) !important;
+}
+
+.home-parallax-immersive--v2 .home-parallax-immersive__lead {
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+
+.home-parallax-immersive .hero-cta-secondary,
+.home-parallax-immersive__btn--ghost {
+  color: var(--text-inverse) !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Portfolio case visual panels — dark gradient, white text OK */
+.cs-case-visual,
+.cs-case-visual-inner {
+  color: var(--text-inverse) !important;
+}
+
+.cs-case-visual .text-white,
+.cs-case-visual .text-white\/80,
+.cs-case-visual .text-white\/50 {
+  color: var(--text-inverse-muted) !important;
+}
+
+.cs-case-visual .font-semibold.text-white {
+  color: var(--text-inverse) !important;
+}
+.guudle-site main section.bg-white .text-white,
+.guudle-site main section.bg-slate-50 .text-white,
+.guudle-site main .bg-white:not(.cs-case-visual):not(.cs-case-visual-inner):not(.home-parallax-immersive) .text-white:not(.svc-btn-primary):not(.hero-cta-primary):not(.corp-btn--primary):not(.mkt-btn--primary):not(.cs-cta-btn--primary):not(.home-parallax-immersive *) {
+  color: var(--text-heading) !important;
+}
+
+.guudle-site main section.bg-white .text-white\/80,
+.guudle-site main section.bg-white .text-white\/70,
+.guudle-site main section.bg-slate-50 .text-white\/80 {
+  color: var(--text-body) !important;
+}
+
+/* Footer — inverse palette on dark surface */
+.site-footer,
+.site-footer h2,
+.site-footer h3,
+.site-footer h4 {
+  color: var(--text-inverse) !important;
+}
+
+.site-footer p,
+.site-footer li,
+.site-footer a:not(:hover) {
+  color: var(--text-inverse-muted) !important;
+}
+
+.site-footer a:hover {
+  color: var(--text-inverse) !important;
+}
+
+/* Buttons — readable in all states */
+.svc-btn-primary,
+.hero-cta-primary,
+.corp-btn--primary,
+.mkt-btn--primary,
+.btn-primary,
+.cs-cta-btn--primary {
+  color: var(--text-inverse) !important;
+}
+
+.svc-btn-primary:focus-visible,
+.hero-cta-primary:focus-visible,
+.corp-btn--primary:focus-visible {
+  outline: 2px solid var(--brand-accent) !important;
+  outline-offset: 2px !important;
+}
+
+.svc-btn-ghost,
+.hero-cta-secondary,
+.corp-btn--outline,
+.mkt-btn--ghost,
+.cs-cta-btn--ghost {
+  color: var(--text-heading) !important;
+}
+
+button:disabled,
+.btn:disabled,
+[disabled] {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+/* ═══ Typography & readability enforcement (loads last) ═══ */
+.guudle-site h1,
+.guudle-site h2,
+.guudle-site .type-h1,
+.guudle-site .type-h2 {
+  font-family: var(--font-display, 'Poppins', 'Inter', sans-serif);
+  color: var(--text-heading);
+}
+
+.guudle-site h3,
+.guudle-site h4,
+.guudle-site h5,
+.guudle-site h6 {
+  font-family: var(--font-sans, 'Inter', sans-serif);
+}
+
+.guudle-site main p,
+.guudle-site main li {
+  color: var(--text-body);
+}
+
+/* App Maintenance panel — white titles & descriptions on dark navy */
+.guudle-site .mob-maint .mob-maint__title,
+.guudle-site .mob-maint h3.mob-maint__title {
+  color: #ffffff !important;
+}
+
+.guudle-site .mob-maint .mob-maint__lead,
+.guudle-site .mob-maint__item h4,
+.guudle-site .mob-maint__item p {
+  color: #ffffff !important;
+}
+
+/* E-Commerce Enterprise Features — cyan card titles, white bullet descriptions */
+.guudle-site #ecom-enterprise .ecom-enterprise-card__title {
+  color: #00FFFF !important;
+}
+.guudle-site #ecom-enterprise .ecom-enterprise-card__list li {
+  color: #ffffff !important;
+}
+.guudle-site #ecom-enterprise .ecom-enterprise-card__list i {
+  color: #00FFFF !important;
+}
+
+/* AI Innovation Hub — teal titles, white descriptions */
+.guudle-site .aix-hub__eyebrow,
+.guudle-site .aix-hub__title,
+.guudle-site .aix-hub h3.aix-hub__title,
+.guudle-site .aix-hub__item h4 {
+  color: #10A5F5 !important;
+}
+
+.guudle-site .aix-hub__tag,
+.guudle-site .aix-hub__item p {
+  color: #ffffff !important;
+}
+
+/* AI CTA — teal title, white description */
+.guudle-site .aix-cta__title,
+.guudle-site .aix-cta h3.aix-cta__title {
+  color: #10A5F5 !important;
+}
+
+.guudle-site .aix-cta__sub {
+  color: #ffffff !important;
+}
+
+/* AI glow panel — dark navy capability cards */
+.guudle-site .aix-glow-panel__title,
+.guudle-site .aix-glow-panel .aix-sec h4 {
+  color: #10A5F5 !important;
+}
+
+.guudle-site .aix-glow-panel .aix-sec__reveal p {
+  color: rgba(255, 255, 255, 0.82) !important;
+}
+
+/* Expertise CTA — teal title, white description */
+.guudle-site .exp-cta__title,
+.guudle-site .exp-cta h3.exp-cta__title {
+  color: #10A5F5 !important;
+}
+
+.guudle-site .exp-cta__sub {
+  color: #ffffff !important;
+}
+
+/* Our Expertise — aqua titles, white descriptions */
+.guudle-site #services .srv-expertise__card-title,
+.guudle-site #services .srv-expertise__cta-title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.guudle-site #services.srv-expertise--glow .srv-expertise__title {
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54 !important;
+}
+
+.guudle-site #services .srv-expertise__subtitle {
+  color: #475569 !important;
+}
+
+.guudle-site #services .srv-expertise__cta-desc,
+.guudle-site #services .srv-expertise__card-desc {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.guudle-site #services .srv-expertise__eyebrow {
+  color: #00DBFF !important;
+}
+
+.guudle-site .svc-section-head h2,
+.guudle-site .slp-section-head h2,
+.guudle-site .corp-section-head h2 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.guudle-site .svc-section-head p,
+.guudle-site .slp-section-head p {
+  color: var(--text-muted) !important;
+  line-height: 1.7;
+}
+
+/* Strengthen parallax overlays site-wide */
+.slp-parallax__overlay:not(.slp-parallax__overlay--none) {
+  min-opacity: 1;
+}
+
+.guudle-site .svc-hero-parallax .slp-parallax__overlay,
+.guudle-site .ind-hero__overlay,
+.guudle-site .ref-hero__overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(10, 37, 64, 0.72) 0%,
+    rgba(10, 22, 40, 0.58) 45%,
+    rgba(10, 37, 64, 0.68) 100%
+  ) !important;
+}
+
+.guudle-site .svc-hero-parallax--clarity h2,
+.guudle-site .svc-hero-parallax--clarity .svc-hero-parallax__title {
+  color: #10A5F5 !important;
+  -webkit-text-fill-color: #10A5F5;
+  text-shadow: 0 2px 28px rgba(16, 165, 245, 0.4);
+}
+
+.guudle-site .svc-hero-parallax--clarity .svc-hero-parallax__desc,
+.guudle-site .svc-hero-parallax--clarity p.svc-hero-parallax__desc {
+  color: #ffffff !important;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.45);
+}
+
+.guudle-site .svc-hero-parallax:not(.svc-hero-parallax--clarity) h1,
+.guudle-site .svc-hero-parallax:not(.svc-hero-parallax--clarity) h2,
+.guudle-site .svc-hero-parallax:not(.svc-hero-parallax--clarity) .svc-display {
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+}
+
+.guudle-site .svc-hero-parallax:not(.svc-hero-parallax--clarity) p {
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.28);
+}
+
+/* SaaS Platforms section — navy titles on light bands */
+.guudle-site .saas-plat__title--light,
+.guudle-site .saas-plat__type-label {
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54;
+}
+
+.guudle-site .saas-plat__lead--light {
+  color: #475569 !important;
+}
+
+.guudle-site .crm-why__title--light,
+.guudle-site .crm-why__benefit-text {
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54;
+}
+
+.guudle-site .crm-why__lead--light {
+  color: #475569 !important;
+}
+
+.guudle-site .erp-why__title--light,
+.guudle-site .erp-why__benefit-text,
+.guudle-site .erp-why__tech-title,
+.guudle-site .erp-why__why-item p {
+  color: #001F54 !important;
+  -webkit-text-fill-color: #001F54;
+}
+
+.guudle-site .erp-why__lead--light {
+  color: #475569 !important;
+}
+
+.guudle-site .svc-feature,
+.guudle-site .svc-why-card,
+.guudle-site .svc-case,
+.guudle-site .svc-testimonial,
+.guudle-site .slp-testimonial {
+  box-shadow: 0 4px 24px rgba(10, 37, 64, 0.06);
+}
+
+.guudle-site .svc-feature__title,
+.guudle-site .svc-why-card h3,
+.guudle-site .svc-case h3 {
+  color: var(--text-heading) !important;
+}
+
+.guudle-site .svc-feature__desc,
+.guudle-site .svc-why-card p,
+.guudle-site .svc-case p {
+  color: var(--text-body) !important;
+}
+
+/* ── No gradient typography ── */
+.guudle-site .hero-gradient-text,
+.guudle-site .hero-stat-num,
+.guudle-site .slp-gradient-text,
+.guudle-site .svc-gradient-text,
+.guudle-site .bg-clip-text,
+.guudle-site .text-transparent,
+.guudle-site [class*="gradient-text"] {
+  background: none !important;
+  background-image: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: currentColor !important;
+  color: #001F54 !important;
+}
+
+.guudle-site .saas-hero:not(.saas-hero--light) .hero-gradient-text,
+.guudle-site .saas-hero:not(.saas-hero--light) [class*="gradient-text"],
+.guudle-site .cpox-cta [class*="gradient-text"],
+.guudle-site .ow-cta [class*="gradient-text"] {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}

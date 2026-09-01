@@ -1,0 +1,70 @@
+/* ═══ UI/UX Design — uxd ═══ */
+.slp-page[data-slp-prefix="uxd"] {
+  --slp-primary: #546E7A; --slp-secondary: #F472B6; --slp-accent: #A78BFA;
+}
+.uxd-hero {
+  position: relative; min-height: 100vh; min-height: 100dvh;
+  background: linear-gradient(155deg, #1e1b4b 0%, #4c1d95 35%, #831843 70%, #1e1b4b 100%);
+  overflow: hidden;
+}
+.uxd-hero__mesh {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 65% 55% at 15% 30%, rgba(124,58,237,0.3), transparent 55%),
+    radial-gradient(ellipse 55% 50% at 85% 25%, rgba(244,114,182,0.25), transparent 50%),
+    radial-gradient(ellipse 50% 45% at 50% 100%, rgba(167,139,250,0.2), transparent 55%);
+  animation: uxd-mesh 20s ease-in-out infinite alternate;
+}
+@keyframes uxd-mesh { 0% { transform: scale(1); } 100% { transform: scale(1.06); } }
+
+.uxd-bento {
+  display: grid; gap: 1rem; grid-template-columns: repeat(4, 1fr); grid-auto-rows: minmax(120px, auto);
+}
+.uxd-bento__item {
+  border-radius: 1.125rem; overflow: hidden; background: #fff; border: 1px solid #E2E8F0;
+  transition: transform 0.35s, box-shadow 0.35s; position: relative;
+}
+.uxd-bento__item:hover { transform: scale(1.02); box-shadow: 0 20px 48px rgba(124,58,237,0.14); }
+.uxd-bento__item--wide { grid-column: span 2; }
+.uxd-bento__item--tall { grid-row: span 2; }
+.uxd-bento__item--hero { grid-column: span 2; grid-row: span 2; }
+.uxd-bento__img { width: 100%; height: 100%; object-fit: cover; min-height: 140px; }
+.uxd-bento__label {
+  position: absolute; bottom: 0; left: 0; right: 0; padding: 1rem;
+  background: linear-gradient(transparent, rgba(15,23,42,0.85)); color: #fff;
+}
+.uxd-bento__label h3 { font-weight: 800; font-size: 0.9rem; }
+.uxd-bento__label p { font-size: 0.72rem; color: rgba(255,255,255,0.7); }
+
+.uxd-tokens { display: grid; gap: 1.5rem; }
+@media (min-width: 1024px) { .uxd-tokens { grid-template-columns: 1fr 1fr; } }
+.uxd-token-panel {
+  padding: 1.75rem; border-radius: 1.25rem; background: #fff; border: 1px solid #E2E8F0;
+}
+.uxd-token-panel h3 { font-family: var(--font-display); font-weight: 800; margin-bottom: 1.25rem; }
+.uxd-color-row { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.uxd-color-swatch {
+  width: 4.5rem; text-align: center;
+}
+.uxd-color-swatch__chip {
+  width: 4.5rem; height: 4.5rem; border-radius: 0.85rem; margin-bottom: 0.4rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12); transition: transform 0.25s;
+}
+.uxd-color-swatch:hover .uxd-color-swatch__chip { transform: scale(1.08); }
+.uxd-color-swatch span { font-size: 0.65rem; font-weight: 700; color: var(--text-muted, #64748B); display: block; }
+.uxd-color-swatch code { font-size: 0.6rem; color: #94A3B8; }
+
+.uxd-type-specimen { padding: 1.5rem; border-radius: 0.85rem; background: #F8FAFC; border: 1px solid #E2E8F0; margin-bottom: 1rem; }
+.uxd-type-specimen--display { font-family: var(--font-display); font-size: 2.5rem; font-weight: 800; line-height: 1.1; }
+.uxd-type-specimen--body { font-family: var(--font-sans); font-size: 1rem; line-height: 1.65; color: var(--text-muted, #64748B); }
+.uxd-type-meta { display: flex; gap: 1rem; font-size: 0.7rem; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.06em; }
+
+.uxd-parallax .slp-parallax__overlay {
+  background: linear-gradient(135deg, rgba(30,27,75,0.9) 0%, rgba(76,29,149,0.55) 50%, rgba(244,114,182,0.4) 100%);
+}
+
+@media (max-width: 767px) {
+  .uxd-bento { grid-template-columns: 1fr 1fr; }
+  .uxd-bento__item--wide, .uxd-bento__item--hero { grid-column: span 2; }
+  .uxd-bento__item--tall, .uxd-bento__item--hero { grid-row: span 1; }
+}
