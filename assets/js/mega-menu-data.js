@@ -46,9 +46,9 @@ window.GuudleMegaMenu = {
       },
       {
         id: 'enterprise',
-        label: 'Enterprise Solutions',
+        label: 'SaaS Applications',
         icon: 'building',
-        cta: { title: 'Scale Enterprise Operations Efficiently', desc: 'ERP, CRM, cloud, and transformation at enterprise grade.', btn: 'Book Consultation', href: 'pages/contact.html' },
+        cta: { title: 'Build SaaS Applications That Scale', desc: 'Subscription products, CRM, ERP, and cloud platforms engineered around how your business works.', btn: 'Explore SaaS Applications', href: 'saas.html' },
         links: [
           { name: 'Enterprise Software Development', href: 'pages/services/enterprise-solutions.html', icon: 'building' },
           { name: 'ERP Development', href: 'pages/services/erp.html', icon: 'erp' },
@@ -62,6 +62,22 @@ window.GuudleMegaMenu = {
           { name: 'Business Intelligence Solutions', href: 'pages/services/business-intelligence.html', icon: 'chart-bar' },
           { name: 'Enterprise Mobility Solutions', href: 'pages/services/enterprise-mobility.html', icon: 'mobile' },
           { name: 'Data Engineering', href: 'pages/services/data-engineering.html', icon: 'database' },
+        ],
+      },
+      {
+        id: 'business-platform',
+        label: 'Business Platform',
+        icon: 'layers',
+        cta: { title: 'One Platform. Every Part of Your Business.', desc: 'CRM, projects, time, invoicing, and client collaboration — connected in one GUUDLE workspace.', btn: 'Explore the Platform', href: 'pages/saas/index.html' },
+        links: [
+          { name: 'GUUDLE Business Operating Platform', href: 'pages/saas/index.html', icon: 'layers' },
+          { name: 'CRM Module', href: 'pages/saas/modules/crm.html', icon: 'users' },
+          { name: 'Sales & Pipeline', href: 'pages/saas/modules/sales.html', icon: 'chart' },
+          { name: 'Projects & Tasks', href: 'pages/saas/modules/projects.html', icon: 'list' },
+          { name: 'Invoicing & Payments', href: 'pages/saas/modules/invoicing.html', icon: 'invoice' },
+          { name: 'Pricing', href: 'pages/saas/pricing.html', icon: 'star' },
+          { name: 'Start Free Trial', href: 'pages/saas/register.html', icon: 'rocket' },
+          { name: 'Sign In', href: 'pages/saas/login.html', icon: 'users' },
         ],
       },
       {
@@ -134,7 +150,8 @@ window.GuudleMegaMenu = {
     items: [
       { name: 'AI-Powered Automation', desc: 'Intelligent workflows that reduce manual work', href: 'pages/services/ai-powered-automation.html', icon: 'brain' },
       { name: 'Enterprise Digital Transformation', desc: 'Modernize legacy systems at scale', href: 'pages/services/enterprise-digital-transformation.html', icon: 'building' },
-      { name: 'SaaS Platforms', desc: 'Subscription products with multi-tenant architecture', href: 'pages/services/saas-platforms.html', icon: 'saas' },
+      { name: 'GUUDLE Business Operating Platform', desc: 'One connected workspace for CRM, projects, time, and finance', href: 'pages/saas/index.html', icon: 'layers' },
+      { name: 'SaaS Platforms', desc: 'Custom subscription products with multi-tenant architecture', href: 'pages/services/saas-platforms.html', icon: 'saas' },
       { name: 'Marketplace Solutions', desc: 'Multi-vendor commerce & booking platforms', href: 'pages/services/marketplace-solutions.html', icon: 'store' },
       { name: 'CRM Systems', desc: 'Sales pipelines & customer 360 views', href: 'pages/services/crm-systems.html', icon: 'users' },
       { name: 'ERP Platforms', desc: 'Unified operations & resource planning', href: 'pages/services/erp-platforms.html', icon: 'erp' },
@@ -159,6 +176,38 @@ window.GuudleMegaMenu = {
     href: 'pages/our-work.html',
   },
 
+  platform: {
+    label: 'Platform',
+    tagline: 'One Platform. Every Part of Your Business.',
+    support: 'Manage customers, sales, projects, teams, tasks, time and finances from one intelligent business workspace.',
+    href: 'pages/saas/index.html',
+    modules: [
+      { name: 'CRM', desc: 'Customers and account history', href: 'pages/saas/modules/crm.html', icon: 'users' },
+      { name: 'Sales', desc: 'Pipeline and opportunities', href: 'pages/saas/modules/sales.html', icon: 'chart' },
+      { name: 'Projects', desc: 'Delivery against sold work', href: 'pages/saas/modules/projects.html', icon: 'layers' },
+      { name: 'Tasks', desc: 'Team work in one system', href: 'pages/saas/modules/tasks.html', icon: 'list' },
+      { name: 'Time Tracking', desc: 'Billable time to invoices', href: 'pages/saas/modules/time-tracking.html', icon: 'clock' },
+      { name: 'Estimates', desc: 'Scope and convert work', href: 'pages/saas/modules/estimates.html', icon: 'document' },
+      { name: 'Proposals', desc: 'Branded, trackable offers', href: 'pages/saas/modules/proposals.html', icon: 'book' },
+      { name: 'Invoicing', desc: 'From time and retainers', href: 'pages/saas/modules/invoicing.html', icon: 'invoice' },
+      { name: 'Payments', desc: 'Collect and reconcile', href: 'pages/saas/modules/payments.html', icon: 'bank' },
+      { name: 'Automation', desc: 'Rules across the workspace', href: 'pages/saas/modules/automation.html', icon: 'bolt' },
+      { name: 'Collaboration', desc: 'Client portal and files', href: 'pages/saas/modules/collaboration.html', icon: 'handshake' },
+    ],
+    links: [
+      { name: 'Overview', href: 'pages/saas/index.html', icon: 'layers' },
+      { name: 'Pricing', href: 'pages/saas/pricing.html', icon: 'star' },
+      { name: 'Support', href: 'pages/saas/support.html', icon: 'help' },
+      { name: 'Start free trial', href: 'pages/saas/register.html', icon: 'rocket' },
+      { name: 'Sign in', href: 'pages/saas/login.html', icon: 'users' },
+    ],
+    experiences: [
+      { name: 'Public Platform', desc: 'Product, pricing, and trial', href: 'pages/saas/index.html', icon: 'globe' },
+      { name: 'Super Admin', desc: 'Tenants, plans, and revenue', href: 'dashboards/admin/index.html', icon: 'shield' },
+      { name: 'Client Workspace', desc: 'CRM and operations', href: 'dashboards/client/index.html', icon: 'briefcase' },
+    ],
+  },
+
   company: {
     label: 'Company',
     items: [
@@ -171,13 +220,9 @@ window.GuudleMegaMenu = {
   resources: {
     label: 'Resources',
     items: [
-      { name: 'Blog', href: 'pages/blog.html', icon: 'document' },
-      { name: 'Whitepapers', href: 'pages/blog.html', icon: 'document' },
-      { name: 'eBooks', href: 'pages/blog.html', icon: 'book' },
       { name: 'FAQs', href: 'pages/contact.html', icon: 'help' },
-      { name: 'Tech Insights', href: 'pages/blog.html', icon: 'chart' },
-      { name: 'Webinars', href: 'pages/blog.html', icon: 'video' },
       { name: 'Documentation', href: 'pages/contact.html', icon: 'code' },
+      { name: 'Platform Support', href: 'pages/saas/support.html', icon: 'help' },
     ],
   },
 

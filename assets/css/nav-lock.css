@@ -60,7 +60,7 @@
 
 #site-header.site-nav--split .nav-cta-btn--appointment {
 
-  background: var(--aqua-primary, #10A5F5) !important;
+  background: var(--aqua-primary, #0B1F3A) !important;
 
   color: #fff !important;
 
@@ -70,7 +70,7 @@
 
 #site-header.site-nav--split .nav-cta-btn--appointment:hover {
 
-  background: var(--aqua-hover, #0E96E8) !important;
+  background: var(--aqua-hover, #142D4E) !important;
 
 }
 

@@ -4,7 +4,7 @@
 
 .variety_section {
   --v-navy: #0B1F3A;
-  --v-sky: #10A5F5;
+  --v-sky: #0B1F3A;
   --v-canvas: #F3F6FB;
   position: relative;
   padding: 4.5rem 0 5rem;
@@ -63,8 +63,8 @@
 
 .variety_three:hover {
   transform: translateY(-3px);
-  border-color: rgba(16, 165, 245, 0.4);
-  box-shadow: 0 14px 32px rgba(16, 165, 245, 0.14);
+  border-color: rgba(11, 31, 58, 0.4);
+  box-shadow: 0 14px 32px rgba(11, 31, 58, 0.14);
 }
 
 .variety_three img {
@@ -93,11 +93,11 @@
   margin-top: -1.25rem;
   border: 0;
   border-radius: 9999px;
-  background: linear-gradient(135deg, #123D6A, #10A5F5);
-  color: #001F54;
+  background: linear-gradient(135deg, #123D6A, #0B1F3A);
+  color: #0B1F3A;
   font-size: 0;
   cursor: pointer;
-  box-shadow: 0 8px 18px rgba(16, 165, 245, 0.3);
+  box-shadow: 0 8px 18px rgba(11, 31, 58, 0.3);
 }
 
 .variety_section .slick-prev { left: 0; }
@@ -141,12 +141,12 @@
   border-radius: 9999px;
   background: rgba(11, 31, 58, 0.2);
   font-size: 0;
-  color: #001F54;
+  color: #0B1F3A;
   cursor: pointer;
 }
 
 .variety_section .slick-dots li.slick-active button {
-  background: #10A5F5;
+  background: #0B1F3A;
   width: 1.35rem;
 }
 

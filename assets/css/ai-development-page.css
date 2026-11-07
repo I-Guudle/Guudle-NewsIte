@@ -6,8 +6,8 @@
 .aid-page {
   --aid-navy: #0B1F3A;
   --aid-deep: #123D6A;
-  --aid-sky: #10A5F5;
-  --aid-aqua: #00DBFF;
+  --aid-sky: #0B1F3A;
+  --aid-aqua: #FFFFFF;
   --aid-canvas: #F3F6FB;
   --aid-muted: #334155;
   --aid-line: rgba(11, 31, 58, 0.1);
@@ -105,8 +105,8 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--aid-deep);
-  background: rgba(16, 165, 245, 0.1);
-  border: 1px solid rgba(16, 165, 245, 0.28);
+  background: rgba(11, 31, 58, 0.1);
+  border: 1px solid rgba(11, 31, 58, 0.28);
   margin-bottom: 1rem;
 }
 
@@ -120,8 +120,8 @@
 }
 
 .aid-title span {
-  color: #10A5F5 !important;
-  -webkit-text-fill-color: #10A5F5 !important;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A !important;
 }
 
 .aid-lead {
@@ -183,7 +183,7 @@
   border-radius: 0.75rem;
   margin-bottom: 0.85rem;
   color: var(--aid-deep);
-  background: rgba(16, 165, 245, 0.12);
+  background: rgba(11, 31, 58, 0.12);
 }
 
 .aid-value__card h3 {
@@ -286,8 +286,8 @@
 
 .aid-hero__title span {
   display: block;
-  color: #10A5F5 !important;
-  -webkit-text-fill-color: #10A5F5 !important;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A !important;
 }
 
 .aid-hero__lead {
@@ -339,13 +339,13 @@
 
 .aid-btn--primary {
   color: #fff !important;
-  background: linear-gradient(135deg, #123D6A, #10A5F5);
-  box-shadow: 0 12px 28px rgba(16, 165, 245, 0.3);
+  background: linear-gradient(135deg, #123D6A, #0B1F3A);
+  box-shadow: 0 12px 28px rgba(11, 31, 58, 0.3);
 }
 
 .aid-btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 34px rgba(16, 165, 245, 0.4);
+  box-shadow: 0 16px 34px rgba(11, 31, 58, 0.4);
 }
 
 .aid-btn--ghost {
@@ -356,7 +356,7 @@
 
 .aid-btn--ghost:hover {
   transform: translateY(-2px);
-  border-color: rgba(16, 165, 245, 0.5);
+  border-color: rgba(11, 31, 58, 0.5);
 }
 
 /* ── Service cards (up-slider reveal) ── */
@@ -392,8 +392,8 @@
 .aid-svc-card:hover,
 .aid-svc-card.is-in:hover {
   transform: translateY(-4px);
-  border-color: rgba(16, 165, 245, 0.4);
-  box-shadow: 0 18px 40px rgba(16, 165, 245, 0.12);
+  border-color: rgba(11, 31, 58, 0.4);
+  box-shadow: 0 18px 40px rgba(11, 31, 58, 0.12);
 }
 
 .aid-svc-card__top {
@@ -412,7 +412,7 @@
   font-size: 0.75rem;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(135deg, #123D6A, #10A5F5);
+  background: linear-gradient(135deg, #123D6A, #0B1F3A);
 }
 
 .aid-svc-card__icon {
@@ -422,8 +422,8 @@
   display: grid;
   place-items: center;
   color: var(--aid-sky);
-  background: rgba(16, 165, 245, 0.1);
-  border: 1px solid rgba(16, 165, 245, 0.22);
+  background: rgba(11, 31, 58, 0.1);
+  border: 1px solid rgba(11, 31, 58, 0.22);
 }
 
 .aid-svc-card h3 {
@@ -518,8 +518,8 @@
   place-items: center;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(135deg, #123D6A, #10A5F5);
-  box-shadow: 0 10px 22px rgba(16, 165, 245, 0.25);
+  background: linear-gradient(135deg, #123D6A, #0B1F3A);
+  box-shadow: 0 10px 22px rgba(11, 31, 58, 0.25);
 }
 
 .aid-life__item h3 {
@@ -561,8 +561,8 @@
 
 .aid-feat:hover {
   transform: translateY(-3px);
-  border-color: rgba(16, 165, 245, 0.35);
-  box-shadow: 0 12px 28px rgba(16, 165, 245, 0.1);
+  border-color: rgba(11, 31, 58, 0.35);
+  box-shadow: 0 12px 28px rgba(11, 31, 58, 0.1);
 }
 
 .aid-feat i {
@@ -614,7 +614,7 @@
 }
 
 .aid-tabs__btn:hover {
-  border-color: rgba(16, 165, 245, 0.45);
+  border-color: rgba(11, 31, 58, 0.45);
   color: var(--aid-deep);
 }
 
@@ -694,8 +694,8 @@
   font-size: 0.78rem;
   font-weight: 700;
   color: #123D6A;
-  background: rgba(16, 165, 245, 0.08);
-  border: 1px solid rgba(16, 165, 245, 0.2);
+  background: rgba(11, 31, 58, 0.08);
+  border: 1px solid rgba(11, 31, 58, 0.2);
 }
 
 /* ── Benefits / Why ── */

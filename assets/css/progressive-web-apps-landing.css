@@ -1,6 +1,6 @@
 /* ═══ Progressive Web Apps — pwa ═══ */
 .slp-page[data-slp-prefix="pwa"] {
-  --slp-primary: #10A5F5; --slp-secondary: #10B981; --slp-accent: #10A5F5;
+  --slp-primary: #0B1F3A; --slp-secondary: #10B981; --slp-accent: #0B1F3A;
 }
 .pwa-hero {
   position: relative; min-height: 100vh; min-height: 100dvh;
@@ -10,9 +10,9 @@
 .pwa-hero__mesh {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 18% 22%, rgba(16,165,245,0.3), transparent 55%),
+    radial-gradient(ellipse 70% 60% at 18% 22%, rgba(11, 31, 58,0.3), transparent 55%),
     radial-gradient(ellipse 55% 50% at 82% 28%, rgba(16,185,129,0.26), transparent 50%),
-    radial-gradient(ellipse 50% 45% at 50% 100%, rgba(16, 165, 245,0.2), transparent 55%);
+    radial-gradient(ellipse 50% 45% at 50% 100%, rgba(11, 31, 58,0.2), transparent 55%);
   animation: pwa-mesh 18s ease-in-out infinite alternate;
 }
 @keyframes pwa-mesh { 0% { transform: scale(1); } 100% { transform: scale(1.05); } }
@@ -44,7 +44,7 @@
   padding: 1.5rem; border-radius: 1.125rem; background: #fff; border: 1px solid #E2E8F0;
   text-align: center; transition: transform 0.3s, box-shadow 0.3s;
 }
-.pwa-lighthouse-card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(16,165,245,0.12); }
+.pwa-lighthouse-card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(11, 31, 58,0.12); }
 .pwa-lighthouse-card__score {
   font-family: var(--font-display); font-size: 2.25rem; font-weight: 800; line-height: 1;
 }
@@ -67,7 +67,7 @@
   padding: 0.5rem 1.25rem; border-radius: 999px; font-size: 0.8rem; font-weight: 700;
   border: none; cursor: pointer; background: transparent; color: var(--text-muted, #64748B); transition: all 0.3s;
 }
-.pwa-toggle__btn.is-active { background: linear-gradient(135deg, var(--slp-primary), var(--slp-secondary)); color: #fff; box-shadow: 0 4px 16px rgba(16,165,245,0.35); }
+.pwa-toggle__btn.is-active { background: linear-gradient(135deg, var(--slp-primary), var(--slp-secondary)); color: #fff; box-shadow: 0 4px 16px rgba(11, 31, 58,0.35); }
 .pwa-demo-app {
   border-radius: 0.85rem; overflow: hidden; border: 1px solid #E2E8F0; min-height: 220px;
   transition: filter 0.4s, opacity 0.4s;
@@ -101,5 +101,5 @@
 .pwa-metric__val { font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; color: var(--slp-primary); }
 
 .pwa-parallax .slp-parallax__overlay {
-  background: linear-gradient(135deg, rgba(4,47,46,0.9) 0%, rgba(12,74,110,0.6) 50%, rgba(16,165,245,0.4) 100%);
+  background: linear-gradient(135deg, rgba(4,47,46,0.9) 0%, rgba(12,74,110,0.6) 50%, rgba(11, 31, 58,0.4) 100%);
 }

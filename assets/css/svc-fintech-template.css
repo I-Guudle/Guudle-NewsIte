@@ -4,10 +4,10 @@
  */
 
 .svc-fintech-page {
-  --fin-purple: #10A5F5;
+  --fin-purple: #0B1F3A;
   --fin-purple-dark: #0A2540;
-  --fin-purple-light: #ECFEFF;
-  --fin-violet: #10A5F5;
+  --fin-purple-light: #F7F9FC;
+  --fin-violet: #0B1F3A;
   --fin-navy: #0A2540;
   --fin-navy-deep: #081E33;
   --fin-teal: var(--aqua-primary);
@@ -22,7 +22,7 @@
 .svc-fintech-page .slp-sticky-nav__link:hover,
 .svc-fintech-page .slp-sticky-nav__link.is-active {
   color: var(--fin-teal);
-  background: rgba(16, 165, 245, 0.08);
+  background: rgba(11, 31, 58, 0.08);
 }
 
 .svc-fintech-page .slp-sticky-nav {
@@ -53,7 +53,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(10, 37, 64, 0.2) 0%, rgba(16, 165, 245, 0.35) 100%);
+  background: linear-gradient(180deg, rgba(10, 37, 64, 0.2) 0%, rgba(11, 31, 58, 0.35) 100%);
 }
 
 .fin-hero__card-wrap {
@@ -71,7 +71,7 @@
   box-shadow:
     0 4px 6px rgba(10, 37, 64, 0.04),
     0 24px 64px rgba(10, 37, 64, 0.12);
-  border: 1px solid rgba(16, 165, 245, 0.12);
+  border: 1px solid rgba(11, 31, 58, 0.12);
   text-align: center;
 }
 
@@ -99,7 +99,7 @@
 
 .fin-hero__cta-pill:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 40px rgba(16, 165, 245, 0.35);
+  box-shadow: 0 14px 40px rgba(11, 31, 58, 0.35);
 }
 
 .fin-hero__cta-pill i {
@@ -265,11 +265,11 @@
 }
 
 .fin-what__item:nth-child(2) .fin-what__icon {
-  background: linear-gradient(145deg, #0A2540, #10A5F5);
+  background: linear-gradient(145deg, #0A2540, #0B1F3A);
 }
 
 .fin-what__item:nth-child(3) .fin-what__icon {
-  background: linear-gradient(145deg, #10A5F5, #10A5F5);
+  background: linear-gradient(145deg, #0B1F3A, #0B1F3A);
 }
 
 .fin-what__item h3 {
@@ -451,7 +451,7 @@
 
 .fin-cap-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(16, 165, 245, 0.3);
+  border-color: rgba(11, 31, 58, 0.3);
   box-shadow: 0 16px 40px rgba(10, 37, 64, 0.1);
 }
 
@@ -571,7 +571,7 @@
 
 .fin-process__step:hover,
 .fin-process__step.is-active {
-  border-color: rgba(16, 165, 245, 0.4);
+  border-color: rgba(11, 31, 58, 0.4);
   background: var(--fin-purple-light);
   box-shadow: 0 8px 24px rgba(10, 37, 64, 0.08);
 }
@@ -628,7 +628,7 @@
 }
 
 .svc-fintech-page .ent-faq__item.is-open {
-  border-color: rgba(16, 165, 245, 0.35);
+  border-color: rgba(11, 31, 58, 0.35);
 }
 
 .svc-fintech-page .ent-faq__item.is-open .ent-faq__icon {
@@ -749,7 +749,7 @@
 }
 
 .fin-contact__aside li i {
-  color: #10A5F5;
+  color: #0B1F3A;
 }
 
 .fin-contact__form {

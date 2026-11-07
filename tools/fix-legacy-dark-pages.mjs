@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Convert legacy dark-mode pages (technologies, blog, industries) to bright typography.
+ * Convert legacy dark-mode pages (technologies, industries) to bright typography.
  */
 import { readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
@@ -8,7 +8,6 @@ import { join } from 'path';
 const ROOT = join(import.meta.dirname, '..');
 const FILES = [
   'pages/technologies.html',
-  'pages/blog.html',
   'pages/industries.html',
 ];
 

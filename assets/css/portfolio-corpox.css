@@ -194,7 +194,7 @@
   font-size: 0.88rem;
   color: var(--cpox-muted);
 }
-.cpox-portfolio-footnote i { color: #10A5F5; margin-right: 0.35rem; }
+.cpox-portfolio-footnote i { color: #0B1F3A; margin-right: 0.35rem; }
 
 .cpox-portfolio-services {
   display: grid;
@@ -277,7 +277,7 @@
   font-size: 0.65rem;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(135deg, var(--cpox-navy), #10A5F5);
+  background: linear-gradient(135deg, var(--cpox-navy), #0B1F3A);
 }
 
 /* Project detail modal — corpox styled */

@@ -4,8 +4,8 @@
 .boh-page {
   --boh-navy: #0B1F3A;
   --boh-deep: #123D6A;
-  --boh-sky: #10A5F5;
-  --boh-aqua: #00DBFF;
+  --boh-sky: #0B1F3A;
+  --boh-aqua: #FFFFFF;
   --boh-canvas: #F3F6FB;
   --boh-muted: #475569;
   --boh-line: rgba(11, 31, 58, 0.1);
@@ -20,8 +20,8 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--boh-deep);
-  background: rgba(16, 165, 245, 0.12);
-  border: 1px solid rgba(16, 165, 245, 0.28);
+  background: rgba(11, 31, 58, 0.12);
+  border: 1px solid rgba(11, 31, 58, 0.28);
   border-radius: 999px;
   padding: 0.35rem 0.85rem;
   margin-bottom: 0.85rem;
@@ -119,8 +119,8 @@
 
 .boh-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(16, 165, 245, 0.45);
-  box-shadow: 0 22px 48px rgba(16, 165, 245, 0.14);
+  border-color: rgba(11, 31, 58, 0.45);
+  box-shadow: 0 22px 48px rgba(11, 31, 58, 0.14);
 }
 
 .boh-card:focus-visible {

@@ -5,8 +5,8 @@
 
 .hta-root {
   --hta-navy: #0B1F3A;
-  --hta-sky: #10A5F5;
-  --hta-aqua: #00DBFF;
+  --hta-sky: #0B1F3A;
+  --hta-aqua: #FFFFFF;
   --hta-deep: #123D6A;
   position: relative;
   isolation: isolate;
@@ -112,13 +112,13 @@
     var(--hta-deep) 100%
   );
   background-size: 220% 100%;
-  color: #001F54;
+  color: #0B1F3A;
   animation: htaSweep 7.5s ease-in-out infinite;
-  filter: drop-shadow(0 0 8px rgba(16, 165, 245, 0.2));
+  filter: drop-shadow(0 0 8px rgba(11, 31, 58, 0.2));
 }
 
 .hta-root.hta-done .hta-char--hl {
-  filter: drop-shadow(0 0 8px rgba(16, 165, 245, 0.2));
+  filter: drop-shadow(0 0 8px rgba(11, 31, 58, 0.2));
 }
 
 @keyframes htaSweep {
@@ -211,12 +211,12 @@
   border-radius: 50%;
   filter: blur(18px);
   opacity: 0.28;
-  background: radial-gradient(circle, rgba(16, 165, 245, 0.55), transparent 70%);
+  background: radial-gradient(circle, rgba(11, 31, 58, 0.55), transparent 70%);
   animation: htaOrb 7s ease-in-out infinite;
 }
 
 .hta-deco__ring {
-  border: 1px solid rgba(16, 165, 245, 0.28);
+  border: 1px solid rgba(11, 31, 58, 0.28);
   border-radius: 50%;
   opacity: 0.35;
   animation: htaRing 6.5s ease-in-out infinite;
@@ -225,7 +225,7 @@
 .hta-deco__line {
   height: 1px;
   width: 48px;
-  background: linear-gradient(90deg, transparent, rgba(16, 165, 245, 0.45), transparent);
+  background: linear-gradient(90deg, transparent, rgba(11, 31, 58, 0.45), transparent);
   opacity: 0.4;
   animation: htaLine 5s ease-in-out infinite;
 }
@@ -288,7 +288,7 @@
 }
 
 .hta-root--light .hta-deco__dot {
-  background: #67e8f9;
+  background: #FFFFFF;
   box-shadow: 0 0 12px rgba(103, 232, 249, 0.7);
 }
 

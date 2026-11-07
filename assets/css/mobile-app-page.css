@@ -5,8 +5,8 @@
 .ma-page {
   --ma-navy: #0B1F3A;
   --ma-deep: #123D6A;
-  --ma-sky: #10A5F5;
-  --ma-aqua: #00DBFF;
+  --ma-sky: #0B1F3A;
+  --ma-aqua: #FFFFFF;
   --ma-canvas: #F3F6FB;
   --ma-muted: #475569;
   --ma-line: rgba(11, 31, 58, 0.1);
@@ -30,8 +30,8 @@
 .ma-eyebrow {
   display: inline-flex; align-items: center; gap: 0.45rem;
   font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ma-deep); background: rgba(16, 165, 245, 0.12);
-  border: 1px solid rgba(16, 165, 245, 0.28); border-radius: 999px;
+  color: var(--ma-deep); background: rgba(11, 31, 58, 0.12);
+  border: 1px solid rgba(11, 31, 58, 0.28); border-radius: 999px;
   padding: 0.35rem 0.85rem; margin-bottom: 0.85rem;
 }
 
@@ -72,7 +72,7 @@
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse 60% 55% at 70% 45%, rgba(16, 165, 245, 0.28), transparent 55%),
+    radial-gradient(ellipse 60% 55% at 70% 45%, rgba(11, 31, 58, 0.28), transparent 55%),
     linear-gradient(120deg, rgba(11, 31, 58, 0.92) 0%, rgba(18, 61, 106, 0.78) 55%, rgba(11, 31, 58, 0.88) 100%);
   pointer-events: none;
 }
@@ -214,8 +214,8 @@
 }
 .ma-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(16, 165, 245, 0.4);
-  box-shadow: 0 18px 40px rgba(16, 165, 245, 0.12);
+  border-color: rgba(11, 31, 58, 0.4);
+  box-shadow: 0 18px 40px rgba(11, 31, 58, 0.12);
 }
 .ma-card__icon {
   width: 2.75rem; height: 2.75rem; border-radius: 0.85rem;

@@ -449,6 +449,32 @@
 
     form.addEventListener('submit', submitForm);
     updateProgress();
+    applyPlanIntent(form);
+  }
+
+  function applyPlanIntent(form) {
+    const params = new URLSearchParams(window.location.search);
+    const intent = params.get('intent');
+    if (intent !== 'demo' && intent !== 'custom-saas') return;
+    const names = { starter: 'Starter', growth: 'Growth', enterprise: 'Enterprise' };
+    const plan = names[params.get('plan') || ''] || '';
+    const title = form.querySelector('#project_title');
+    const desc = form.querySelector('#project_description');
+    if (title && !title.value) {
+      title.value = intent === 'demo'
+        ? (plan ? `GUUDLE ${plan} plan demonstration` : 'GUUDLE SaaS demonstration')
+        : 'Custom SaaS product enquiry';
+    }
+    if (desc && !desc.value) {
+      desc.value = intent === 'demo'
+        ? (plan
+          ? `Please book a demonstration of the GUUDLE Business Operating Platform on the ${plan} plan.`
+          : 'Please book a demonstration of the GUUDLE Business Operating Platform.')
+        : 'We need a custom SaaS product. Please prepare a quote.';
+    }
+    const saas = form.querySelector('input[name="services"][value="SaaS Development"]');
+    if (saas) saas.checked = true;
+    form.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
   }
 
   async   function init() {

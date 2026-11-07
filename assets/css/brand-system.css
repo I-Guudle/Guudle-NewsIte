@@ -15,9 +15,9 @@
   --brand-cta-shadow: 0 8px 22px rgba(0, 31, 84, 0.16);
   --brand-cta-shadow-hover: 0 10px 26px rgba(0, 31, 84, 0.2);
 
-  --nav-accent: var(--aqua-primary, #10A5F5);
-  --nav-accent-soft: rgba(16, 165, 245, 0.1);
-  --nav-accent-border: rgba(16, 165, 245, 0.28);
+  --nav-accent: var(--aqua-primary, #0B1F3A);
+  --nav-accent-soft: rgba(11, 31, 58, 0.1);
+  --nav-accent-border: rgba(11, 31, 58, 0.28);
 }
 
 /* ─── Primary buttons (site-wide) ─── */
@@ -82,7 +82,7 @@
 .svc-btn-primary:focus-visible,
 .mkt-btn--primary:focus-visible,
 .nav-cta-btn--appointment:focus-visible {
-  outline: 2px solid var(--aqua-primary, #10A5F5);
+  outline: 2px solid var(--aqua-primary, #0B1F3A);
   outline-offset: 2px;
 }
 

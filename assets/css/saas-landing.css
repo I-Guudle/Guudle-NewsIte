@@ -2,10 +2,10 @@
 .slp-page[data-slp-prefix="saas"] {
   --slp-primary: #6366F1;
   --slp-secondary: #8B5CF6;
-  --slp-accent: #10A5F5;
+  --slp-accent: #0B1F3A;
   --saas-indigo: #6366F1;
   --saas-violet: #8B5CF6;
-  --saas-cyan: #10A5F5;
+  --saas-cyan: #0B1F3A;
   --saas-dark: #0F172A;
   --saas-light: #F8FAFC;
   font-family: var(--font-sans, 'Inter', system-ui, sans-serif);
@@ -13,7 +13,7 @@
 }
 .saas-display { font-family: var(--font-display, 'Manrope', 'Inter', sans-serif); }
 .saas-gradient-text {
-  background: linear-gradient(135deg, #6366F1, #8B5CF6 45%, #10A5F5);
+  background: linear-gradient(135deg, #6366F1, #8B5CF6 45%, #0B1F3A);
   }
 
 .saas-hero {
@@ -25,7 +25,7 @@
   position: absolute; inset: 0;
   background:
     radial-gradient(ellipse 65% 55% at 25% 30%, rgba(99,102,241,0.3), transparent 55%),
-    radial-gradient(ellipse 50% 45% at 75% 25%, rgba(16,165,245,0.2), transparent 50%),
+    radial-gradient(ellipse 50% 45% at 75% 25%, rgba(11, 31, 58,0.2), transparent 50%),
     radial-gradient(ellipse 45% 40% at 50% 90%, rgba(139,92,246,0.18), transparent 55%);
   animation: saas-mesh 20s ease-in-out infinite alternate;
 }
@@ -160,7 +160,7 @@
   transition: transform 0.35s, box-shadow 0.35s; height: 100%; display: flex; flex-direction: column;
 }
 .saas-case:hover { transform: translateY(-8px); box-shadow: 0 28px 56px rgba(99,102,241,0.12); }
-.saas-case__visual { height: 7rem; background: linear-gradient(135deg, #6366F1, #10A5F5); position: relative; }
+.saas-case__visual { height: 7rem; background: linear-gradient(135deg, #6366F1, #0B1F3A); position: relative; }
 .saas-case__visual i { position: absolute; right: 1.25rem; bottom: 1rem; font-size: 3rem; color: rgba(255,255,255,0.2); }
 .saas-case__head {
   padding: 1.25rem; margin: -1.5rem 1.25rem 0; position: relative; z-index: 1;
@@ -183,7 +183,7 @@
 .saas-cta__glow {
   position: absolute; inset: 0;
   background: radial-gradient(ellipse 50% 60% at 30% 50%, rgba(99,102,241,0.45), transparent),
-    radial-gradient(ellipse 45% 50% at 75% 80%, rgba(16,165,245,0.3), transparent);
+    radial-gradient(ellipse 45% 50% at 75% 80%, rgba(11, 31, 58,0.3), transparent);
 }
 
 .saas-contact-aside {

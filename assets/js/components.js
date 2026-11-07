@@ -54,7 +54,7 @@ const NAV = {
     ],
   },
   solutions: {
-    label: 'Enterprise Solutions',
+    label: 'SaaS Applications',
     icon: '🏛️',
     items: [
       { name: 'Enterprise Software Development', href: 'pages/services/enterprise-solutions.html', desc: 'Custom enterprise platforms' },
@@ -66,8 +66,8 @@ const NAV = {
       { name: 'Digital Transformation', href: 'pages/services/digital-transformation.html', desc: 'Modernize at scale' },
       { name: 'IT Consulting', href: 'pages/services/it-consulting.html', desc: 'Technology advisory' },
       { name: 'Workflow Automation', href: 'pages/services/workflow-automation.html', desc: 'RPA & orchestration' },
-      { name: 'Business Intelligence', href: 'pages/services/business-intelligence.html', desc: 'Dashboards & analytics' },
-      { name: 'Enterprise Mobility', href: 'pages/services/enterprise-mobility.html', desc: 'Secure mobile apps' },
+      { name: 'Business Intelligence Solutions', href: 'pages/services/business-intelligence.html', desc: 'Dashboards & analytics' },
+      { name: 'Enterprise Mobility Solutions', href: 'pages/services/enterprise-mobility.html', desc: 'Secure mobile apps' },
       { name: 'Data Engineering', href: 'pages/services/data-engineering.html', desc: 'Pipelines & lakehouses' },
     ],
   },
@@ -116,11 +116,12 @@ const NAV = {
 
 function getBasePath() {
   const path = window.location.pathname;
-  if (path.includes('/pages/')) {
-    const segments = path.split('/').filter(Boolean);
-    const pagesIndex = segments.indexOf('pages');
-    const levels = segments.length - pagesIndex - 1;
-    return '../'.repeat(levels);
+  const segments = path.split('/').filter(Boolean);
+  const marker = segments.find((s) => s === 'pages' || s === 'dashboards');
+  if (marker) {
+    const idx = segments.indexOf(marker);
+    const levels = segments.length - idx - 1;
+    return '../'.repeat(Math.max(levels, 1));
   }
   return '';
 }
@@ -194,7 +195,7 @@ const MEGA_TABS = [
       {
         title: 'Enterprise Cloud',
         links: [
-          { name: 'Enterprise Solutions', href: 'pages/services/enterprise-solutions.html', icon: 'building' },
+          { name: 'SaaS Applications', href: 'saas.html', icon: 'saas' },
           { name: 'Scalable Infrastructure', href: 'pages/services/cloud-solutions.html', icon: 'chart' },
         ],
       },
@@ -260,6 +261,10 @@ const MEGA_TABS = [
           { name: 'Digital Transformation', href: 'pages/services/digital-transformation.html', icon: 'chart' },
           { name: 'IT Consulting', href: 'pages/services/it-consulting.html', icon: 'briefcase' },
           { name: 'Workflow Automation', href: 'pages/services/workflow-automation.html', icon: 'workflow' },
+          { name: 'Cloud Engineering', href: 'pages/services/cloud-engineering.html', icon: 'cloud' },
+          { name: 'Business Intelligence Solutions', href: 'pages/services/business-intelligence.html', icon: 'chart-bar' },
+          { name: 'Enterprise Mobility Solutions', href: 'pages/services/enterprise-mobility.html', icon: 'mobile' },
+          { name: 'Data Engineering', href: 'pages/services/data-engineering.html', icon: 'database' },
         ],
       },
       {
@@ -417,6 +422,10 @@ function renderHeader() {
               ${renderTopContact('fa-headset', '24/7 Online Support', SITE.email, `mailto:${SITE.email}`)}
               ${renderTopContact('fa-phone-volume', 'Contact Us Free', SITE.phone, `tel:${SITE.phoneTel}`)}
             </div>
+            <a href="${base}pages/saas/login.html" class="nav-signin-link hidden lg:inline-flex items-center gap-2 whitespace-nowrap" data-nav-match="saas-login">
+              <i class="fas fa-right-to-bracket" aria-hidden="true"></i>
+              Sign in
+            </a>
             <a href="${base}pages/contact.html" class="nav-cta-btn nav-cta-btn--appointment nav-top-cta hidden lg:inline-flex items-center gap-2 whitespace-nowrap" data-nav-match="contact">
               <i class="fas fa-calendar-check" aria-hidden="true"></i>
               Start Your Project
@@ -471,16 +480,17 @@ function getMobileGroups() {
   }
   return [
     { title: 'Development Services', items: NAV.services.items.slice(0, 7) },
-    { title: 'Enterprise Solutions', items: NAV.solutions.items },
+    { title: 'SaaS Applications', items: NAV.solutions.items },
   ];
 }
 
 function renderMobileMenu(base) {
   const mainLinks = [
     { label: 'Home', href: `${base}index.html`, match: 'index.html' },
+    { label: 'Pricing', href: `${base}pages/saas/pricing.html`, match: 'pricing' },
     { label: 'Our Work', href: `${base}pages/our-work.html`, match: 'our-work' },
     { label: 'About Us', href: `${base}pages/about.html`, match: 'about' },
-    { label: 'Blog', href: `${base}pages/blog.html`, match: 'blog' },
+    { label: 'Industries', href: `${base}pages/industries.html`, match: 'industries' },
     { label: 'Contact', href: `${base}pages/contact.html`, match: 'contact' },
   ];
   const mobileGroups = getMobileGroups();
@@ -532,7 +542,7 @@ function renderMobileMenu(base) {
 
         <div class="mobile-drawer__footer">
           <a href="${base}pages/contact.html" class="mobile-drawer__cta-primary nav-cta-btn nav-cta-btn--appointment">Start Your Project <i class="fas fa-calendar-check" aria-hidden="true"></i></a>
-          <a href="${base}pages/contact.html" class="mobile-drawer__cta-secondary">Get Free Estimate</a>
+          <a href="${base}pages/saas/login.html" class="mobile-drawer__cta-secondary">Sign in to Platform</a>
           <p class="mobile-drawer__email">${SITE.email}</p>
         </div>
       </div>
@@ -570,15 +580,24 @@ function renderFooter() {
               <a href="${base}pages/contact.html" class="site-footer__cta">Start Your Project <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
-          ${col('Development', NAV.services.items.slice(0, 7))}
-          ${col('Enterprise', NAV.solutions.items.slice(0, 7))}
-          ${col('AI & Cloud', [...NAV.ai.items.slice(0, 5), ...NAV.cloud.items.slice(0, 2)])}
+          ${col('Platform', [
+            { name: 'Business Operating Platform', href: 'pages/saas/index.html' },
+            { name: 'Modules', href: 'pages/saas/index.html#gbp-modules' },
+            { name: 'Pricing', href: 'pages/saas/pricing.html' },
+            { name: 'Start Free Trial', href: 'pages/saas/register.html' },
+            { name: 'Sign In', href: 'pages/saas/login.html' },
+            { name: 'Client Workspace', href: 'dashboards/client/index.html' },
+            { name: 'Super Admin', href: 'dashboards/admin/index.html' },
+            { name: 'Support', href: 'pages/saas/support.html' },
+          ])}
+          ${col('Development', NAV.services.items.slice(0, 6))}
+          ${col('Enterprise', NAV.solutions.items.slice(0, 6))}
           ${col('Company', [
             { name: 'About Us', href: 'pages/about.html' },
+            { name: 'Industries', href: 'pages/industries.html' },
             { name: 'Our Process', href: 'pages/our-process.html' },
             { name: 'Our Work', href: 'pages/our-work.html' },
             { name: 'Testimonials', href: 'pages/testimonials.html' },
-            { name: 'Blog', href: 'pages/blog.html' },
             { name: 'Contact', href: 'pages/contact.html' },
           ])}
         </div>
@@ -615,7 +634,7 @@ function renderChatbot() {
         </div>
         <div id="chatbot-messages" class="p-4 h-60 overflow-y-auto space-y-3 bg-[#2E3440]">
           <div class="flex gap-2">
-            <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#2563EB] to-[#10A5F5] flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold">AI</div>
+            <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#2563EB] to-[#0B1F3A] flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold">AI</div>
             <div class="bg-white/8 border border-white/10 rounded-2xl rounded-tl-sm px-3 py-2 text-sm text-white/70">Hello! How can I help with your technology needs today?</div>
           </div>
         </div>
@@ -673,6 +692,16 @@ function injectEnterpriseSystemCss() {
   document.head.appendChild(link);
 }
 
+function injectAquaThemeCss() {
+  if (document.getElementById('aqua-white-css')) return;
+  const base = getBasePath();
+  const link = document.createElement('link');
+  link.id = 'aqua-white-css';
+  link.rel = 'stylesheet';
+  link.href = `${base}assets/css/aqua-white.css`;
+  document.head.appendChild(link);
+}
+
 function injectEnterpriseHero() {
   if (document.getElementById('guudle-enterprise-hero')) return;
   const base = getBasePath();
@@ -720,6 +749,7 @@ function injectComponents() {
   injectNavLockCss();
   injectSiteUnifiedCss();
   injectEnterpriseSystemCss();
+  injectAquaThemeCss();
   injectEnterpriseHero();
   injectOfferPopup();
   requestAnimationFrame(() => {

@@ -16,8 +16,8 @@
 .ft-hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(165deg, #FAFBFC 0%, #F5F3FF 35%, #ECFDF5 70%, #F0FDFA 100%);
-  color: #001F54;
+  background: linear-gradient(165deg, #FAFBFC 0%, #F5F3FF 35%, #ECFDF5 70%, #F7F9FC 100%);
+  color: #0B1F3A;
   padding: 7.25rem 0 4.5rem;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .ft-crumb a { color: #475569; text-decoration: none; }
-.ft-crumb a:hover { color: #001F54; }
+.ft-crumb a:hover { color: #0B1F3A; }
 
 .ft-eyebrow {
   display: inline-flex;
@@ -61,7 +61,7 @@
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #001F54;
+  color: #0B1F3A;
   margin-bottom: 0.9rem;
 }
 
@@ -73,7 +73,7 @@
   line-height: 1.05;
   letter-spacing: -0.03em;
   margin: 0 0 1rem;
-  color: #001F54;
+  color: #0B1F3A;
   max-width: 16ch;
 }
 
@@ -100,10 +100,10 @@
 }
 .ft-btn:hover { transform: translateY(-1px); }
 .ft-btn--primary { background: #001F54; color: #fff; }
-.ft-btn--ghost { background: #fff; color: #001F54; border-color: rgba(0, 31, 84, 0.22); }
+.ft-btn--ghost { background: #fff; color: #0B1F3A; border-color: rgba(0, 31, 84, 0.22); }
 .ft-btn--ghost:hover { background: rgba(0, 31, 84, 0.05); }
 .ft-btn--navy { background: #001F54; color: #fff; }
-.ft-btn--line { background: #fff; color: #001F54; border-color: var(--ft-line); }
+.ft-btn--line { background: #fff; color: #0B1F3A; border-color: var(--ft-line); }
 
 .ft-console {
   background: #0b1f3a;

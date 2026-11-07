@@ -1,15 +1,15 @@
 /**
- * Guudle brand cyan — single source of truth (#10A5F5)
+ * Guudle brand cyan — single source of truth (#0B1F3A)
  */
 
 :root {
-  --aqua-primary: #10A5F5;
+  --aqua-primary: #0B1F3A;
   --aqua-dark: #0D84C4;
-  --aqua-light: #E6F4FE;
-  --aqua-hover: #0E96E8;
-  --aqua-gradient-start: #3DB8F7;
-  --aqua-gradient-end: #0A7BC4;
-  --aqua-accent: #10A5F5;
+  --aqua-light: #F7F9FC;
+  --aqua-hover: #142D4E;
+  --aqua-gradient-start: #142D4E;
+  --aqua-gradient-end: #142D4E;
+  --aqua-accent: #0B1F3A;
   --aqua-rgb: 16, 165, 245;
   --aqua-accent-rgb: 16, 165, 245;
   --aqua-dark-rgb: 13, 132, 196;
@@ -62,7 +62,7 @@
   --mkt-accent2: var(--aqua-accent);
 }
 
-/* ─── Primary buttons — #10A5F5 + white text ─── */
+/* ─── Primary buttons — #0B1F3A + white text ─── */
 .btn-primary,
 .svc-btn-primary,
 .mkt-btn--primary,
@@ -207,7 +207,7 @@ select:focus-visible {
 .cpox-industry-head__accent,
 .hero-gradient-text {
   background: var(--aqua-gradient) !important;
-  color: #001F54 !important;
+  color: #0B1F3A !important;
 }
 
 .form-control:focus,
