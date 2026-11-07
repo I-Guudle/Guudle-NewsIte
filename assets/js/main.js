@@ -155,8 +155,13 @@ function initNavSearch() {
     { name: 'Contact Us', href: `${base}pages/contact.html` },
     { name: 'Our Work', href: `${base}pages/our-work.html` },
     { name: 'About Us', href: `${base}pages/about.html` },
-    { name: 'Blog', href: `${base}pages/blog.html` },
     { name: 'Industries', href: `${base}pages/industries.html` },
+    { name: 'GUUDLE Business Operating Platform', href: `${base}pages/saas/index.html` },
+    { name: 'Platform Pricing', href: `${base}pages/saas/pricing.html` },
+    { name: 'Platform Sign In', href: `${base}pages/saas/login.html` },
+    { name: 'Start Free Trial', href: `${base}pages/saas/register.html` },
+    { name: 'Super Admin Dashboard', href: `${base}dashboards/admin/index.html` },
+    { name: 'Client Workspace', href: `${base}dashboards/client/index.html` },
   ].forEach((item) => {
     if (item.href && !index.some((i) => i.name === item.name)) index.push(item);
   });

@@ -140,6 +140,7 @@ main {
 }
 
 .home-navy-refined #services,
+.home-navy-refined #services.srv-expertise--parallax,
 .home-navy-refined #tech-stack-section,
 .home-navy-refined #mobile-app-section {
   background: transparent !important;
@@ -414,6 +415,27 @@ section.bg-red-500,
 .bg-gradient-to-r.from-teal-500 {
   background: var(--brand-section-alt) !important;
   background-image: none !important;
+}
+
+.gbp-page.guudle-site .gbp-hero h1,
+.gbp-saas .gbp-hero h2,
+.gbp-saas .gbp-px h3,
+.gbp-page.guudle-site .gbp-px h2,
+.gbp-page.guudle-site .gbp-hero p,
+.gbp-page.guudle-site .gbp-px p,
+.gbp-saas .gbp-hero p,
+.gbp-saas .gbp-px p {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.gbp-page.guudle-site .gbp-hero h1 span,
+.gbp-saas .gbp-hero h2 span,
+.gbp-page.guudle-site .gbp-hero .gbp-hero__kicker,
+.gbp-page.guudle-site .gbp-px .gbp-hero__kicker,
+.gbp-saas .gbp-hero__kicker {
+  color: #00DBFF !important;
+  -webkit-text-fill-color: #00DBFF !important;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -781,13 +803,18 @@ button:disabled,
   -webkit-text-fill-color: #ffffff !important;
 }
 
-.guudle-site #services.srv-expertise--glow .srv-expertise__title {
+.guudle-site #services.srv-expertise--glow .srv-expertise__title,
+.guudle-site #services.srv-expertise--parallax .srv-expertise__title {
   color: #001F54 !important;
   -webkit-text-fill-color: #001F54 !important;
 }
 
 .guudle-site #services .srv-expertise__subtitle {
   color: #475569 !important;
+}
+
+.guudle-site #services.srv-expertise--parallax .srv-expertise__subtitle {
+  color: #1e293b !important;
 }
 
 .guudle-site #services .srv-expertise__cta-desc,

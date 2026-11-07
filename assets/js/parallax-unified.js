@@ -12,6 +12,8 @@
     '[data-mkt-parallax-bg]',
     '[data-parallax-bg]',
     '.guudle-parallax-layer',
+    '.gbp-hero__layer',
+    '.gbp-px__layer',
   ].join(',');
 
   const SECTION_SELECTORS = [
@@ -23,16 +25,18 @@
     '.svc-hero-parallax',
     '.mkt-hero--parallax',
     '.home-parallax-immersive',
+    '.gbp-hero--parallax',
+    '.gbp-px',
   ].join(',');
 
   function getSpeed(el, bg) {
     const section = el.closest(SECTION_SELECTORS) || el;
     const ds = section.dataset;
     return parseFloat(
-      ds.svcParallaxSpeed ||
+      bg?.dataset?.parallaxSpeed ||
+        ds.svcParallaxSpeed ||
         ds.slpParallaxSpeed ||
         ds.mktParallaxSpeed ||
-        bg?.dataset?.parallaxSpeed ||
         '0.32'
     );
   }
