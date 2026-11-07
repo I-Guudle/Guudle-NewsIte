@@ -955,3 +955,20 @@ button:disabled,
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
 }
+
+/* AI advisor — title in white, accent and description in aqua */
+.guudle-site .tsf-section h2.tsf-title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.guudle-site .tsf-section .tsf-highlight {
+  color: #10A5F5 !important;
+  -webkit-text-fill-color: #10A5F5 !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+.guudle-site .tsf-section .tsf-subtitle {
+  color: #7EE8FF !important;
+}

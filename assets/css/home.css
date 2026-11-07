@@ -5921,38 +5921,21 @@
 }
 .home-switch__panel a:focus-visible { outline: 2px solid #10A5F5; outline-offset: 3px; }
 
-/* Mid-page web hosting referral */
-.home-hosting {
-  padding: clamp(3.5rem, 7vw, 5.5rem) 1.25rem;
-  background:
-    radial-gradient(640px 220px at 50% 0%, rgba(16, 165, 245, 0.16), transparent 70%),
-    #f6f8fc;
+/* Mid-page web hosting referral — parallax band */
+.home-hosting.home-parallax-immersive {
+  padding: 0;
+  background: transparent;
   text-align: center;
 }
 
-.home-hosting__wrap {
-  max-width: 40rem;
-  margin: 0 auto;
+.home-hosting .home-parallax-immersive__card {
+  max-width: 46rem;
+  margin-inline: auto;
 }
 
-.home-hosting__kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin: 0;
-  color: #0b8ed4;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-}
-
-.home-hosting h2 {
-  margin: 0.85rem 0 0;
-  color: #0A2540;
-  font-size: clamp(1.7rem, 3vw, 2.45rem);
-  line-height: 1.2;
-  font-weight: 800;
+.home-hosting .home-parallax-immersive__eyebrow,
+.home-hosting .home-parallax-immersive__eyebrow i {
+  color: #7EE8FF;
 }
 
 .home-hosting__btn {
@@ -5961,11 +5944,11 @@
   justify-content: center;
   gap: 0.55rem;
   min-height: 2.75rem;
-  margin-top: 1.5rem;
-  padding: 0.75rem 1.25rem;
+  margin-top: 0.35rem;
+  padding: 0.85rem 1.35rem;
   border-radius: 0.65rem;
-  background: #0A2540;
-  color: #fff;
+  background: #10A5F5;
+  color: #041018;
   font-weight: 700;
   text-decoration: none;
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -5973,10 +5956,10 @@
 
 .home-hosting__btn:hover,
 .home-hosting__btn:focus-visible {
-  background: #123D6A;
-  color: #fff;
+  background: #7EE8FF;
+  color: #041018;
   transform: translateY(-2px);
-  box-shadow: 0 10px 24px rgba(10, 37, 64, 0.18);
+  box-shadow: 0 10px 24px rgba(16, 165, 245, 0.35);
 }
 
 .home-hosting__btn:focus-visible {
