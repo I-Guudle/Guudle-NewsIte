@@ -601,3 +601,37 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
     width: auto;
   }
 }
+
+/* Hosting referral — keep the photo visible and the type white on aqua */
+.guudle-site .home-hosting.home-parallax-immersive .home-parallax-immersive__overlay {
+  background:
+    linear-gradient(180deg, rgba(6, 24, 41, 0.55) 0%, rgba(10, 37, 64, 0.72) 48%, rgba(6, 24, 41, 0.84) 100%) !important;
+}
+
+.guudle-site .home-hosting .home-parallax-immersive__title {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.guudle-site .home-hosting .home-parallax-immersive__eyebrow,
+.guudle-site .home-hosting .home-parallax-immersive__eyebrow i {
+  color: #7EE8FF !important;
+  -webkit-text-fill-color: #7EE8FF !important;
+}
+
+.guudle-site .home-hosting .home-parallax-immersive__card {
+  background: rgba(6, 24, 41, 0.42) !important;
+  border: 1px solid rgba(126, 232, 255, 0.35) !important;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35) !important;
+}
+
+.guudle-site .home-hosting .home-hosting__btn {
+  background: #10A5F5 !important;
+  color: #041018 !important;
+}
+
+.guudle-site .home-hosting .home-hosting__btn:hover,
+.guudle-site .home-hosting .home-hosting__btn:focus-visible {
+  background: #7EE8FF !important;
+  color: #041018 !important;
+}
