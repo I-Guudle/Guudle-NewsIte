@@ -5,7 +5,7 @@
   --navy-primary: #37474F;
   --navy-mid: #455A64;
   --navy-light: #546E7A;
-  --navy-accent: #10A5F5;
+  --navy-accent: #0B1F3A;
   --navy-surface: #F5F7FA;
   --navy-border: rgba(55, 71, 79, 0.1);
   --navy-shadow: 0 8px 32px rgba(55, 71, 79, 0.08);
@@ -58,7 +58,7 @@
 /* ─── Navy gradient text (replace rainbow accents) ─── */
 .home-navy-refined main [class*="bg-clip-text"][class*="text-transparent"] {
   background: none !important;
-  color: #001F54 !important;
+  color: #0B1F3A !important;
 }
 
 /* ─── Section backgrounds — alternating navy rhythm ─── */
@@ -68,8 +68,8 @@
 
 .home-navy-refined #services .srv-expertise__card-title,
 .home-navy-refined #services .srv-expertise__cta-title {
-  color: #001F54 !important;
-  -webkit-text-fill-color: #001F54 !important;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A !important;
 }
 
 .home-navy-refined #services .srv-expertise__card-desc,
@@ -135,8 +135,8 @@
 .home-navy-refined #ai-services-section .aib-hub__eyebrow,
 .home-navy-refined #ai-services-section .aib-hub__title,
 .home-navy-refined #ai-services-section .aib-hub__pillar h4 {
-  color: #001F54 !important;
-  -webkit-text-fill-color: #001F54 !important;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A !important;
 }
 
 .home-navy-refined #ai-services-section .aib-tile > p,
@@ -368,7 +368,7 @@
 
 /* ─── Particles & parallax blobs — navy only ─── */
 .home-navy-refined .particle {
-  background: rgba(16, 165, 245, 0.35) !important;
+  background: rgba(11, 31, 58, 0.35) !important;
 }
 
 .home-navy-refined [class*="bg-cyan-500"],
@@ -403,7 +403,7 @@
 .home-navy-refined .saas-hero:not(.saas-hero--light) .saas-hero-mesh {
   background:
     radial-gradient(ellipse 90% 70% at 70% 20%, rgba(18, 61, 106, 0.35) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 50% at 20% 80%, rgba(16, 165, 245, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 50% at 20% 80%, rgba(11, 31, 58, 0.12) 0%, transparent 50%),
     linear-gradient(165deg, #37474F 0%, #455A64 45%, #37474F 100%) !important;
 }
 
@@ -419,7 +419,7 @@
 /* Light hero — keep vivid styling, no navy overrides */
 .home-navy-refined .saas-hero--light .hero-gradient-text {
   background: none !important;
-  color: #001F54 !important;
+  color: #0B1F3A !important;
   }
 
 .home-navy-refined .saas-hero--light h1 {

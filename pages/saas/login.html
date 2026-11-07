@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Guudle IT Solutions">
+  <meta name="description" content="Sign in to the GUUDLE Super Admin or Client/Tenant workspace.">
+  <link rel="canonical" href="https://guudle.com/pages/saas/login.html">
+  <title>Sign in to GUUDLE Platform | Guudle IT Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../../assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <link rel="stylesheet" href="../../assets/css/site-unified.css">
+  <link rel="stylesheet" href="../../assets/css/guudle-platform.css">
+  
+</head>
+<body class="gbp-page guudle-site antialiased overflow-x-hidden">
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <div id="header-placeholder"></div>
+  <main id="main">
+    <section class="gbp-auth">
+      <div class="gbp-auth__card">
+        <p class="gbp-kicker">Sign in</p>
+        <h1 style="font-size:1.7rem;font-weight:800;margin:0.4rem 0 0.4rem">Enter your GUUDLE workspace</h1>
+        <p class="gbp-lead">Choose Super Admin for platform control, or Client for a tenant CRM workspace.</p>
+        <div class="gbp-auth__tabs">
+          <button type="button" class="gbp-auth__tab is-active" data-gbp-role-tab="client">Client workspace</button>
+          <button type="button" class="gbp-auth__tab" data-gbp-role-tab="admin">Super Admin</button>
+        </div>
+        <form data-gbp-auth>
+          <input type="hidden" data-gbp-role value="client">
+          <label>Work email</label>
+          <input type="email" required placeholder="you@company.com" value="amira@northline.co">
+          <label>Password</label>
+          <input type="password" required value="demo-access">
+          <div class="gbp-actions" style="margin-top:1.1rem">
+            <button type="submit" class="gbp-btn gbp-btn--navy" style="border:0;cursor:pointer;width:100%;justify-content:center">Continue</button>
+          </div>
+        </form>
+        <p class="gbp-form-note">Prototype login — opens the matching dashboard. <a href="register.html">Start a trial</a> · <a href="support.html">Need help?</a></p>
+      </div>
+    </section></main>
+  <div id="footer-placeholder"></div>
+  <script src="../../assets/js/mega-menu-webdev-data.js"></script>
+  <script src="../../assets/js/mega-menu-data.js"></script>
+  <script src="../../assets/js/mega-menu-render.js"></script>
+  <script src="../../assets/js/components.js"></script>
+  <script src="../../assets/js/main.js"></script>
+  <script src="../../assets/js/guudle-platform-data.js"></script>
+  <script src="../../assets/js/guudle-platform.js"></script>
+  <script src="../../assets/js/parallax-unified.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>window.AOS&&AOS.init({once:true,duration:700});</script>
+</body>
+</html>

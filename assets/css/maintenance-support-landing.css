@@ -1,16 +1,16 @@
 /* ═══ Maintenance & Support — Enterprise Landing ═══ */
 .slp-page[data-slp-prefix="mnt"] {
-  --slp-primary: #10A5F5;
-  --slp-secondary: #10A5F5;
-  --slp-accent: #10A5F5;
-  --mnt-teal: #10A5F5;
-  --mnt-blue: #10A5F5;
+  --slp-primary: #0B1F3A;
+  --slp-secondary: #0B1F3A;
+  --slp-accent: #0B1F3A;
+  --mnt-teal: #0B1F3A;
+  --mnt-blue: #0B1F3A;
   --mnt-dark: #0F172A;
   --mnt-light: #F8FAFC;
 }
 .mnt-display { font-family: var(--font-display); }
 .mnt-gradient-text {
-  background: linear-gradient(135deg, #10A5F5, #10A5F5 50%, #10A5F5);
+  background: linear-gradient(135deg, #0B1F3A, #0B1F3A 50%, #0B1F3A);
   }
 .mnt-hero {
   position: relative; min-height: 100vh; min-height: 100dvh;
@@ -21,8 +21,8 @@
   position: absolute; inset: 0;
   background:
     radial-gradient(ellipse 70% 60% at 15% 20%, rgba(13,148,136,0.28), transparent 55%),
-    radial-gradient(ellipse 50% 45% at 85% 30%, rgba(16, 165, 245,0.25), transparent 50%),
-    radial-gradient(ellipse 55% 50% at 50% 95%, rgba(16,165,245,0.15), transparent 55%);
+    radial-gradient(ellipse 50% 45% at 85% 30%, rgba(11, 31, 58,0.25), transparent 50%),
+    radial-gradient(ellipse 55% 50% at 50% 95%, rgba(11, 31, 58,0.15), transparent 55%);
   animation: mnt-mesh 22s ease-in-out infinite alternate;
 }
 .mnt-hero__grid {
@@ -55,7 +55,7 @@
 }
 .mnt-uptime-widget__ring {
   width: 8rem; height: 8rem; margin: 0 auto 1rem; border-radius: 50%;
-  background: conic-gradient(#10A5F5 0deg 352deg, rgba(255,255,255,0.1) 352deg 360deg);
+  background: conic-gradient(#0B1F3A 0deg 352deg, rgba(255,255,255,0.1) 352deg 360deg);
   display: grid; place-items: center; position: relative;
 }
 .mnt-uptime-widget__ring::before {
@@ -64,7 +64,7 @@
 }
 .mnt-uptime-widget__pct {
   position: relative; z-index: 1; font-family: var(--font-display);
-  font-size: 1.75rem; font-weight: 800; color: #10A5F5;
+  font-size: 1.75rem; font-weight: 800; color: #0B1F3A;
 }
 .mnt-uptime-widget__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
 .mnt-uptime-widget__stat {
@@ -109,7 +109,7 @@
 }
 .mnt-sla-timeline__track {
   position: absolute; top: 3rem; left: 0; right: 0; height: 4px;
-  background: linear-gradient(90deg, #EF4444, #F59E0B, #10A5F5, #10A5F5);
+  background: linear-gradient(90deg, #EF4444, #F59E0B, #0B1F3A, #0B1F3A);
   border-radius: 999px;
 }
 .mnt-sla-timeline__steps {
@@ -123,8 +123,8 @@
 }
 .mnt-sla-timeline__step:nth-child(1) .mnt-sla-timeline__dot { background: #EF4444; }
 .mnt-sla-timeline__step:nth-child(2) .mnt-sla-timeline__dot { background: #F59E0B; }
-.mnt-sla-timeline__step:nth-child(3) .mnt-sla-timeline__dot { background: #10A5F5; }
-.mnt-sla-timeline__step:nth-child(4) .mnt-sla-timeline__dot { background: #10A5F5; }
+.mnt-sla-timeline__step:nth-child(3) .mnt-sla-timeline__dot { background: #0B1F3A; }
+.mnt-sla-timeline__step:nth-child(4) .mnt-sla-timeline__dot { background: #0B1F3A; }
 .mnt-sla-timeline__label { font-size: 0.72rem; font-weight: 700; color: var(--text-muted, #64748B); }
 .mnt-sla-timeline__time { font-size: 0.65rem; color: #94A3B8; margin-top: 0.15rem; }
 
@@ -158,7 +158,7 @@
   background: linear-gradient(135deg, var(--mnt-teal), var(--mnt-blue));
 }
 .mnt-parallax .slp-parallax__overlay {
-  background: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(19,78,74,0.6) 50%, rgba(16, 165, 245,0.4) 100%);
+  background: linear-gradient(135deg, rgba(15,23,42,0.92) 0%, rgba(19,78,74,0.6) 50%, rgba(11, 31, 58,0.4) 100%);
 }
 .slp-page[data-slp-prefix="mnt"] .slp-faq-item.is-open { border-color: rgba(13,148,136,0.35); }
 

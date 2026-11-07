@@ -179,7 +179,7 @@
 
 .cx-cap-card:nth-child(2) .cx-cap-card__icon { background: linear-gradient(135deg, #3B82F6, #2563EB); }
 .cx-cap-card:nth-child(3) .cx-cap-card__icon { background: linear-gradient(135deg, #10B981, #059669); }
-.cx-cap-card:nth-child(4) .cx-cap-card__icon { background: linear-gradient(135deg, #10A5F5, #10A5F5); }
+.cx-cap-card:nth-child(4) .cx-cap-card__icon { background: linear-gradient(135deg, #0B1F3A, #0B1F3A); }
 .cx-cap-card:nth-child(5) .cx-cap-card__icon { background: linear-gradient(135deg, #F97316, #EA580C); }
 .cx-cap-card:nth-child(6) .cx-cap-card__icon { background: linear-gradient(135deg, #EC4899, #DB2777); }
 
@@ -222,7 +222,7 @@
   inset: 0;
   background:
     radial-gradient(ellipse 40% 60% at 10% 20%, rgba(124, 58, 237, 0.25), transparent 55%),
-    radial-gradient(ellipse 35% 50% at 90% 80%, rgba(16, 165, 245, 0.2), transparent 50%);
+    radial-gradient(ellipse 35% 50% at 90% 80%, rgba(11, 31, 58, 0.2), transparent 50%);
   pointer-events: none;
 }
 
@@ -234,7 +234,7 @@
 
 .cx-tech__head .cx-tag {
   color: var(--cx2-teal);
-  background: rgba(16, 165, 245, 0.15);
+  background: rgba(11, 31, 58, 0.15);
 }
 
 .cx-tech__head h2 {
@@ -270,7 +270,7 @@
 .cx-tech__chip:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(16, 165, 245, 0.4);
+  border-color: rgba(11, 31, 58, 0.4);
 }
 
 .cx-tech__chip i {

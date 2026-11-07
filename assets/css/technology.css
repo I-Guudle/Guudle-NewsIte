@@ -2,7 +2,7 @@
  * Website Development Services — website-development.html
  */
 .tech-page {
-  --tech-accent: #10A5F5;
+  --tech-accent: #0B1F3A;
   --tech-accent-rgb: 16, 165, 245;
   --tech-navy: #0b1f3a;
   --tech-cyan-bright: #00FFFF;
@@ -148,8 +148,8 @@
 }
 .tech-hero__title-grad {
   display: inline;
-  background: linear-gradient(135deg, var(--tech-cyan-bright) 0%, var(--tech-accent) 50%, #7dd3fc 100%);
-  color: #001F54;
+  background: linear-gradient(135deg, var(--tech-cyan-bright) 0%, var(--tech-accent) 50%, #FFFFFF 100%);
+  color: #0B1F3A;
   text-shadow: none;
 }
 
@@ -646,7 +646,7 @@
   .tech-glow-card, .tech-industry-card, .tech-btn, .tech-related-card { transition: none; }
 }
 
-.tech-page { --tech-accent: #10A5F5; --tech-accent-rgb: 16, 165, 245; --tech-navy: #0b1f3a; }
+.tech-page { --tech-accent: #0B1F3A; --tech-accent-rgb: 16, 165, 245; --tech-navy: #0b1f3a; }
 
 .tech-philosophy-grid { display: grid; gap: 1.15rem; grid-template-columns: 1fr; }
 @media (min-width: 640px) { .tech-philosophy-grid { grid-template-columns: repeat(2, 1fr); } }
@@ -1117,8 +1117,8 @@
 }
 .tech-hero-v2__title-grad {
   display: inline;
-  background: linear-gradient(120deg, var(--tech-accent) 0%, #0ea5e9 45%, #06b6d4 100%);
-  color: #001F54;
+  background: linear-gradient(120deg, var(--tech-accent) 0%, #142D4E 45%, #0B1F3A 100%);
+  color: #0B1F3A;
 }
 .tech-hero-v2__highlights {
   display: flex;
@@ -1166,7 +1166,7 @@
 }
 .tech-hero-v2__btn--primary {
   color: #fff;
-  background: linear-gradient(135deg, var(--tech-accent) 0%, #0ea5e9 100%);
+  background: linear-gradient(135deg, var(--tech-accent) 0%, #142D4E 100%);
   box-shadow: 0 8px 28px rgba(var(--tech-accent-rgb), 0.38), 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
 }
 .tech-hero-v2__btn--primary:hover {

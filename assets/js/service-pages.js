@@ -296,7 +296,7 @@ function initNeuralCanvas() {
           ctx.beginPath();
           ctx.moveTo(n.x, n.y);
           ctx.lineTo(n2.x, n2.y);
-          ctx.strokeStyle = `rgba(16, 165, 245, ${0.15 * (1 - d / 100)})`;
+          ctx.strokeStyle = `rgba(11, 31, 58, ${0.15 * (1 - d / 100)})`;
           ctx.stroke();
         }
       });

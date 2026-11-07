@@ -1,11 +1,11 @@
 .gproc-page {
-  --gproc-accent: #10A5F5;
-  --gproc-accent-2: #10A5F5;
+  --gproc-accent: #0B1F3A;
+  --gproc-accent-2: #0B1F3A;
   --gproc-navy: #0F172A;
   --gproc-muted: #64748B;
   --gproc-body: #475569;
   --gproc-glass: rgba(255, 255, 255, 0.72);
-  --gproc-border: rgba(16, 165, 245, 0.22);
+  --gproc-border: rgba(11, 31, 58, 0.22);
   --gproc-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
   --gproc-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -37,7 +37,7 @@
 .gproc-ambient__grid {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, rgba(16, 165, 245, 0.12) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgba(11, 31, 58, 0.12) 1px, transparent 0);
   background-size: 28px 28px;
   mask-image: linear-gradient(180deg, #000 0%, transparent 92%);
   opacity: 0.55;
@@ -56,7 +56,7 @@
   height: 420px;
   top: -8%;
   left: -6%;
-  background: radial-gradient(circle, rgba(16, 165, 245, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(11, 31, 58, 0.35), transparent 70%);
 }
 
 .gproc-ambient__orb--2 {
@@ -124,7 +124,7 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--gproc-accent-2);
-  background: rgba(16, 165, 245, 0.1);
+  background: rgba(11, 31, 58, 0.1);
   border: 1px solid var(--gproc-border);
   margin-bottom: 1.25rem;
 }
@@ -190,7 +190,7 @@
   background: linear-gradient(180deg, var(--gproc-accent), var(--gproc-accent-2));
   border-radius: inherit;
   transition: height 0.6s var(--gproc-ease);
-  box-shadow: 0 0 16px rgba(16, 165, 245, 0.45);
+  box-shadow: 0 0 16px rgba(11, 31, 58, 0.45);
 }
 
 .gproc-step {
@@ -248,7 +248,7 @@
 .gproc-step.is-active .gproc-node,
 .gproc-step.is-done .gproc-node {
   border-color: var(--gproc-accent);
-  box-shadow: 0 0 0 6px rgba(16, 165, 245, 0.18), 0 0 20px rgba(16, 165, 245, 0.35);
+  box-shadow: 0 0 0 6px rgba(11, 31, 58, 0.18), 0 0 20px rgba(11, 31, 58, 0.35);
 }
 
 .gproc-step.is-active .gproc-node {
@@ -283,7 +283,7 @@
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(16, 165, 245, 0.45), rgba(99, 102, 241, 0.15), rgba(16, 165, 245, 0.08));
+  background: linear-gradient(135deg, rgba(11, 31, 58, 0.45), rgba(99, 102, 241, 0.15), rgba(11, 31, 58, 0.08));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -296,7 +296,7 @@
 .gproc-card:hover {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 32px 70px rgba(15, 23, 42, 0.12);
-  border-color: rgba(16, 165, 245, 0.28);
+  border-color: rgba(11, 31, 58, 0.28);
 }
 
 .gproc-card:hover::before {
@@ -320,7 +320,7 @@
   justify-content: center;
   font-size: 1.15rem;
   color: var(--gproc-accent-2);
-  background: linear-gradient(135deg, rgba(16, 165, 245, 0.14), rgba(16, 165, 245, 0.06));
+  background: linear-gradient(135deg, rgba(11, 31, 58, 0.14), rgba(11, 31, 58, 0.06));
   border: 1px solid var(--gproc-border);
   transition: transform 0.55s var(--gproc-ease);
 }
@@ -417,7 +417,7 @@
   align-items: center;
   justify-content: center;
   color: var(--gproc-accent-2);
-  background: rgba(16, 165, 245, 0.1);
+  background: rgba(11, 31, 58, 0.1);
   font-size: 1rem;
 }
 
@@ -463,7 +463,7 @@
   transform: translateY(-3px) scale(1.04);
   border-color: var(--gproc-border);
   color: var(--gproc-accent-2);
-  box-shadow: 0 10px 24px rgba(16, 165, 245, 0.12);
+  box-shadow: 0 10px 24px rgba(11, 31, 58, 0.12);
 }
 
 .gproc-tech__badge i {
@@ -535,8 +535,8 @@
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(135deg, #10A5F5 0%, #10A5F5 45%, #10A5F5 100%);
-  box-shadow: 0 28px 60px rgba(16, 165, 245, 0.28);
+  background: linear-gradient(135deg, #0B1F3A 0%, #0B1F3A 45%, #0B1F3A 100%);
+  box-shadow: 0 28px 60px rgba(11, 31, 58, 0.28);
 }
 
 @media (min-width: 640px) {
@@ -613,7 +613,7 @@
 }
 
 .gproc-btn--primary {
-  color: #10A5F5;
+  color: #0B1F3A;
   background: #fff;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
@@ -676,7 +676,7 @@
 
 /* ─── Enterprise Process Hub (oproc-page) ─── */
 .oproc-page {
-  --oproc-accent: #10A5F5;
+  --oproc-accent: #0B1F3A;
   --oproc-accent-rgb: 16, 165, 245;
   --oproc-navy: #0b1f3a;
   --oproc-cyan: #00FFFF;

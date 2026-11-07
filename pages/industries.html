@@ -40,11 +40,23 @@
   <div id="header-placeholder"></div>
 
   <main id="main">
-    <section class="pt-32 pb-12 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
-        <span class="inline-block px-4 py-1.5 rounded-full bg-slate-100 text-slate-700 text-sm font-medium mb-4">Industries</span>
-        <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mb-4">Industry-Specific Solutions</h1>
-        <p class="text-xl text-slate-600 max-w-2xl mx-auto">Deep domain expertise delivering tailored technology solutions across diverse sectors.</p>
+    <section class="ind-hero" aria-labelledby="industries-hero-heading">
+      <div class="ind-hero__bg guudle-parallax-layer" style="background-image:url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&amp;fit=crop&amp;w=2000&amp;q=80')" role="img" aria-label="Modern workplace across the industries Guudle serves"></div>
+      <div class="ind-hero__overlay" aria-hidden="true"></div>
+      <div class="ind-hero__inner">
+        <p class="ind-hero__kicker">Industries · Technology Expertise</p>
+        <h1 id="industries-hero-heading">Industries We Serve</h1>
+        <p>We build secure, practical technology for your industry — clear workflows, compliance awareness, and solutions your teams can actually use.</p>
+      </div>
+    </section>
+
+    <section id="industries-directory" class="py-16 sm:py-20 bg-white" aria-labelledby="industries-directory-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center mb-10">
+          <p class="ind-kicker">Industry directory</p>
+          <h2 id="industries-directory-heading" class="text-3xl sm:text-4xl font-bold mt-3">Every sector we already support</h2>
+        </header>
+        <div id="industries-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       </div>
     </section>
 
@@ -396,12 +408,19 @@
       </div>
     </section>
 
-    <section class="py-20 bg-slate-50 border-t border-slate-200">
-      <div class="max-w-4xl mx-auto px-4 text-center reveal">
-        <h2 class="text-3xl font-bold text-slate-900 mb-4">Don't See Your Industry?</h2>
-        <p class="text-slate-600 mb-8">We adapt our expertise to any sector. Contact us to discuss your specific needs.</p>
-        <a href="contact.html" class="inline-flex px-8 py-4 bg-[#001F54] text-white font-semibold rounded-xl hover:bg-[#0B1F3A] transition-all">Contact Us</a>
+    <section id="industries-security" class="ind-secure py-16 sm:py-20" aria-labelledby="industries-security-heading">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+        <p class="ind-kicker">Security and compliance</p>
+        <h2 id="industries-security-heading" class="text-3xl font-bold mt-3 mb-4">Built with the controls each sector already expects</h2>
+        <p>Identity, encryption, and audit trails are part of the build. Where a sector names a requirement — such as HIPAA, PCI-DSS, HL7/FHIR, or accessibility — the work is designed around that requirement. This is engineering practice, not a claim that Guudle holds a certification.</p>
       </div>
+    </section>
+
+    <section class="ind-cta" aria-labelledby="industries-cta-heading">
+      <p class="ind-kicker">Next step</p>
+      <h2 id="industries-cta-heading" class="text-3xl sm:text-4xl font-bold mt-3">Let's build the right technology for your industry</h2>
+      <p>Tell us about your business, your challenges and your technology goals. Let's explore the right solution together.</p>
+      <a href="contact.html" class="ind-cta__btn inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold">Discuss your project</a>
     </section>
   </main>
 
@@ -416,8 +435,7 @@
   <script>
     const industries = [
       { icon: '🏥', name: 'Healthcare', desc: 'HIPAA-compliant telemedicine, EHR systems, patient portals, and health analytics platforms.', services: ['Telemedicine Apps', 'EHR Integration', 'Health Analytics'] },
-      { icon: '🏦', name: 'Fina
-  nce & Banking', desc: 'Secure fintech platforms, payment systems, trading apps, and regulatory compliance solutions.', services: ['Banking Platforms', 'Payment Gateways', 'Compliance Systems'] },
+      { icon: '🏦', name: 'Finance & Banking', desc: 'Secure fintech platforms, payment systems, trading apps, and regulatory compliance solutions.', services: ['Banking Platforms', 'Payment Gateways', 'Compliance Systems'] },
       { icon: '🛒', name: 'E-commerce & Retail', desc: 'Online stores, marketplaces, inventory management, and omnichannel retail solutions.', services: ['Online Stores', 'Marketplaces', 'POS Integration'] },
       { icon: '🏠', name: 'Real Estate', desc: 'Property listing platforms, CRM for agents, virtual tours, and property management systems.', services: ['Listing Platforms', 'Agent CRM', 'Virtual Tours'] },
       { icon: '🎓', name: 'Education', desc: 'Learning management systems, e-learning platforms, student portals, and educational apps.', services: ['LMS Platforms', 'E-Learning Apps', 'Student Portals'] },
@@ -432,17 +450,29 @@
       { icon: '🏛️', name: 'Enterprise Businesses', desc: 'Digital transformation, legacy modernization, enterprise integration, and custom ERP/CRM.', services: ['Digital Transformation', 'Legacy Modernization', 'Enterprise Integration'] },
     ];
 
+    const links = {
+      'Healthcare': 'industries/healthcare.html',
+      'Finance & Banking': 'industries/finance.html',
+      'E-commerce & Retail': 'industries/retail.html',
+      'Real Estate': 'industries/real-estate.html',
+      'Education': 'industries/education.html',
+      'Manufacturing': 'industries/manufacturing.html',
+      'Logistics': 'industries/logistics.html',
+      'Travel & Hospitality': 'industries/hospitality.html',
+      'Insurance': 'industries/insurance.html'
+    };
     const grid = document.getElementById('industries-grid');
-    grid.innerHTML = industries.map((ind, i) => `
-      <article class="bg-white border border-slate-200 shadow-sm rounded-2xl p-6 reveal ${i % 3 === 1 ? 'delay-100' : i % 3 === 2 ? 'delay-200' : ''}">
-        <span class="text-4xl mb-4 block">${ind.icon}</span>
-        <h2 class="text-xl font-semibold text-slate-900 mb-2">${ind.name}</h2>
-        <p class="text-slate-600 text-sm mb-4">${ind.desc}</p>
-        <div class="flex flex-wrap gap-2">
-          ${ind.services.map(s => `<span class="px-3 py-1 text-xs rounded-full bg-slate-100 text-teal-700">${s}</span>`).join('')}
-        </div>
+    if (grid) {
+      grid.innerHTML = industries.map((ind) => `
+      <article class="ind-card">
+        <span class="text-4xl mb-4 block" aria-hidden="true">${ind.icon}</span>
+        <h2>${ind.name}</h2>
+        <p>${ind.desc}</p>
+        <div class="ind-tags">${ind.services.map((s) => `<span>${s}</span>`).join('')}</div>
+        ${links[ind.name] ? `<a href="${links[ind.name]}" class="inline-flex mt-4 font-semibold">Explore solutions</a>` : ''}
       </article>
     `).join('');
+    }
 
     document.querySelectorAll('.reveal').forEach(el => {
       const observer = new IntersectionObserver(entries => {

@@ -18,7 +18,7 @@
   align-items: center;
   padding: 9.5rem 0 5.5rem;
   isolation: isolate;
-  background-color: #001F54 !important;
+  background-color: #0B1F3A !important;
   background-image: none;
 }
 
@@ -48,9 +48,9 @@
   inset: 0;
   z-index: 2;
   pointer-events: none;
-  background-color: #001F54;
+  background-color: #0B1F3A;
   background-image:
-    radial-gradient(720px 320px at 12% 18%, rgba(16, 165, 245, 0.28), transparent 58%),
+    radial-gradient(720px 320px at 12% 18%, rgba(11, 31, 58, 0.28), transparent 58%),
     linear-gradient(180deg, rgba(0, 31, 84, 0.72) 0%, rgba(6, 24, 51, 0.86) 100%);
 }
 
@@ -66,7 +66,7 @@
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #00DBFF;
+  color: #FFFFFF;
 }
 
 .gbp-page.guudle-site .gbp-hero h1,
@@ -82,10 +82,10 @@
 }
 
 .gbp-page.guudle-site .gbp-hero h1 span,
-.gbp-hero h1 span { color: #00DBFF !important; }
+.gbp-hero h1 span { color: #FFFFFF !important; }
 
 .gbp-page.guudle-site .gbp-hero .gbp-hero__kicker,
-.gbp-page.guudle-site .gbp-px .gbp-hero__kicker { color: #00DBFF !important; }
+.gbp-page.guudle-site .gbp-px .gbp-hero__kicker { color: #FFFFFF !important; }
 
 .gbp-page.guudle-site .gbp-hero p,
 .gbp-page.guudle-site .gbp-hero .gbp-hero__lead,
@@ -133,9 +133,9 @@
 .gbp-btn:hover { transform: translateY(-1px); }
 
 .gbp-btn--primary {
-  background: linear-gradient(90deg, #10A5F5, #00DBFF);
-  color: #001F54;
-  box-shadow: 0 12px 28px rgba(16, 165, 245, 0.28);
+  background: linear-gradient(90deg, #0B1F3A, #FFFFFF);
+  color: #0B1F3A;
+  box-shadow: 0 12px 28px rgba(11, 31, 58, 0.28);
 }
 .gbp-btn--ghost {
   border: 1px solid rgba(255, 255, 255, 0.28);
@@ -148,7 +148,7 @@
 }
 .gbp-btn--outline {
   border: 1px solid #cbd5e1;
-  color: #001F54;
+  color: #0B1F3A;
   background: #fff;
 }
 
@@ -159,7 +159,7 @@
   margin-top: 2.4rem;
   max-width: 34rem;
 }
-.gbp-hero__metrics strong { display: block; font-size: 1.45rem; color: #00DBFF !important; }
+.gbp-hero__metrics strong { display: block; font-size: 1.45rem; color: #FFFFFF !important; }
 .gbp-hero__metrics span { font-size: 0.8rem; color: #ffffff !important; }
 
 .gbp-subnav {
@@ -225,7 +225,7 @@
 }
 .gbp-card:hover {
   transform: translateY(-3px);
-  border-color: #10A5F5;
+  border-color: #0B1F3A;
   box-shadow: 0 16px 36px rgba(0, 31, 84, 0.08);
 }
 .gbp-card__icon {
@@ -234,15 +234,15 @@
   border-radius: 0.75rem;
   display: grid;
   place-items: center;
-  background: rgba(16, 165, 245, 0.12);
+  background: rgba(11, 31, 58, 0.12);
   color: #0a7ec4;
   margin-bottom: 0.85rem;
 }
-.gbp-card h3 { font-size: 1.05rem; font-weight: 750; margin-bottom: 0.35rem; color: #001F54; }
+.gbp-card h3 { font-size: 1.05rem; font-weight: 750; margin-bottom: 0.35rem; color: #0B1F3A; }
 .gbp-card p { font-size: 0.9rem; color: #475569; line-height: 1.55; }
 .gbp-card ul { margin: 0.75rem 0 0; padding: 0; list-style: none; }
 .gbp-card li { font-size: 0.82rem; color: #334155; padding: 0.18rem 0 0.18rem 1rem; position: relative; }
-.gbp-card li::before { content: ""; position: absolute; left: 0; top: 0.55rem; width: 0.4rem; height: 0.4rem; border-radius: 50%; background: #10A5F5; }
+.gbp-card li::before { content: ""; position: absolute; left: 0; top: 0.55rem; width: 0.4rem; height: 0.4rem; border-radius: 50%; background: #0B1F3A; }
 
 .gbp-flow {
   display: grid;
@@ -256,7 +256,7 @@
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.12);
 }
-.gbp-flow strong { display: block; color: #00DBFF; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.45rem; }
+.gbp-flow strong { display: block; color: #FFFFFF; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.45rem; }
 
 .gbp-plans {
   display: grid;
@@ -272,11 +272,11 @@
   padding: 1.6rem 1.5rem;
 }
 .gbp-plan--featured {
-  border-color: #10A5F5;
+  border-color: #0B1F3A;
   box-shadow: 0 20px 40px rgba(0, 31, 84, 0.1);
   transform: translateY(-6px);
 }
-.gbp-plan__price { font-size: 2.2rem; font-weight: 800; color: #001F54; margin: 0.4rem 0; }
+.gbp-plan__price { font-size: 2.2rem; font-weight: 800; color: #0B1F3A; margin: 0.4rem 0; }
 .gbp-plan__price small { font-size: 0.85rem; font-weight: 600; color: #64748b; }
 .gbp-plan ul { list-style: none; padding: 0; margin: 1rem 0 1.25rem; }
 .gbp-plan li { padding: 0.35rem 0; font-size: 0.9rem; color: #334155; }
@@ -312,7 +312,7 @@
   font-weight: 700;
   cursor: pointer;
 }
-.gbp-auth__tab.is-active { background: #001F54; color: #fff; border-color: #001F54; }
+.gbp-auth__tab.is-active { background: #001F54; color: #fff; border-color: #0B1F3A; }
 .gbp-form-note { font-size: 0.8rem; color: #64748b; margin-top: 0.85rem; text-align: center; }
 
 .gbp-saas { background: #f6f8fc; }
@@ -326,7 +326,7 @@
   margin: 0.7rem 0 1rem;
   color: #ffffff !important;
 }
-.gbp-saas .gbp-hero h2 span { color: #00DBFF !important; }
+.gbp-saas .gbp-hero h2 span { color: #FFFFFF !important; }
 .gbp-saas__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -342,7 +342,7 @@
   overflow: hidden;
   padding: 5.5rem 0;
   background:
-    radial-gradient(700px 280px at 8% 0%, rgba(16,165,245,0.16), transparent 55%),
+    radial-gradient(700px 280px at 8% 0%, rgba(11, 31, 58,0.16), transparent 55%),
     #f4f7fb;
 }
 .gbp-home__layout {
@@ -359,7 +359,7 @@
   border-radius: 999px;
   background: #fff;
   border: 1px solid #dbe3ee;
-  color: #001F54;
+  color: #0B1F3A;
 }
 .gbp-preview {
   background: #001F54;
@@ -368,7 +368,7 @@
   color: #fff;
   box-shadow: 0 24px 50px rgba(0, 31, 84, 0.2);
 }
-.gbp-preview__bar { display: flex; justify-content: space-between; font-size: 0.75rem; color: #7dd3fc; margin-bottom: 1rem; }
+.gbp-preview__bar { display: flex; justify-content: space-between; font-size: 0.75rem; color: #FFFFFF; margin-bottom: 1rem; }
 .gbp-preview__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
 .gbp-preview__tile {
   background: rgba(255,255,255,0.08);
@@ -376,7 +376,7 @@
   padding: 0.85rem;
   min-height: 5.2rem;
 }
-.gbp-preview__tile strong { display: block; font-size: 1.2rem; color: #00DBFF; }
+.gbp-preview__tile strong { display: block; font-size: 1.2rem; color: #FFFFFF; }
 
 @media (max-width: 960px) {
   .gbp-grid, .gbp-grid--4, .gbp-plans, .gbp-flow, .gbp-home__layout, .gbp-hero__metrics {

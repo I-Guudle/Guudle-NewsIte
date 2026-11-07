@@ -24,7 +24,7 @@
   height: 420px;
   top: -10%;
   right: -5%;
-  background: rgba(16, 165, 245, 0.25);
+  background: rgba(11, 31, 58, 0.25);
 }
 .ai-svc-hub__orb--2 {
   width: 360px;
@@ -44,21 +44,21 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #10A5F5;
-  background: rgba(16, 165, 245, 0.1);
-  border: 1px solid rgba(16, 165, 245, 0.22);
+  color: #0B1F3A;
+  background: rgba(11, 31, 58, 0.1);
+  border: 1px solid rgba(11, 31, 58, 0.22);
   margin-bottom: 1rem;
 }
 .ai-svc-hub__title {
   font-size: clamp(1.85rem, 4vw, 2.75rem);
   font-weight: 800;
-  color: #0b1f3a;
+  color: #0B1F3A;
   line-height: 1.1;
   margin: 0 0 0.75rem;
 }
 .ai-svc-hub__accent {
-  background: linear-gradient(120deg, #10A5F5, #0ea5e9);
-  color: #001F54;
+  background: linear-gradient(120deg, #0B1F3A, #142D4E);
+  color: #0B1F3A;
 }
 .ai-svc-hub__lead {
   font-size: 1.05rem;
@@ -68,12 +68,12 @@
   margin: 0 0 2.5rem;
 }
 .ai-svc-hub__inline-link {
-  color: #10A5F5;
+  color: #0B1F3A;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.ai-svc-hub__inline-link:hover { color: #0b1f3a; }
+.ai-svc-hub__inline-link:hover { color: #0B1F3A; }
 
 .ai-svc-hub__grid {
   display: grid;
@@ -94,8 +94,8 @@
 }
 .ai-svc-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(16, 165, 245, 0.35);
-  box-shadow: 0 16px 40px rgba(16, 165, 245, 0.14);
+  border-color: rgba(11, 31, 58, 0.35);
+  box-shadow: 0 16px 40px rgba(11, 31, 58, 0.14);
 }
 .ai-svc-card__link {
   display: flex;
@@ -112,7 +112,7 @@
   transform: translateX(-50%);
   width: 70%;
   height: 50%;
-  background: radial-gradient(circle, rgba(16, 165, 245, 0.12), transparent 70%);
+  background: radial-gradient(circle, rgba(11, 31, 58, 0.12), transparent 70%);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.25s ease;
@@ -124,8 +124,8 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #10A5F5;
-  background: rgba(16, 165, 245, 0.1);
+  color: #0B1F3A;
+  background: rgba(11, 31, 58, 0.1);
   padding: 0.2rem 0.5rem;
   border-radius: 0.35rem;
   margin-bottom: 0.75rem;
@@ -137,15 +137,15 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.65rem;
-  background: linear-gradient(135deg, rgba(16, 165, 245, 0.15), rgba(11, 31, 58, 0.06));
-  color: #10A5F5;
+  background: linear-gradient(135deg, rgba(11, 31, 58, 0.15), rgba(11, 31, 58, 0.06));
+  color: #0B1F3A;
   font-size: 1.1rem;
   margin-bottom: 0.85rem;
 }
 .ai-svc-card__title {
   font-size: 1rem;
   font-weight: 800;
-  color: #0b1f3a;
+  color: #0B1F3A;
   margin: 0 0 0.45rem;
   line-height: 1.25;
 }
@@ -162,7 +162,7 @@
   gap: 0.4rem;
   font-size: 0.78rem;
   font-weight: 700;
-  color: #10A5F5;
+  color: #0B1F3A;
   margin-top: auto;
 }
 .ai-svc-card__cta i { transition: transform 0.2s ease; }
@@ -181,14 +181,14 @@
   font-size: 0.875rem;
   font-weight: 700;
   color: #fff;
-  background: linear-gradient(135deg, #10A5F5, #0ea5e9);
-  box-shadow: 0 10px 32px rgba(16, 165, 245, 0.35);
+  background: linear-gradient(135deg, #0B1F3A, #142D4E);
+  box-shadow: 0 10px 32px rgba(11, 31, 58, 0.35);
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .ai-svc-hub__tech-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 40px rgba(16, 165, 245, 0.42);
+  box-shadow: 0 14px 40px rgba(11, 31, 58, 0.42);
 }
 
 /* Technology page — AI service directory */
@@ -227,8 +227,8 @@
   transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 .tech-ai-svc-link:hover {
-  background: rgba(16, 165, 245, 0.12);
-  border-color: rgba(16, 165, 245, 0.35);
+  background: rgba(11, 31, 58, 0.12);
+  border-color: rgba(11, 31, 58, 0.35);
   transform: translateX(4px);
 }
 .tech-ai-svc-link__icon {
@@ -238,7 +238,7 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 0.55rem;
-  background: rgba(16, 165, 245, 0.15);
+  background: rgba(11, 31, 58, 0.15);
   color: #00FFFF;
   flex-shrink: 0;
 }
@@ -274,8 +274,8 @@
 
 .tech-ai-svc-link--hub {
   grid-column: 1 / -1;
-  background: rgba(16, 165, 245, 0.12);
-  border-color: rgba(16, 165, 245, 0.35);
+  background: rgba(11, 31, 58, 0.12);
+  border-color: rgba(11, 31, 58, 0.35);
 }
 .tech-ai-svc-link--hub .tech-ai-svc-link__text strong {
   color: #00FFFF;

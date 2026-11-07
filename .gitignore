@@ -46,3 +46,13 @@ database/_sql_payload.json
 
 # Local agent/session working files
 .superpowers/
+
+# Next.js / Prisma / tests
+.next/
+out/
+storage/private/
+.pgdata/
+playwright-report/
+test-results/
+blob-report/
+*.tsbuildinfo

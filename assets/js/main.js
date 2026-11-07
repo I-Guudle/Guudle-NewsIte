@@ -240,6 +240,7 @@ function initNavActiveLinks() {
     'about.html', 'testimonials.html', 'our-process.html',
   ];
   const sectionRules = [
+    { section: 'industries', match: () => path.includes('/industries') },
     { section: 'services', match: () => path.includes('/services/') },
     { section: 'solutions', match: () => path.includes('/services/enterprise-') || path.includes('/services/erp') || path.includes('/services/crm') || path.includes('/services/hrms') || path.includes('/services/legacy-') || path.includes('/services/cloud-engineering') || path.includes('/services/digital-transformation') || path.includes('/services/it-consulting') || path.includes('/services/workflow-') || path.includes('/services/business-intelligence') || path.includes('/services/enterprise-mobility') || path.includes('/services/data-engineering') || path.includes('/services/cloud-solutions') || path.includes('/services/aws') || path.includes('/services/azure') || path.includes('/services/saas-development') },
     { section: 'portfolio', match: () => path.includes('/our-work') || path.includes('/case-studies') || path.includes('/portfolio') || file === 'our-work.html' || file === 'portfolio.html' },
@@ -392,7 +393,7 @@ function initParticles() {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(16, 165, 245, ${p.opacity})`;
+      ctx.fillStyle = `rgba(11, 31, 58, ${p.opacity})`;
       ctx.fill();
 
       particles.slice(i + 1).forEach((p2) => {
@@ -518,7 +519,7 @@ function initChatbot() {
     div.className = 'flex gap-2' + (type === 'user' ? ' flex-row-reverse' : '');
     div.innerHTML = type === 'user'
       ? `<div class="bg-[#2563EB] rounded-2xl rounded-tr-sm px-3 py-2 text-sm text-white max-w-[80%]">${esc(text)}</div>`
-      : `<div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#2563EB] to-[#10A5F5] flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold">AI</div>
+      : `<div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#2563EB] to-[#0B1F3A] flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold">AI</div>
          <div class="bg-white/8 border border-white/10 rounded-2xl rounded-tl-sm px-3 py-2 text-sm text-white/70 max-w-[80%]">${esc(text)}</div>`;
     messages?.appendChild(div);
     messages.scrollTop = messages.scrollHeight;

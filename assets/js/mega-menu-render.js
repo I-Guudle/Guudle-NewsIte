@@ -19,6 +19,7 @@
     star: 'fa-star', handshake: 'fa-handshake', document: 'fa-file-lines', folder: 'fa-folder-open',
     book: 'fa-book', help: 'fa-circle-question', video: 'fa-video',
     megaphone: 'fa-bullhorn', envelope: 'fa-envelope', list: 'fa-list',
+    clock: 'fa-clock', invoice: 'fa-file-invoice-dollar',
   };
 
   function renderStandardTabContent(base, sec) {
@@ -108,11 +109,11 @@
     const { industries } = window.GuudleMegaMenu;
     return `
       <li class="relative group mega-menu-item list-none">
-        <button type="button" class="mega-trigger nav-link flex items-center gap-1 cursor-pointer bg-transparent border-0" aria-haspopup="true" data-nav-section="industries">
+        <a href="${base}pages/industries.html" class="mega-trigger nav-link flex items-center gap-1 cursor-pointer bg-transparent border-0" aria-haspopup="true" data-nav-section="industries" data-nav-match="industries">
           ${faIcon('building', 'text-xs opacity-70')}
           <span>Industries</span>
           <span class="nav-plus-indicator" aria-hidden="true">+</span>
-        </button>
+        </a>
         <div class="sub_menu mega-panel mega-panel--industries">
           <div class="mega-panel-header">
             <h3 class="mega-panel-heading">Industries We Serve</h3>
@@ -211,6 +212,55 @@
       </li>`;
   }
 
+  function renderPlatformMega(base) {
+    const platform = window.GuudleMegaMenu.platform;
+    if (!platform) return '';
+    return `
+      <li class="relative group mega-menu-item mega-menu-item--wide list-none">
+        <button type="button" class="mega-trigger nav-link flex items-center gap-1 cursor-pointer bg-transparent border-0" aria-haspopup="true" data-nav-section="platform">
+          ${faIcon('layers', 'text-xs opacity-70')}
+          <span>Platform</span>
+          <span class="nav-plus-indicator" aria-hidden="true">+</span>
+        </button>
+        <div class="sub_menu mega-panel mega-panel--platform">
+          <div class="mega-platform-layout">
+            <aside class="mega-platform-intro">
+              <p class="mega-cta-eyebrow">GUUDLE SaaS</p>
+              <h3 class="mega-platform-title">${platform.tagline}</h3>
+              <p class="mega-platform-desc">${platform.support}</p>
+              <div class="mega-platform-actions">
+                <a href="${base}${platform.href}" class="mega-cta-primary">Explore Platform <i class="fas fa-arrow-right ml-2"></i></a>
+                <a href="${base}pages/saas/pricing.html" class="mega-cta-secondary">View Pricing</a>
+              </div>
+              <div class="mega-platform-experiences">
+                ${(platform.experiences || []).map((ex) => `
+                  <a href="${base}${ex.href}" class="mega-platform-exp">
+                    <span class="mega-simple-icon">${faIcon(ex.icon)}</span>
+                    <span><strong>${ex.name}</strong><small>${ex.desc}</small></span>
+                  </a>
+                `).join('')}
+              </div>
+            </aside>
+            <div class="mega-platform-modules">
+              <h4 class="mega-section-title">Connected modules</h4>
+              <div class="mega-platform-grid">
+                ${platform.modules.map((item) => `
+                  <a href="${base}${item.href}" class="mega-solution-card">
+                    <span class="mega-solution-icon">${faIcon(item.icon)}</span>
+                    <span class="mega-solution-body">
+                      <strong>${item.name}</strong>
+                      <small>${item.desc}</small>
+                    </span>
+                  </a>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+          ${megaFooter(base)}
+        </div>
+      </li>`;
+  }
+
   function renderAllMegaMenus(base) {
     if (!window.GuudleMegaMenu) return '';
     const { company } = window.GuudleMegaMenu;
@@ -218,6 +268,7 @@
       renderServicesMega(base),
       renderSolutionsMega(base),
       renderPortfolioLink(base),
+      `<li class="list-none"><a href="${base}pages/saas/pricing.html" class="nav-link flex items-center gap-1" data-nav-section="pricing"><span>Pricing</span></a></li>`,
       renderSimpleDropdown(base, { ...company, icon: 'building', navSection: 'company' }),
     ].join('');
   }
@@ -231,7 +282,20 @@
         title: `Services — ${s.label}`,
         items: s.links.map((l) => ({ name: l.name, href: l.href })),
       }));
+    groups.unshift({
+      title: 'GUUDLE Business Platform',
+      items: [
+        { name: 'Platform Overview', href: 'pages/saas/index.html' },
+        ...(d.platform?.modules || []).map((l) => ({ name: l.name, href: l.href })),
+        { name: 'Pricing', href: 'pages/saas/pricing.html' },
+        { name: 'Sign In', href: 'pages/saas/login.html' },
+        { name: 'Start Free Trial', href: 'pages/saas/register.html' },
+        { name: 'Super Admin Dashboard', href: 'dashboards/admin/index.html' },
+        { name: 'Client Workspace', href: 'dashboards/client/index.html' },
+      ],
+    });
     groups.push(
+      { title: 'Industries', items: [{ name: 'All industries', href: 'pages/industries.html' }, ...d.industries.items.map((l) => ({ name: l.name, href: l.href }))] },
       { title: 'Solutions', items: d.solutions.items.map((l) => ({ name: l.name, href: l.href })) },
       { title: 'Company', items: d.company.items.map((l) => ({ name: l.name, href: l.href })) },
     );

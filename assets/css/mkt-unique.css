@@ -487,7 +487,7 @@
 }
 
 /* Per-page accent tweaks */
-[data-mkt-page="seo"] { --mkt-accent: #10A5F5; --mkt-accent2: #4ADE80; }
+[data-mkt-page="seo"] { --mkt-accent: #0B1F3A; --mkt-accent2: #4ADE80; }
 [data-mkt-page="social-media-marketing"] { --mkt-accent: #EC4899; --mkt-accent2: #F472B6; }
 [data-mkt-page="whatsapp-marketing"] { --mkt-accent: #25D366; --mkt-accent2: #128C7E; }
 

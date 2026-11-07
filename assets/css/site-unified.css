@@ -4,17 +4,29 @@
  */
 
 :root {
-  --brand-bg: #F5F7FA;
-  --brand-bg-alt: #FAFBFC;
-  --brand-surface: #FFFFFF;
+  --primary-navy: #0B1F3A;
+  --secondary-navy: #142D4E;
+  --deep-navy: #071629;
+  --white: #FFFFFF;
+  --soft-white: #F7F9FC;
+  --light-grey: #E8EDF3;
+  --body-text: #46545B;
+  --dark-text: #0B1F3A;
+  --primary-aqua: var(--primary-navy);
+  --deep-aqua: var(--primary-navy);
+  --light-aqua: var(--soft-white);
 
-  /* Typography — WCAG 2.2 AA (see typography.css) */
-  --text-heading: #0A2540;
-  --text-subheading: #334155;
-  --text-body: #475569;
-  --text-muted: #64748B;
-  --text-link: #10A5F5;
-  --text-link-hover: #10A5F5;
+  --brand-bg: var(--soft-white);
+  --brand-bg-alt: var(--light-aqua);
+  --brand-surface: var(--white);
+
+  /* Typography — headings are Dark Navy; body stays neutral on white */
+  --text-heading: var(--primary-navy);
+  --text-subheading: var(--secondary-navy);
+  --text-body: var(--body-text);
+  --text-muted: #5C6E76;
+  --text-link: var(--primary-navy);
+  --text-link-hover: var(--secondary-navy);
   --text-inverse: #FFFFFF;
   --text-inverse-muted: rgba(255, 255, 255, 0.82);
 
@@ -24,16 +36,16 @@
   --brand-charcoal: #334155;
   --brand-slate: var(--text-heading);
   --brand-slate-mid: var(--text-subheading);
-  --brand-accent: #10A5F5;
-  --brand-accent-hover: #10A5F5;
-  --brand-accent-soft: rgba(16, 165, 245, 0.1);
-  --brand-border: #E2E8F0;
+  --brand-accent: var(--primary-navy);
+  --brand-accent-hover: var(--secondary-navy);
+  --brand-accent-soft: rgba(11, 31, 58, 0.08);
+  --brand-border: var(--light-grey);
   --brand-border-light: #ECEFF1;
-  --brand-shadow: 0 4px 24px rgba(16, 165, 245, 0.08);
-  --brand-shadow-hover: 0 12px 40px rgba(16, 165, 245, 0.12);
+  --brand-shadow: 0 4px 24px rgba(11, 31, 58, 0.08);
+  --brand-shadow-hover: 0 12px 40px rgba(11, 31, 58, 0.12);
   --brand-section-alt: #F8FAFC;
-  --brand-cta-bg: #10A5F5;
-  --brand-cta-hover: #10A5F5;
+  --brand-cta-bg: var(--primary-navy);
+  --brand-cta-hover: var(--secondary-navy);
 
   /* Legacy aliases → neutral palette */
   --navy: var(--brand-slate);
@@ -52,7 +64,7 @@
   --corp-accent: var(--brand-accent);
   --corp-accent-2: var(--brand-accent-hover);
   --mkt-accent: var(--brand-accent);
-  --mkt-accent2: #10A5F5;
+  --mkt-accent2: var(--primary-navy);
   --mkt-navy: var(--brand-text);
   --svc-navy: var(--brand-text);
   --svc-navy-deep: var(--brand-charcoal);
@@ -125,8 +137,8 @@ main {
 .home-navy-refined #ai-services-section .aib-hub__eyebrow,
 .home-navy-refined #ai-services-section .aib-hub__title,
 .home-navy-refined #ai-services-section .aib-hub__pillar h4 {
-  color: #00DBFF !important;
-  -webkit-text-fill-color: #00DBFF !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
 }
 
 .home-navy-refined #ai-services-section .aib-tile > p,
@@ -434,8 +446,8 @@ section.bg-red-500,
 .gbp-page.guudle-site .gbp-hero .gbp-hero__kicker,
 .gbp-page.guudle-site .gbp-px .gbp-hero__kicker,
 .gbp-saas .gbp-hero__kicker {
-  color: #00DBFF !important;
-  -webkit-text-fill-color: #00DBFF !important;
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
 }
 
 /* ═══════════════════════════════════════════════════════════
@@ -758,7 +770,7 @@ button:disabled,
 .guudle-site .aix-hub__title,
 .guudle-site .aix-hub h3.aix-hub__title,
 .guudle-site .aix-hub__item h4 {
-  color: #10A5F5 !important;
+  color: #0B1F3A !important;
 }
 
 .guudle-site .aix-hub__tag,
@@ -769,7 +781,7 @@ button:disabled,
 /* AI CTA — teal title, white description */
 .guudle-site .aix-cta__title,
 .guudle-site .aix-cta h3.aix-cta__title {
-  color: #10A5F5 !important;
+  color: #0B1F3A !important;
 }
 
 .guudle-site .aix-cta__sub {
@@ -779,7 +791,7 @@ button:disabled,
 /* AI glow panel — dark navy capability cards */
 .guudle-site .aix-glow-panel__title,
 .guudle-site .aix-glow-panel .aix-sec h4 {
-  color: #10A5F5 !important;
+  color: #0B1F3A !important;
 }
 
 .guudle-site .aix-glow-panel .aix-sec__reveal p {
@@ -789,7 +801,7 @@ button:disabled,
 /* Expertise CTA — teal title, white description */
 .guudle-site .exp-cta__title,
 .guudle-site .exp-cta h3.exp-cta__title {
-  color: #10A5F5 !important;
+  color: #0B1F3A !important;
 }
 
 .guudle-site .exp-cta__sub {
@@ -805,8 +817,8 @@ button:disabled,
 
 .guudle-site #services.srv-expertise--glow .srv-expertise__title,
 .guudle-site #services.srv-expertise--parallax .srv-expertise__title {
-  color: #001F54 !important;
-  -webkit-text-fill-color: #001F54 !important;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A !important;
 }
 
 .guudle-site #services .srv-expertise__subtitle {
@@ -824,7 +836,7 @@ button:disabled,
 }
 
 .guudle-site #services .srv-expertise__eyebrow {
-  color: #00DBFF !important;
+  color: #FFFFFF !important;
 }
 
 .guudle-site .svc-section-head h2,
@@ -858,9 +870,9 @@ button:disabled,
 
 .guudle-site .svc-hero-parallax--clarity h2,
 .guudle-site .svc-hero-parallax--clarity .svc-hero-parallax__title {
-  color: #10A5F5 !important;
-  -webkit-text-fill-color: #10A5F5;
-  text-shadow: 0 2px 28px rgba(16, 165, 245, 0.4);
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A;
+  text-shadow: 0 2px 28px rgba(11, 31, 58, 0.4);
 }
 
 .guudle-site .svc-hero-parallax--clarity .svc-hero-parallax__desc,
@@ -882,8 +894,8 @@ button:disabled,
 /* SaaS Platforms section — navy titles on light bands */
 .guudle-site .saas-plat__title--light,
 .guudle-site .saas-plat__type-label {
-  color: #001F54 !important;
-  -webkit-text-fill-color: #001F54;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A;
 }
 
 .guudle-site .saas-plat__lead--light {
@@ -892,8 +904,8 @@ button:disabled,
 
 .guudle-site .crm-why__title--light,
 .guudle-site .crm-why__benefit-text {
-  color: #001F54 !important;
-  -webkit-text-fill-color: #001F54;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A;
 }
 
 .guudle-site .crm-why__lead--light {
@@ -904,8 +916,8 @@ button:disabled,
 .guudle-site .erp-why__benefit-text,
 .guudle-site .erp-why__tech-title,
 .guudle-site .erp-why__why-item p {
-  color: #001F54 !important;
-  -webkit-text-fill-color: #001F54;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A;
 }
 
 .guudle-site .erp-why__lead--light {
@@ -945,7 +957,7 @@ button:disabled,
   -webkit-background-clip: unset !important;
   background-clip: unset !important;
   -webkit-text-fill-color: currentColor !important;
-  color: #001F54 !important;
+  color: #0B1F3A !important;
 }
 
 .guudle-site .saas-hero:not(.saas-hero--light) .hero-gradient-text,
@@ -963,12 +975,12 @@ button:disabled,
 }
 
 .guudle-site .tsf-section .tsf-highlight {
-  color: #10A5F5 !important;
-  -webkit-text-fill-color: #10A5F5 !important;
+  color: #0B1F3A !important;
+  -webkit-text-fill-color: #0B1F3A !important;
   background: none !important;
   background-image: none !important;
 }
 
 .guudle-site .tsf-section .tsf-subtitle {
-  color: #7EE8FF !important;
+  color: #FFFFFF !important;
 }

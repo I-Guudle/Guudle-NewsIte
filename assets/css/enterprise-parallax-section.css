@@ -52,7 +52,7 @@
   background: linear-gradient(
     135deg,
     rgba(11, 31, 58, 0.88) 0%,
-    rgba(8, 145, 178, 0.55) 45%,
+    rgba(11, 31, 58, 0.55) 45%,
     rgba(11, 31, 58, 0.92) 100%
   );
   z-index: 1;
@@ -91,12 +91,12 @@
   color: rgba(255, 255, 255, 0.92);
   font-size: 0.75rem;
   font-weight: 600;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 0 24px rgba(16, 165, 245, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 0 24px rgba(11, 31, 58, 0.15);
   animation: ent-parallax-float 6s ease-in-out infinite;
 }
 
 .ent-parallax__float i {
-  color: #22d3ee;
+  color: #FFFFFF;
   font-size: 0.85rem;
 }
 
@@ -146,7 +146,7 @@
   box-shadow:
     0 24px 64px rgba(0, 0, 0, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    0 0 48px rgba(16, 165, 245, 0.12);
+    0 0 48px rgba(11, 31, 58, 0.12);
   text-align: center;
   overflow: hidden;
 }
@@ -164,7 +164,7 @@
   transform: translateX(-50%);
   width: 120%;
   height: 80%;
-  background: radial-gradient(ellipse, rgba(16, 165, 245, 0.25) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(11, 31, 58, 0.25) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -175,9 +175,9 @@
   padding: 0.4rem 1rem;
   margin-bottom: 1.25rem;
   border-radius: 999px;
-  background: rgba(16, 165, 245, 0.15);
-  border: 1px solid rgba(34, 211, 238, 0.35);
-  color: #67e8f9;
+  background: rgba(11, 31, 58, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #FFFFFF;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -193,8 +193,8 @@
 }
 
 .ent-parallax__accent {
-  background: linear-gradient(90deg, #22d3ee, #38bdf8, #67e8f9);
-  color: #001F54;
+  background: linear-gradient(90deg, #FFFFFF, #FFFFFF, #FFFFFF);
+  color: #0B1F3A;
 }
 
 .ent-parallax__lead {
@@ -224,14 +224,14 @@
 }
 
 .ent-parallax__btn--primary {
-  background: linear-gradient(135deg, #0891b2 0%, #0ea5e9 50%, #06b6d4 100%);
+  background: linear-gradient(135deg, #0B1F3A 0%, #142D4E 50%, #0B1F3A 100%);
   color: #fff;
-  box-shadow: 0 8px 28px rgba(8, 145, 178, 0.45);
+  box-shadow: 0 8px 28px rgba(11, 31, 58, 0.45);
 }
 
 .ent-parallax__btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 36px rgba(8, 145, 178, 0.55);
+  box-shadow: 0 12px 36px rgba(11, 31, 58, 0.55);
 }
 
 .ent-parallax__btn--ghost {
@@ -246,6 +246,6 @@
 }
 
 .ent-parallax__btn:focus-visible {
-  outline: 2px solid #22d3ee;
+  outline: 2px solid #FFFFFF;
   outline-offset: 3px;
 }
