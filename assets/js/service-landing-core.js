@@ -85,20 +85,22 @@
 
   function initFaq(cfg) {
     if (document.querySelector('.ent-faq')) return;
-    selAll(cfg, 'faq').forEach((item) => {
+    const marked = selAll(cfg, 'faq');
+    const items = marked.length ? marked : document.querySelectorAll('.slp-faq-item');
+    items.forEach((item) => {
       const trigger = item.querySelector(`.${cfg.prefix}-faq-trigger`) || item.querySelector('.slp-faq-trigger');
       const panel = item.querySelector(`.${cfg.prefix}-faq-panel`) || item.querySelector('.slp-faq-panel');
-      if (!trigger || !panel) return;
+      if (!trigger || !panel || trigger.dataset.faqBound === '1') return;
+      trigger.dataset.faqBound = '1';
       trigger.addEventListener('click', () => {
         const isOpen = item.classList.contains('is-open');
-        selAll(cfg, 'faq').forEach((open) => {
-          if (open.classList.contains('is-open')) {
-            open.classList.remove('is-open');
-            const p = open.querySelector(`.${cfg.prefix}-faq-panel`) || open.querySelector('.slp-faq-panel');
-            const t = open.querySelector(`.${cfg.prefix}-faq-trigger`) || open.querySelector('.slp-faq-trigger');
-            if (p) p.style.maxHeight = '0';
-            if (t) t.setAttribute('aria-expanded', 'false');
-          }
+        items.forEach((open) => {
+          if (!open.classList.contains('is-open')) return;
+          open.classList.remove('is-open');
+          const p = open.querySelector(`.${cfg.prefix}-faq-panel`) || open.querySelector('.slp-faq-panel');
+          const t = open.querySelector(`.${cfg.prefix}-faq-trigger`) || open.querySelector('.slp-faq-trigger');
+          if (p) p.style.maxHeight = '0';
+          if (t) t.setAttribute('aria-expanded', 'false');
         });
         if (!isOpen) {
           item.classList.add('is-open');

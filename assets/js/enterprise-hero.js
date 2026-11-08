@@ -87,6 +87,7 @@
 
     var hero = document.querySelector('[data-svc-hero], .saas-hero');
     if (!hero || hero.querySelector('.ent-stage')) return;
+    if (hero.classList.contains('bweb-hero') || hero.classList.contains('lm-hero') || hero.querySelector('img')) return;
 
     var theme = document.body.getAttribute('data-svc-theme') || '';
     var kind = groupFor(theme);

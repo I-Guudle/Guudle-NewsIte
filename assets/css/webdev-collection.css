@@ -1,0 +1,344 @@
+/**
+ * Web Development Services collection.
+ * Homepage (index.html) is the type, colour, and button reference.
+ * Heroes keep their original markup. This file only aligns presentation.
+ */
+
+body.wds-collection {
+  --wds-navy: #0b1f3a;
+  --wds-cta: #0a2540;
+  --wds-heading: #0b1f3a;
+  --wds-body: #475569;
+  --wds-muted: #64748b;
+  --wds-line: rgba(11, 31, 58, 0.12);
+  --wds-canvas: #f7f8fb;
+  --wds-mist: #f3f6fb;
+  --wds-max: 80rem;
+  background: var(--wds-canvas);
+  color: var(--wds-body);
+  font-family: Inter, sans-serif;
+  overflow-x: clip;
+}
+
+body.wds-collection main {
+  overflow-x: clip;
+}
+
+body.wds-collection main > section[id],
+body.wds-collection main section[id] {
+  scroll-margin-top: 8.75rem;
+}
+
+body.wds-collection .lm-wrap,
+body.wds-collection .cma-section-head,
+body.wds-collection .max-w-7xl,
+body.wds-collection .max-w-4xl,
+body.wds-collection .max-w-3xl {
+  max-width: var(--wds-max);
+}
+
+body.wds-collection .max-w-4xl { max-width: 56rem; }
+body.wds-collection .max-w-3xl { max-width: 48rem; }
+
+body.wds-collection .cma-section-head,
+body.wds-collection .bweb-head,
+body.wds-collection .guudle-benefits__head {
+  max-width: 48rem;
+  margin-bottom: 2rem;
+}
+
+body.wds-collection .cma-title,
+body.wds-collection .bweb-head h2,
+body.wds-collection .lm-h2,
+body.wds-collection .guudle-benefits__title,
+body.wds-collection .process-hub-cta__title,
+body.wds-collection .cpox-title {
+  font-family: Poppins, Inter, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.18;
+}
+
+body.wds-collection .cma-lead,
+body.wds-collection .lm-lead,
+body.wds-collection .bweb-head p,
+body.wds-collection .wds-shared-note {
+  font-family: Inter, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--wds-body);
+}
+
+body.wds-collection #cma-deep-dive .cma-lead,
+body.wds-collection .wds-shared-note {
+  max-width: 68ch;
+}
+
+body.wds-collection .wds-shared-note {
+  margin-top: 1rem;
+}
+
+/* Section bands stay inside the viewport */
+body.wds-collection .gv-band--image,
+body.wds-collection .gv-band--solid,
+body.wds-collection .cma-parallax,
+body.wds-collection .ent-parallax,
+body.wds-collection .guudle-benefits,
+body.wds-collection .bweb-cta {
+  overflow: hidden;
+}
+
+body.wds-collection .gv-band--image .cma-glow-card,
+body.wds-collection .gv-band--image .guudle-benefits__card,
+body.wds-collection .gv-band--image .cma-check-item,
+body.wds-collection .gv-band--image .lm-card,
+body.wds-collection .gv-band--image .bweb-feature,
+body.wds-collection .gv-band--image .bweb-service,
+body.wds-collection .gv-band--image .bweb-step,
+body.wds-collection .gv-band--solid .cma-glow-card,
+body.wds-collection .gv-band--solid .guudle-benefits__card,
+body.wds-collection .gv-band--solid .lm-card,
+body.wds-collection .gv-band--solid .bweb-feature,
+body.wds-collection .gv-band--solid .bweb-service,
+body.wds-collection .gv-band--solid .bweb-step,
+body.wds-collection .gv-band--solid .cma-check-item {
+  background: #fff !important;
+  border: 1px solid var(--wds-line) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 10px 32px rgba(11, 31, 58, 0.08) !important;
+}
+
+body.wds-collection .cma-glow-card h3,
+body.wds-collection .guudle-benefits__card-title,
+body.wds-collection .lm-card h3,
+body.wds-collection .bweb-feature h3,
+body.wds-collection .bweb-service h3,
+body.wds-collection .bweb-step h3 {
+  font-family: Poppins, Inter, sans-serif;
+  font-weight: 700;
+  color: var(--wds-heading) !important;
+  -webkit-text-fill-color: var(--wds-heading) !important;
+}
+
+body.wds-collection .cma-glow-card__desc,
+body.wds-collection .cma-glow-card li,
+body.wds-collection .guudle-benefits__card-desc,
+body.wds-collection .lm-card p,
+body.wds-collection .bweb-feature p,
+body.wds-collection .bweb-service p,
+body.wds-collection .bweb-step p {
+  color: var(--wds-body) !important;
+  -webkit-text-fill-color: var(--wds-body) !important;
+  line-height: 1.65;
+}
+
+/* Solid bands keep navy text even where an older photo treatment used white type. */
+body.wds-collection.guudle-site .gv-band--solid.cma-parallax .cma-title,
+body.wds-collection.guudle-site .gv-band--solid.cma-parallax h2,
+body.wds-collection.guudle-site .gv-band--solid .cma-section-head--light .cma-title,
+body.wds-collection.guudle-site .gv-band--solid .cma-section-head--light .cma-badge,
+body.wds-collection.guudle-site #cma-features.gv-band--solid .cma-title,
+body.wds-collection.guudle-site #cma-features.gv-band--solid h2,
+body.wds-collection.guudle-site #cma-features.gv-band--solid .cma-glow-card__title,
+body.wds-collection.guudle-site #cma-features.gv-band--solid h3,
+body.wds-collection.guudle-site .gv-band--solid .cma-glow-card h3,
+body.wds-collection.guudle-site .gv-band--solid .cma-glow-card__title {
+  color: #0b1f3a !important;
+  -webkit-text-fill-color: #0b1f3a !important;
+}
+
+body.wds-collection.guudle-site .gv-band--solid.cma-parallax .cma-lead,
+body.wds-collection.guudle-site .gv-band--solid .cma-section-head--light .cma-lead,
+body.wds-collection.guudle-site #cma-features.gv-band--solid .cma-lead,
+body.wds-collection.guudle-site #cma-features.gv-band--solid .cma-glow-card li,
+body.wds-collection.guudle-site #cma-features.gv-band--solid .cma-glow-card p,
+body.wds-collection.guudle-site .gv-band--solid .cma-glow-card li,
+body.wds-collection.guudle-site .gv-band--solid .cma-glow-card p {
+  color: #475569 !important;
+  -webkit-text-fill-color: #475569 !important;
+}
+
+body.wds-collection .cma-check-grid,
+body.wds-collection .cma-glow-grid,
+body.wds-collection .guudle-benefits__grid,
+body.wds-collection .lm-grid,
+body.wds-collection .bweb-features__grid,
+body.wds-collection .bweb-services,
+body.wds-collection .bweb-steps,
+body.wds-collection .bweb-work {
+  align-items: stretch;
+}
+
+body.wds-collection .cma-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  padding: 0.9rem 1rem;
+  line-height: 1.45;
+}
+
+/* In-page section nav */
+body.wds-collection .slp-sticky-nav {
+  position: sticky;
+  top: var(--site-header-height, 96px);
+  z-index: 30;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--wds-line);
+}
+
+body.wds-collection .slp-sticky-nav__inner {
+  display: flex;
+  gap: 0.4rem;
+  max-width: var(--wds-max);
+  margin: 0 auto;
+  padding: 0.7rem 1rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+body.wds-collection .slp-sticky-nav__inner::-webkit-scrollbar { display: none; }
+
+body.wds-collection .slp-sticky-nav__link {
+  flex: 0 0 auto;
+  color: var(--wds-heading);
+  font-family: Inter, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+}
+
+body.wds-collection .slp-sticky-nav__link:hover,
+body.wds-collection .slp-sticky-nav__link.is-active,
+body.wds-collection .slp-sticky-nav__link[aria-current="true"] {
+  background: rgba(11, 31, 58, 0.06);
+  color: var(--wds-heading);
+}
+
+body.wds-collection a:focus-visible,
+body.wds-collection button:focus-visible,
+body.wds-collection summary:focus-visible,
+body.wds-collection input:focus-visible,
+body.wds-collection textarea:focus-visible,
+body.wds-collection select:focus-visible {
+  outline: 2px solid var(--wds-navy);
+  outline-offset: 3px;
+}
+
+body.wds-collection .svc-related__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 0.75rem;
+  border: 1.5px solid #cbd5e1;
+  background: #fff;
+  color: var(--wds-heading) !important;
+  -webkit-text-fill-color: var(--wds-heading) !important;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.3;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+body.wds-collection .svc-related__link:hover {
+  border-color: var(--wds-navy);
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+body.wds-collection .cpox-contact-form,
+body.wds-collection #svc-contact-form {
+  background: #fff;
+  border: 1px solid var(--wds-line);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+}
+
+body.wds-collection .slp-faq-item,
+body.wds-collection .lm-faq details {
+  background: #fff;
+  border: 1px solid var(--wds-line);
+  border-radius: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+body.wds-collection .slp-faq-trigger,
+body.wds-collection .lm-faq summary {
+  width: 100%;
+  text-align: left;
+  font-family: Poppins, Inter, sans-serif;
+  font-weight: 650;
+  color: var(--wds-heading);
+  background: transparent;
+  min-height: 3rem;
+}
+
+body.wds-collection .bweb-work__card img,
+body.wds-collection .bweb-preview img,
+body.wds-collection .lm-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+body.wds-collection .wds-keep {
+  background-image: none;
+}
+
+@media (max-width: 767px) {
+  body.wds-collection .hero-enterprise-grid,
+  body.wds-collection .bweb-hero__actions,
+  body.wds-collection .lm-hero__actions,
+  body.wds-collection .cma-cta-band .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  body.wds-collection .hero-enterprise-card,
+  body.wds-collection .cma-glow-card,
+  body.wds-collection .guudle-benefits__card,
+  body.wds-collection .lm-card {
+    min-width: 0;
+  }
+
+  body.wds-collection .cpox-contact-grid,
+  body.wds-collection .bweb-hero__inner,
+  body.wds-collection .lm-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  body.wds-collection .svc-related .flex {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  body.wds-collection .svc-related__link {
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.wds-collection .gv-parallax__bg,
+  body.wds-collection .guudle-parallax-layer,
+  body.wds-collection .cma-parallax__bg,
+  body.wds-collection .ent-parallax__bg,
+  body.wds-collection .slp-parallax__bg {
+    transform: none !important;
+  }
+
+  body.wds-collection .svc-related__link,
+  body.wds-collection .hero-cta-navy-primary,
+  body.wds-collection .hero-cta-primary,
+  body.wds-collection .bweb-btn,
+  body.wds-collection .lm-btn {
+    transition: none;
+  }
+}

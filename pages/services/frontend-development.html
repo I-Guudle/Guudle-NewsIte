@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="Frontend development with React, Vue, Angular, and TypeScript. Guudle builds fast, accessible user interfaces.">
   <meta name="twitter:image" content="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=900&q=82&auto=format&fit=crop">
   <title>Frontend Development | Guudle IT Solutions</title>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Frontend Development","description":"Frontend development with React, Vue, Angular, and TypeScript. Guudle builds fast, accessible user interfaces.","provider":{"@type":"Organization","name":"Guudle IT Solutions","url":"https://guudle.com"},"areaServed":"Worldwide","url":"https://guudle.com/pages/services/frontend-development.html"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://guudle.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://guudle.com/pages/services/"},{"@type":"ListItem","position":3,"name":"Frontend Development","item":"https://guudle.com/pages/services/frontend-development.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which framework do you recommend?","acceptedAnswer":{"@type":"Answer","text":"Based on team skills, scale, and SEO requirements — we advise during discovery."}},{"@type":"Question","name":"Do you work from Figma designs?","acceptedAnswer":{"@type":"Answer","text":"Yes — pixel-perfect implementation with design system documentation."}},{"@type":"Question","name":"How do you ensure performance?","acceptedAnswer":{"@type":"Answer","text":"Lighthouse audits, bundle analysis, and performance budgets in CI."}},{"@type":"Question","name":"How do you ensure project success?","acceptedAnswer":{"@type":"Answer","text":"Clear milestones, weekly demos, and KPI tracking aligned to your business goals from day one."}},{"@type":"Question","name":"What engagement models do you offer?","acceptedAnswer":{"@type":"Answer","text":"Fixed-scope projects, dedicated teams, and flexible retainers depending on your timeline and budget."}},{"@type":"Question","name":"Do you sign NDAs and protect IP?","acceptedAnswer":{"@type":"Answer","text":"Yes — full confidentiality, IP assignment, and enterprise-grade security practices."}},{"@type":"Question","name":"How do you handle communication?","acceptedAnswer":{"@type":"Answer","text":"Dedicated project lead, Slack or Teams channel, and structured sprint reviews."}},{"@type":"Question","name":"Can you work with our internal team?","acceptedAnswer":{"@type":"Answer","text":"We integrate with your developers, designers, and product owners as an extension of your team."}},{"@type":"Question","name":"What post-launch support is included?","acceptedAnswer":{"@type":"Answer","text":"Maintenance packages with SLA-backed response times and proactive monitoring."}},{"@type":"Question","name":"How do you price projects?","acceptedAnswer":{"@type":"Answer","text":"Transparent estimates after discovery — no surprise scope creep without written approval."}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Frontend Development","description":"Frontend development with React, Vue, Angular, and TypeScript. Guudle builds fast, accessible user interfaces.","provider":{"@type":"Organization","name":"Guudle IT Solutions","url":"https://guudle.com"},"areaServed":"Worldwide","url":"https://guudle.com/pages/services/frontend-development.html"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://guudle.com/"},{"@type":"ListItem","position":2,"name":"Services","item":"https://guudle.com/pages/services/"},{"@type":"ListItem","position":3,"name":"Frontend Development","item":"https://guudle.com/pages/services/frontend-development.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which framework do you recommend?","acceptedAnswer":{"@type":"Answer","text":"Based on team skills, scale, and SEO requirements — we advise during discovery."}},{"@type":"Question","name":"Do you work from Figma designs?","acceptedAnswer":{"@type":"Answer","text":"Yes — pixel-perfect implementation with design system documentation."}},{"@type":"Question","name":"How do you ensure performance?","acceptedAnswer":{"@type":"Answer","text":"Lighthouse audits, bundle analysis, and performance budgets in CI."}}]}]}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
@@ -42,15 +42,16 @@
   <link rel="stylesheet" href="../../assets/css/custom-mobile-app.css">
   <link rel="stylesheet" href="../../assets/css/enterprise-parallax-section.css">
   <link rel="stylesheet" href="../../assets/css/enterprise-system.css">
+  <link rel="stylesheet" href="../../assets/css/webdev-collection.css" id="webdev-collection-css">
 </head>
-<body class="slp-page service-page scroll-smooth antialiased guudle-site overflow-x-hidden home-premium svc-corpox-page cma-page webdev-photo" data-slp-prefix="svc" data-svc-theme="frontend">
+<body class="wds-collection slp-page service-page scroll-smooth antialiased guudle-site overflow-x-hidden home-premium svc-corpox-page cma-page webdev-photo" data-slp-prefix="svc" data-svc-theme="frontend" data-wds-managed="1">
   <a href="#main" class="skip-link">Skip to main content</a>
   <div class="slp-scroll-progress" data-svc-scroll-progress aria-hidden="true"></div>
   <button type="button" class="slp-back-top" data-svc-back-top aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
   <div id="header-placeholder"></div>
   <main id="main">
 
-    <section id="cma-hero" class="saas-hero saas-hero--light hero-premium hero-premium--enterprise hero-premium--center" aria-labelledby="cma-hero-heading" data-svc-hero>
+    <section id="cma-hero" class="saas-hero saas-hero--light hero-premium hero-premium--enterprise hero-premium--center gv-hero" aria-labelledby="cma-hero-heading" data-svc-hero>
       <div class="hero-dot-grid" aria-hidden="true"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-[96px] relative z-10">
         <div class="py-14 lg:py-20">
@@ -83,381 +84,88 @@
       </div>
       <div class="hero-divider" aria-hidden="true"><span class="hero-divider__line"></span><span class="hero-divider__gem"></span><span class="hero-divider__line"></span></div>
     </section>
+
     <nav class="slp-sticky-nav" data-svc-sticky-nav aria-label="Page sections">
-    <div class="slp-sticky-nav__inner">
-      <a href="#cma-intro" class="slp-sticky-nav__link" data-svc-nav-link>Overview</a>
-      <a href="#cma-services" class="slp-sticky-nav__link" data-svc-nav-link>Services</a>
-      <a href="#cma-enterprise-parallax" class="slp-sticky-nav__link" data-svc-nav-link>Enterprise</a>
-      <a href="#cma-features" class="slp-sticky-nav__link" data-svc-nav-link>Technologies</a>
-      <a href="../industries.html" class="slp-sticky-nav__link" data-svc-nav-link>Industries</a>
-      <a href="#cma-testimonials" class="slp-sticky-nav__link" data-svc-nav-link>Testimonials</a>
-      <a href="#cma-faq" class="slp-sticky-nav__link" data-svc-nav-link>FAQ</a>
-      <a href="#svc-contact" class="slp-sticky-nav__link" data-svc-nav-link>Contact</a>
-    </div>
-  </nav>
-    <section id="cma-intro" class="cma-parallax guudle-parallax-section" data-svc-parallax-section data-svc-parallax-speed="0.32" data-parallax-scale="1.07" aria-labelledby="cma-intro-heading">
-  <div class="cma-parallax__ambient" aria-hidden="true">
-    <span class="cma-parallax__orb cma-parallax__orb--1"></span>
-    <span class="cma-parallax__orb cma-parallax__orb--2"></span>
-  </div>
-  <div class="cma-parallax__bg guudle-parallax-layer slp-parallax__bg" style="background-image:url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1920&amp;q=85&amp;auto=format&amp;fit=crop')" role="img" aria-label="Frontend source code on a monitor"></div>
-  <div class="cma-parallax__overlay cma-parallax__overlay--light" aria-hidden="true"></div>
-  <div class="cma-parallax__content py-20 sm:py-28"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="cma-section-head" data-aos="fade-up">
-        <span class="cma-badge mb-4"><i class="fas fa-code" aria-hidden="true"></i> UI Engineering</span>
-        <h2 id="cma-intro-heading" class="cma-title">Interfaces Users Love to Use <span>By Guudle</span></h2>
-        <p class="cma-lead">We build component-driven frontends with design systems, state management, and performance budgets — delivering interfaces that are fast, accessible, and maintainable. Guudle IT Solutions combines strategic consulting with hands-on engineering — senior developers, UX specialists, and DevOps engineers working as one accountable unit. We audit current platforms, define scalable architecture, build with modern frameworks, and optimize continuously for performance and security. Every engagement includes documentation, analytics setup, and executive summaries tied to launch milestones, technical quality, and business outcomes.</p>
-        <p class="cma-lead mt-4">Whether you are launching a new digital product or modernizing an existing platform, our Frontend Development services align every technical decision to business outcomes — reducing risk, improving user experience, and building web assets that scale with your organization.</p>
-      </header>
-    </div></div>
-</section>
-    <section id="cma-why" class="py-20 sm:py-28 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="cma-section-head" data-aos="fade-up">
-        <h2 class="cma-title">Why Your Business Needs Frontend Development</h2>
-        <p class="cma-lead">Professional frontend development enables your organization to reach buyers, build trust, and convert demand into measurable revenue.</p>
-      </header>
-      <div class="cma-check-grid"><div class="cma-check-item" data-aos="fade-up" data-aos-delay="0"><i class="fas fa-circle-check" aria-hidden="true"></i>React, Vue, Angular expertise</div><div class="cma-check-item" data-aos="fade-up" data-aos-delay="40"><i class="fas fa-circle-check" aria-hidden="true"></i>Design system implementation</div><div class="cma-check-item" data-aos="fade-up" data-aos-delay="80"><i class="fas fa-circle-check" aria-hidden="true"></i>Accessibility (WCAG 2.1)</div><div class="cma-check-item" data-aos="fade-up" data-aos-delay="120"><i class="fas fa-circle-check" aria-hidden="true"></i>Performance optimization</div><div class="cma-check-item" data-aos="fade-up" data-aos-delay="160"><i class="fas fa-circle-check" aria-hidden="true"></i>Launch faster with proven engineering methodologies</div><div class="cma-check-item" data-aos="fade-up" data-aos-delay="200"><i class="fas fa-circle-check" aria-hidden="true"></i>Improve site performance and Core Web Vitals scores</div><div class="cma-check-item" data-aos="fade-up" data-aos-delay="240"><i class="fas fa-circle-check" aria-hidden="true"></i>Reduce technical debt with scalable architecture</div><div class="cma-check-item" data-aos="fade-up" data-aos-delay="280"><i class="fas fa-circle-check" aria-hidden="true"></i>Increase conversions with UX-focused development</div></div>
-    </div>
-  </section>
-    <section id="cma-services" class="py-20 sm:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="cma-section-head" data-aos="fade-up">
-        <span class="cma-badge mb-4"><i class="fas fa-layer-group" aria-hidden="true"></i> Our Services</span>
-        <h2 class="cma-title">Our Frontend Development Services</h2>
-        <p class="cma-lead">Comprehensive frontend development capabilities — strategy, execution, analytics, and optimization under one accountable team.</p>
-      </header>
-      <div class="cma-glow-grid cma-glow-grid--2 lg:grid-cols-3 gap-6"><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="0">
-    <span class="cma-glow-card__glow" aria-hidden="true"></span>
-    <span class="cma-glow-card__shine" aria-hidden="true"></span>
-    <span class="cma-glow-card__icon"><i class="fab fa-react" aria-hidden="true"></i></span>
-    <h3 class="cma-glow-card__title">Modern Frameworks</h3>
-    <p class="cma-glow-card__desc">React, Vue, Angular, and Next.js. Our Frontend Development engineers implement proven frameworks with clean architecture, rigorous testing, and performance optimization — ensuring every deliverable supports scalability, security, and long-term maintainability. We document technical decisions, align with your internal teams, and report progress in language stakeholders can act on immediately. Each capability maps to business outcomes — conversion, operational efficiency, and digital transformation goals.</p>
-    <ul class="cma-glow-card__list"><li><i class="fas fa-check" aria-hidden="true"></i>Architecture aligned to your scale and integration needs</li><li><i class="fas fa-check" aria-hidden="true"></i>Implementation with senior engineers and QA discipline</li><li><i class="fas fa-check" aria-hidden="true"></i>Performance, accessibility, and security validation</li><li><i class="fas fa-check" aria-hidden="true"></i>Documentation and knowledge transfer included</li></ul>
-  </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="55">
-    <span class="cma-glow-card__glow" aria-hidden="true"></span>
-    <span class="cma-glow-card__shine" aria-hidden="true"></span>
-    <span class="cma-glow-card__icon"><i class="fas fa-palette" aria-hidden="true"></i></span>
-    <h3 class="cma-glow-card__title">Design Systems</h3>
-    <p class="cma-glow-card__desc">Reusable component libraries. Our Frontend Development engineers implement proven frameworks with clean architecture, rigorous testing, and performance optimization — ensuring every deliverable supports scalability, security, and long-term maintainability. We document technical decisions, align with your internal teams, and report progress in language stakeholders can act on immediately. Each capability maps to business outcomes — conversion, operational efficiency, and digital transformation goals.</p>
-    <ul class="cma-glow-card__list"><li><i class="fas fa-check" aria-hidden="true"></i>Architecture aligned to your scale and integration needs</li><li><i class="fas fa-check" aria-hidden="true"></i>Implementation with senior engineers and QA discipline</li><li><i class="fas fa-check" aria-hidden="true"></i>Performance, accessibility, and security validation</li><li><i class="fas fa-check" aria-hidden="true"></i>Documentation and knowledge transfer included</li></ul>
-  </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="110">
-    <span class="cma-glow-card__glow" aria-hidden="true"></span>
-    <span class="cma-glow-card__shine" aria-hidden="true"></span>
-    <span class="cma-glow-card__icon"><i class="fas fa-gauge-high" aria-hidden="true"></i></span>
-    <h3 class="cma-glow-card__title">Performance</h3>
-    <p class="cma-glow-card__desc">Code splitting and lazy loading. Our Frontend Development engineers implement proven frameworks with clean architecture, rigorous testing, and performance optimization — ensuring every deliverable supports scalability, security, and long-term maintainability. We document technical decisions, align with your internal teams, and report progress in language stakeholders can act on immediately. Each capability maps to business outcomes — conversion, operational efficiency, and digital transformation goals.</p>
-    <ul class="cma-glow-card__list"><li><i class="fas fa-check" aria-hidden="true"></i>Architecture aligned to your scale and integration needs</li><li><i class="fas fa-check" aria-hidden="true"></i>Implementation with senior engineers and QA discipline</li><li><i class="fas fa-check" aria-hidden="true"></i>Performance, accessibility, and security validation</li><li><i class="fas fa-check" aria-hidden="true"></i>Documentation and knowledge transfer included</li></ul>
-  </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="165">
-    <span class="cma-glow-card__glow" aria-hidden="true"></span>
-    <span class="cma-glow-card__shine" aria-hidden="true"></span>
-    <span class="cma-glow-card__icon"><i class="fas fa-universal-access" aria-hidden="true"></i></span>
-    <h3 class="cma-glow-card__title">Accessibility</h3>
-    <p class="cma-glow-card__desc">Inclusive, keyboard-navigable UIs. Our Frontend Development engineers implement proven frameworks with clean architecture, rigorous testing, and performance optimization — ensuring every deliverable supports scalability, security, and long-term maintainability. We document technical decisions, align with your internal teams, and report progress in language stakeholders can act on immediately. Each capability maps to business outcomes — conversion, operational efficiency, and digital transformation goals.</p>
-    <ul class="cma-glow-card__list"><li><i class="fas fa-check" aria-hidden="true"></i>Architecture aligned to your scale and integration needs</li><li><i class="fas fa-check" aria-hidden="true"></i>Implementation with senior engineers and QA discipline</li><li><i class="fas fa-check" aria-hidden="true"></i>Performance, accessibility, and security validation</li><li><i class="fas fa-check" aria-hidden="true"></i>Documentation and knowledge transfer included</li></ul>
-  </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="220">
-    <span class="cma-glow-card__glow" aria-hidden="true"></span>
-    <span class="cma-glow-card__shine" aria-hidden="true"></span>
-    <span class="cma-glow-card__icon"><i class="fas fa-mobile-screen" aria-hidden="true"></i></span>
-    <h3 class="cma-glow-card__title">Responsive Design</h3>
-    <p class="cma-glow-card__desc">Mobile-first adaptive layouts. Our Frontend Development engineers implement proven frameworks with clean architecture, rigorous testing, and performance optimization — ensuring every deliverable supports scalability, security, and long-term maintainability. We document technical decisions, align with your internal teams, and report progress in language stakeholders can act on immediately. Each capability maps to business outcomes — conversion, operational efficiency, and digital transformation goals.</p>
-    <ul class="cma-glow-card__list"><li><i class="fas fa-check" aria-hidden="true"></i>Architecture aligned to your scale and integration needs</li><li><i class="fas fa-check" aria-hidden="true"></i>Implementation with senior engineers and QA discipline</li><li><i class="fas fa-check" aria-hidden="true"></i>Performance, accessibility, and security validation</li><li><i class="fas fa-check" aria-hidden="true"></i>Documentation and knowledge transfer included</li></ul>
-  </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="275">
-    <span class="cma-glow-card__glow" aria-hidden="true"></span>
-    <span class="cma-glow-card__shine" aria-hidden="true"></span>
-    <span class="cma-glow-card__icon"><i class="fas fa-vial" aria-hidden="true"></i></span>
-    <h3 class="cma-glow-card__title">Testing</h3>
-    <p class="cma-glow-card__desc">Unit, integration, and E2E coverage. Our Frontend Development engineers implement proven frameworks with clean architecture, rigorous testing, and performance optimization — ensuring every deliverable supports scalability, security, and long-term maintainability. We document technical decisions, align with your internal teams, and report progress in language stakeholders can act on immediately. Each capability maps to business outcomes — conversion, operational efficiency, and digital transformation goals.</p>
-    <ul class="cma-glow-card__list"><li><i class="fas fa-check" aria-hidden="true"></i>Architecture aligned to your scale and integration needs</li><li><i class="fas fa-check" aria-hidden="true"></i>Implementation with senior engineers and QA discipline</li><li><i class="fas fa-check" aria-hidden="true"></i>Performance, accessibility, and security validation</li><li><i class="fas fa-check" aria-hidden="true"></i>Documentation and knowledge transfer included</li></ul>
-  </article></div>
-    </div>
-  </section>
-    
-    <section id="cma-enterprise-parallax" class="ent-parallax guudle-parallax-section" data-svc-parallax-section data-svc-parallax-speed="0.38" data-parallax-scale="1.08" aria-labelledby="cma-enterprise-parallax-heading">
-      <div class="ent-parallax__bg slp-parallax__bg guudle-parallax-layer" style="background-image:url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1920&amp;q=85&amp;auto=format&amp;fit=crop')" role="img" aria-label="Interface code open in a code editor"></div>
-      <div class="ent-parallax__overlay" aria-hidden="true"></div>
-      <div class="ent-parallax__mesh" aria-hidden="true"></div>
-      <div class="ent-parallax__floats"><span class="ent-parallax__float ent-parallax__float--1" aria-hidden="true"><i class="fab fa-react"></i><em>React</em></span><span class="ent-parallax__float ent-parallax__float--2" aria-hidden="true"><i class="fas fa-palette"></i><em>Design</em></span><span class="ent-parallax__float ent-parallax__float--3" aria-hidden="true"><i class="fas fa-universal-access"></i><em>A11y</em></span><span class="ent-parallax__float ent-parallax__float--4" aria-hidden="true"><i class="fas fa-gauge-high"></i><em>Speed</em></span></div>
-      <svg class="ent-parallax__svg ent-parallax__svg--top" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path fill="rgba(255,255,255,0.06)" d="M0,32 C360,0 720,48 1080,16 C1260,0 1380,8 1440,24 L1440,0 L0,0 Z"/></svg>
-      <div class="ent-parallax__inner">
-        <article class="ent-parallax__glass" data-aos="fade-up" data-aos-duration="900">
-          <span class="ent-parallax__glass-glow" aria-hidden="true"></span>
-          <span class="ent-parallax__badge"><i class="fas fa-code" aria-hidden="true"></i> UI Engineering</span>
-          <h2 id="cma-enterprise-parallax-heading" class="ent-parallax__title font-display">Frontend Engineering <span class="ent-parallax__accent">Users Love</span></h2>
-          <p class="ent-parallax__lead">React, Vue, and Angular interfaces with design systems, accessibility, and performance budgets — pixel-perfect UIs that load fast and delight users on every device.</p>
-          <div class="ent-parallax__actions">
-            <a href="../contact.html" class="ent-parallax__btn ent-parallax__btn--primary magnetic">Get Started Today <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-            <a href="#svc-contact" class="ent-parallax__btn ent-parallax__btn--ghost"><i class="fas fa-calendar-check" aria-hidden="true"></i> Book Free Consultation</a>
-          </div>
-        </article>
+      <div class="slp-sticky-nav__inner">
+        <a href="#cma-intro" class="slp-sticky-nav__link" data-svc-nav-link>Overview</a>
+        <a href="#cma-services" class="slp-sticky-nav__link" data-svc-nav-link>Services</a>
+        <a href="#cma-features" class="slp-sticky-nav__link" data-svc-nav-link>Technologies</a>
+        <a href="#cma-process" class="slp-sticky-nav__link" data-svc-nav-link>Process</a>
+        <a href="#cma-faq" class="slp-sticky-nav__link" data-svc-nav-link>FAQ</a>
+        <a href="#svc-contact" class="slp-sticky-nav__link" data-svc-nav-link>Contact</a>
       </div>
-      <svg class="ent-parallax__svg ent-parallax__svg--bottom" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true"><path fill="rgba(248,250,252,1)" d="M0,16 C360,48 720,0 1080,32 C1260,48 1380,40 1440,24 L1440,48 L0,48 Z"/></svg>
+    </nav>
+
+    <section id="cma-intro" class="cma-parallax guudle-parallax-section gv-band--image" data-svc-parallax-section data-svc-parallax-speed="0.18" data-parallax-scale="1.05" aria-labelledby="cma-intro-heading">
+      <div class="cma-parallax__bg guudle-parallax-layer slp-parallax__bg" style="background-image:url('../../assets/images/solutions/mobile.jpg')" role="img" aria-label="Responsive interface design on multiple screens"></div>
+      <div class="cma-parallax__overlay" aria-hidden="true"></div>
+      <div class="cma-parallax__content py-16 sm:py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="cma-section-head" data-aos="fade-up">
+            <span class="cma-badge mb-4"><i class="fas fa-code" aria-hidden="true"></i> UI Engineering</span>
+            <h2 id="cma-intro-heading" class="cma-title">Interfaces users love to use</h2>
+            <p class="cma-lead">Component-driven frontends with a design system, clear state, and a performance budget — fast, accessible, and straightforward to maintain.</p>
+          </header>
+        </div>
+      </div>
     </section>
-    <section id="cma-features" class="cma-parallax guudle-parallax-section" data-svc-parallax-section data-svc-parallax-speed="0.32" data-parallax-scale="1.07" aria-labelledby="cma-features-heading">
-  <div class="cma-parallax__ambient" aria-hidden="true">
-    <span class="cma-parallax__orb cma-parallax__orb--1"></span>
-    <span class="cma-parallax__orb cma-parallax__orb--2"></span>
-  </div>
-  <div class="cma-parallax__bg guudle-parallax-layer slp-parallax__bg" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=85&auto=format&fit=crop')" role="img" aria-label="Section background"></div>
-  <div class="cma-parallax__overlay" aria-hidden="true"></div>
-  <div class="cma-parallax__content py-20 sm:py-28"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="cma-section-head cma-section-head--light" data-aos="fade-up">
-        <span class="cma-badge mb-4"><i class="fas fa-microchip" aria-hidden="true"></i> Key Features</span>
-        <h2 id="cma-features-heading" class="cma-title">Technologies & Capabilities for Frontend Development</h2>
-        <p class="cma-lead">Modern frameworks, cloud platforms, and engineering practices — integrated into scalable web solutions built for performance, security, and long-term growth.</p>
-      </header>
-      <div class="cma-glow-grid cma-glow-grid--2 lg:grid-cols-3 gap-6"><article class="cma-glow-card cma-glow-card--dark" data-aos="fade-up" data-aos-delay="0">
-    <span class="cma-glow-card__glow" aria-hidden="true"></span>
-    <span class="cma-glow-card__shine" aria-hidden="true"></span>
-    <span class="cma-glow-card__icon"><i class="fas fa-plug" aria-hidden="true"></i></span>
-    <h3 class="cma-glow-card__title">Frameworks &amp; Languages</h3>
-    
-    <ul class="cma-glow-card__list"><li><i class="fas fa-check" aria-hidden="true"></i>React</li><li><i class="fas fa-check" aria-hidden="true"></i>Vue</li><li><i class="fas fa-check" aria-hidden="true"></i>Angular</li></ul>
-  </article><article class="cma-glow-card cma-glow-card--dark" data-aos="fade-up" data-aos-delay="50">
-    <span class="cma-glow-card__glow" aria-hidden="true"></span>
-    <span class="cma-glow-card__shine" aria-hidden="true"></span>
-    <span class="cma-glow-card__icon"><i class="fas fa-plug" aria-hidden="true"></i></span>
-    <h3 class="cma-glow-card__title">Cloud &amp; DevOps</h3>
-    
-    <ul class="cma-glow-card__list"><li><i class="fas fa-check" aria-hidden="true"></i>TypeScript</li><li><i class="fas fa-check" aria-hidden="true"></i>Next.js</li></ul>
-  </article></div>
-    </div></div>
-</section>
-    
-    <section id="cma-value" class="guudle-benefits guudle-parallax-section" data-svc-parallax-section data-svc-parallax-speed="0.3" data-parallax-scale="1.06" aria-labelledby="cma-value-heading">
-      <div class="guudle-benefits__bg slp-parallax__bg guudle-parallax-layer" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&amp;q=85&amp;auto=format&amp;fit=crop')" role="img" aria-label="Laptop showing a frontend build"></div>
-      <div class="guudle-benefits__overlay" aria-hidden="true"></div>
-      <div class="guudle-benefits__ambient" aria-hidden="true">
-        <div class="guudle-benefits__grid-pattern"></div>
-        <span class="guudle-benefits__orb guudle-benefits__orb--1"></span>
-        <span class="guudle-benefits__orb guudle-benefits__orb--2"></span>
-      </div>
-      <div class="guudle-benefits__content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <header class="guudle-benefits__head" data-aos="fade-up">
-          <span class="guudle-benefits__badge"><i class="fas fa-gem" aria-hidden="true"></i> Why Choose Us</span>
-          <h2 id="cma-value-heading" class="guudle-benefits__title font-display">Why Businesses Choose <span class="guudle-benefits__accent">Us</span></h2>
-          <p class="guudle-benefits__lead">Enterprise-grade Frontend Development focused on engineering quality, scalability, and long-term partnership — not vanity metrics.</p>
+
+    <section id="cma-services" class="py-16 sm:py-20 gv-band--solid gv-solid--white" aria-labelledby="cma-services-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="cma-section-head" data-aos="fade-up">
+          <h2 id="cma-services-heading" class="cma-title">What we build</h2>
+          <p class="cma-lead">Six frontend capabilities, delivered by one team.</p>
         </header>
-        <div class="guudle-benefits__grid guudle-benefits__grid--4" role="list"><article class="guudle-benefits__card" tabindex="0" data-aos="fade-up" data-aos-delay="0">
-    <span class="guudle-benefits__card-shine" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-glow" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-icon" aria-hidden="true"><i class="fas fa-shield-halved"></i></span>
-    <h3 class="guudle-benefits__card-title">Enterprise Security</h3>
-    <p class="guudle-benefits__card-desc">Protect your business with industry-leading security, encryption, compliance, and continuous monitoring.</p>
-  </article><article class="guudle-benefits__card" tabindex="0" data-aos="fade-up" data-aos-delay="70">
-    <span class="guudle-benefits__card-shine" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-glow" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></span>
-    <h3 class="guudle-benefits__card-title">Scalable Architecture</h3>
-    <p class="guudle-benefits__card-desc">Cloud-native solutions that grow seamlessly with your business.</p>
-  </article><article class="guudle-benefits__card" tabindex="0" data-aos="fade-up" data-aos-delay="140">
-    <span class="guudle-benefits__card-shine" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-glow" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-icon" aria-hidden="true"><i class="fas fa-sliders"></i></span>
-    <h3 class="guudle-benefits__card-title">Custom Solutions</h3>
-    <p class="guudle-benefits__card-desc">Every solution is tailored specifically to your workflows and business objectives.</p>
-  </article><article class="guudle-benefits__card" tabindex="0" data-aos="fade-up" data-aos-delay="210">
-    <span class="guudle-benefits__card-shine" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-glow" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-icon" aria-hidden="true"><i class="fas fa-headset"></i></span>
-    <h3 class="guudle-benefits__card-title">Dedicated Support</h3>
-    <p class="guudle-benefits__card-desc">Long-term technical partnership with proactive maintenance and SLA-backed support.</p>
-  </article><article class="guudle-benefits__card" tabindex="0" data-aos="fade-up" data-aos-delay="280">
-    <span class="guudle-benefits__card-shine" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-glow" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-icon" aria-hidden="true"><i class="fas fa-code"></i></span>
-    <h3 class="guudle-benefits__card-title">Modern Technology</h3>
-    <p class="guudle-benefits__card-desc">Built using modern frameworks, cloud platforms, AI technologies, and enterprise best practices.</p>
-  </article><article class="guudle-benefits__card" tabindex="0" data-aos="fade-up" data-aos-delay="350">
-    <span class="guudle-benefits__card-shine" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-glow" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-icon" aria-hidden="true"><i class="fas fa-rocket"></i></span>
-    <h3 class="guudle-benefits__card-title">Future-Ready Solutions</h3>
-    <p class="guudle-benefits__card-desc">Designed for long-term scalability, flexibility, and continuous innovation.</p>
-  </article><article class="guudle-benefits__card" tabindex="0" data-aos="fade-up" data-aos-delay="420">
-    <span class="guudle-benefits__card-shine" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-glow" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-icon" aria-hidden="true"><i class="fas fa-gauge-high"></i></span>
-    <h3 class="guudle-benefits__card-title">Performance Optimized</h3>
-    <p class="guudle-benefits__card-desc">Fast, responsive, and engineered for exceptional user experiences across all devices.</p>
-  </article><article class="guudle-benefits__card" tabindex="0" data-aos="fade-up" data-aos-delay="420">
-    <span class="guudle-benefits__card-shine" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-glow" aria-hidden="true"></span>
-    <span class="guudle-benefits__card-icon" aria-hidden="true"><i class="fas fa-plug"></i></span>
-    <h3 class="guudle-benefits__card-title">Seamless Integration</h3>
-    <p class="guudle-benefits__card-desc">Connect effortlessly with existing business systems, APIs, cloud services, and third-party platforms.</p>
-  </article></div>
+        <div class="cma-glow-grid cma-glow-grid--2 lg:grid-cols-3 gap-6">
+          <article class="cma-glow-card"><span class="cma-glow-card__icon"><i class="fas fa-layer-group" aria-hidden="true"></i></span><h3 class="cma-glow-card__title">Modern frameworks</h3><p class="cma-glow-card__desc">React, Vue, Angular, and Next.js.</p></article>
+          <article class="cma-glow-card"><span class="cma-glow-card__icon"><i class="fas fa-swatchbook" aria-hidden="true"></i></span><h3 class="cma-glow-card__title">Design systems</h3><p class="cma-glow-card__desc">Reusable component libraries.</p></article>
+          <article class="cma-glow-card"><span class="cma-glow-card__icon"><i class="fas fa-gauge-high" aria-hidden="true"></i></span><h3 class="cma-glow-card__title">Performance</h3><p class="cma-glow-card__desc">Code splitting and lazy loading.</p></article>
+          <article class="cma-glow-card"><span class="cma-glow-card__icon"><i class="fas fa-universal-access" aria-hidden="true"></i></span><h3 class="cma-glow-card__title">Accessibility</h3><p class="cma-glow-card__desc">Inclusive, keyboard-navigable UIs.</p></article>
+          <article class="cma-glow-card"><span class="cma-glow-card__icon"><i class="fas fa-mobile-screen" aria-hidden="true"></i></span><h3 class="cma-glow-card__title">Responsive design</h3><p class="cma-glow-card__desc">Mobile-first adaptive layouts.</p></article>
+          <article class="cma-glow-card"><span class="cma-glow-card__icon"><i class="fas fa-vial" aria-hidden="true"></i></span><h3 class="cma-glow-card__title">Testing</h3><p class="cma-glow-card__desc">Unit, integration, and end-to-end coverage.</p></article>
+        </div>
       </div>
     </section>
-    
-    
-    <section id="svc-process-hub" class="process-hub-cta" aria-labelledby="svc-process-hub-heading">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-    <div class="process-hub-cta__card" data-aos="fade-up">
-      <span class="process-hub-cta__glow" aria-hidden="true"></span>
-      <div class="process-hub-cta__content">
-        <span class="process-hub-cta__badge"><i class="fas fa-route" aria-hidden="true"></i> Development Process</span>
-        <h2 id="svc-process-hub-heading" class="process-hub-cta__title">Our Proven Development Process</h2>
-        <p class="process-hub-cta__desc">Discovery, strategy, architecture, design, development, testing, deployment, and support — discover how our engineers transform requirements into production-ready web platforms.</p>
-        <a href="../our-process.html" class="process-hub-cta__btn">Explore Our Development Process <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+
+    <section id="cma-features" class="py-16 sm:py-20 gv-band--solid gv-solid--mist" aria-labelledby="cma-features-heading">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="cma-section-head" data-aos="fade-up">
+          <h2 id="cma-features-heading" class="cma-title">Technologies</h2>
+          <p class="cma-lead">Chosen for the product, the team, and how the interface needs to rank and scale.</p>
+        </header>
+        <ul class="cma-check-grid">
+          <li class="cma-check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> React</li>
+          <li class="cma-check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> Vue</li>
+          <li class="cma-check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> Angular</li>
+          <li class="cma-check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> Next.js</li>
+          <li class="cma-check-item"><i class="fas fa-circle-check" aria-hidden="true"></i> TypeScript</li>
+        </ul>
       </div>
-    </div>
-  </div>
-</section>
-    <section id="cma-process" class="py-20 sm:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="cma-section-head" data-aos="fade-up">
-        <span class="cma-badge mb-4"><i class="fas fa-route" aria-hidden="true"></i> Our Process</span>
-        <h2 class="cma-title">How We Deliver Frontend Development</h2>
-        <p class="cma-lead">A proven methodology from discovery through scaling — transparent milestones, accountable KPIs, and continuous optimization at every stage.</p>
-      </header>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="0">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-compass" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Discovery</h3>
-          <p class="cma-glow-card__desc">Stakeholder workshops and technical assessment. We map goals, constraints, data sources, and success metrics before writing code.</p>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="40">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-magnifying-glass" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Strategy</h3>
-          <p class="cma-glow-card__desc">Roadmap, architecture, and ROI modeling. Prioritized backlog with clear milestones and business-case alignment.</p>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="80">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-chess" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Design</h3>
-          <p class="cma-glow-card__desc">UX flows, prototypes, and solution design. Interactive prototypes validated with users and engineering feasibility.</p>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="120">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-calendar-days" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Development</h3>
-          <p class="cma-glow-card__desc">Agile sprints with transparent demos. Two-week iterations delivering testable, production-ready increments.</p>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="160">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Testing</h3>
-          <p class="cma-glow-card__desc">QA, security review, and performance validation. Automated tests, accessibility checks, and load testing before release.</p>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="200">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-rocket" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Deployment</h3>
-          <p class="cma-glow-card__desc">CI/CD launch with monitoring. Zero-downtime releases, observability, and runbooks for operations.</p>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="240">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-gauge-high" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Optimization</h3>
-          <p class="cma-glow-card__desc">Continuous improvement post-launch. Analytics-driven enhancements, model retraining, and feature iteration.</p>
-        </article></div>
-    </div>
-  </section>
-    <section id="cma-deep-dive" class="py-20 sm:py-28 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="cma-section-head" data-aos="fade-up">
-        <span class="cma-badge mb-4"><i class="fas fa-book-open" aria-hidden="true"></i> In Depth</span>
-        <h2 class="cma-title">Frontend Development for Pixel-Perfect Digital Experiences</h2>
-      </header>
-      <div class="max-w-4xl mx-auto space-y-6"><p class="cma-lead" data-aos="fade-up" data-aos-delay="0">Frontend development determines how users perceive and interact with your digital products. Guudle IT Solutions builds modern frontends with React, Vue, Angular, Next.js, and TypeScript — component-driven architectures that prioritize performance, accessibility, and maintainability. We translate Figma designs into production code with design system documentation that accelerates future feature development.</p><p class="cma-lead mt-0" data-aos="fade-up" data-aos-delay="60">Performance engineering includes code splitting, lazy loading, image optimization, and bundle analysis integrated into CI pipelines. Accessibility compliance targets WCAG 2.2 AA — keyboard navigation, screen reader support, color contrast, and focus management validated through automated and manual testing. State management patterns — Redux, Zustand, Pinia, NgRx — are selected based on application complexity and team familiarity.</p><p class="cma-lead mt-0" data-aos="fade-up" data-aos-delay="120">API integration connects frontends to REST, GraphQL, and WebSocket backends with robust error handling, loading states, and offline-capable patterns where user experience demands resilience. Testing coverage spans unit tests, integration tests, and end-to-end automation with Cypress or Playwright — catching regressions before they reach production.</p><p class="cma-lead mt-0" data-aos="fade-up" data-aos-delay="180">Guudle frontend teams support greenfield builds, legacy UI modernization, and design system creation for enterprises scaling digital product portfolios. Our deliverables include developer documentation, Storybook component libraries, and handoff materials that enable your internal teams to extend the codebase confidently.</p><p class="cma-lead mt-0" data-aos="fade-up" data-aos-delay="240">Our engagement model includes structured discovery workshops, shared project workspaces, weekly demos, and executive summaries written for decision-makers. We integrate with your existing tools — Jira, Azure DevOps, Figma, GitHub — rather than forcing proprietary workflows. From initial architecture through post-launch optimization, Guudle remains accountable to the outcomes defined in discovery — with full transparency when we adjust scope, timeline, or technical approach based on evolving requirements.</p><p class="cma-lead mt-0" data-aos="fade-up" data-aos-delay="300">Quality assurance spans automated testing, accessibility validation, performance benchmarking, and security review gates before every production release. Documentation covers architecture decisions, deployment procedures, and editor guides so your team inherits a maintainable platform — not a black box dependent on vendor knowledge alone.</p><p class="cma-lead mt-0" data-aos="fade-up" data-aos-delay="300">Cross-functional collaboration is central to our delivery approach — product owners, designers, engineers, and QA specialists work in unified sprints with clear acceptance criteria and demo-ready increments. Stakeholder feedback is incorporated continuously so the final platform reflects real business needs rather than assumptions made at project kickoff.</p><p class="cma-lead mt-0" data-aos="fade-up" data-aos-delay="300">Partner with Guudle IT Solutions for frontend development that combines strategic clarity, engineering excellence, and long-term support — the same enterprise discipline trusted by growth-stage startups and global organizations alike. Request a consultation to receive a tailored roadmap, technical assessment, and transparent proposal aligned to your goals, timeline, and budget. Our onboarding process is efficient, collaborative, and designed to deliver early milestones within the first sprint cycle.</p></div>
-    </div>
-  </section>
-    <section id="cma-why-us" class="py-20 sm:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="cma-section-head" data-aos="fade-up">
-        <h2 class="cma-title">Why Choose Guudle for Frontend Development?</h2>
-        <p class="cma-lead">Certified experts, modern engineering practices, and transparent delivery — built for scalable web platforms and long-term partnership.</p>
-      </header>
-      <div class="cma-glow-grid cma-glow-grid--2 lg:grid-cols-4 gap-4"><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="0">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Enterprise-Grade Engineering</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="35">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Scalable Architecture</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="70">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Security-First Development</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="105">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Performance Optimization</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="140">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Dedicated Project Team</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="175">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Agile Sprint Delivery</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="210">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">WCAG Accessibility Standards</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="245">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">SEO-Ready Foundations</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="280">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Cloud-Native Deployment</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="315">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Long-Term Partnership</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="350">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Transparent Communication</h3>
-        </article><article class="cma-glow-card" data-aos="fade-up" data-aos-delay="350">
-          <span class="cma-glow-card__glow" aria-hidden="true"></span>
-          <span class="cma-glow-card__shine" aria-hidden="true"></span>
-          <span class="cma-glow-card__icon"><i class="fas fa-check" aria-hidden="true"></i></span>
-          <h3 class="cma-glow-card__title">Post-Launch Support</h3>
-        </article></div>
-    </div>
-  </section>
-    <section id="cma-testimonials" class="py-20 sm:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <header class="cma-section-head" data-aos="fade-up">
-        <span class="cma-badge mb-4"><i class="fas fa-quote-left" aria-hidden="true"></i> Client Success</span>
-        <h2 class="cma-title">What Our Clients Say</h2>
-        <p class="cma-lead">Enterprise leaders trust Guudle IT Solutions for frontend development that delivers measurable business impact.</p>
-      </header>
-      <div class="grid md:grid-cols-3 gap-6"><blockquote class="cma-glow-card" data-aos="fade-up" data-aos-delay="0">
-      <span class="cma-glow-card__glow" aria-hidden="true"></span>
-      <div class="cpox-testimonial__stars mb-3" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <p class="cma-glow-card__desc">"Guudle rebuilt our web platform from the ground up — faster load times, cleaner architecture, and a CMS our marketing team actually uses every day."</p>
-      <footer class="mt-4 text-sm"><strong>Sarah Chen</strong><br><span class="text-slate-500">VP Digital, FinScale Technologies</span></footer>
-    </blockquote><blockquote class="cma-glow-card" data-aos="fade-up" data-aos-delay="70">
-      <span class="cma-glow-card__glow" aria-hidden="true"></span>
-      <div class="cpox-testimonial__stars mb-3" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <p class="cma-glow-card__desc">"Their engineering team operates like an extension of ours — transparent sprints, rigorous QA, and deliverables that consistently meet our launch deadlines."</p>
-      <footer class="mt-4 text-sm"><strong>Marcus Webb</strong><br><span class="text-slate-500">CTO, NovaRetail Group</span></footer>
-    </blockquote><blockquote class="cma-glow-card" data-aos="fade-up" data-aos-delay="140">
-      <span class="cma-glow-card__glow" aria-hidden="true"></span>
-      <div class="cpox-testimonial__stars mb-3" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-      <p class="cma-glow-card__desc">"From discovery through deployment, every layer was thoughtfully architected. We launched on schedule with a platform built to scale."</p>
-      <footer class="mt-4 text-sm"><strong>Priya Sharma</strong><br><span class="text-slate-500">Director of Product, HealthBridge Systems</span></footer>
-    </blockquote></div>
-    </div>
-  </section>
-    
-        <section id="cma-faq" class="py-20 sm:py-28 bg-white" aria-labelledby="cma-faq-heading">
+    </section>
+
+    <section id="cma-process" class="cma-parallax guudle-parallax-section gv-band--image" data-svc-parallax-section data-svc-parallax-speed="0.18" data-parallax-scale="1.05" aria-labelledby="cma-process-heading">
+      <div class="cma-parallax__bg guudle-parallax-layer slp-parallax__bg" style="background-image:url('../../assets/images/solutions/workspace.jpg')" role="img" aria-label="Frontend layout being built in the browser"></div>
+      <div class="cma-parallax__overlay" aria-hidden="true"></div>
+      <div class="cma-parallax__content py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <header class="cma-section-head" data-aos="fade-up">
+            <h2 id="cma-process-heading" class="cma-title">How we deliver</h2>
+            <p class="cma-lead">Four steps, with a working demo at each stage.</p>
+          </header>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="cma-glow-card"><h3 class="cma-glow-card__title">01 Discovery</h3><p class="cma-glow-card__desc">Goals, constraints, and success metrics before code.</p></article>
+            <article class="cma-glow-card"><h3 class="cma-glow-card__title">02 Design</h3><p class="cma-glow-card__desc">Figma flows turned into a documented component system.</p></article>
+            <article class="cma-glow-card"><h3 class="cma-glow-card__title">03 Build</h3><p class="cma-glow-card__desc">Short sprints with a demo you can click through.</p></article>
+            <article class="cma-glow-card"><h3 class="cma-glow-card__title">04 Test</h3><p class="cma-glow-card__desc">Accessibility, performance, and browser checks before release.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cma-faq" class="py-16 sm:py-20 gv-band--solid gv-solid--white" aria-labelledby="cma-faq-heading">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <header class="cma-section-head">
           <h2 id="cma-faq-heading" class="cma-title">FAQ</h2>
-          <p class="cma-lead">Answers to the questions clients ask before a project starts.</p>
         </header>
         <div class="slp-faq-item">
           <button type="button" class="slp-faq-trigger" aria-expanded="false">Which framework do you recommend? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
@@ -471,94 +179,71 @@
           <button type="button" class="slp-faq-trigger" aria-expanded="false">How do you ensure performance? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
           <div class="slp-faq-panel"><div class="slp-faq-panel__inner">Lighthouse audits, bundle analysis, and performance budgets in CI.</div></div>
         </div>
-        <div class="slp-faq-item">
-          <button type="button" class="slp-faq-trigger" aria-expanded="false">How do you ensure project success? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-          <div class="slp-faq-panel"><div class="slp-faq-panel__inner">Clear milestones, weekly demos, and KPI tracking aligned to your business goals from day one.</div></div>
-        </div>
-        <div class="slp-faq-item">
-          <button type="button" class="slp-faq-trigger" aria-expanded="false">What engagement models do you offer? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-          <div class="slp-faq-panel"><div class="slp-faq-panel__inner">Fixed-scope projects, dedicated teams, and flexible retainers depending on your timeline and budget.</div></div>
-        </div>
-        <div class="slp-faq-item">
-          <button type="button" class="slp-faq-trigger" aria-expanded="false">Do you sign NDAs and protect IP? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-          <div class="slp-faq-panel"><div class="slp-faq-panel__inner">Yes — full confidentiality, IP assignment, and enterprise-grade security practices.</div></div>
-        </div>
-        <div class="slp-faq-item">
-          <button type="button" class="slp-faq-trigger" aria-expanded="false">How do you handle communication? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-          <div class="slp-faq-panel"><div class="slp-faq-panel__inner">Dedicated project lead, Slack or Teams channel, and structured sprint reviews.</div></div>
-        </div>
-        <div class="slp-faq-item">
-          <button type="button" class="slp-faq-trigger" aria-expanded="false">Can you work with our internal team? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-          <div class="slp-faq-panel"><div class="slp-faq-panel__inner">We integrate with your developers, designers, and product owners as an extension of your team.</div></div>
-        </div>
-        <div class="slp-faq-item">
-          <button type="button" class="slp-faq-trigger" aria-expanded="false">What post-launch support is included? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-          <div class="slp-faq-panel"><div class="slp-faq-panel__inner">Maintenance packages with SLA-backed response times and proactive monitoring.</div></div>
-        </div>
-        <div class="slp-faq-item">
-          <button type="button" class="slp-faq-trigger" aria-expanded="false">How do you price projects? <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
-          <div class="slp-faq-panel"><div class="slp-faq-panel__inner">Transparent estimates after discovery — no surprise scope creep without written approval.</div></div>
+      </div>
+    </section>
+
+    <section id="cma-cta" class="cma-parallax guudle-parallax-section gv-band--image" data-svc-parallax-section data-svc-parallax-speed="0.18" data-parallax-scale="1.05" aria-labelledby="cma-cta-heading">
+      <div class="cma-parallax__bg guudle-parallax-layer slp-parallax__bg" style="background-image:url('../../assets/images/solutions/agency.jpg')" role="img" aria-label="Modern web interface design review"></div>
+      <div class="cma-parallax__overlay" aria-hidden="true"></div>
+      <div class="cma-parallax__content py-16 sm:py-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center cma-cta-band">
+          <h2 id="cma-cta-heading">Build your frontend</h2>
+          <p>Tell us about the interface. We reply within one business day.</p>
+          <div class="flex flex-wrap justify-center gap-3 mt-6">
+            <a href="../contact.html" class="cma-btn-primary">Get Started Today <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#svc-contact" class="cma-btn-outline"><i class="fas fa-calendar-check" aria-hidden="true"></i> Book Free Consultation</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="cma-cta" class="cma-parallax guudle-parallax-section" data-svc-parallax-section data-svc-parallax-speed="0.32" data-parallax-scale="1.07" aria-labelledby="cma-cta-heading">
-  <div class="cma-parallax__ambient" aria-hidden="true">
-    <span class="cma-parallax__orb cma-parallax__orb--1"></span>
-    <span class="cma-parallax__orb cma-parallax__orb--2"></span>
-  </div>
-  <div class="cma-parallax__bg guudle-parallax-layer slp-parallax__bg" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1920&q=85&auto=format&fit=crop')" role="img" aria-label="Section background"></div>
-  <div class="cma-parallax__overlay" aria-hidden="true"></div>
-  <div class="cma-parallax__content py-20 sm:py-28"><div class="max-w-4xl mx-auto px-4 sm:px-6 cma-cta-band" data-aos="fade-up">
-      <h2 id="cma-cta-heading">Build Your Frontend</h2>
-      <p>Partner with Guudle IT Solutions for enterprise-grade frontend development — scalable, secure, and built for long-term success.</p>
-      <div class="flex flex-wrap justify-center gap-3">
-        <a href="../contact.html" class="cma-btn-primary">Get Started Today <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
-        <a href="#svc-contact" class="cma-btn-outline"><i class="fas fa-calendar-check" aria-hidden="true"></i> Book Free Consultation</a>
-      </div>
-    </div></div>
-</section>
-    <section id="svc-contact" class="cpox-section cpox-section--gray cpox-contact py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="cpox-contact-grid">
-        <div class="cpox-contact-aside" data-aos="fade-up">
-          <div class="cpox-label"><span class="cpox-label__line" aria-hidden="true"></span><span class="cpox-label__text">Contact</span></div>
-          <h2 class="cpox-title font-display">Start Your <span class="cpox-accent">Frontend Development</span> Project</h2>
-          <p class="cpox-lead">Tell us about your web project. We respond within one business day.</p>
-          <ul class="cpox-contact-list">
-            <li><i class="fas fa-envelope" aria-hidden="true"></i> hello@guudle.com</li>
-            <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+447908727559">07908 727559</a></li>
-            <li><i class="fas fa-clock" aria-hidden="true"></i> Response within 24 hours</li>
-          </ul>
+    <section id="svc-contact" class="cpox-section cpox-section--gray cpox-contact py-16 gv-band--solid gv-solid--mist">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="cpox-contact-grid">
+          <div class="cpox-contact-aside">
+            <div class="cpox-label"><span class="cpox-label__line" aria-hidden="true"></span><span class="cpox-label__text">Contact</span></div>
+            <h2 class="cpox-title font-display">Start your <span class="cpox-accent">frontend</span> project</h2>
+            <p class="cpox-lead">Share the screens, the stack, and the deadline.</p>
+            <ul class="cpox-contact-list">
+              <li><i class="fas fa-envelope" aria-hidden="true"></i> hello@guudle.com</li>
+              <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+447908727559">07908 727559</a></li>
+              <li><i class="fas fa-clock" aria-hidden="true"></i> Response within 24 hours</li>
+            </ul>
+          </div>
+          <form id="svc-contact-form" class="cpox-contact-form" novalidate>
+            <div data-slp-field>
+              <label for="svc-name">Full Name <span class="text-red-500">*</span></label>
+              <input type="text" id="svc-name" name="name" class="slp-form-input" required placeholder="Your full name" autocomplete="name">
+              <span class="slp-form-error" role="alert"></span>
+            </div>
+            <div data-slp-field>
+              <label for="svc-email">Work Email <span class="text-red-500">*</span></label>
+              <input type="email" id="svc-email" name="email" class="slp-form-input" required placeholder="you@company.com" autocomplete="email">
+              <span class="slp-form-error" role="alert"></span>
+            </div>
+            <div data-slp-field>
+              <label for="svc-message">Project Details <span class="text-red-500">*</span></label>
+              <textarea id="svc-message" name="message" rows="4" class="slp-form-input resize-y" required placeholder="Which screens and frameworks are in scope?"></textarea>
+              <span class="slp-form-error" role="alert"></span>
+            </div>
+            <button type="submit" class="cpox-cta__btn cpox-cta__btn--primary cpox-cta__btn--full">Submit Inquiry <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+          </form>
         </div>
-        <form id="svc-contact-form" class="cpox-contact-form" data-aos="fade-up" data-aos-delay="80" novalidate>
-          <div data-slp-field>
-            <label for="svc-name">Full Name <span class="text-red-500">*</span></label>
-            <input type="text" id="svc-name" name="name" class="slp-form-input" required placeholder="Your full name" autocomplete="name">
-            <span class="slp-form-error" role="alert"></span>
-          </div>
-          <div data-slp-field>
-            <label for="svc-email">Work Email <span class="text-red-500">*</span></label>
-            <input type="email" id="svc-email" name="email" class="slp-form-input" required placeholder="you@company.com" autocomplete="email">
-            <span class="slp-form-error" role="alert"></span>
-          </div>
-          <div data-slp-field>
-            <label for="svc-message">Project Details <span class="text-red-500">*</span></label>
-            <textarea id="svc-message" name="message" rows="4" class="slp-form-input resize-y" required placeholder="Describe your web project goals and timeline..."></textarea>
-            <span class="slp-form-error" role="alert"></span>
-          </div>
-          <button type="submit" class="cpox-cta__btn cpox-cta__btn--primary cpox-cta__btn--full">Submit Inquiry <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
-        </form>
       </div>
-    </div>
-  </section>
-    <section class="svc-related py-12 bg-white border-t border-slate-100" aria-label="Related services">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <p class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4">Related Services</p>
-      <div class="flex flex-wrap gap-3"><a href="website-development.html" class="svc-related__link"><i class="fas fa-arrow-right"></i>Website Development</a><a href="custom-mobile-app-development.html" class="svc-related__link"><i class="fas fa-arrow-right"></i>Custom Mobile Apps</a><a href="ai-development.html" class="svc-related__link"><i class="fas fa-arrow-right"></i>AI Development</a><a href="enterprise-mobile-app-development.html" class="svc-related__link"><i class="fas fa-arrow-right"></i>Enterprise Mobile</a></div>
-    </div>
-  </section>
-  
+    </section>
+
+    <section class="svc-related gv-band--solid gv-solid--white py-12 bg-white border-t border-slate-100" aria-label="Related services">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-sm font-bold uppercase tracking-wider text-slate-500 mb-4">Related Services</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="ui-ux-design.html" class="svc-related__link"><i class="fas fa-arrow-right" aria-hidden="true"></i>UI/UX Design Services</a>
+          <a href="backend-development.html" class="svc-related__link"><i class="fas fa-arrow-right" aria-hidden="true"></i>Backend Development</a>
+          <a href="full-stack-development.html" class="svc-related__link"><i class="fas fa-arrow-right" aria-hidden="true"></i>Full-Stack Development</a>
+          <a href="website-development.html" class="svc-related__link"><i class="fas fa-arrow-right" aria-hidden="true"></i>Web Development Services</a>
+        </div>
+      </div>
+    </section>
+
   </main>
   <div id="footer-placeholder"></div>
   <div id="chatbot-placeholder"></div>
@@ -568,11 +253,8 @@
   <script src="../../assets/js/components.js"></script>
   <script src="../../assets/js/main.js"></script>
   <script src="../../assets/js/parallax-unified.js"></script>
-  <script src="../../assets/js/parallax-unified.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="../../assets/js/service-landing-core.js"></script>
-  <script src="../../assets/js/dev-process.js"></script>
   <script src="../../assets/js/svc-landing.js"></script>
-  <script src="../../assets/js/industries-tabs.js"></script>
 </body>
 </html>

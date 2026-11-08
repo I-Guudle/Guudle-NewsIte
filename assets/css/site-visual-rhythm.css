@@ -1,0 +1,632 @@
+/**
+ * Site-wide visual rhythm.
+ * Homepage (body.home-saas) is the reference and is not restyled here.
+ * Inner pages share its type scale, navy/white palette, light hero, and alternating bands.
+ */
+
+body.guudle-site:not(.home-saas) {
+  --gv-navy: #0b1f3a;
+  --gv-navy-deep: #071629;
+  --gv-navy-mid: #142d4e;
+  --gv-heading: #0b1f3a;
+  --gv-body: #475569;
+  --gv-muted: #64748b;
+  --gv-canvas: #f7f8fb;
+  --gv-mist: #f3f6fb;
+  --gv-line: rgba(11, 31, 58, 0.12);
+  --gv-cta: #0a2540;
+}
+
+/* ─── Heroes match the homepage light canvas and type ─── */
+body.guudle-site:not(.home-saas) main > section.ct-hero > .ct-hero-grid,
+body.guudle-site:not(.home-saas) main > section.ct-hero > .ct-hero-orb,
+body.guudle-site:not(.home-saas) main > section.ct-hero > .ct-hero-float,
+body.guudle-site:not(.home-saas) main > section.bweb-hero > .bweb-hero__art {
+  position: absolute !important;
+  z-index: 0 !important;
+  pointer-events: none;
+}
+
+body.guudle-site:not(.home-saas) .gv-hero,
+body.guudle-site:not(.home-saas) [data-svc-hero],
+body.guudle-site:not(.home-saas) main > section.saas-hero,
+body.guudle-site:not(.home-saas) main > section.bweb-hero,
+body.guudle-site:not(.home-saas) main > section.lm-hero,
+body.guudle-site:not(.home-saas) main > section.ct-hero,
+body.guudle-site:not(.home-saas) main > section.svc-hero,
+body.guudle-site:not(.home-saas) main > section.ind-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: var(--gv-heading) !important;
+  background: var(--gv-canvas) !important;
+  background-image: none !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-hero h1,
+body.guudle-site:not(.home-saas) [data-svc-hero] h1,
+body.guudle-site:not(.home-saas) .bweb-hero__title,
+body.guudle-site:not(.home-saas) .bweb-hero__title span,
+body.guudle-site:not(.home-saas) .lm-hero h1,
+body.guudle-site:not(.home-saas) .ct-hero-title,
+body.guudle-site:not(.home-saas) .ct-hero-title em,
+body.guudle-site:not(.home-saas) .svc-hero h1,
+body.guudle-site:not(.home-saas) .ind-hero h1,
+body.guudle-site:not(.home-saas) .hero-title,
+body.guudle-site:not(.home-saas) .hero-title-navy,
+body.guudle-site:not(.home-saas) .hero-title-navy__line {
+  font-family: Poppins, Inter, sans-serif !important;
+  font-weight: 800 !important;
+  font-size: clamp(2rem, 4.5vw, 3.25rem) !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.02em !important;
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+  background: none !important;
+  white-space: normal !important;
+  text-wrap: balance;
+}
+
+body.guudle-site:not(.home-saas) .gv-hero p,
+body.guudle-site:not(.home-saas) [data-svc-hero] .hero-enter-d3,
+body.guudle-site:not(.home-saas) .bweb-hero__lead,
+body.guudle-site:not(.home-saas) .lm-hero .lm-wrap > p,
+body.guudle-site:not(.home-saas) .ct-hero-sub,
+body.guudle-site:not(.home-saas) .svc-hero p,
+body.guudle-site:not(.home-saas) .ind-hero p {
+  color: var(--gv-body) !important;
+  -webkit-text-fill-color: var(--gv-body) !important;
+  font-family: Inter, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+body.guudle-site:not(.home-saas) .gv-hero nav,
+body.guudle-site:not(.home-saas) [data-svc-hero] nav,
+body.guudle-site:not(.home-saas) .bweb-hero__crumb,
+body.guudle-site:not(.home-saas) .lm-crumbs,
+body.guudle-site:not(.home-saas) .gv-hero nav a,
+body.guudle-site:not(.home-saas) [data-svc-hero] nav a,
+body.guudle-site:not(.home-saas) .bweb-hero__crumb a,
+body.guudle-site:not(.home-saas) .lm-crumbs a {
+  color: var(--gv-muted) !important;
+  -webkit-text-fill-color: var(--gv-muted) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-hero nav span,
+body.guudle-site:not(.home-saas) [data-svc-hero] nav span,
+body.guudle-site:not(.home-saas) .bweb-hero__crumb span,
+body.guudle-site:not(.home-saas) .lm-crumbs span {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+  font-weight: 600;
+}
+
+body.guudle-site:not(.home-saas) .lm-hero .lm-kicker,
+body.guudle-site:not(.home-saas) .gv-hero .hp-hero__eyebrow,
+body.guudle-site:not(.home-saas) [data-svc-hero] .hp-hero__eyebrow,
+body.guudle-site:not(.home-saas) .bweb-badge,
+body.guudle-site:not(.home-saas) .ct-hero-badge {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+  background: rgba(11, 31, 58, 0.06) !important;
+  border-color: rgba(11, 31, 58, 0.16) !important;
+}
+
+body.guudle-site:not(.home-saas) .hero-cta-primary,
+body.guudle-site:not(.home-saas) .hero-cta-navy-primary,
+body.guudle-site:not(.home-saas) .bweb-btn--primary,
+body.guudle-site:not(.home-saas) .lm-btn--aqua,
+body.guudle-site:not(.home-saas) .ct-hero-cta,
+body.guudle-site:not(.home-saas) .svc-btn-primary {
+  background: var(--gv-cta) !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 0 !important;
+  border-radius: 0.75rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0 8px 28px rgba(10, 37, 64, 0.28) !important;
+}
+
+body.guudle-site:not(.home-saas) .hero-cta-primary:hover,
+body.guudle-site:not(.home-saas) .hero-cta-navy-primary:hover,
+body.guudle-site:not(.home-saas) .bweb-btn--primary:hover,
+body.guudle-site:not(.home-saas) .lm-btn--aqua:hover,
+body.guudle-site:not(.home-saas) .ct-hero-cta:hover {
+  background: #081e33 !important;
+  transform: translateY(-2px);
+}
+
+body.guudle-site:not(.home-saas) .hero-cta-secondary,
+body.guudle-site:not(.home-saas) .hero-cta-navy-secondary,
+body.guudle-site:not(.home-saas) .bweb-btn--ghost,
+body.guudle-site:not(.home-saas) .lm-hero .lm-btn--ghost,
+body.guudle-site:not(.home-saas) .gv-hero .lm-btn--ghost {
+  background: rgba(255, 255, 255, 0.72) !important;
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+  border: 1.5px solid #cbd5e1 !important;
+  border-radius: 0.75rem !important;
+  font-weight: 600 !important;
+  box-shadow: none !important;
+}
+
+body.guudle-site:not(.home-saas) .hero-cta-secondary:hover,
+body.guudle-site:not(.home-saas) .hero-cta-navy-secondary:hover,
+body.guudle-site:not(.home-saas) .bweb-btn--ghost:hover,
+body.guudle-site:not(.home-saas) .lm-hero .lm-btn--ghost:hover {
+  background: #fff !important;
+  border-color: var(--gv-heading) !important;
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+}
+
+body.guudle-site:not(.home-saas) .ct-hero .ct-chip,
+body.guudle-site:not(.home-saas) .bweb-hero__trust span {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+  background: rgba(11, 31, 58, 0.05) !important;
+  border-color: rgba(11, 31, 58, 0.12) !important;
+}
+
+body.guudle-site:not(.home-saas) .bweb-hero__orb--2,
+body.guudle-site:not(.home-saas) .bweb-hero__arcs {
+  opacity: 0.2;
+}
+
+/* ─── Section type scale ─── */
+body.guudle-site:not(.home-saas) main h2,
+body.guudle-site:not(.home-saas) main .cma-title,
+body.guudle-site:not(.home-saas) main .lm-h2 {
+  font-family: Poppins, Inter, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.75rem, 3.2vw, 2.625rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+}
+
+body.guudle-site:not(.home-saas) main h3 {
+  font-family: Poppins, Inter, sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.125rem, 1.8vw, 1.375rem);
+  line-height: 1.3;
+}
+
+body.guudle-site:not(.home-saas) main h4,
+body.guudle-site:not(.home-saas) main h5,
+body.guudle-site:not(.home-saas) main h6 {
+  font-family: Poppins, Inter, sans-serif;
+  color: var(--gv-heading);
+}
+
+body.guudle-site:not(.home-saas) .gv-band--solid:not(.gv-solid--navy) h2,
+body.guudle-site:not(.home-saas) .gv-band--solid:not(.gv-solid--navy) .cma-title,
+body.guudle-site:not(.home-saas) .gv-band--solid:not(.gv-solid--navy) .lm-h2 {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--solid:not(.gv-solid--navy) .cma-lead,
+body.guudle-site:not(.home-saas) .gv-band--solid:not(.gv-solid--navy) .lm-lead,
+body.guudle-site:not(.home-saas) .gv-band--solid:not(.gv-solid--navy) .cma-section-head p {
+  color: var(--gv-body) !important;
+  -webkit-text-fill-color: var(--gv-body) !important;
+}
+
+/* ─── Style A: full-width image parallax ─── */
+body.guudle-site:not(.home-saas) .gv-band--image {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: var(--gv-navy-deep) !important;
+  background-image: none !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-parallax__bg,
+body.guudle-site:not(.home-saas) .gv-band--image > .guudle-parallax-layer,
+body.guudle-site:not(.home-saas) .gv-band--image > .cma-parallax__bg,
+body.guudle-site:not(.home-saas) .gv-band--image > .ent-parallax__bg,
+body.guudle-site:not(.home-saas) .gv-band--image > .slp-parallax__bg {
+  position: absolute;
+  inset: -18% 0;
+  z-index: 0;
+  width: 100%;
+  height: 136%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: translate3d(0, 0, 0) scale(1.08);
+  pointer-events: none;
+}
+
+body.guudle-site:not(.home-saas) .gv-parallax__overlay,
+body.guudle-site:not(.home-saas) .gv-band--image > .cma-parallax__overlay,
+body.guudle-site:not(.home-saas) .gv-band--image > .ent-parallax__overlay,
+body.guudle-site:not(.home-saas) .gv-band--image > .slp-parallax__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(7, 22, 41, 0.8) 0%,
+    rgba(11, 31, 58, 0.74) 48%,
+    rgba(7, 22, 41, 0.86) 100%
+  ) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image > :not(.gv-parallax__bg):not(.gv-parallax__overlay):not(.guudle-parallax-layer):not(.cma-parallax__bg):not(.cma-parallax__overlay):not(.cma-parallax__ambient):not(.ent-parallax__bg):not(.ent-parallax__overlay):not(.ent-parallax__mesh):not(.slp-parallax__bg):not(.slp-parallax__overlay) {
+  position: relative;
+  z-index: 2;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image h2,
+body.guudle-site:not(.home-saas) .gv-band--image .cma-title,
+body.guudle-site:not(.home-saas) .gv-band--image .lm-h2,
+body.guudle-site:not(.home-saas) .gv-band--image .lm-kicker,
+body.guudle-site:not(.home-saas) .gv-band--image .cma-badge {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .process-hub-cta__card {
+  background: #fff !important;
+  border-color: rgba(11, 31, 58, 0.12) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .process-hub-cta__title,
+body.guudle-site:not(.home-saas) .gv-band--image .process-hub-cta__badge {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .process-hub-cta__desc {
+  color: var(--gv-body) !important;
+  -webkit-text-fill-color: var(--gv-body) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .lm-cta,
+body.guudle-site:not(.home-saas) .gv-band--solid .lm-cta,
+body.guudle-site:not(.home-saas) .gv-solid--navy.ct-cta,
+body.guudle-site:not(.home-saas) .gv-solid--navy.gstory-cta,
+body.guudle-site:not(.home-saas) .gv-solid--navy.gstory-vision,
+body.guudle-site:not(.home-saas) .gv-solid--navy.bweb-cta {
+  background: #0b1f3a !important;
+  background-image: none !important;
+}
+
+body.guudle-site:not(.home-saas) .lm-cta h2,
+body.guudle-site:not(.home-saas) .lm-cta p,
+body.guudle-site:not(.home-saas) .gv-solid--navy.ct-cta h2,
+body.guudle-site:not(.home-saas) .gv-solid--navy.ct-cta p,
+body.guudle-site:not(.home-saas) .gv-solid--navy.gstory-cta h2,
+body.guudle-site:not(.home-saas) .gv-solid--navy.gstory-cta p,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-title--light,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-kicker--on-dark,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-vision__lead,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-vision li {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image.ct-cta .ct-cta-inner p,
+body.guudle-site:not(.home-saas) .gv-solid--navy.ct-cta .ct-cta-inner p,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-cta p,
+body.guudle-site:not(.home-saas) .gv-solid--navy.gstory-cta p {
+  color: rgba(255, 255, 255, 0.9) !important;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image.ct-cta .ct-btn--outline,
+body.guudle-site:not(.home-saas) .gv-solid--navy.ct-cta .ct-btn--outline {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+  background: transparent !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .lm-figure {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.45rem;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .lm-figure img {
+  border-radius: 0.75rem;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .lm-figure figcaption {
+  color: #475569 !important;
+  -webkit-text-fill-color: #475569 !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .cma-section-head .cma-lead,
+body.guudle-site:not(.home-saas) .gv-band--image .cma-section-head > p,
+body.guudle-site:not(.home-saas) .gv-band--image .lm-lead,
+body.guudle-site:not(.home-saas) .gv-band--image .ct-section-head p {
+  color: rgba(226, 232, 240, 0.92) !important;
+  -webkit-text-fill-color: rgba(226, 232, 240, 0.92) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .cma-glow-card h2,
+body.guudle-site:not(.home-saas) .gv-band--image .cma-glow-card h3,
+body.guudle-site:not(.home-saas) .gv-band--image .cma-glow-card .cma-title,
+body.guudle-site:not(.home-saas) .gv-band--image article h3,
+body.guudle-site:not(.home-saas) .gv-band--image .card h2,
+body.guudle-site:not(.home-saas) .gv-band--image .card h3 {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .cma-glow-card p,
+body.guudle-site:not(.home-saas) .gv-band--image .cma-glow-card li,
+body.guudle-site:not(.home-saas) .gv-band--image article p,
+body.guudle-site:not(.home-saas) .gv-band--image .card p {
+  color: var(--gv-body) !important;
+  -webkit-text-fill-color: var(--gv-body) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .cma-check-item {
+  background: #fff !important;
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+  border-radius: 0.9rem;
+}
+
+body.guudle-site:not(.home-saas) .ind-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+body.guudle-site:not(.home-saas) .ind-tags span {
+  display: inline-flex;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .slp-faq-item,
+body.guudle-site:not(.home-saas) .gv-solid--navy .slp-faq-item {
+  background: #fff;
+  border-radius: 0.9rem;
+  padding: 0.15rem 1rem;
+  margin-bottom: 0.75rem;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .slp-faq-trigger,
+body.guudle-site:not(.home-saas) .gv-solid--navy .slp-faq-trigger,
+body.guudle-site:not(.home-saas) .gv-band--image .slp-faq-panel,
+body.guudle-site:not(.home-saas) .gv-solid--navy .slp-faq-panel,
+body.guudle-site:not(.home-saas) .gv-band--image .slp-faq-panel__inner,
+body.guudle-site:not(.home-saas) .gv-solid--navy .slp-faq-panel__inner {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+}
+
+/* ─── Style B: solid navy / white / mist ─── */
+body.guudle-site:not(.home-saas) .gv-band--solid.gv-solid--white {
+  background: #fff !important;
+  background-image: none !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--solid.gv-solid--mist {
+  background: var(--gv-mist) !important;
+  background-image: none !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--solid.gv-solid--navy {
+  background: var(--gv-navy) !important;
+  background-image: none !important;
+  color: #e8edf3;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--solid .cma-parallax__bg,
+body.guudle-site:not(.home-saas) .gv-band--solid .cma-parallax__overlay,
+body.guudle-site:not(.home-saas) .gv-band--solid .cma-parallax__ambient,
+body.guudle-site:not(.home-saas) .gv-band--solid .ent-parallax__bg,
+body.guudle-site:not(.home-saas) .gv-band--solid .ent-parallax__overlay,
+body.guudle-site:not(.home-saas) .gv-band--solid .ent-parallax__mesh,
+body.guudle-site:not(.home-saas) .gv-band--solid .ent-parallax__floats,
+body.guudle-site:not(.home-saas) .gv-band--solid .ent-parallax__svg,
+body.guudle-site:not(.home-saas) .gv-band--solid .slp-parallax__bg,
+body.guudle-site:not(.home-saas) .gv-band--solid .slp-parallax__overlay,
+body.guudle-site:not(.home-saas) .gv-band--solid .gv-parallax__bg,
+body.guudle-site:not(.home-saas) .gv-band--solid .gv-parallax__overlay,
+body.guudle-site:not(.home-saas) .gv-band--solid > .guudle-parallax-layer {
+  display: none !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-solid--navy h2,
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-title,
+body.guudle-site:not(.home-saas) .gv-solid--navy .lm-h2,
+body.guudle-site:not(.home-saas) .gv-solid--navy .lm-kicker,
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-section-head .cma-lead,
+body.guudle-site:not(.home-saas) .gv-solid--navy .lm-lead,
+body.guudle-site:not(.home-saas) .gv-solid--navy .ent-parallax__title,
+body.guudle-site:not(.home-saas) .gv-solid--navy .ent-parallax__accent,
+body.guudle-site:not(.home-saas) .gv-solid--navy .ent-parallax__lead,
+body.guudle-site:not(.home-saas) .gv-solid--navy .ent-parallax__badge,
+body.guudle-site:not(.home-saas) .gv-solid--navy .guudle-benefits__title,
+body.guudle-site:not(.home-saas) .gv-solid--navy .guudle-benefits__lead {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  background: none !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-solid--navy .ent-parallax__btn--ghost {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.7) !important;
+  background: transparent !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-glow-card,
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-check-item,
+body.guudle-site:not(.home-saas) .gv-band--image .cma-glow-card,
+body.guudle-site:not(.home-saas) .cma-glow-card {
+  background: #fff !important;
+  border: 1px solid var(--gv-line) !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 8px 32px rgba(11, 31, 58, 0.08) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-glow-card h3,
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-check-item,
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-glow-card h2 {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-glow-card p,
+body.guudle-site:not(.home-saas) .gv-solid--navy .cma-glow-card li {
+  color: var(--gv-body) !important;
+  -webkit-text-fill-color: var(--gv-body) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image input,
+body.guudle-site:not(.home-saas) .gv-band--image textarea,
+body.guudle-site:not(.home-saas) .gv-band--image select,
+body.guudle-site:not(.home-saas) .gv-solid--navy input,
+body.guudle-site:not(.home-saas) .gv-solid--navy textarea,
+body.guudle-site:not(.home-saas) .gv-solid--navy select {
+  color: var(--gv-heading) !important;
+  -webkit-text-fill-color: var(--gv-heading) !important;
+  background: #fff !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image ::placeholder,
+body.guudle-site:not(.home-saas) .gv-solid--navy ::placeholder {
+  color: var(--gv-muted) !important;
+  -webkit-text-fill-color: var(--gv-muted) !important;
+}
+
+/* Keep footer and header on the shared navy system */
+body.guudle-site:not(.home-saas) .site-footer {
+  background: var(--gv-navy-deep);
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-kicker,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-title,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-split__body p,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-head .gstory-lead {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-split__body p,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-head .gstory-lead {
+  color: rgba(226, 232, 240, 0.92) !important;
+  -webkit-text-fill-color: rgba(226, 232, 240, 0.92) !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-pull {
+  background: #fff;
+  border-radius: 1rem;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-pull p {
+  color: #0b1f3a !important;
+  -webkit-text-fill-color: #0b1f3a !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-expertise__card,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-service,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-timeline li,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-expertise__card,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-service,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-timeline li {
+  background: #fff !important;
+  border-radius: 1rem;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-expertise__card h3,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-service h3,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-timeline h3,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-expertise__card h3,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-service h3,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-timeline h3 {
+  color: #0b1f3a !important;
+  -webkit-text-fill-color: #0b1f3a !important;
+}
+
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-expertise__card p,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-service p,
+body.guudle-site:not(.home-saas) .gv-band--image .gstory-timeline p,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-expertise__card p,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-service p,
+body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-timeline p {
+  color: #475569 !important;
+  -webkit-text-fill-color: #475569 !important;
+}
+
+@media (max-width: 1023px) {
+  body.guudle-site:not(.home-saas) .hero-premium--split .grid > .order-2 {
+    order: 1 !important;
+  }
+  body.guudle-site:not(.home-saas) .hero-premium--split .grid > .order-1 {
+    order: 2 !important;
+  }
+  body.guudle-site:not(.home-saas) .hero-premium--split .hero-visual-panel__img {
+    max-height: 16rem;
+    object-fit: cover;
+  }
+  body.guudle-site:not(.home-saas) .hero-premium--center .hero-title-navy,
+  body.guudle-site:not(.home-saas) .gv-hero h1,
+  body.guudle-site:not(.home-saas) [data-svc-hero] h1 {
+    white-space: normal !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body.guudle-site:not(.home-saas) .gv-hero h1,
+  body.guudle-site:not(.home-saas) [data-svc-hero] h1,
+  body.guudle-site:not(.home-saas) .bweb-hero__title,
+  body.guudle-site:not(.home-saas) .lm-hero h1,
+  body.guudle-site:not(.home-saas) .ct-hero-title {
+    font-size: 2rem !important;
+    line-height: 1.16 !important;
+  }
+
+  body.guudle-site:not(.home-saas) .gv-hero,
+  body.guudle-site:not(.home-saas) [data-svc-hero],
+  body.guudle-site:not(.home-saas) .lm-hero,
+  body.guudle-site:not(.home-saas) .ct-hero,
+  body.guudle-site:not(.home-saas) .bweb-hero {
+    min-height: 0 !important;
+  }
+
+  body.guudle-site:not(.home-saas) .lm-hero,
+  body.guudle-site:not(.home-saas) .ct-hero,
+  body.guudle-site:not(.home-saas) .bweb-hero__inner {
+    padding-top: 6.5rem !important;
+    padding-bottom: 2.75rem !important;
+  }
+
+  body.guudle-site:not(.home-saas) .gv-parallax__bg,
+  body.guudle-site:not(.home-saas) .gv-band--image > .guudle-parallax-layer,
+  body.guudle-site:not(.home-saas) .gv-band--image > .cma-parallax__bg,
+  body.guudle-site:not(.home-saas) .gv-band--image > .ent-parallax__bg {
+    inset: 0 !important;
+    height: 100% !important;
+    transform: none !important;
+    background-position: center top;
+  }
+
+  body.guudle-site:not(.home-saas) .hero-enterprise-grid,
+  body.guudle-site:not(.home-saas) .hero-cta-row {
+    grid-template-columns: 1fr;
+  }
+
+  body.guudle-site:not(.home-saas) .gv-hero .hero-cta-navy-primary,
+  body.guudle-site:not(.home-saas) .gv-hero .hero-cta-navy-secondary,
+  body.guudle-site:not(.home-saas) [data-svc-hero] .hero-cta-navy-primary,
+  body.guudle-site:not(.home-saas) [data-svc-hero] .hero-cta-navy-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.guudle-site:not(.home-saas) .gv-parallax__bg,
+  body.guudle-site:not(.home-saas) .guudle-parallax-layer {
+    transform: none !important;
+  }
+}

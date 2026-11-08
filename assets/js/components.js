@@ -702,6 +702,35 @@ function injectAquaThemeCss() {
   document.head.appendChild(link);
 }
 
+function injectVisualRhythm() {
+  const base = getBasePath();
+  if (!document.getElementById('site-visual-rhythm-css')) {
+    const link = document.createElement('link');
+    link.id = 'site-visual-rhythm-css';
+    link.rel = 'stylesheet';
+    link.href = `${base}assets/css/site-visual-rhythm.css`;
+    document.head.appendChild(link);
+  }
+  if (!document.getElementById('guudle-section-rhythm')) {
+    const script = document.createElement('script');
+    script.id = 'guudle-section-rhythm';
+    script.src = `${base}assets/js/section-rhythm.js`;
+    document.body.appendChild(script);
+  }
+}
+
+function injectWebdevCollection() {
+  if (!document.body.classList.contains('wds-collection')) return;
+  let link = document.getElementById('webdev-collection-css');
+  if (!link) {
+    link = document.createElement('link');
+    link.id = 'webdev-collection-css';
+    link.rel = 'stylesheet';
+    link.href = `${getBasePath()}assets/css/webdev-collection.css`;
+  }
+  document.head.appendChild(link);
+}
+
 function injectEnterpriseHero() {
   if (document.getElementById('guudle-enterprise-hero')) return;
   const base = getBasePath();
@@ -750,6 +779,8 @@ function injectComponents() {
   injectSiteUnifiedCss();
   injectEnterpriseSystemCss();
   injectAquaThemeCss();
+  injectVisualRhythm();
+  injectWebdevCollection();
   injectEnterpriseHero();
   injectOfferPopup();
   requestAnimationFrame(() => {
