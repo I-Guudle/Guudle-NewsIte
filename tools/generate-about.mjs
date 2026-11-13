@@ -137,7 +137,7 @@ ${valuePropsSection()}
 /* ─── LEADERSHIP ─── */
 function pageLeadership() {
   const leaders = [
-    { initials: 'AK', name: 'Alex Kumar', role: 'CEO & Founder', bio: '20+ years leading enterprise technology firms. Former VP Engineering at a Fortune 500 fintech. Passionate about scalable innovation and client success.', tags: ['Strategy', 'Enterprise Sales', 'FinTech'], grad: 'linear-gradient(135deg,#0B1F3A,#2563EB)' },
+    { initials: 'AK', name: 'Alex Kumar', role: 'CEO & Founder', bio: '20+ years leading enterprise technology firms. Former VP Engineering at a Fortune 500 fintech. Passionate about scalable innovation and client success.', tags: ['Strategy', 'Enterprise Sales', 'FinTech'], grad: 'linear-gradient(135deg,#002080,#2563EB)' },
     { initials: 'MR', name: 'Maria Rodriguez', role: 'Chief Technology Officer', bio: 'Cloud architect and AI strategist. Led platform migrations for global banks and healthcare networks. AWS & Azure certified.', tags: ['Cloud', 'AI/ML', 'Architecture'], grad: 'linear-gradient(135deg,#7C3AED,#2563EB)' },
     { initials: 'DW', name: 'David Wong', role: 'VP Engineering', bio: 'Full-stack and mobile engineering leader focused on quality delivery and high-performing engineering teams.', tags: ['Mobile', 'Full-Stack', 'DevOps'], grad: 'linear-gradient(135deg,#10A5F5,#10A5F5)' },
     { initials: 'EJ', name: 'Emily Johnson', role: 'VP Client Success', bio: 'Enterprise relationship leader with deep experience in SaaS, ERP, and long-term account growth across EMEA and Americas.', tags: ['Client Success', 'ERP', 'SaaS'], grad: 'linear-gradient(135deg,#EA580C,#F59E0B)' },
@@ -207,7 +207,7 @@ function pageCareers() {
         <div class="corp-culture-item" style="background:linear-gradient(135deg,#10A5F5,#10A5F5)"><i class="fas fa-laptop-house"></i><span>Remote-first</span></div>
         <div class="corp-culture-item" style="background:linear-gradient(135deg,#2563EB,#7C3AED)"><i class="fas fa-people-group"></i><span>Team retreats</span></div>
         <div class="corp-culture-item" style="background:linear-gradient(135deg,#EA580C,#F59E0B)"><i class="fas fa-code"></i><span>Hack weeks</span></div>
-        <div class="corp-culture-item" style="background:linear-gradient(135deg,#0B1F3A,#2563EB)"><i class="fas fa-heart-pulse"></i><span>Wellness perks</span></div>
+        <div class="corp-culture-item" style="background:linear-gradient(135deg,#002080,#2563EB)"><i class="fas fa-heart-pulse"></i><span>Wellness perks</span></div>
       </div>
       <div class="corp-grid-4">${perks.map(([icon, t, d], i) =>
         `<div class="corp-card corp-reveal corp-d${i + 1}"><div class="corp-card-icon" style="background:linear-gradient(135deg,#10A5F5,#10A5F5)"><i class="fas ${icon}"></i></div><h3 class="font-bold mb-1">${esc(t)}</h3><p class="text-sm text-slate-600">${esc(d)}</p></div>`
@@ -335,7 +335,7 @@ function pagePartnerships() {
     body: `
     <section class="corp-hero"><div class="corp-hero-inner max-w-7xl mx-auto px-4 text-center">
       <span class="corp-badge corp-reveal" style="background:rgba(37,99,235,0.1);color:#2563EB"><i class="fas fa-handshake"></i> Strategic Alliances</span>
-      <h1 class="corp-hero-title corp-reveal corp-d1" style="color:#0B1F3A">Technology Partnerships</h1>
+      <h1 class="corp-hero-title corp-reveal corp-d1" style="color:#002080">Technology Partnerships</h1>
       <p class="corp-hero-sub corp-reveal corp-d2 mx-auto" style="color:#64748b">Certified alliances with the world's leading cloud, enterprise, and innovation platforms.</p>
     </div></section>
     <section class="corp-section"><div class="max-w-7xl mx-auto px-4">
@@ -412,7 +412,7 @@ function pageProcess() {
     body: `
     <section class="corp-hero"><div class="corp-hero-inner max-w-7xl mx-auto px-4 text-center">
       <span class="corp-badge corp-reveal" style="background:rgba(99,102,241,0.1);color:#6366F1"><i class="fas fa-diagram-project"></i> Delivery Excellence</span>
-      <h1 class="corp-hero-title corp-reveal corp-d1" style="color:#0B1F3A">Our Process</h1>
+      <h1 class="corp-hero-title corp-reveal corp-d1" style="color:#002080">Our Process</h1>
       <p class="corp-hero-sub corp-reveal corp-d2 mx-auto" style="color:#64748b">A proven enterprise workflow from strategy through launch and beyond.</p>
     </div></section>
     <section class="corp-section"><div class="max-w-7xl mx-auto px-4">

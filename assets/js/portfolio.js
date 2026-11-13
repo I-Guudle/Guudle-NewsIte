@@ -52,7 +52,7 @@
       challenge: 'Translating an aspirational décor brand into a digital experience that feels premium and easy to shop.',
       solution: 'Visual-first layouts, collection-based navigation, and cohesive brand styling across product and content pages.',
       results: ['Elevated brand presence online', 'Structured catalog for seasonal collections', 'Responsive shopping on all devices'],
-      accent: '#0B1F3A',
+      accent: '#002080',
       icon: 'fa-couch',
       featured: true,
     },
@@ -137,7 +137,7 @@
       challenge: 'Earning trust from vulnerable clients and families while keeping navigation simple for older users.',
       solution: 'Prominent CQC/AQP badges, warm accessible design, large readable type, and clear CTAs.',
       results: ['Credible care brand presence', 'Increased assessment enquiries', 'Accessible UX for all ages'],
-      accent: '#0B1F3A',
+      accent: '#002080',
       icon: 'fa-house-medical',
       featured: true,
       thumbnail: '../assets/images/portfolio/nearbycare.jpg',
@@ -155,7 +155,7 @@
       challenge: 'Communicating clinical credibility while making appointment booking effortless.',
       solution: 'Clean medical UI, service-specific pages, practitioner profiles, and prominent booking CTAs.',
       results: ['Professional clinic brand online', 'Clear patient journey to booking', 'Mobile-friendly medical content'],
-      accent: '#0B1F3A',
+      accent: '#002080',
       icon: 'fa-stethoscope',
       featured: true,
       thumbnail: '../assets/images/portfolio/bright-clinic.jpg',
@@ -245,7 +245,7 @@
       challenge: 'Serving a diverse community with accessible information, events, and donation pathways.',
       solution: 'Centralized community hub with prayer schedules, event calendar, and donation integration.',
       results: ['Unified community information hub', 'Increased event visibility', 'Accessible multilingual content'],
-      accent: '#0B1F3A',
+      accent: '#002080',
       icon: 'fa-mosque',
       featured: true,
       thumbnail: '../assets/images/portfolio/masjid-umalqura.jpg',
@@ -299,7 +299,7 @@
       challenge: 'Coordinating customers, vendors, and riders in real time with a 20-minute delivery promise.',
       solution: 'Unified platform with nearest-supplier routing, automated dispatch, and live tracking across three apps.',
       results: ['Scalable multi-vendor delivery ecosystem', 'Real-time order tracking', 'Multi-service expansion ready'],
-      accent: '#0B1F3A',
+      accent: '#002080',
       icon: 'fa-fire-flame-simple',
       featured: true,
       thumbnail: '../assets/images/portfolio/bea-gas.jpg',
@@ -327,7 +327,7 @@
   const PLACEHOLDERS = [
     { title: 'Enterprise SaaS Platform', categories: ['saas', 'enterprise'], industry: 'SaaS', accent: '#7C3AED' },
     { title: 'AI Automation Suite', categories: ['ai', 'enterprise'], industry: 'AI & Automation', accent: '#6366F1' },
-    { title: 'EdTech Learning Portal', categories: ['education'], industry: 'Education', accent: '#0B1F3A' },
+    { title: 'EdTech Learning Portal', categories: ['education'], industry: 'Education', accent: '#002080' },
     { title: 'FinTech Dashboard', categories: ['enterprise'], industry: 'Financial Services', accent: '#2563EB' },
   ];
 
@@ -346,7 +346,7 @@
       role: 'Operations Lead, Healthcare Provider',
       project: 'Healthcare Website',
       initials: 'JK',
-      accent: '#0B1F3A',
+      accent: '#002080',
     },
     {
       quote: 'From discovery to launch, the process was transparent and professional. The platform handles our complex inventory and scales beautifully.',
@@ -527,10 +527,10 @@
         <article class="cpox-mini"><span class="cpox-mini__icon"><i class="fas fa-triangle-exclamation"></i></span><div><strong>Challenge</strong><p style="font-size:0.85rem;margin-top:0.35rem;color:#64748b">${project.challenge}</p></div></article>
         <article class="cpox-mini"><span class="cpox-mini__icon"><i class="fas fa-lightbulb"></i></span><div><strong>Solution</strong><p style="font-size:0.85rem;margin-top:0.35rem;color:#64748b">${project.solution}</p></div></article>
       </div>
-      <p style="font-weight:800;font-size:0.85rem;margin-bottom:0.5rem;color:#0b1f3a">Technologies</p>
+      <p style="font-weight:800;font-size:0.85rem;margin-bottom:0.5rem;color:#002080">Technologies</p>
       <div class="cpox-portfolio-card__chips" style="margin-bottom:1rem">${(project.stack || []).map((t) => `<span class="cpox-portfolio-card__chip">${t}</span>`).join('')}</div>
-      <p style="font-weight:800;font-size:0.85rem;margin-bottom:0.5rem;color:#0b1f3a">Results</p>
-      <ul style="margin-bottom:1.25rem;padding-left:0;list-style:none">${(project.results || []).map((r) => `<li style="display:flex;gap:0.5rem;margin-bottom:0.35rem;font-size:0.88rem;color:#475569"><i class="fas fa-check" style="color:#0B1F3A;margin-top:0.2rem"></i>${r}</li>`).join('')}</ul>
+      <p style="font-weight:800;font-size:0.85rem;margin-bottom:0.5rem;color:#002080">Results</p>
+      <ul style="margin-bottom:1.25rem;padding-left:0;list-style:none">${(project.results || []).map((r) => `<li style="display:flex;gap:0.5rem;margin-bottom:0.35rem;font-size:0.88rem;color:#475569"><i class="fas fa-check" style="color:#002080;margin-top:0.2rem"></i>${r}</li>`).join('')}</ul>
       <div class="cpox-portfolio-card__actions">
         ${project.url && project.url !== '#' ? `<a href="${project.url}" target="_blank" rel="noopener" class="cpox-cta__btn cpox-cta__btn--primary">Visit Live Site <i class="fas fa-arrow-up-right-from-square"></i></a>` : ''}
         <a href="contact.html" class="cpox-cta__btn cpox-cta__btn--outline">Start Similar Project</a>

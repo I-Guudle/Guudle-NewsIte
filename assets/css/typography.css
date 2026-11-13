@@ -45,12 +45,12 @@
   --tracking-caps: 0.08em;
 
   /* Typography colors — WCAG 2.2 AA on #FFFFFF / #F5F7FA */
-  --text-heading: #0A2540;
+  --text-heading: #002080;
   --text-subheading: #334155;
   --text-body: #475569;
   --text-muted: #64748B;
-  --text-link: #001F54;
-  --text-link-hover: #0B1F3A;
+  --text-link: #002080;
+  --text-link-hover: #002080;
   --text-inverse: #FFFFFF;
   --text-inverse-muted: rgba(255, 255, 255, 0.88);
   --text-inverse-subtle: rgba(255, 255, 255, 0.72);
@@ -293,7 +293,7 @@ textarea::placeholder {
 /* ─── Links ─── */
 main a:not([class*="btn"]):not([class*="cta"]):not(.svc-btn-primary):not(.svc-btn-ghost):not(.hero-cta-primary):not(.hero-cta-secondary):not(.corp-btn):not(.mkt-btn):not(.cs-cta-btn):not(.mm-link):not(.nav-top-link):not(.nav-menu-link) {
   color: var(--text-link);
-  text-decoration-color: rgba(10, 37, 64, 0.35);
+  text-decoration-color: rgba(0, 32, 128, 0.35);
   text-underline-offset: 0.15em;
 }
 

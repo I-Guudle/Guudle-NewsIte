@@ -40,8 +40,8 @@ for (const file of fs.readdirSync(servicesDir).filter((f) => f.endsWith('.html')
   // Magento-style inline stat blocks
   content = content.replace(spCounterRe4, '<p class="text-sm font-semibold text-slate-800">Included</p>');
   content = content.replace(spCounterRe, '<p class="text-sm font-semibold text-slate-800 mt-1">Included</p>');
-  content = content.replace(spCounterRe2, '<p class="text-lg font-bold text-[#0B1F3A]">Included</p>');
-  content = content.replace(spCounterRe3, '<p class="text-lg font-bold text-[#0B1F3A]">Included</p>');
+  content = content.replace(spCounterRe2, '<p class="text-lg font-bold text-[#002080]">Included</p>');
+  content = content.replace(spCounterRe3, '<p class="text-lg font-bold text-[#002080]">Included</p>');
 
   // Cloud solutions hero stat
   content = content.replace(

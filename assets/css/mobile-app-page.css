@@ -3,13 +3,13 @@
  * Guudle navy / aqua · light enterprise look
  */
 .ma-page {
-  --ma-navy: #0B1F3A;
+  --ma-navy: #002080;
   --ma-deep: #123D6A;
-  --ma-sky: #0B1F3A;
+  --ma-sky: #002080;
   --ma-aqua: #FFFFFF;
   --ma-canvas: #F3F6FB;
   --ma-muted: #475569;
-  --ma-line: rgba(11, 31, 58, 0.1);
+  --ma-line: rgba(0, 32, 128, 0.1);
 }
 
 .ma-page .slp-sticky-nav {
@@ -30,8 +30,8 @@
 .ma-eyebrow {
   display: inline-flex; align-items: center; gap: 0.45rem;
   font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--ma-deep); background: rgba(11, 31, 58, 0.12);
-  border: 1px solid rgba(11, 31, 58, 0.28); border-radius: 999px;
+  color: var(--ma-deep); background: rgba(0, 32, 128, 0.12);
+  border: 1px solid rgba(0, 32, 128, 0.28); border-radius: 999px;
   padding: 0.35rem 0.85rem; margin-bottom: 0.85rem;
 }
 
@@ -72,8 +72,8 @@
   inset: 0;
   z-index: 1;
   background:
-    radial-gradient(ellipse 60% 55% at 70% 45%, rgba(11, 31, 58, 0.28), transparent 55%),
-    linear-gradient(120deg, rgba(11, 31, 58, 0.92) 0%, rgba(18, 61, 106, 0.78) 55%, rgba(11, 31, 58, 0.88) 100%);
+    radial-gradient(ellipse 60% 55% at 70% 45%, rgba(0, 32, 128, 0.28), transparent 55%),
+    linear-gradient(120deg, rgba(0, 32, 128, 0.92) 0%, rgba(18, 61, 106, 0.78) 55%, rgba(0, 32, 128, 0.88) 100%);
   pointer-events: none;
 }
 
@@ -209,13 +209,13 @@
 .ma-card {
   padding: 1.4rem 1.25rem; border-radius: 1.2rem;
   background: #fff; border: 1px solid var(--ma-line);
-  box-shadow: 0 12px 32px rgba(11, 31, 58, 0.05);
+  box-shadow: 0 12px 32px rgba(0, 32, 128, 0.05);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 .ma-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(11, 31, 58, 0.4);
-  box-shadow: 0 18px 40px rgba(11, 31, 58, 0.12);
+  border-color: rgba(0, 32, 128, 0.4);
+  box-shadow: 0 18px 40px rgba(0, 32, 128, 0.12);
 }
 .ma-card__icon {
   width: 2.75rem; height: 2.75rem; border-radius: 0.85rem;
@@ -291,7 +291,7 @@
 }
 .ma-stats-band__veil {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(135deg, rgba(11, 31, 58, 0.9), rgba(18, 61, 106, 0.85));
+  background: linear-gradient(135deg, rgba(0, 32, 128, 0.9), rgba(18, 61, 106, 0.85));
 }
 .ma-stats-band .ma-wrap { position: relative; z-index: 2; }
 .ma-stats {
@@ -337,7 +337,7 @@
 }
 .ma-cta__veil {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(135deg, rgba(11, 31, 58, 0.92), rgba(18, 61, 106, 0.88));
+  background: linear-gradient(135deg, rgba(0, 32, 128, 0.92), rgba(18, 61, 106, 0.88));
 }
 .ma-cta .ma-wrap { position: relative; z-index: 2; }
 .ma-cta h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 800; margin: 0 0 0.85rem; color: #fff; }

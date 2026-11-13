@@ -1,7 +1,7 @@
 /* GUUDLE Super Admin + Client/Tenant dashboards */
 .gdb {
-  --gdb-navy: #001F54;
-  --gdb-aqua: #0B1F3A;
+  --gdb-navy: #002080;
+  --gdb-aqua: #002080;
   --gdb-cyan: #FFFFFF;
   --gdb-bg: #f3f6fb;
   --gdb-panel: #ffffff;
@@ -49,7 +49,7 @@
 }
 .gdb-nav a i { width: 1rem; text-align: center; color: var(--gdb-cyan); }
 .gdb-nav a:hover,
-.gdb-nav a.is-active { background: rgba(11, 31, 58,0.18); color: #fff; }
+.gdb-nav a.is-active { background: rgba(0, 32, 128,0.18); color: #fff; }
 
 .gdb-side-foot {
   margin-top: 0.8rem;

@@ -10,7 +10,7 @@
   border-radius: 999px;
   background: #fff;
   border: 1px solid #e2e8f0;
-  box-shadow: 0 8px 32px rgba(11, 31, 58, 0.06);
+  box-shadow: 0 8px 32px rgba(0, 32, 128, 0.06);
 }
 .cpox-portfolio-filter.is-stuck {
   position: sticky;
@@ -36,7 +36,7 @@
 .cpox-portfolio-filter__btn[aria-pressed="true"] {
   color: #fff;
   background: linear-gradient(135deg, var(--cpox-navy), var(--cpox-navy-light));
-  box-shadow: 0 6px 18px rgba(11, 31, 58, 0.22);
+  box-shadow: 0 6px 18px rgba(0, 32, 128, 0.22);
 }
 
 .cpox-portfolio-grid {
@@ -54,12 +54,12 @@
   overflow: hidden;
   background: #fff;
   border: 1px solid #e2e8f0;
-  box-shadow: 0 12px 36px rgba(11, 31, 58, 0.07);
+  box-shadow: 0 12px 36px rgba(0, 32, 128, 0.07);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 .cpox-portfolio-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 22px 48px rgba(11, 31, 58, 0.12);
+  box-shadow: 0 22px 48px rgba(0, 32, 128, 0.12);
 }
 .cpox-portfolio-card.pf-hidden { display: none; }
 
@@ -119,7 +119,7 @@
   inset: 0;
   display: grid;
   place-items: center;
-  background: rgba(11, 31, 58, 0.55);
+  background: rgba(0, 32, 128, 0.55);
   color: #fff;
   font-size: 0.85rem;
   font-weight: 700;
@@ -146,7 +146,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  background: rgba(11, 31, 58, 0.06);
+  background: rgba(0, 32, 128, 0.06);
   color: var(--cpox-navy);
 }
 .cpox-portfolio-card__title {
@@ -194,7 +194,7 @@
   font-size: 0.88rem;
   color: var(--cpox-muted);
 }
-.cpox-portfolio-footnote i { color: #0B1F3A; margin-right: 0.35rem; }
+.cpox-portfolio-footnote i { color: #002080; margin-right: 0.35rem; }
 
 .cpox-portfolio-services {
   display: grid;
@@ -217,7 +217,7 @@
 }
 .cpox-portfolio-service:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(11, 31, 58, 0.1);
+  box-shadow: 0 14px 32px rgba(0, 32, 128, 0.1);
   border-color: #cbd5e1;
 }
 .cpox-portfolio-service__icon {
@@ -277,7 +277,7 @@
   font-size: 0.65rem;
   font-weight: 800;
   color: #fff;
-  background: linear-gradient(135deg, var(--cpox-navy), #0B1F3A);
+  background: linear-gradient(135deg, var(--cpox-navy), #002080);
 }
 
 /* Project detail modal — corpox styled */
@@ -293,7 +293,7 @@
 .cpox-pf-modal__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(11, 31, 58, 0.65);
+  background: rgba(0, 32, 128, 0.65);
   backdrop-filter: blur(6px);
 }
 .cpox-pf-modal__panel {
@@ -304,7 +304,7 @@
   border-radius: 1rem;
   background: #fff;
   padding: 2rem;
-  box-shadow: 0 32px 64px rgba(11, 31, 58, 0.25);
+  box-shadow: 0 32px 64px rgba(0, 32, 128, 0.25);
 }
 .cpox-pf-modal__close {
   position: absolute;

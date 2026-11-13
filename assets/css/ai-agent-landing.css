@@ -1,8 +1,8 @@
 /* ═══ AI Development & AI Agent Development — Enterprise Landing ═══ */
 .aad-page {
-  --aad-primary: #0B1F3A;
+  --aad-primary: #002080;
   --aad-secondary: #546E7A;
-  --aad-accent: #0B1F3A;
+  --aad-accent: #002080;
   --aad-navy: #37474F;
   --aad-dark: #0F172A;
   --aad-light: #F8FAFC;
@@ -11,7 +11,7 @@
 }
 .aad-display { font-family: var(--font-display); }
 .aad-gradient-text {
-  background: linear-gradient(135deg, #60A5FA, #A78BFA 45%, #0B1F3A);
+  background: linear-gradient(135deg, #60A5FA, #A78BFA 45%, #002080);
   }
 
 .aad-scroll-progress {
@@ -23,7 +23,7 @@
   width: 2.75rem; height: 2.75rem; border-radius: 50%;
   display: grid; place-items: center; color: #fff;
   background: linear-gradient(135deg, var(--aad-primary), var(--aad-secondary));
-  box-shadow: 0 8px 24px rgba(11, 31, 58,0.4);
+  box-shadow: 0 8px 24px rgba(0, 32, 128,0.4);
   opacity: 0; visibility: hidden; transform: translateY(12px);
   transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
 }
@@ -48,7 +48,7 @@
   transition: color 0.25s, background 0.25s;
 }
 .aad-sticky-nav__link:hover, .aad-sticky-nav__link.is-active {
-  color: var(--aad-primary); background: rgba(11, 31, 58,0.1);
+  color: var(--aad-primary); background: rgba(0, 32, 128,0.1);
 }
 
 .aad-glass { background: rgba(255,255,255,0.08); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.12); }
@@ -66,7 +66,7 @@
   position: absolute; inset: 0;
   background:
     radial-gradient(ellipse 70% 60% at 20% 20%, rgba(99,102,241,0.35), transparent 55%),
-    radial-gradient(ellipse 55% 50% at 80% 30%, rgba(11, 31, 58,0.22), transparent 50%),
+    radial-gradient(ellipse 55% 50% at 80% 30%, rgba(0, 32, 128,0.22), transparent 50%),
     radial-gradient(ellipse 45% 40% at 50% 90%, rgba(124,58,237,0.2), transparent 55%);
   animation: aad-mesh 22s ease-in-out infinite alternate;
 }
@@ -90,9 +90,9 @@
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.9rem 1.75rem; border-radius: 0.85rem; font-weight: 800; font-size: 0.875rem;
   color: #fff; background: linear-gradient(135deg, var(--aad-primary), var(--aad-secondary));
-  box-shadow: 0 8px 28px rgba(11, 31, 58,0.4); transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 28px rgba(0, 32, 128,0.4); transition: transform 0.3s, box-shadow 0.3s;
 }
-.aad-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(11, 31, 58,0.5); color: #fff; }
+.aad-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 36px rgba(0, 32, 128,0.5); color: #fff; }
 .aad-btn-ghost {
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.9rem 1.75rem; border-radius: 0.85rem; font-weight: 800; font-size: 0.875rem;
@@ -132,7 +132,7 @@
   width: 5.5rem; height: 5.5rem; border-radius: 50%;
   display: grid; place-items: center; text-align: center;
   background: linear-gradient(135deg, var(--aad-primary), var(--aad-accent));
-  box-shadow: 0 0 0 8px rgba(11, 31, 58,0.2), 0 24px 48px rgba(0,0,0,0.4);
+  box-shadow: 0 0 0 8px rgba(0, 32, 128,0.2), 0 24px 48px rgba(0,0,0,0.4);
   color: #fff; font-size: 0.62rem; font-weight: 800; letter-spacing: 0.05em; line-height: 1.3;
   z-index: 2;
 }
@@ -164,7 +164,7 @@
   box-shadow: 0 4px 20px rgba(15,23,42,0.04);
   transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
-.aad-benefit:hover { transform: translateY(-4px); border-color: rgba(11, 31, 58,0.25); box-shadow: 0 16px 40px rgba(11, 31, 58,0.1); }
+.aad-benefit:hover { transform: translateY(-4px); border-color: rgba(0, 32, 128,0.25); box-shadow: 0 16px 40px rgba(0, 32, 128,0.1); }
 .aad-benefit__ico {
   width: 2.5rem; height: 2.5rem; border-radius: 0.65rem;
   display: grid; place-items: center; font-size: 1rem; color: #fff;
@@ -183,7 +183,7 @@
   transition: transform 0.35s ease, box-shadow 0.35s ease;
   height: 100%; display: flex; flex-direction: column;
 }
-.aad-service:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(11, 31, 58,0.12); }
+.aad-service:hover { transform: translateY(-6px); box-shadow: 0 20px 48px rgba(0, 32, 128,0.12); }
 .aad-service::before {
   content: ''; display: block; height: 3px; border-radius: 999px;
   background: linear-gradient(90deg, var(--aad-primary), var(--aad-accent));
@@ -221,7 +221,7 @@
 .aad-agent__ico {
   width: 2.5rem; height: 2.5rem; flex-shrink: 0; border-radius: 0.6rem;
   display: grid; place-items: center; color: #fff; font-size: 1rem;
-  background: linear-gradient(135deg, var(--aad-navy), #0B1F3A);
+  background: linear-gradient(135deg, var(--aad-navy), #002080);
 }
 .aad-agent h3 { font-size: 1.05rem; font-weight: 800; color: var(--aad-navy); margin: 0 0 0.25rem; line-height: 1.25; }
 .aad-agent__sub { font-size: 0.82rem; color: #64748B; line-height: 1.55; margin: 0; }
@@ -256,7 +256,7 @@
   border-radius: 1rem; background: #fff; border: 1px solid #E2E8F0;
   transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
 }
-.aad-step:hover { transform: translateY(-4px); border-color: rgba(11, 31, 58,0.3); box-shadow: 0 12px 32px rgba(11, 31, 58,0.1); }
+.aad-step:hover { transform: translateY(-4px); border-color: rgba(0, 32, 128,0.3); box-shadow: 0 12px 32px rgba(0, 32, 128,0.1); }
 .aad-step__num {
   width: 2rem; height: 2rem; margin: 0 auto 0.75rem;
   display: grid; place-items: center; border-radius: 50%;
@@ -277,7 +277,7 @@
 .aad-tech-col h3 {
   font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--aad-navy); margin: 0 0 0.85rem;
-  padding-bottom: 0.65rem; border-bottom: 2px solid rgba(11, 31, 58,0.15);
+  padding-bottom: 0.65rem; border-bottom: 2px solid rgba(0, 32, 128,0.15);
 }
 .aad-tech-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.45rem; }
 .aad-tech-col li { font-size: 0.82rem; font-weight: 600; color: #475569; }
@@ -291,7 +291,7 @@
   background: #fff; border: 1px solid #E2E8F0;
   transition: border-color 0.3s, transform 0.3s;
 }
-.aad-result:hover { border-color: rgba(11, 31, 58,0.3); transform: translateY(-2px); }
+.aad-result:hover { border-color: rgba(0, 32, 128,0.3); transform: translateY(-2px); }
 .aad-result i { font-size: 1.1rem; color: var(--aad-primary); }
 .aad-result span { font-size: 0.82rem; font-weight: 700; color: var(--aad-navy); }
 

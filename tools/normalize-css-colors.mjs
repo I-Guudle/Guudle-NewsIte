@@ -21,7 +21,7 @@ const REPLACEMENTS = [
   [/#0[Dd]9488/g, '#10A5F5'],
   [/#14[Bb]8[Aa]6/g, '#10A5F5'],
   [/rgba\(\s*11\s*,\s*31\s*,\s*58/g, 'rgba(55, 71, 79'],
-  [/rgba\(\s*37\s*,\s*99\s*,\s*235/g, 'rgba(16, 165, 245'],
+  [/rgba\(\s*37\s*,\s*99\s*,\s*235/g, 'rgba(0, 32, 128'],
 ];
 
 let changed = 0;

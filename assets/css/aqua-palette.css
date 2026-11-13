@@ -1,17 +1,17 @@
 /**
- * Guudle brand cyan — single source of truth (#0B1F3A)
+ * Guudle brand cyan — single source of truth (#002080)
  */
 
 :root {
-  --aqua-primary: #0B1F3A;
+  --aqua-primary: #002080;
   --aqua-dark: #0D84C4;
   --aqua-light: #F7F9FC;
-  --aqua-hover: #142D4E;
-  --aqua-gradient-start: #142D4E;
-  --aqua-gradient-end: #142D4E;
-  --aqua-accent: #0B1F3A;
-  --aqua-rgb: 16, 165, 245;
-  --aqua-accent-rgb: 16, 165, 245;
+  --aqua-hover: #001560;
+  --aqua-gradient-start: #002080;
+  --aqua-gradient-end: #002080;
+  --aqua-accent: #002080;
+  --aqua-rgb: 0, 32, 128;
+  --aqua-accent-rgb: 0, 32, 128;
   --aqua-dark-rgb: 13, 132, 196;
 
   --aqua-gradient: linear-gradient(
@@ -62,7 +62,7 @@
   --mkt-accent2: var(--aqua-accent);
 }
 
-/* ─── Primary buttons — #0B1F3A + white text ─── */
+/* ─── Primary buttons — #002080 + white text ─── */
 .btn-primary,
 .svc-btn-primary,
 .mkt-btn--primary,
@@ -81,7 +81,7 @@
 .home-parallax-immersive__btn--primary,
 .srv-expertise__cta-btn--primary,
 .ind-featured__btn {
-  background: var(--aqua-primary) !important;
+  background: #374151 !important;
   background-image: none !important;
   color: #fff !important;
   border-color: transparent !important;
@@ -99,7 +99,7 @@
 .tsf-btn-next:hover,
 .guudle-offer-btn--primary:hover,
 .home-parallax-immersive__btn--primary:hover {
-  background: var(--aqua-hover) !important;
+  background: #1f2937 !important;
   box-shadow: var(--aqua-shadow-hover);
 }
 
@@ -207,7 +207,7 @@ select:focus-visible {
 .cpox-industry-head__accent,
 .hero-gradient-text {
   background: var(--aqua-gradient) !important;
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 .form-control:focus,

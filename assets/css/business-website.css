@@ -1,8 +1,8 @@
 /* Business Website service — visual, short-copy layout */
 .bweb-page {
   --bweb-navy: #061428;
-  --bweb-navy-mid: #0b1f3a;
-  --bweb-aqua: #0B1F3A;
+  --bweb-navy-mid: #002080;
+  --bweb-aqua: #002080;
   --bweb-gold: #f5c542;
   --bweb-text: #1e293b;
   --bweb-muted: #475569;
@@ -14,7 +14,7 @@
   isolation: isolate;
   color: #fff;
   background:
-    radial-gradient(ellipse 55% 70% at 8% 12%, rgba(11, 31, 58, 0.28), transparent 58%),
+    radial-gradient(ellipse 55% 70% at 8% 12%, rgba(0, 32, 128, 0.28), transparent 58%),
     radial-gradient(ellipse 45% 55% at 92% 88%, rgba(245, 197, 66, 0.16), transparent 52%),
     linear-gradient(160deg, #020817 0%, #071427 42%, #0a2744 100%);
 }
@@ -37,7 +37,7 @@
   height: 420px;
   top: -8%;
   left: -6%;
-  background: rgba(11, 31, 58, 0.28);
+  background: rgba(0, 32, 128, 0.28);
 }
 
 .bweb-hero__orb--2 {
@@ -98,8 +98,8 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #e0f2fe;
-  background: rgba(11, 31, 58, 0.16);
-  border: 1px solid rgba(11, 31, 58, 0.35);
+  background: rgba(0, 32, 128, 0.16);
+  border: 1px solid rgba(0, 32, 128, 0.35);
   margin-bottom: 1.15rem;
 }
 
@@ -195,8 +195,8 @@
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.45),
-    0 0 0 1px rgba(11, 31, 58, 0.12),
-    0 0 60px rgba(11, 31, 58, 0.12);
+    0 0 0 1px rgba(0, 32, 128, 0.12),
+    0 0 60px rgba(0, 32, 128, 0.12);
 }
 
 .bweb-preview__chrome {
@@ -246,7 +246,7 @@
   border-radius: 0.85rem;
   font-size: 0.8rem;
   font-weight: 700;
-  color: #0B1F3A;
+  color: #002080;
   background: rgba(255, 255, 255, 0.96);
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
 }
@@ -289,7 +289,7 @@
   display: grid;
   place-items: center;
   color: #fff;
-  background: linear-gradient(135deg, #0b1f3a, #0B1F3A);
+  background: linear-gradient(135deg, #002080, #002080);
 }
 
 .bweb-feature h3 {
@@ -438,7 +438,7 @@
   height: 2.4rem;
   margin: 0 auto 0.7rem;
   border-radius: 999px;
-  background: rgba(11, 31, 58, 0.12);
+  background: rgba(0, 32, 128, 0.12);
   color: var(--bweb-aqua);
   font-size: 0.85rem;
 }
@@ -478,7 +478,7 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(135deg, rgba(6, 20, 40, 0.72), rgba(11, 31, 58, 0.55));
+  background: linear-gradient(135deg, rgba(6, 20, 40, 0.72), rgba(0, 32, 128, 0.55));
 }
 
 .bweb-cta__inner {
@@ -533,8 +533,8 @@
 .guudle-site.bweb-page .bweb-service h3,
 .guudle-site.bweb-page .bweb-step h3,
 .guudle-site.bweb-page .bweb-work__meta strong {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .guudle-site.bweb-page .bweb-head p,

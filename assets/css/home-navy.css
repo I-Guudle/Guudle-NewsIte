@@ -5,7 +5,7 @@
   --navy-primary: #37474F;
   --navy-mid: #455A64;
   --navy-light: #546E7A;
-  --navy-accent: #0B1F3A;
+  --navy-accent: #002080;
   --navy-surface: #F5F7FA;
   --navy-border: rgba(55, 71, 79, 0.1);
   --navy-shadow: 0 8px 32px rgba(55, 71, 79, 0.08);
@@ -58,7 +58,7 @@
 /* ─── Navy gradient text (replace rainbow accents) ─── */
 .home-navy-refined main [class*="bg-clip-text"][class*="text-transparent"] {
   background: none !important;
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 /* ─── Section backgrounds — alternating navy rhythm ─── */
@@ -68,8 +68,8 @@
 
 .home-navy-refined #services .srv-expertise__card-title,
 .home-navy-refined #services .srv-expertise__cta-title {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .home-navy-refined #services .srv-expertise__card-desc,
@@ -93,8 +93,8 @@
 .home-navy-refined #home-industries .indw-cta__title,
 .home-navy-refined #home-industries .indw-acc__link,
 .home-navy-refined #home-industries .indw-cta__ghost {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .home-navy-refined #home-industries .indw-intro__lead,
@@ -135,8 +135,8 @@
 .home-navy-refined #ai-services-section .aib-hub__eyebrow,
 .home-navy-refined #ai-services-section .aib-hub__title,
 .home-navy-refined #ai-services-section .aib-hub__pillar h4 {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .home-navy-refined #ai-services-section .aib-tile > p,
@@ -368,7 +368,7 @@
 
 /* ─── Particles & parallax blobs — navy only ─── */
 .home-navy-refined .particle {
-  background: rgba(11, 31, 58, 0.35) !important;
+  background: rgba(0, 32, 128, 0.35) !important;
 }
 
 .home-navy-refined [class*="bg-cyan-500"],
@@ -403,7 +403,7 @@
 .home-navy-refined .saas-hero:not(.saas-hero--light) .saas-hero-mesh {
   background:
     radial-gradient(ellipse 90% 70% at 70% 20%, rgba(18, 61, 106, 0.35) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 50% at 20% 80%, rgba(11, 31, 58, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 50% at 20% 80%, rgba(0, 32, 128, 0.12) 0%, transparent 50%),
     linear-gradient(165deg, #37474F 0%, #455A64 45%, #37474F 100%) !important;
 }
 
@@ -419,17 +419,19 @@
 /* Light hero — keep vivid styling, no navy overrides */
 .home-navy-refined .saas-hero--light .hero-gradient-text {
   background: none !important;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   }
 
 .home-navy-refined .saas-hero--light h1 {
   font-size: clamp(2rem, 4.5vw, 3.25rem) !important;
-  color: #0F172A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .home-navy-refined .saas-hero--light .hero-cta-primary {
-  background: #001F54 !important;
-  box-shadow: 0 8px 22px rgba(0, 31, 84, 0.16) !important;
+  background: #374151 !important;
+  color: #ffffff !important;
+  box-shadow: 0 8px 22px rgba(31, 41, 55, 0.16) !important;
 }
 
 .home-navy-refined .saas-hero:not(.saas-hero--light) .saas-btn-primary {
@@ -473,10 +475,30 @@
   border-color: var(--navy-border) !important;
 }
 
-/* ─── Emergency CTA phone button ─── */
+/* ─── Emergency CTA phone button — not the header contact ─── */
 .home-navy-refined a[href^="tel:"] {
   background: linear-gradient(135deg, var(--navy-accent), var(--navy-mid)) !important;
   font-size: 0.9375rem !important;
+}
+
+.home-navy-refined .nav-top-contact a[href^="tel:"],
+.home-navy-refined .mobile-nav-contact-item a[href^="tel:"] {
+  background: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  font-size: 0.8125rem !important;
+}
+
+.home-navy-refined .nav-top-contact a[href^="tel:"] {
+  color: #334155 !important;
+  -webkit-text-fill-color: #334155 !important;
+}
+
+.home-navy-refined .mobile-nav-contact-item a[href^="tel:"] {
+  color: #e2e8f0 !important;
+  -webkit-text-fill-color: #e2e8f0 !important;
 }
 
 /* ─── Footer area on homepage inherits from components ─── */

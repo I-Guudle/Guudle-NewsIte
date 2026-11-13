@@ -4,14 +4,14 @@
  */
 
 :root {
-  --primary-navy: #0B1F3A;
+  --primary-navy: #002080;
   --secondary-navy: #142D4E;
   --deep-navy: #071629;
   --white: #FFFFFF;
   --soft-white: #F7F9FC;
   --light-grey: #E8EDF3;
   --body-text: #46545B;
-  --dark-text: #0B1F3A;
+  --dark-text: #002080;
   --primary-aqua: var(--primary-navy);
   --deep-aqua: var(--primary-navy);
   --light-aqua: var(--soft-white);
@@ -38,14 +38,14 @@
   --brand-slate-mid: var(--text-subheading);
   --brand-accent: var(--primary-navy);
   --brand-accent-hover: var(--secondary-navy);
-  --brand-accent-soft: rgba(11, 31, 58, 0.08);
+  --brand-accent-soft: rgba(0, 32, 128, 0.08);
   --brand-border: var(--light-grey);
   --brand-border-light: #ECEFF1;
-  --brand-shadow: 0 4px 24px rgba(11, 31, 58, 0.08);
-  --brand-shadow-hover: 0 12px 40px rgba(11, 31, 58, 0.12);
+  --brand-shadow: 0 4px 24px rgba(0, 32, 128, 0.08);
+  --brand-shadow-hover: 0 12px 40px rgba(0, 32, 128, 0.12);
   --brand-section-alt: #F8FAFC;
-  --brand-cta-bg: var(--primary-navy);
-  --brand-cta-hover: var(--secondary-navy);
+  --brand-cta-bg: #374151;
+  --brand-cta-hover: #1f2937;
 
   /* Legacy aliases → neutral palette */
   --navy: var(--brand-slate);
@@ -172,8 +172,8 @@ main {
 .guudle-site #home-industries .indw-cta__title,
 .guudle-site #home-industries .indw-acc__link,
 .guudle-site #home-industries .indw-cta__ghost {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .guudle-site #home-industries .indw-intro__lead,
@@ -770,7 +770,7 @@ button:disabled,
 .guudle-site .aix-hub__title,
 .guudle-site .aix-hub h3.aix-hub__title,
 .guudle-site .aix-hub__item h4 {
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 .guudle-site .aix-hub__tag,
@@ -781,7 +781,7 @@ button:disabled,
 /* AI CTA — teal title, white description */
 .guudle-site .aix-cta__title,
 .guudle-site .aix-cta h3.aix-cta__title {
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 .guudle-site .aix-cta__sub {
@@ -791,7 +791,7 @@ button:disabled,
 /* AI glow panel — dark navy capability cards */
 .guudle-site .aix-glow-panel__title,
 .guudle-site .aix-glow-panel .aix-sec h4 {
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 .guudle-site .aix-glow-panel .aix-sec__reveal p {
@@ -801,7 +801,7 @@ button:disabled,
 /* Expertise CTA — teal title, white description */
 .guudle-site .exp-cta__title,
 .guudle-site .exp-cta h3.exp-cta__title {
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 .guudle-site .exp-cta__sub {
@@ -817,8 +817,8 @@ button:disabled,
 
 .guudle-site #services.srv-expertise--glow .srv-expertise__title,
 .guudle-site #services.srv-expertise--parallax .srv-expertise__title {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .guudle-site #services .srv-expertise__subtitle {
@@ -862,17 +862,17 @@ button:disabled,
 .guudle-site .ref-hero__overlay {
   background: linear-gradient(
     135deg,
-    rgba(10, 37, 64, 0.72) 0%,
+    rgba(0, 32, 128, 0.72) 0%,
     rgba(10, 22, 40, 0.58) 45%,
-    rgba(10, 37, 64, 0.68) 100%
+    rgba(0, 32, 128, 0.68) 100%
   ) !important;
 }
 
 .guudle-site .svc-hero-parallax--clarity h2,
 .guudle-site .svc-hero-parallax--clarity .svc-hero-parallax__title {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
-  text-shadow: 0 2px 28px rgba(11, 31, 58, 0.4);
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
+  text-shadow: 0 2px 28px rgba(0, 32, 128, 0.4);
 }
 
 .guudle-site .svc-hero-parallax--clarity .svc-hero-parallax__desc,
@@ -894,8 +894,8 @@ button:disabled,
 /* SaaS Platforms section — navy titles on light bands */
 .guudle-site .saas-plat__title--light,
 .guudle-site .saas-plat__type-label {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
 }
 
 .guudle-site .saas-plat__lead--light {
@@ -904,8 +904,8 @@ button:disabled,
 
 .guudle-site .crm-why__title--light,
 .guudle-site .crm-why__benefit-text {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
 }
 
 .guudle-site .crm-why__lead--light {
@@ -916,8 +916,8 @@ button:disabled,
 .guudle-site .erp-why__benefit-text,
 .guudle-site .erp-why__tech-title,
 .guudle-site .erp-why__why-item p {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
 }
 
 .guudle-site .erp-why__lead--light {
@@ -929,7 +929,7 @@ button:disabled,
 .guudle-site .svc-case,
 .guudle-site .svc-testimonial,
 .guudle-site .slp-testimonial {
-  box-shadow: 0 4px 24px rgba(10, 37, 64, 0.06);
+  box-shadow: 0 4px 24px rgba(0, 32, 128, 0.06);
 }
 
 .guudle-site .svc-feature__title,
@@ -957,7 +957,11 @@ button:disabled,
   -webkit-background-clip: unset !important;
   background-clip: unset !important;
   -webkit-text-fill-color: currentColor !important;
-  color: #0B1F3A !important;
+  color: inherit !important;
+}
+.guudle-site .hero-stat-num {
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .guudle-site .saas-hero:not(.saas-hero--light) .hero-gradient-text,
@@ -969,18 +973,16 @@ button:disabled,
 }
 
 /* AI advisor — title in white, accent and description in aqua */
-.guudle-site .tsf-section h2.tsf-title {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff !important;
-}
-
+.guudle-site .tsf-section h2.tsf-title,
 .guudle-site .tsf-section .tsf-highlight {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #1f2937 !important;
+  -webkit-text-fill-color: #1f2937 !important;
   background: none !important;
   background-image: none !important;
 }
 
-.guudle-site .tsf-section .tsf-subtitle {
-  color: #FFFFFF !important;
+.guudle-site .tsf-section .tsf-subtitle,
+.guudle-site .tsf-section .tsf-trust-item {
+  color: #374151 !important;
+  -webkit-text-fill-color: #374151 !important;
 }

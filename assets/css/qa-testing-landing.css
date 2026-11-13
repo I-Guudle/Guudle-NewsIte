@@ -1,16 +1,16 @@
 /* ═══ QA & Testing — Enterprise Landing ═══ */
 .slp-page[data-slp-prefix="qa"] {
-  --slp-primary: #0B1F3A;
-  --slp-secondary: #0B1F3A;
+  --slp-primary: #002080;
+  --slp-secondary: #002080;
   --slp-accent: #4ADE80;
-  --qa-green: #0B1F3A;
-  --qa-teal: #0B1F3A;
+  --qa-green: #002080;
+  --qa-teal: #002080;
   --qa-dark: #0F172A;
   --qa-light: #F8FAFC;
 }
 .qa-display { font-family: var(--font-display); }
 .qa-gradient-text {
-  background: linear-gradient(135deg, #86EFAC, #0B1F3A 50%, #0B1F3A);
+  background: linear-gradient(135deg, #86EFAC, #002080 50%, #002080);
   }
 .qa-hero {
   position: relative; min-height: 100vh; min-height: 100dvh;
@@ -135,7 +135,7 @@
 .qa-outcome__icon {
   width: 3rem; height: 3rem; border-radius: 0.85rem; display: grid; place-items: center;
   font-size: 1.15rem; color: #fff; margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--qa-i, #0B1F3A), var(--qa-i2, #0B1F3A));
+  background: linear-gradient(135deg, var(--qa-i, #002080), var(--qa-i2, #002080));
 }
 .qa-tech-section {
   background: linear-gradient(160deg, #0F172A, #14532D 50%, #0F172A);
@@ -160,8 +160,8 @@
 }
 .qa-case:hover { transform: translateY(-8px); box-shadow: 0 28px 56px rgba(15,23,42,0.12); }
 .qa-case__visual { height: 7rem; position: relative; }
-.qa-case__visual--1 { background: linear-gradient(135deg, #0B1F3A, #0B1F3A); }
-.qa-case__visual--2 { background: linear-gradient(135deg, #0B1F3A, #0B1F3A); }
+.qa-case__visual--1 { background: linear-gradient(135deg, #002080, #002080); }
+.qa-case__visual--2 { background: linear-gradient(135deg, #002080, #002080); }
 .qa-case__visual--3 { background: linear-gradient(135deg, #16A34A, #546E7A); }
 .qa-case__visual i { position: absolute; right: 1.25rem; bottom: 1rem; font-size: 3rem; color: rgba(255,255,255,0.2); }
 .qa-case__head {

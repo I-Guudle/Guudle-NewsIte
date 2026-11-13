@@ -80,7 +80,7 @@ function heroAside(p) {
 
 function heroSection(p) {
   const bc = `<nav class="text-sm text-slate-500 mb-8 sp-reveal" aria-label="Breadcrumb">
-    <a href="../../index.html" class="hover:text-[#0B1F3A]">Home</a><span class="mx-2">/</span><span>Services</span><span class="mx-2">/</span><span class="font-medium" style="color:${p.accent}">${esc(p.breadcrumb)}</span>
+    <a href="../../index.html" class="hover:text-[#002080]">Home</a><span class="mx-2">/</span><span>Services</span><span class="mx-2">/</span><span class="font-medium" style="color:${p.accent}">${esc(p.breadcrumb)}</span>
   </nav>`;
   const ctas = `<div class="flex flex-wrap gap-3 sp-reveal sp-d2">
     <a href="../contact.html" class="sp-btn-primary inline-flex items-center gap-2 px-7 py-3.5 text-sm">Start Your Project <i class="fas fa-arrow-right"></i></a>
@@ -88,10 +88,10 @@ function heroSection(p) {
   </div>`;
   const aside = heroAside(p);
   const bg = p.heroStyle === 'dark'
-    ? `background:linear-gradient(150deg,#0B1F3A 0%,#123D6A 50%,${p.accent}33 100%);color:#fff;`
+    ? `background:linear-gradient(150deg,#002080 0%,#123D6A 50%,${p.accent}33 100%);color:#fff;`
     : 'background:linear-gradient(180deg,#F3F6FB 0%,#fff 100%);';
   const textMain = p.heroStyle === 'dark' ? 'text-white/70' : 'text-slate-600';
-  const bcUse = p.heroStyle === 'dark' ? bc.replace('text-slate-500', 'text-white/60').replace('hover:text-[#0B1F3A]', 'hover:text-white') : bc;
+  const bcUse = p.heroStyle === 'dark' ? bc.replace('text-slate-500', 'text-white/60').replace('hover:text-[#002080]', 'hover:text-white') : bc;
   const accentSpan = p.heroStyle === 'dark'
     ? `<span style="color:${p.accent}">${esc(p.headlineAccent)}</span>`
     : `<span class="sp-gradient-text">${esc(p.headlineAccent)}</span>`;
@@ -153,11 +153,11 @@ ${getSiteMetaBlock({ homeHref: '../../index.html', aboutHref: '../about.html' })
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"><\/script>
-  <script>tailwind.config={theme:{extend:{colors:{navy:'#0B1F3A','deep-blue':'#123D6A','royal-blue':'#2563EB',cyan:'#10A5F5','light-gray':'#F3F6FB'}}}}<\/script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#002080','deep-blue':'#123D6A','royal-blue':'#2563EB',cyan:'#10A5F5','light-gray':'#F3F6FB'}}}}<\/script>
   <link rel="stylesheet" href="../../assets/css/styles.css">
   <link rel="stylesheet" href="../../assets/css/service-pages.css">
 </head>
-<body class="service-page ${p.layout} bg-white text-[#0B1F3A] antialiased" data-service="${p.dataService}" data-layout="${p.dataLayout}">
+<body class="service-page ${p.layout} bg-white text-[#002080] antialiased" data-service="${p.dataService}" data-layout="${p.dataLayout}">
   <a href="#main" class="skip-link">Skip to main content</a>
   <div id="header-placeholder"></div>
   <main id="main">
@@ -229,7 +229,7 @@ const PAGES = [
     stats: [['200+', 'Apps shipped', 'navy'], ['4.8★', 'Avg store rating', 'accent'], ['40+', 'Countries launched', 'accent'], ['8 wks', 'Typical MVP', 'accent']],
     capabilitiesTitle: 'Mobile Capabilities', capabilitiesSub: 'Full-stack mobile delivery across platforms.',
     capabilities: [
-      ['fa-apple', 'Native iOS Development', 'Swift, SwiftUI, and Apple ecosystem integrations.', 'from-[#0B1F3A] to-[#2563EB]'],
+      ['fa-apple', 'Native iOS Development', 'Swift, SwiftUI, and Apple ecosystem integrations.', 'from-[#002080] to-[#2563EB]'],
       ['fa-android', 'Android Development', 'Kotlin, Jetpack Compose, and Material Design 3.', 'from-[#3DDC84] to-[#10A5F5]'],
       ['fa-mobile-screen', 'Cross-Platform', 'Single codebase with Flutter or React Native.', 'from-[#2563EB] to-[#10A5F5]'],
       ['fa-screwdriver-wrench', 'App Maintenance', 'Bug fixes, OS updates, and performance monitoring.', 'from-[#7C3AED] to-[#2563EB]'],
@@ -303,7 +303,7 @@ const PAGES = [
       ['fa-bell', 'Push Notifications', 'Web push for retention and alerts.', 'from-[#7C3AED] to-[#2563EB]'],
       ['fa-gauge-high', 'High Performance', 'Code splitting, lazy loading, and CDN.', 'from-[#EA580C] to-[#F59E0B]'],
       ['fa-globe', 'Cross-Platform', 'One URL for desktop, tablet, and mobile.', 'from-[#2563EB] to-[#10A5F5]'],
-      ['fa-shield-halved', 'Secure Delivery', 'HTTPS, CSP, and modern auth flows.', 'from-[#0B1F3A] to-[#2563EB]'],
+      ['fa-shield-halved', 'Secure Delivery', 'HTTPS, CSP, and modern auth flows.', 'from-[#002080] to-[#2563EB]'],
     ],
     industries: [['fa-store', 'Retail', 'Mobile commerce without app store friction.', 'cyan'], ['fa-newspaper', 'Media', 'Offline reading and breaking alerts.', 'blue'], ['fa-industry', 'Field Ops', 'Offline data capture for technicians.', 'teal'], ['fa-graduation-cap', 'EdTech', 'Learning apps accessible everywhere.', 'purple']],
     tech: ['React', 'Vue', 'Workbox', 'Vite', 'Lighthouse', 'Web Push', 'IndexedDB', 'Service Workers', 'Tailwind', 'Node.js'],
@@ -325,7 +325,7 @@ const PAGES = [
       ['fa-diagram-project', 'GraphQL', 'Flexible queries and federated schemas.', 'from-[#7C3AED] to-[#2563EB]'],
       ['fa-cubes', 'Microservices', 'Domain-driven service decomposition.', 'from-[#10A5F5] to-[#22C55E]'],
       ['fa-plug', 'Third-Party Integrations', 'Stripe, Twilio, HubSpot, and enterprise ERP.', 'from-[#EA580C] to-[#F59E0B]'],
-      ['fa-shield-halved', 'API Security', 'OAuth 2.0, JWT, mTLS, and WAF policies.', 'from-[#0B1F3A] to-[#2563EB]'],
+      ['fa-shield-halved', 'API Security', 'OAuth 2.0, JWT, mTLS, and WAF policies.', 'from-[#002080] to-[#2563EB]'],
       ['fa-sliders', 'API Management', 'Kong, AWS API Gateway, and analytics.', 'from-[#10A5F5] to-[#3B82F6]'],
     ],
     industries: [['fa-building-columns', 'FinTech', 'Payment and banking APIs.', 'blue'], ['fa-cart-shopping', 'E-commerce', 'Catalog, cart, and fulfillment APIs.', 'teal'], ['fa-hospital', 'Healthcare', 'FHIR and HL7 integrations.', 'purple'], ['fa-truck', 'Logistics', 'Tracking and TMS connectors.', 'orange']],
@@ -367,7 +367,7 @@ const PAGES = [
     stats: [['300+', 'Enterprise projects', 'navy'], ['40%', 'Process efficiency gain', 'accent'], ['99.9%', 'Platform uptime', 'accent'], ['6 mo', 'Avg enterprise delivery', 'accent']],
     capabilitiesTitle: 'Custom Development', capabilitiesSub: 'Enterprise-grade tailored solutions.',
     capabilities: [
-      ['fa-building', 'Enterprise Applications', 'Portals, intranets, and operational platforms.', 'from-[#0B1F3A] to-[#2563EB]'],
+      ['fa-building', 'Enterprise Applications', 'Portals, intranets, and operational platforms.', 'from-[#002080] to-[#2563EB]'],
       ['fa-gears', 'Workflow Automation', 'Approval flows, RPA, and orchestration.', 'from-[#10A5F5] to-[#22C55E]'],
       ['fa-arrows-rotate', 'Legacy Modernization', 'Replatform monoliths to microservices.', 'from-[#7C3AED] to-[#2563EB]'],
       ['fa-cloud', 'Cloud Solutions', 'AWS, Azure, and hybrid deployments.', 'from-[#10A5F5] to-[#2563EB]'],
@@ -395,7 +395,7 @@ const PAGES = [
       ['fa-door-open', 'Portals', 'Partner, vendor, and employee portals.', 'from-[#10A5F5] to-[#22C55E]'],
       ['fa-chart-line', 'Dashboards', 'BI, analytics, and operational views.', 'from-[#EA580C] to-[#F59E0B]'],
       ['fa-server', 'Cloud-Native Apps', 'Containerized, auto-scaling deployments.', 'from-[#10A5F5] to-[#3B82F6]'],
-      ['fa-lock', 'Security', 'OWASP, encryption, and audit logging.', 'from-[#0B1F3A] to-[#2563EB]'],
+      ['fa-lock', 'Security', 'OWASP, encryption, and audit logging.', 'from-[#002080] to-[#2563EB]'],
     ],
     industries: [['fa-briefcase', 'B2B SaaS', 'Vertical and horizontal SaaS products.', 'blue'], ['fa-building', 'Enterprise', 'Workflow and compliance portals.', 'purple'], ['fa-heart-pulse', 'Healthcare', 'Patient and provider platforms.', 'teal'], ['fa-graduation-cap', 'EdTech', 'LMS and learning platforms.', 'orange']],
     tech: ['React', 'Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Redis', 'AWS', 'GraphQL', 'Docker', 'Tailwind'],
@@ -417,7 +417,7 @@ const PAGES = [
       ['fa-java', 'Java Development', 'Legacy app maintenance and migration.', 'from-[#EA580C] to-[#F59E0B]'],
       ['fa-palette', 'Material Design', 'MD3 theming, motion, and accessibility.', 'from-[#2563EB] to-[#7C3AED]'],
       ['fa-google-play', 'Play Store Deployment', 'Listing, policies, and release management.', 'from-[#3DDC84] to-[#22C55E]'],
-      ['fa-bolt', 'Android Optimization', 'Startup time, memory, and battery efficiency.', 'from-[#0B1F3A] to-[#2563EB]'],
+      ['fa-bolt', 'Android Optimization', 'Startup time, memory, and battery efficiency.', 'from-[#002080] to-[#2563EB]'],
       ['fa-plug', 'Google Services', 'Maps, Firebase, and Play Billing integration.', 'from-[#10A5F5] to-[#2563EB]'],
     ],
     industries: [['fa-cart-shopping', 'Retail', 'Shopping and loyalty apps.', 'green'], ['fa-utensils', 'Food & Delivery', 'Ordering and rider apps.', 'orange'], ['fa-car', 'Automotive', 'Connected car companion apps.', 'blue'], ['fa-building', 'Enterprise', 'Field workforce mobility.', 'purple']],
@@ -438,7 +438,7 @@ const PAGES = [
     capabilities: [
       ['fa-swift', 'Swift Development', 'Modern concurrency and type-safe code.', 'from-[#007AFF] to-[#5856D6]'],
       ['fa-mobile-screen', 'SwiftUI', 'Declarative UI across iPhone and iPad.', 'from-[#5856D6] to-[#2563EB]'],
-      ['fa-tablet-screen-button', 'iPhone & iPad Apps', 'Adaptive layouts and multitasking.', 'from-[#0B1F3A] to-[#007AFF]'],
+      ['fa-tablet-screen-button', 'iPhone & iPad Apps', 'Adaptive layouts and multitasking.', 'from-[#002080] to-[#007AFF]'],
       ['fa-chart-line', 'App Store Optimization', 'Keywords, screenshots, and conversion.', 'from-[#10A5F5] to-[#22C55E]'],
       ['fa-apple-whole', 'Apple Ecosystem', 'Watch, widgets, and iCloud sync.', 'from-[#EA580C] to-[#F59E0B]'],
       ['fa-shield-halved', 'Privacy & Security', 'Keychain, App Tracking Transparency.', 'from-[#007AFF] to-[#5856D6]'],

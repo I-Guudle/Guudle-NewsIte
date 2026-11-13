@@ -20,10 +20,10 @@ function walk(dir, out = []) {
 }
 
 const REPLACEMENTS = [
-  ['text-[#0B1F3A]', 'text-slate-900'],
-  ['text-[#0b1f3a]', 'text-slate-900'],
-  ['#0B1F3A', '#0F172A'],
-  ['#0b1f3a', '#0F172A'],
+  ['text-[#002080]', 'text-slate-900'],
+  ['text-[#002080]', 'text-slate-900'],
+  ['#002080', '#0F172A'],
+  ['#002080', '#0F172A'],
 ];
 
 const files = [...walk(path.join(root, 'pages')), path.join(root, 'index.html')].filter(fs.existsSync);

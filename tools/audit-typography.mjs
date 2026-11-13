@@ -79,8 +79,8 @@ for (const file of walkHtml(ROOT)) {
 for (const css of REQUIRED_FILES) {
   const file = join(CSS_DIR, css);
   const text = readFileSync(file, 'utf8');
-  if (!text.includes('--text-heading: #0A2540') && !text.includes('--text-heading: #0F172A')) {
-    issues.push({ file: `assets/css/${css}`, line: 0, msg: 'Missing --text-heading token (#0A2540 or #0F172A)' });
+  if (!text.includes('--text-heading: #002080') && !text.includes('--text-heading: #0F172A')) {
+    issues.push({ file: `assets/css/${css}`, line: 0, msg: 'Missing --text-heading token (#002080 or #0F172A)' });
   }
   if (!text.includes('--text-body: #475569')) {
     issues.push({ file: `assets/css/${css}`, line: 0, msg: 'Missing --text-body token (#475569)' });

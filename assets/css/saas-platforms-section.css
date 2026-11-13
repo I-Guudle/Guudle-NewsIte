@@ -4,7 +4,7 @@
    ═══════════════════════════════════════════════════════════ */
 
 .saas-plat {
-  --sp-teal: #0B1F3A;
+  --sp-teal: #002080;
   --sp-indigo: #6366F1;
   --sp-violet: #8B5CF6;
   --sp-navy-deep: #041018;
@@ -27,8 +27,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
   mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 20%, transparent 75%);
 }
@@ -45,7 +45,7 @@
   height: min(480px, 65vw);
   top: -15%;
   right: -8%;
-  background: radial-gradient(circle, rgba(11, 31, 58, 0.2), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 32, 128, 0.2), transparent 70%);
 }
 
 .saas-plat__orb--2 {
@@ -60,8 +60,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.08) 1px, transparent 1px);
   background-size: 48px 48px;
   opacity: 0.4;
   mask-image: radial-gradient(ellipse 85% 75% at 50% 40%, #000 15%, transparent 72%);
@@ -113,15 +113,15 @@
   text-transform: uppercase;
   color: var(--sp-teal);
   background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(11, 31, 58, 0.22);
+  border: 1px solid rgba(0, 32, 128, 0.22);
   box-shadow: 0 4px 16px rgba(10, 22, 40, 0.06);
 }
 
 .saas-plat__eyebrow--dark {
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(11, 31, 58, 0.28);
-  box-shadow: 0 0 24px rgba(11, 31, 58, 0.12);
+  border-color: rgba(0, 32, 128, 0.28);
+  box-shadow: 0 0 24px rgba(0, 32, 128, 0.12);
 }
 
 .saas-plat__title {
@@ -134,9 +134,9 @@
 }
 
 .saas-plat__title--light {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
-  text-shadow: 0 2px 24px rgba(11, 31, 58, 0.35);
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
+  text-shadow: 0 2px 24px rgba(0, 32, 128, 0.35);
 }
 
 /* ── Our SaaS Development Services — high-contrast typography ── */
@@ -145,9 +145,9 @@
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.15;
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
-  text-shadow: 0 2px 28px rgba(11, 31, 58, 0.4);
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
+  text-shadow: 0 2px 28px rgba(0, 32, 128, 0.4);
 }
 
 .saas-plat__block--dark .saas-plat__head--light .saas-plat__lead--light {
@@ -226,18 +226,18 @@
   border-radius: 1rem;
   text-align: center;
   background: linear-gradient(145deg, var(--sp-navy-deep) 0%, var(--sp-navy) 50%, var(--sp-navy-mid) 100%);
-  border: 1px solid rgba(11, 31, 58, 0.25);
+  border: 1px solid rgba(0, 32, 128, 0.25);
   box-shadow:
-    0 0 28px rgba(11, 31, 58, 0.1),
+    0 0 28px rgba(0, 32, 128, 0.1),
     0 10px 28px rgba(4, 16, 24, 0.35);
   transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .saas-plat__pillar:hover {
   transform: translateY(-4px);
-  border-color: rgba(11, 31, 58, 0.45);
+  border-color: rgba(0, 32, 128, 0.45);
   box-shadow:
-    0 0 36px rgba(11, 31, 58, 0.2),
+    0 0 36px rgba(0, 32, 128, 0.2),
     0 16px 36px rgba(4, 16, 24, 0.45);
 }
 
@@ -250,7 +250,7 @@
   font-size: 1rem;
   color: #fff;
   background: linear-gradient(135deg, var(--sp-violet), var(--sp-teal));
-  box-shadow: 0 4px 16px rgba(11, 31, 58, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 32, 128, 0.35);
 }
 
 .saas-plat__pillar-label {
@@ -290,7 +290,7 @@
   padding: 1.15rem 1.2rem;
   border-radius: 0.9rem;
   background: rgba(4, 16, 24, 0.55);
-  border: 1px solid rgba(11, 31, 58, 0.28);
+  border: 1px solid rgba(0, 32, 128, 0.28);
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
@@ -298,9 +298,9 @@
 
 .saas-plat__type:hover {
   transform: translateY(-3px);
-  background: rgba(11, 31, 58, 0.1);
-  border-color: rgba(11, 31, 58, 0.45);
-  box-shadow: 0 8px 28px rgba(11, 31, 58, 0.15);
+  background: rgba(0, 32, 128, 0.1);
+  border-color: rgba(0, 32, 128, 0.45);
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.15);
 }
 
 .saas-plat__type-icon {
@@ -312,9 +312,9 @@
   place-items: center;
   font-size: 0.95rem;
   color: #ffffff;
-  background: linear-gradient(135deg, rgba(11, 31, 58, 0.35), rgba(99, 102, 241, 0.35));
-  border: 1px solid rgba(11, 31, 58, 0.35);
-  box-shadow: 0 0 16px rgba(11, 31, 58, 0.2);
+  background: linear-gradient(135deg, rgba(0, 32, 128, 0.35), rgba(99, 102, 241, 0.35));
+  border: 1px solid rgba(0, 32, 128, 0.35);
+  box-shadow: 0 0 16px rgba(0, 32, 128, 0.2);
 }
 
 .saas-plat__type-label {
@@ -322,10 +322,10 @@
   font-weight: 800;
   line-height: 1.5;
   letter-spacing: -0.015em;
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
   margin: 0;
-  text-shadow: 0 1px 18px rgba(11, 31, 58, 0.3);
+  text-shadow: 0 1px 18px rgba(0, 32, 128, 0.3);
 }
 
 .saas-plat__type:hover .saas-plat__type-label {
@@ -352,7 +352,7 @@
   font-weight: 700;
   color: var(--sp-heading);
   background: #fff;
-  border: 1px solid rgba(11, 31, 58, 0.2);
+  border: 1px solid rgba(0, 32, 128, 0.2);
   box-shadow: 0 4px 14px rgba(10, 22, 40, 0.06);
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
@@ -360,7 +360,7 @@
 .saas-plat__cap-chip:hover {
   transform: translateY(-2px);
   border-color: var(--sp-teal);
-  box-shadow: 0 8px 20px rgba(11, 31, 58, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 32, 128, 0.15);
 }
 
 /* Feature modules bento */
@@ -385,14 +385,14 @@
   overflow: hidden;
   isolation: isolate;
   background: linear-gradient(145deg, rgba(4, 16, 24, 0.9) 0%, rgba(10, 22, 40, 0.85) 100%);
-  border: 1px solid rgba(11, 31, 58, 0.22);
-  box-shadow: 0 0 32px rgba(11, 31, 58, 0.08), 0 12px 32px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 32, 128, 0.22);
+  box-shadow: 0 0 32px rgba(0, 32, 128, 0.08), 0 12px 32px rgba(0, 0, 0, 0.25);
   transition: transform 0.35s ease, border-color 0.35s ease;
 }
 
 .saas-plat__feat:hover {
   transform: translateY(-4px);
-  border-color: rgba(11, 31, 58, 0.4);
+  border-color: rgba(0, 32, 128, 0.4);
 }
 
 .saas-plat__feat-glow {
@@ -400,14 +400,14 @@
   inset: 0;
   pointer-events: none;
   opacity: 0.6;
-  background: radial-gradient(ellipse 80% 60% at 100% 0%, rgba(11, 31, 58, 0.15), transparent 55%);
+  background: radial-gradient(ellipse 80% 60% at 100% 0%, rgba(0, 32, 128, 0.15), transparent 55%);
 }
 
-.saas-plat__feat--cyan .saas-plat__feat-icon { background: linear-gradient(135deg, #0B1F3A, var(--sp-teal)); }
+.saas-plat__feat--cyan .saas-plat__feat-icon { background: linear-gradient(135deg, #002080, var(--sp-teal)); }
 .saas-plat__feat--indigo .saas-plat__feat-icon { background: linear-gradient(135deg, var(--sp-indigo), var(--sp-teal)); }
 .saas-plat__feat--violet .saas-plat__feat-icon { background: linear-gradient(135deg, var(--sp-violet), var(--sp-indigo)); }
 .saas-plat__feat--teal .saas-plat__feat-icon { background: linear-gradient(135deg, #0d9488, var(--sp-teal)); }
-.saas-plat__feat--sky .saas-plat__feat-icon { background: linear-gradient(135deg, #0B1F3A, var(--sp-teal)); }
+.saas-plat__feat--sky .saas-plat__feat-icon { background: linear-gradient(135deg, #002080, var(--sp-teal)); }
 .saas-plat__feat--emerald .saas-plat__feat-icon { background: linear-gradient(135deg, #059669, #10b981); }
 
 .saas-plat__feat-head {
@@ -428,13 +428,13 @@
   font-size: 1rem;
   color: #fff;
   flex-shrink: 0;
-  box-shadow: 0 4px 14px rgba(11, 31, 58, 0.3);
+  box-shadow: 0 4px 14px rgba(0, 32, 128, 0.3);
 }
 
 .saas-plat__feat-title {
   font-size: 1.08rem;
   font-weight: 800;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   margin: 0;
   letter-spacing: -0.02em;
 }
@@ -509,7 +509,7 @@
   font-weight: 700;
   color: var(--sp-heading);
   background: #fff;
-  border: 1px solid rgba(11, 31, 58, 0.18);
+  border: 1px solid rgba(0, 32, 128, 0.18);
   box-shadow: 0 2px 10px rgba(10, 22, 40, 0.05);
   transition: transform 0.25s ease, border-color 0.25s ease;
 }
@@ -536,8 +536,8 @@
   overflow: hidden;
   isolation: isolate;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
-  border: 1px solid rgba(11, 31, 58, 0.28);
-  box-shadow: 0 0 40px rgba(11, 31, 58, 0.1), 0 14px 40px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 32, 128, 0.28);
+  box-shadow: 0 0 40px rgba(0, 32, 128, 0.1), 0 14px 40px rgba(0, 0, 0, 0.3);
 }
 
 .saas-plat__panel-glow {
@@ -556,7 +556,7 @@
   font-size: 1.1rem;
   color: #fff;
   background: linear-gradient(135deg, var(--sp-violet), var(--sp-teal));
-  box-shadow: 0 6px 20px rgba(11, 31, 58, 0.35);
+  box-shadow: 0 6px 20px rgba(0, 32, 128, 0.35);
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
@@ -565,7 +565,7 @@
 .saas-plat__panel-title {
   font-size: clamp(1.15rem, 2vw, 1.35rem);
   font-weight: 800;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   margin: 0 0 0.65rem;
   position: relative;
   z-index: 1;
@@ -635,8 +635,8 @@
   border-radius: 1rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(11, 31, 58, 0.25);
-  box-shadow: 0 0 32px rgba(11, 31, 58, 0.12);
+  border: 1px solid rgba(0, 32, 128, 0.25);
+  box-shadow: 0 0 32px rgba(0, 32, 128, 0.12);
 }
 
 .saas-plat__footer-text {
@@ -667,13 +667,13 @@
   color: #fff !important;
   background: linear-gradient(135deg, var(--sp-violet), var(--sp-teal));
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 28px rgba(11, 31, 58, 0.35);
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.35);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .saas-plat__footer-cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 36px rgba(11, 31, 58, 0.4);
+  box-shadow: 0 14px 36px rgba(0, 32, 128, 0.4);
   color: #fff !important;
 }
 

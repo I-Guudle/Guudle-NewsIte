@@ -38,7 +38,7 @@ for (const dir of dirs) {
     }
 
     content = content.replace(outcomeCardRe, (_, cls, label) => {
-      return `<p class="text-base font-bold text-[#0B1F3A]">${label.trim()}</p><p class="${cls} text-sm mt-2">Measurable outcomes for your team</p>`;
+      return `<p class="text-base font-bold text-[#002080]">${label.trim()}</p><p class="${cls} text-sm mt-2">Measurable outcomes for your team</p>`;
     });
 
     content = content.replace(

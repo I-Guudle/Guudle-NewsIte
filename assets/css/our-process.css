@@ -1,11 +1,11 @@
 .gproc-page {
-  --gproc-accent: #0B1F3A;
-  --gproc-accent-2: #0B1F3A;
+  --gproc-accent: #002080;
+  --gproc-accent-2: #002080;
   --gproc-navy: #0F172A;
   --gproc-muted: #64748B;
   --gproc-body: #475569;
   --gproc-glass: rgba(255, 255, 255, 0.72);
-  --gproc-border: rgba(11, 31, 58, 0.22);
+  --gproc-border: rgba(0, 32, 128, 0.22);
   --gproc-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
   --gproc-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -37,7 +37,7 @@
 .gproc-ambient__grid {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, rgba(11, 31, 58, 0.12) 1px, transparent 0);
+  background-image: radial-gradient(circle at 1px 1px, rgba(0, 32, 128, 0.12) 1px, transparent 0);
   background-size: 28px 28px;
   mask-image: linear-gradient(180deg, #000 0%, transparent 92%);
   opacity: 0.55;
@@ -56,7 +56,7 @@
   height: 420px;
   top: -8%;
   left: -6%;
-  background: radial-gradient(circle, rgba(11, 31, 58, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 32, 128, 0.35), transparent 70%);
 }
 
 .gproc-ambient__orb--2 {
@@ -124,7 +124,7 @@
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--gproc-accent-2);
-  background: rgba(11, 31, 58, 0.1);
+  background: rgba(0, 32, 128, 0.1);
   border: 1px solid var(--gproc-border);
   margin-bottom: 1.25rem;
 }
@@ -190,7 +190,7 @@
   background: linear-gradient(180deg, var(--gproc-accent), var(--gproc-accent-2));
   border-radius: inherit;
   transition: height 0.6s var(--gproc-ease);
-  box-shadow: 0 0 16px rgba(11, 31, 58, 0.45);
+  box-shadow: 0 0 16px rgba(0, 32, 128, 0.45);
 }
 
 .gproc-step {
@@ -248,7 +248,7 @@
 .gproc-step.is-active .gproc-node,
 .gproc-step.is-done .gproc-node {
   border-color: var(--gproc-accent);
-  box-shadow: 0 0 0 6px rgba(11, 31, 58, 0.18), 0 0 20px rgba(11, 31, 58, 0.35);
+  box-shadow: 0 0 0 6px rgba(0, 32, 128, 0.18), 0 0 20px rgba(0, 32, 128, 0.35);
 }
 
 .gproc-step.is-active .gproc-node {
@@ -283,7 +283,7 @@
   inset: 0;
   border-radius: inherit;
   padding: 1px;
-  background: linear-gradient(135deg, rgba(11, 31, 58, 0.45), rgba(99, 102, 241, 0.15), rgba(11, 31, 58, 0.08));
+  background: linear-gradient(135deg, rgba(0, 32, 128, 0.45), rgba(99, 102, 241, 0.15), rgba(0, 32, 128, 0.08));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -296,7 +296,7 @@
 .gproc-card:hover {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 32px 70px rgba(15, 23, 42, 0.12);
-  border-color: rgba(11, 31, 58, 0.28);
+  border-color: rgba(0, 32, 128, 0.28);
 }
 
 .gproc-card:hover::before {
@@ -320,7 +320,7 @@
   justify-content: center;
   font-size: 1.15rem;
   color: var(--gproc-accent-2);
-  background: linear-gradient(135deg, rgba(11, 31, 58, 0.14), rgba(11, 31, 58, 0.06));
+  background: linear-gradient(135deg, rgba(0, 32, 128, 0.14), rgba(0, 32, 128, 0.06));
   border: 1px solid var(--gproc-border);
   transition: transform 0.55s var(--gproc-ease);
 }
@@ -417,7 +417,7 @@
   align-items: center;
   justify-content: center;
   color: var(--gproc-accent-2);
-  background: rgba(11, 31, 58, 0.1);
+  background: rgba(0, 32, 128, 0.1);
   font-size: 1rem;
 }
 
@@ -463,7 +463,7 @@
   transform: translateY(-3px) scale(1.04);
   border-color: var(--gproc-border);
   color: var(--gproc-accent-2);
-  box-shadow: 0 10px 24px rgba(11, 31, 58, 0.12);
+  box-shadow: 0 10px 24px rgba(0, 32, 128, 0.12);
 }
 
 .gproc-tech__badge i {
@@ -535,8 +535,8 @@
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(135deg, #0B1F3A 0%, #0B1F3A 45%, #0B1F3A 100%);
-  box-shadow: 0 28px 60px rgba(11, 31, 58, 0.28);
+  background: linear-gradient(135deg, #002080 0%, #002080 45%, #002080 100%);
+  box-shadow: 0 28px 60px rgba(0, 32, 128, 0.28);
 }
 
 @media (min-width: 640px) {
@@ -613,7 +613,7 @@
 }
 
 .gproc-btn--primary {
-  color: #0B1F3A;
+  color: #002080;
   background: #fff;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
@@ -676,9 +676,9 @@
 
 /* ─── Enterprise Process Hub (oproc-page) ─── */
 .oproc-page {
-  --oproc-accent: #0B1F3A;
-  --oproc-accent-rgb: 16, 165, 245;
-  --oproc-navy: #0b1f3a;
+  --oproc-accent: #002080;
+  --oproc-accent-rgb: 0, 32, 128;
+  --oproc-navy: #002080;
   --oproc-cyan: #00FFFF;
   --oproc-cyan-rgb: 0, 255, 255;
 }
@@ -691,7 +691,7 @@
   border-radius: 999px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--oproc-accent); background: rgba(var(--oproc-accent-rgb), 0.12); border: 1px solid rgba(var(--oproc-accent-rgb), 0.28); margin-bottom: 1rem;
 }
-.oproc-badge--navy { color: var(--oproc-navy); background: rgba(11,31,58,0.06); border-color: rgba(11,31,58,0.12); }
+.oproc-badge--navy { color: var(--oproc-navy); background: rgba(0, 32, 128,0.06); border-color: rgba(0, 32, 128,0.12); }
 .oproc-title { font-size: clamp(1.85rem, 3vw, 2.65rem); font-weight: 800; line-height: 1.15; color: var(--oproc-navy); margin: 0 0 1rem; }
 .oproc-title--light { color: #fff; }
 .oproc-accent { color: var(--oproc-accent); }
@@ -702,7 +702,7 @@
 .oproc-parallax__bg { position: absolute; inset: -12% 0; height: 124%; background-size: cover; background-position: center; z-index: 0; }
 .oproc-parallax__overlay {
   position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(155deg, rgba(11, 31, 58, 0.92) 0%, rgba(11, 31, 58, 0.84) 50%, rgba(8, 47, 73, 0.94) 100%);
+  background: linear-gradient(155deg, rgba(0, 32, 128, 0.92) 0%, rgba(0, 32, 128, 0.84) 50%, rgba(8, 47, 73, 0.94) 100%);
 }
 .oproc-parallax__ambient { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
 .oproc-parallax__orb { position: absolute; border-radius: 50%; filter: blur(65px); opacity: 0.45; }
@@ -726,12 +726,12 @@
 
 .oproc-glow-card {
   position: relative; padding: 1.35rem 1.25rem; border-radius: 1rem; background: #fff;
-  border: 1px solid rgba(11,31,58,0.08); box-shadow: 0 10px 28px rgba(11,31,58,0.07); overflow: hidden;
+  border: 1px solid rgba(0, 32, 128,0.08); box-shadow: 0 10px 28px rgba(0, 32, 128,0.07); overflow: hidden;
   transition: transform 0.28s ease, border-color 0.28s ease;
 }
 .oproc-glow-card:hover { transform: translateY(-4px); border-color: rgba(var(--oproc-accent-rgb),0.35); }
 .oproc-parallax .oproc-glow-card {
-  background: rgba(11, 31, 58, 0.55); border-color: rgba(var(--oproc-cyan-rgb), 0.22); backdrop-filter: blur(8px);
+  background: rgba(0, 32, 128, 0.55); border-color: rgba(var(--oproc-cyan-rgb), 0.22); backdrop-filter: blur(8px);
 }
 .oproc-glow-card__glow {
   position: absolute; inset: -30% auto auto -20%; width: 70%; height: 60%;
@@ -755,7 +755,7 @@
 .oproc-workflow__step {
   display: flex; align-items: center; gap: 0.75rem; width: 100%; padding: 0.75rem 1rem;
   border-radius: 0.75rem; background: #fff; border: 1px solid rgba(var(--oproc-accent-rgb),0.2);
-  box-shadow: 0 6px 18px rgba(11,31,58,0.06);
+  box-shadow: 0 6px 18px rgba(0, 32, 128,0.06);
 }
 .oproc-workflow__num {
   width: 2rem; height: 2rem; border-radius: 0.5rem; display: grid; place-items: center;
@@ -769,7 +769,7 @@
 @media (min-width: 1024px) { .oproc-role-grid { grid-template-columns: repeat(4, 1fr); } }
 .oproc-role-card {
   padding: 1.1rem; border-radius: 0.85rem; text-align: center; background: #fff;
-  border: 1px solid rgba(11,31,58,0.08); box-shadow: 0 6px 18px rgba(11,31,58,0.05);
+  border: 1px solid rgba(0, 32, 128,0.08); box-shadow: 0 6px 18px rgba(0, 32, 128,0.05);
   transition: transform 0.22s ease, border-color 0.22s ease;
 }
 .oproc-role-card:hover { transform: translateY(-3px); border-color: rgba(var(--oproc-accent-rgb),0.3); }
@@ -784,7 +784,7 @@
 @media (min-width: 1024px) { .oproc-tool-grid { grid-template-columns: repeat(4, 1fr); } }
 .oproc-tool-card {
   display: flex; align-items: center; gap: 0.65rem; padding: 0.85rem 1rem; border-radius: 0.75rem;
-  background: #fff; border: 1px solid rgba(11,31,58,0.08); box-shadow: 0 4px 14px rgba(11,31,58,0.05);
+  background: #fff; border: 1px solid rgba(0, 32, 128,0.08); box-shadow: 0 4px 14px rgba(0, 32, 128,0.05);
 }
 .oproc-tool-card__icon { font-size: 1.25rem; color: var(--oproc-accent); width: 1.75rem; text-align: center; }
 .oproc-tool-card__title { font-size: 0.88rem; font-weight: 700; color: var(--oproc-navy); margin: 0; }
@@ -794,7 +794,7 @@
 @media (min-width: 1024px) { .oproc-industry-grid { grid-template-columns: repeat(4, 1fr); } }
 .oproc-industry-card {
   padding: 1rem; border-radius: 0.85rem; text-align: center; background: #fff;
-  border: 1px solid rgba(11,31,58,0.08); transition: transform 0.22s ease;
+  border: 1px solid rgba(0, 32, 128,0.08); transition: transform 0.22s ease;
 }
 .oproc-industry-card:hover { transform: translateY(-3px); }
 .oproc-industry-card__icon {
@@ -807,7 +807,7 @@
 @media (min-width: 768px) { .oproc-choose-grid { grid-template-columns: repeat(3, 1fr); } }
 @media (min-width: 1024px) { .oproc-choose-grid { grid-template-columns: repeat(4, 1fr); } }
 .oproc-choose-card {
-  padding: 1rem; border-radius: 0.85rem; background: #fff; border: 1px solid rgba(11,31,58,0.08);
+  padding: 1rem; border-radius: 0.85rem; background: #fff; border: 1px solid rgba(0, 32, 128,0.08);
   display: flex; align-items: center; gap: 0.65rem; transition: transform 0.22s ease;
 }
 .oproc-choose-card:hover { transform: translateY(-2px); }
@@ -819,7 +819,7 @@
 @media (min-width: 1024px) { .oproc-related-grid { grid-template-columns: repeat(3, 1fr); } }
 .oproc-related-card {
   display: block; padding: 1.35rem; border-radius: 1rem; background: #fff;
-  border: 1px solid rgba(11,31,58,0.08); box-shadow: 0 8px 22px rgba(11,31,58,0.06);
+  border: 1px solid rgba(0, 32, 128,0.08); box-shadow: 0 8px 22px rgba(0, 32, 128,0.06);
   text-decoration: none; transition: transform 0.25s ease, border-color 0.25s ease;
 }
 .oproc-related-card:hover { transform: translateY(-4px); border-color: rgba(var(--oproc-accent-rgb),0.35); }

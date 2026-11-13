@@ -5,19 +5,6 @@
 (function () {
   'use strict';
 
-  var HIGHLIGHT = [
-    'AI', 'Digital', 'Enterprise', 'Cloud', 'Solutions', 'Business', 'Platform',
-    'Platforms', 'Automation', 'Healthcare', 'Analytics', 'Innovation', 'Technology',
-    'Transformation', 'Future', 'Intelligence', 'Data', 'Security', 'Growth',
-    'Intelligent', 'Customer', 'Operations', 'Scale', 'Modern', 'Global', 'Software',
-    'Mobile', 'Commerce', 'FinTech', 'SaaS', 'CRM', 'ERP'
-  ];
-
-  var HIGHLIGHT_SET = {};
-  HIGHLIGHT.forEach(function (w) {
-    HIGHLIGHT_SET[w.toLowerCase()] = true;
-  });
-
   var SELECTORS = [
     'h1.hero-title',
     '.hero-title',
@@ -44,9 +31,8 @@
     return (Math.abs(h) % 4) + 1;
   }
 
-  function isHighlightWord(word) {
-    var clean = word.replace(/[^a-zA-Z0-9+]/g, '');
-    return !!HIGHLIGHT_SET[clean.toLowerCase()];
+  function isHighlightWord() {
+    return false;
   }
 
   function wrapCharsInTextNode(textNode, counter, forceHl) {
@@ -91,11 +77,7 @@
     var tag = node.tagName;
     if (tag === 'SCRIPT' || tag === 'STYLE' || tag === 'BR') return;
 
-    var accent =
-      forceHl ||
-      node.classList.contains('hero-title-navy__line') ||
-      node.classList.contains('hero-title-navy__line--inline') ||
-      node.classList.contains('cpox-accent');
+    var accent = false;
 
     var children = Array.prototype.slice.call(node.childNodes);
     children.forEach(function (child) {

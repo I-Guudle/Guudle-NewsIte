@@ -275,10 +275,10 @@
 .mkt-zig, .mkt-split { display: grid; gap: 2rem; align-items: center; }
 @media (min-width: 768px) { .mkt-zig, .mkt-split { grid-template-columns: 1fr 1fr; } }
 .mkt-split--reverse { direction: rtl; } .mkt-split--reverse > * { direction: ltr; }
-.mkt-zig__img img, .mkt-split img { width: 100%; border-radius: 1rem; box-shadow: 0 16px 40px rgba(0,31,84,0.1); }
+.mkt-zig__img img, .mkt-split img { width: 100%; border-radius: 1rem; box-shadow: 0 16px 40px rgba(0, 32, 128,0.1); }
 
 .mkt-sec--overview-bleed { background-size: cover; background-position: center; position: relative; min-height: 360px; display: flex; align-items: center; }
-.mkt-sec--overview-bleed::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,31,84,0.92), rgba(0,31,84,0.6)); }
+.mkt-sec--overview-bleed::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0, 32, 128,0.92), rgba(0, 32, 128,0.6)); }
 .mkt-bleed-content { position: relative; z-index: 2; color: #fff; }
 .mkt-bleed-content .mkt-h2 { color: #fff; }
 
@@ -317,7 +317,7 @@
 .mkt-parallax { position: relative; min-height: 320px; display: flex; align-items: center; overflow: hidden; }
 .mkt-parallax--short { min-height: 220px; }
 .mkt-parallax__bg { position: absolute; inset: -20% 0; background-size: cover; background-position: center; will-change: transform; }
-.mkt-parallax__bg::after { content: ''; position: absolute; inset: 0; background: rgba(0,31,84,0.75); }
+.mkt-parallax__bg::after { content: ''; position: absolute; inset: 0; background: rgba(0, 32, 128,0.75); }
 .mkt-parallax__content { position: relative; z-index: 2; color: #fff; text-align: center; }
 
 .mkt-process-h { display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 1rem; scroll-snap-type: x mandatory; }
@@ -487,7 +487,7 @@
 }
 
 /* Per-page accent tweaks */
-[data-mkt-page="seo"] { --mkt-accent: #0B1F3A; --mkt-accent2: #4ADE80; }
+[data-mkt-page="seo"] { --mkt-accent: #002080; --mkt-accent2: #4ADE80; }
 [data-mkt-page="social-media-marketing"] { --mkt-accent: #EC4899; --mkt-accent2: #F472B6; }
 [data-mkt-page="whatsapp-marketing"] { --mkt-accent: #25D366; --mkt-accent2: #128C7E; }
 

@@ -5,16 +5,16 @@
  */
 
 body.guudle-site:not(.home-saas) {
-  --gv-navy: #0b1f3a;
+  --gv-navy: #002080;
   --gv-navy-deep: #071629;
   --gv-navy-mid: #142d4e;
-  --gv-heading: #0b1f3a;
+  --gv-heading: #002080;
   --gv-body: #475569;
   --gv-muted: #64748b;
   --gv-canvas: #f7f8fb;
   --gv-mist: #f3f6fb;
-  --gv-line: rgba(11, 31, 58, 0.12);
-  --gv-cta: #0a2540;
+  --gv-line: rgba(0, 32, 128, 0.12);
+  --gv-cta: #374151;
 }
 
 /* ─── Heroes match the homepage light canvas and type ─── */
@@ -109,8 +109,8 @@ body.guudle-site:not(.home-saas) .bweb-badge,
 body.guudle-site:not(.home-saas) .ct-hero-badge {
   color: var(--gv-heading) !important;
   -webkit-text-fill-color: var(--gv-heading) !important;
-  background: rgba(11, 31, 58, 0.06) !important;
-  border-color: rgba(11, 31, 58, 0.16) !important;
+  background: rgba(0, 32, 128, 0.06) !important;
+  border-color: rgba(0, 32, 128, 0.16) !important;
 }
 
 body.guudle-site:not(.home-saas) .hero-cta-primary,
@@ -125,7 +125,7 @@ body.guudle-site:not(.home-saas) .svc-btn-primary {
   border: 0 !important;
   border-radius: 0.75rem !important;
   font-weight: 600 !important;
-  box-shadow: 0 8px 28px rgba(10, 37, 64, 0.28) !important;
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.28) !important;
 }
 
 body.guudle-site:not(.home-saas) .hero-cta-primary:hover,
@@ -133,7 +133,7 @@ body.guudle-site:not(.home-saas) .hero-cta-navy-primary:hover,
 body.guudle-site:not(.home-saas) .bweb-btn--primary:hover,
 body.guudle-site:not(.home-saas) .lm-btn--aqua:hover,
 body.guudle-site:not(.home-saas) .ct-hero-cta:hover {
-  background: #081e33 !important;
+  background: #1f2937 !important;
   transform: translateY(-2px);
 }
 
@@ -165,8 +165,8 @@ body.guudle-site:not(.home-saas) .ct-hero .ct-chip,
 body.guudle-site:not(.home-saas) .bweb-hero__trust span {
   color: var(--gv-heading) !important;
   -webkit-text-fill-color: var(--gv-heading) !important;
-  background: rgba(11, 31, 58, 0.05) !important;
-  border-color: rgba(11, 31, 58, 0.12) !important;
+  background: rgba(0, 32, 128, 0.05) !important;
+  border-color: rgba(0, 32, 128, 0.12) !important;
 }
 
 body.guudle-site:not(.home-saas) .bweb-hero__orb--2,
@@ -250,7 +250,7 @@ body.guudle-site:not(.home-saas) .gv-band--image > .slp-parallax__overlay {
   background: linear-gradient(
     180deg,
     rgba(7, 22, 41, 0.8) 0%,
-    rgba(11, 31, 58, 0.74) 48%,
+    rgba(0, 32, 128, 0.74) 48%,
     rgba(7, 22, 41, 0.86) 100%
   ) !important;
 }
@@ -271,7 +271,7 @@ body.guudle-site:not(.home-saas) .gv-band--image .cma-badge {
 
 body.guudle-site:not(.home-saas) .gv-band--image .process-hub-cta__card {
   background: #fff !important;
-  border-color: rgba(11, 31, 58, 0.12) !important;
+  border-color: rgba(0, 32, 128, 0.12) !important;
 }
 
 body.guudle-site:not(.home-saas) .gv-band--image .process-hub-cta__title,
@@ -291,7 +291,7 @@ body.guudle-site:not(.home-saas) .gv-solid--navy.ct-cta,
 body.guudle-site:not(.home-saas) .gv-solid--navy.gstory-cta,
 body.guudle-site:not(.home-saas) .gv-solid--navy.gstory-vision,
 body.guudle-site:not(.home-saas) .gv-solid--navy.bweb-cta {
-  background: #0b1f3a !important;
+  background: #002080 !important;
   background-image: none !important;
 }
 
@@ -465,7 +465,7 @@ body.guudle-site:not(.home-saas) .cma-glow-card {
   background: #fff !important;
   border: 1px solid var(--gv-line) !important;
   border-radius: 1.25rem !important;
-  box-shadow: 0 8px 32px rgba(11, 31, 58, 0.08) !important;
+  box-shadow: 0 8px 32px rgba(0, 32, 128, 0.08) !important;
 }
 
 body.guudle-site:not(.home-saas) .gv-solid--navy .cma-glow-card h3,
@@ -523,8 +523,8 @@ body.guudle-site:not(.home-saas) .gv-band--image .gstory-pull {
 }
 
 body.guudle-site:not(.home-saas) .gv-band--image .gstory-pull p {
-  color: #0b1f3a !important;
-  -webkit-text-fill-color: #0b1f3a !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 body.guudle-site:not(.home-saas) .gv-band--image .gstory-expertise__card,
@@ -543,8 +543,8 @@ body.guudle-site:not(.home-saas) .gv-band--image .gstory-timeline h3,
 body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-expertise__card h3,
 body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-service h3,
 body.guudle-site:not(.home-saas) .gv-solid--navy .gstory-timeline h3 {
-  color: #0b1f3a !important;
-  -webkit-text-fill-color: #0b1f3a !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 body.guudle-site:not(.home-saas) .gv-band--image .gstory-expertise__card p,

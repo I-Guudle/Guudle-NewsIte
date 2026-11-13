@@ -15,15 +15,15 @@ const BANNED_HTML = [
   /bg-gradient-to-br\s+from-teal-900/i,
   /bg-navy-900\b/i,
   /from-navy-900\s+via-navy-800/i,
-  /background:\s*#001F54/i,
+  /background:\s*#002080/i,
   /background:\s*#0F172A/i,
-  /background-color:\s*#001F54/i,
+  /background-color:\s*#002080/i,
   /background-color:\s*#0F172A/i,
 ];
 
 const BANNED_CSS = [
   /--svc-hero-bg:\s*linear-gradient[^;]*#001F/i,
-  /background:\s*linear-gradient[^;]*#001F54/i,
+  /background:\s*linear-gradient[^;]*#002080/i,
   /background:\s*linear-gradient[^;]*#0F172A/i,
   /background:\s*var\(--svc-navy\)/i,
   /\.svc-benefits\s*\{[^}]*background:\s*var\(--svc-navy\)/s,

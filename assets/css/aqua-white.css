@@ -4,7 +4,7 @@
  * Photo bands keep white type so text stays readable.
  */
 :root {
-  --primary-navy: #0B1F3A;
+  --primary-navy: #002080;
   --secondary-navy: #142D4E;
   --deep-navy: #071629;
   --white: #FFFFFF;
@@ -127,10 +127,10 @@
 .guudle-site .ind-cta__btn,
 .guudle-site .hs-hero__cta,
 .hs-hero__cta {
-  background: var(--primary-navy) !important;
+  background: #374151 !important;
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
-  border-color: var(--primary-navy) !important;
+  border-color: #374151 !important;
 }
 
 .guudle-site .nav-cta-btn:hover,
@@ -144,8 +144,8 @@
 .guudle-site .ind-cta__btn:hover,
 .guudle-site .hs-hero__cta:hover,
 .hs-hero__cta:hover {
-  background: var(--secondary-navy) !important;
-  border-color: var(--secondary-navy) !important;
+  background: #1f2937 !important;
+  border-color: #1f2937 !important;
   filter: none;
 }
 
@@ -220,7 +220,7 @@
 .guudle-site .cma-glow-card:not(.cma-glow-card--dark) {
   background: #ffffff !important;
   border: 1px solid var(--light-grey) !important;
-  box-shadow: 0 10px 28px rgba(11, 31, 58, 0.06) !important;
+  box-shadow: 0 10px 28px rgba(0, 32, 128, 0.06) !important;
 }
 
 .guudle-site .hind__card h3,
@@ -231,7 +231,7 @@
 }
 
 .ind-hero__overlay {
-  background: linear-gradient(160deg, rgba(7, 22, 41, 0.82), rgba(11, 31, 58, 0.55));
+  background: linear-gradient(160deg, rgba(7, 22, 41, 0.82), rgba(0, 32, 128, 0.55));
 }
 
 .ind-hero__kicker,
@@ -246,7 +246,7 @@
 .ind-card {
   background: #fff;
   border: 1px solid var(--light-grey);
-  box-shadow: 0 10px 28px rgba(11, 31, 58, 0.06);
+  box-shadow: 0 10px 28px rgba(0, 32, 128, 0.06);
 }
 
 .ind-tags span {

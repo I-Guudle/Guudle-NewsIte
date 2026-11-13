@@ -6,7 +6,7 @@ const indexPath = path.join(root, 'index.html');
 let html = fs.readFileSync(indexPath, 'utf8');
 
 const aiSection = `    <!-- AI Services Section — clean redesign -->
-    <section class="ai-section-redesign py-24 lg:py-28 bg-[#0B1F3A]" id="ai-services-section">
+    <section class="ai-section-redesign py-24 lg:py-28 bg-[#002080]" id="ai-services-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
                 <span class="ai-section-badge"><i class="fas fa-brain"></i> Artificial Intelligence Services</span>

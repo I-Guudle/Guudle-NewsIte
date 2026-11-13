@@ -475,6 +475,7 @@
       title: 'Beba Gas',
       client: 'Beba Gas',
       url: 'https://bebagas.com/',
+      demo: '../gas/index.html',
       industry: 'On-Demand Delivery',
       industryId: 'logistics',
       categoryLabel: 'Mobile App Development',

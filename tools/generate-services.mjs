@@ -41,7 +41,7 @@ const SERVICES = [
 function esc(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;'); }
 
 function breadcrumb(title) {
-  return `<nav class="text-sm text-slate-500 mb-6 sp-reveal" aria-label="Breadcrumb"><a href="../../index.html" class="hover:text-[#0B1F3A]">Home</a> <span class="mx-2">/</span> <a href="#" class="hover:text-[#0B1F3A]">Services</a> <span class="mx-2">/</span> <span class="text-[#2563EB] font-medium">${esc(title)}</span></nav>`;
+  return `<nav class="text-sm text-slate-500 mb-6 sp-reveal" aria-label="Breadcrumb"><a href="../../index.html" class="hover:text-[#002080]">Home</a> <span class="mx-2">/</span> <a href="#" class="hover:text-[#002080]">Services</a> <span class="mx-2">/</span> <span class="text-[#2563EB] font-medium">${esc(title)}</span></nav>`;
 }
 
 function ctas() {
@@ -56,25 +56,25 @@ function featureList(features) {
 }
 
 function techPills(tech) {
-  return `<div class="flex flex-wrap gap-2">${tech.map(t => `<span class="px-4 py-2 bg-[#F3F6FB] border border-slate-200 rounded-xl text-sm font-medium text-[#0B1F3A] hover:border-[#2563EB] hover:text-[#2563EB] transition-colors">${esc(t)}</span>`).join('')}</div>`;
+  return `<div class="flex flex-wrap gap-2">${tech.map(t => `<span class="px-4 py-2 bg-[#F3F6FB] border border-slate-200 rounded-xl text-sm font-medium text-[#002080] hover:border-[#2563EB] hover:text-[#2563EB] transition-colors">${esc(t)}</span>`).join('')}</div>`;
 }
 
 function sharedSections(s) {
   return `
     <section class="py-20 sp-section-gray">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-[#0B1F3A] mb-8 sp-reveal">Technologies We Use</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#002080] mb-8 sp-reveal">Technologies We Use</h2>
         <div class="sp-reveal sp-d1">${techPills(s.tech)}</div>
       </div>
     </section>
     <section class="py-20">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl sm:text-3xl font-bold text-[#0B1F3A] mb-12 text-center sp-reveal">Our Process</h2>
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#002080] mb-12 text-center sp-reveal">Our Process</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           ${['Discovery','Strategy','Development','Launch'].map((step, i) => `
           <div class="sp-card p-6 text-center sp-reveal sp-d${i+1}">
-            <div class="w-12 h-12 rounded-xl ${i===0||i===3 ? 'bg-[#0B1F3A] text-white' : 'bg-[#F3F6FB] text-[#0B1F3A]'} flex items-center justify-center font-bold mx-auto mb-4">${String(i+1).padStart(2,'0')}</div>
-            <h3 class="font-semibold text-[#0B1F3A] mb-2">${step}</h3>
+            <div class="w-12 h-12 rounded-xl ${i===0||i===3 ? 'bg-[#002080] text-white' : 'bg-[#F3F6FB] text-[#002080]'} flex items-center justify-center font-bold mx-auto mb-4">${String(i+1).padStart(2,'0')}</div>
+            <h3 class="font-semibold text-[#002080] mb-2">${step}</h3>
             <p class="text-slate-500 text-sm">${['Understanding goals & requirements','Architecture & roadmap planning','Agile build with regular updates','Deployment & ongoing support'][i]}</p>
           </div>`).join('')}
         </div>
@@ -84,7 +84,7 @@ function sharedSections(s) {
       <div class="max-w-4xl mx-auto px-4 text-center sp-reveal">
         <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready to Transform Your Business?</h2>
         <p class="text-white/60 mb-8">Let's discuss how our ${esc(s.title)} expertise can accelerate your goals.</p>
-        <a href="../contact.html" class="inline-flex px-8 py-4 bg-white text-[#0B1F3A] font-semibold rounded-xl hover:shadow-xl transition-all text-sm">Start Your Project</a>
+        <a href="../contact.html" class="inline-flex px-8 py-4 bg-white text-[#002080] font-semibold rounded-xl hover:shadow-xl transition-all text-sm">Start Your Project</a>
       </div>
     </section>`;
 }
@@ -97,7 +97,7 @@ const HEROES = {
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="sp-reveal-left">
             <span class="sp-badge bg-[#F3F6FB] text-[#2563EB] border border-blue-100 mb-6">${esc(s.personality)}</span>
-            <h1 class="text-4xl sm:text-5xl font-bold text-[#0B1F3A] leading-tight mb-5">${esc(s.title)}</h1>
+            <h1 class="text-4xl sm:text-5xl font-bold text-[#002080] leading-tight mb-5">${esc(s.title)}</h1>
             <p class="text-lg text-slate-500 mb-8 leading-relaxed">${esc(s.subtitle)}</p>
             ${ctas()}
           </div>
@@ -107,7 +107,7 @@ const HEROES = {
               <div class="flex-1 mx-4 h-6 bg-white rounded-md border border-slate-200 text-[10px] text-slate-400 flex items-center px-3">https://yourbusiness.com</div>
             </div>
             <div class="p-6 bg-gradient-to-br from-[#F3F6FB] to-white min-h-[280px]">
-              <div class="h-4 w-3/4 bg-[#0B1F3A]/10 rounded mb-3"></div>
+              <div class="h-4 w-3/4 bg-[#002080]/10 rounded mb-3"></div>
               <div class="h-3 w-full bg-slate-200 rounded mb-2"></div>
               <div class="h-3 w-5/6 bg-slate-200 rounded mb-6"></div>
               <div class="grid grid-cols-3 gap-3">${[1,2,3].map(()=>'<div class="h-20 bg-white border border-slate-100 rounded-lg shadow-sm"></div>').join('')}</div>
@@ -116,34 +116,34 @@ const HEROES = {
         </div>
       </div>
     </section>
-    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12"><div class="sp-reveal"><h2 class="text-2xl font-bold text-[#0B1F3A] mb-6">What We Deliver</h2>${featureList(s.features)}</div><div class="grid sm:grid-cols-2 gap-4 sp-reveal sp-d2">${s.benefits.map(b=>`<div class="sp-card p-5"><p class="font-medium text-[#0B1F3A]">${esc(b)}</p></div>`).join('')}</div></div></section>`,
+    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12"><div class="sp-reveal"><h2 class="text-2xl font-bold text-[#002080] mb-6">What We Deliver</h2>${featureList(s.features)}</div><div class="grid sm:grid-cols-2 gap-4 sp-reveal sp-d2">${s.benefits.map(b=>`<div class="sp-card p-5"><p class="font-medium text-[#002080]">${esc(b)}</p></div>`).join('')}</div></div></section>`,
 
   'corporate-timeline': (s) => `
     <section class="pt-28 pb-20 bg-gradient-to-b from-[#F3F6FB] to-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         ${breadcrumb(s.title)}
         <div class="max-w-3xl sp-reveal">
-          <span class="sp-badge bg-white text-[#0B1F3A] border border-slate-200 mb-6">${esc(s.personality)}</span>
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#0B1F3A] mb-5">${esc(s.title)}</h1>
+          <span class="sp-badge bg-white text-[#002080] border border-slate-200 mb-6">${esc(s.personality)}</span>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#002080] mb-5">${esc(s.title)}</h1>
           <p class="text-xl text-slate-500 mb-8">${esc(s.subtitle)}</p>
           ${ctas()}
         </div>
       </div>
     </section>
-    <section class="py-20"><div class="max-w-3xl mx-auto px-4">${s.features.map((f,i)=>`<div class="timeline-item relative pl-12 pb-10 sp-reveal sp-d${Math.min(i+1,4)}"><div class="absolute left-0 w-10 h-10 rounded-full bg-[#0B1F3A] text-white flex items-center justify-center text-sm font-bold">${i+1}</div><h3 class="font-semibold text-[#0B1F3A] mb-1">${esc(f)}</h3><p class="text-slate-500 text-sm">${esc(s.benefits[i % s.benefits.length])}</p></div>`).join('')}</div></section>`,
+    <section class="py-20"><div class="max-w-3xl mx-auto px-4">${s.features.map((f,i)=>`<div class="timeline-item relative pl-12 pb-10 sp-reveal sp-d${Math.min(i+1,4)}"><div class="absolute left-0 w-10 h-10 rounded-full bg-[#002080] text-white flex items-center justify-center text-sm font-bold">${i+1}</div><h3 class="font-semibold text-[#002080] mb-1">${esc(f)}</h3><p class="text-slate-500 text-sm">${esc(s.benefits[i % s.benefits.length])}</p></div>`).join('')}</div></section>`,
 
   'dashboard-saas': (s) => `
-    <section class="pt-28 pb-16 bg-[#0B1F3A] text-white relative overflow-hidden">
+    <section class="pt-28 pb-16 bg-[#002080] text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-20" style="background-image:linear-gradient(rgba(37,99,235,0.3) 1px,transparent 1px),linear-gradient(90deg,rgba(37,99,235,0.3) 1px,transparent 1px);background-size:40px 40px"></div>
       <div class="max-w-7xl mx-auto px-4 relative">
-        ${breadcrumb(s.title).replace('text-slate-500','text-white/50').replace('hover:text-[#0B1F3A]','hover:text-white').replace('text-[#2563EB]','text-cyan-400')}
+        ${breadcrumb(s.title).replace('text-slate-500','text-white/50').replace('hover:text-[#002080]','hover:text-white').replace('text-[#2563EB]','text-cyan-400')}
         <div class="grid lg:grid-cols-2 gap-12 items-center py-8">
-          <div class="sp-reveal-left"><span class="sp-badge bg-white/10 text-cyan-400 mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-5xl font-bold mb-5">${esc(s.title)}</h1><p class="text-white/60 text-lg mb-8">${esc(s.subtitle)}</p>${ctas().replace('sp-btn-outline','sp-btn-outline border-white/30 text-white hover:bg-white hover:text-[#0B1F3A]')}</div>
+          <div class="sp-reveal-left"><span class="sp-badge bg-white/10 text-cyan-400 mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-5xl font-bold mb-5">${esc(s.title)}</h1><p class="text-white/60 text-lg mb-8">${esc(s.subtitle)}</p>${ctas().replace('sp-btn-outline','sp-btn-outline border-white/30 text-white hover:bg-white hover:text-[#002080]')}</div>
           <div class="metric-pulse sp-card-navy p-6 sp-reveal-right"><div class="grid grid-cols-2 gap-4 mb-4">${['Users','Revenue','Uptime','API'].map((l,i)=>`<div class="bg-white/10 rounded-xl p-4"><p class="text-xs text-white/50">${l}</p><p class="text-2xl font-bold text-cyan-400">${['847K','$2.4M','99.9%','12M'][i]}</p></div>`).join('')}</div><div class="h-24 bg-white/5 rounded-xl flex items-end gap-2 p-4">${[40,65,45,80,55,90,70].map(h=>`<div class="flex-1 bg-gradient-to-t from-[#2563EB] to-cyan-400 rounded-t" style="height:${h}%"></div>`).join('')}</div></div>
         </div>
       </div>
     </section>
-    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">${s.features.slice(0,6).map((f,i)=>`<div class="sp-card p-6 sp-reveal sp-d${(i%4)+1}"><div class="w-10 h-10 rounded-lg bg-[#F3F6FB] flex items-center justify-center text-[#2563EB] font-bold mb-4">${i+1}</div><h3 class="font-semibold text-[#0B1F3A] mb-2">${esc(f)}</h3></div>`).join('')}</div></section>`,
+    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">${s.features.slice(0,6).map((f,i)=>`<div class="sp-card p-6 sp-reveal sp-d${(i%4)+1}"><div class="w-10 h-10 rounded-lg bg-[#F3F6FB] flex items-center justify-center text-[#2563EB] font-bold mb-4">${i+1}</div><h3 class="font-semibold text-[#002080] mb-2">${esc(f)}</h3></div>`).join('')}</div></section>`,
 
   'phone-showcase': (s) => `
     <section class="pt-28 pb-20 overflow-hidden">
@@ -151,153 +151,153 @@ const HEROES = {
         ${breadcrumb(s.title)}
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div class="order-2 lg:order-1 flex justify-center sp-reveal">
-            <div class="phone-frame w-56 bg-[#0B1F3A] p-3">
+            <div class="phone-frame w-56 bg-[#002080] p-3">
               <div class="bg-white rounded-[1.4rem] overflow-hidden h-[420px]">
-                <div class="h-8 bg-[#F3F6FB] flex items-center justify-center"><div class="w-16 h-4 bg-[#0B1F3A]/10 rounded-full"></div></div>
+                <div class="h-8 bg-[#F3F6FB] flex items-center justify-center"><div class="w-16 h-4 bg-[#002080]/10 rounded-full"></div></div>
                 <div class="p-4 space-y-3">${[1,2,3,4].map(()=>'<div class="h-12 bg-[#F3F6FB] rounded-xl"></div>').join('')}</div>
               </div>
             </div>
           </div>
-          <div class="order-1 lg:order-2 sp-reveal-right"><span class="sp-badge bg-[#F3F6FB] text-[#0B1F3A] mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-5xl font-bold text-[#0B1F3A] mb-5">${esc(s.title)}</h1><p class="text-slate-500 text-lg mb-6">${esc(s.subtitle)}</p><p class="text-3xl font-bold sp-gradient-text mb-8">${esc(s.stat.n)} <span class="text-base font-normal text-slate-400">${esc(s.stat.l)}</span></p>${ctas()}</div>
+          <div class="order-1 lg:order-2 sp-reveal-right"><span class="sp-badge bg-[#F3F6FB] text-[#002080] mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-5xl font-bold text-[#002080] mb-5">${esc(s.title)}</h1><p class="text-slate-500 text-lg mb-6">${esc(s.subtitle)}</p><p class="text-3xl font-bold sp-gradient-text mb-8">${esc(s.stat.n)} <span class="text-base font-normal text-slate-400">${esc(s.stat.l)}</span></p>${ctas()}</div>
         </div>
       </div>
     </section>
-    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4"><h2 class="text-2xl font-bold text-[#0B1F3A] mb-8 sp-reveal">Capabilities</h2>${featureList(s.features)}</div></section>`,
+    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4"><h2 class="text-2xl font-bold text-[#002080] mb-8 sp-reveal">Capabilities</h2>${featureList(s.features)}</div></section>`,
 
   'ios-minimal': (s) => `
     <section class="pt-32 pb-24 text-center">
       <div class="max-w-4xl mx-auto px-4 sp-reveal">
         ${breadcrumb(s.title)}
-        <span class="sp-badge bg-[#F3F6FB] text-[#0B1F3A] mb-8">${esc(s.personality)}</span>
-        <h1 class="hero-title text-5xl sm:text-6xl lg:text-7xl font-bold text-[#0B1F3A] tracking-tight mb-6">${esc(s.title)}</h1>
+        <span class="sp-badge bg-[#F3F6FB] text-[#002080] mb-8">${esc(s.personality)}</span>
+        <h1 class="hero-title text-5xl sm:text-6xl lg:text-7xl font-bold text-[#002080] tracking-tight mb-6">${esc(s.title)}</h1>
         <p class="text-xl text-slate-500 max-w-2xl mx-auto mb-10 leading-relaxed">${esc(s.subtitle)}</p>
         ${ctas()}
-        <div class="flex flex-wrap justify-center gap-3 mt-16">${s.features.map(f=>`<span class="feature-pill px-5 py-2 bg-[#F3F6FB] border border-slate-200 text-sm text-[#0B1F3A]">${esc(f)}</span>`).join('')}</div>
+        <div class="flex flex-wrap justify-center gap-3 mt-16">${s.features.map(f=>`<span class="feature-pill px-5 py-2 bg-[#F3F6FB] border border-slate-200 text-sm text-[#002080]">${esc(f)}</span>`).join('')}</div>
       </div>
     </section>
-    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6">${s.benefits.map((b,i)=>`<div class="sp-card p-6 sp-reveal sp-d${i+1}"><h3 class="font-semibold text-[#0B1F3A]">${esc(b)}</h3></div>`).join('')}</div></section>`,
+    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6">${s.benefits.map((b,i)=>`<div class="sp-card p-6 sp-reveal sp-d${i+1}"><h3 class="font-semibold text-[#002080]">${esc(b)}</h3></div>`).join('')}</div></section>`,
 
   'material-cards': (s) => `
     <section class="pt-28 pb-16 bg-gradient-to-br from-[#F3F6FB] via-white to-[#F3F6FB]">
-      <div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="sp-reveal"><span class="sp-badge bg-[#2563EB] text-white mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-5xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 text-lg max-w-2xl mb-8">${esc(s.subtitle)}</p>${ctas()}</div></div>
+      <div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="sp-reveal"><span class="sp-badge bg-[#2563EB] text-white mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-5xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 text-lg max-w-2xl mb-8">${esc(s.subtitle)}</p>${ctas()}</div></div>
     </section>
-    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="material-card sp-card p-6 sp-reveal" style="transition-delay:${i*0.08}s"><div class="w-12 h-12 rounded-full bg-[#2563EB] text-white flex items-center justify-center mb-4 shadow-lg shadow-blue-500/30"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div><h3 class="font-semibold text-[#0B1F3A]">${esc(f)}</h3></div>`).join('')}</div></section>`,
+    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="material-card sp-card p-6 sp-reveal" style="transition-delay:${i*0.08}s"><div class="w-12 h-12 rounded-full bg-[#2563EB] text-white flex items-center justify-center mb-4 shadow-lg shadow-blue-500/30"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div><h3 class="font-semibold text-[#002080]">${esc(f)}</h3></div>`).join('')}</div></section>`,
 
   'diagonal-dual': (s) => `
     <section class="relative pt-28 pb-20"><div class="diag-bg absolute inset-0 -z-10"></div>
       <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">${breadcrumb(s.title)}<div class="lg:col-span-2 grid lg:grid-cols-2 gap-12 items-center -mt-8">
-        <div class="sp-reveal-left"><h1 class="text-4xl sm:text-5xl font-bold text-[#0B1F3A] mb-5">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
-        <div class="grid grid-cols-2 gap-4 sp-reveal-right"><div class="sp-card p-6 bg-[#0B1F3A] text-white rounded-2xl"><p class="text-cyan-400 text-sm mb-2">iOS</p><p class="font-bold">Native feel</p></div><div class="sp-card p-6 mt-8"><p class="text-[#2563EB] text-sm mb-2">Android</p><p class="font-bold text-[#0B1F3A]">Material UI</p></div><div class="sp-card p-6 -mt-4 col-span-2 text-center"><p class="text-sm text-slate-500">One Flutter codebase</p><p class="text-2xl font-bold sp-gradient-text">Deploy everywhere</p></div></div>
+        <div class="sp-reveal-left"><h1 class="text-4xl sm:text-5xl font-bold text-[#002080] mb-5">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
+        <div class="grid grid-cols-2 gap-4 sp-reveal-right"><div class="sp-card p-6 bg-[#002080] text-white rounded-2xl"><p class="text-cyan-400 text-sm mb-2">iOS</p><p class="font-bold">Native feel</p></div><div class="sp-card p-6 mt-8"><p class="text-[#2563EB] text-sm mb-2">Android</p><p class="font-bold text-[#002080]">Material UI</p></div><div class="sp-card p-6 -mt-4 col-span-2 text-center"><p class="text-sm text-slate-500">One Flutter codebase</p><p class="text-2xl font-bold sp-gradient-text">Deploy everywhere</p></div></div>
       </div></div>
     </section>
     <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12"><div class="sp-reveal">${featureList(s.features)}</div><div class="sp-card-navy p-8 sp-reveal sp-d2"><h2 class="text-xl font-bold mb-6">Key Benefits</h2><ul class="space-y-4">${s.benefits.map(b=>`<li class="flex gap-3 text-white/80"><span class="text-cyan-400">→</span>${esc(b)}</li>`).join('')}</ul></div></div></section>`,
 
   'shop-grid': (s) => `
-    <section class="pt-28 pb-12 bg-white"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 sp-reveal"><div><span class="sp-badge bg-[#F3F6FB] text-[#0B1F3A] mb-4">${esc(s.personality)}</span><h1 class="text-4xl sm:text-5xl font-bold text-[#0B1F3A]">${esc(s.title)}</h1><p class="text-slate-500 mt-4 max-w-xl">${esc(s.subtitle)}</p></div>${ctas()}</div>
+    <section class="pt-28 pb-12 bg-white"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 sp-reveal"><div><span class="sp-badge bg-[#F3F6FB] text-[#002080] mb-4">${esc(s.personality)}</span><h1 class="text-4xl sm:text-5xl font-bold text-[#002080]">${esc(s.title)}</h1><p class="text-slate-500 mt-4 max-w-xl">${esc(s.subtitle)}</p></div>${ctas()}</div>
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">${[1,2,3,4].map(i=>`<div class="product-tile sp-card overflow-hidden sp-reveal sp-d${i}"><div class="h-32 bg-gradient-to-br from-[#F3F6FB] to-slate-100"></div><div class="p-4"><div class="h-3 w-2/3 bg-slate-200 rounded mb-2"></div><p class="text-[#2563EB] font-bold">$${99+i*20}</p></div></div>`).join('')}</div></div></section>
-    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12"><div class="sp-reveal"><h2 class="text-2xl font-bold text-[#0B1F3A] mb-6">Store Features</h2>${featureList(s.features)}</div><div class="grid grid-cols-2 gap-4 sp-reveal sp-d2">${s.benefits.map(b=>`<div class="sp-card p-5 text-center"><p class="font-medium text-[#0B1F3A] text-sm">${esc(b)}</p></div>`).join('')}</div></div></section>`,
+    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12"><div class="sp-reveal"><h2 class="text-2xl font-bold text-[#002080] mb-6">Store Features</h2>${featureList(s.features)}</div><div class="grid grid-cols-2 gap-4 sp-reveal sp-d2">${s.benefits.map(b=>`<div class="sp-card p-5 text-center"><p class="font-medium text-[#002080] text-sm">${esc(b)}</p></div>`).join('')}</div></div></section>`,
 
   'shopify-store': (s) => `
     <section class="pt-28 pb-0"><div class="store-header py-3 text-center text-white text-sm font-medium">Powered by Shopify Expert Development</div>
-      <div class="max-w-7xl mx-auto px-4 py-16">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center sp-reveal"><div><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-6">${esc(s.subtitle)}</p>${ctas()}</div><div class="sp-card p-6 border-2 border-[#95BF47]/30"><div class="flex gap-3 mb-4">${['Home','Products','Cart'].map(t=>`<span class="text-sm ${t==='Products'?'accent-green font-semibold':'text-slate-400'}">${t}</span>`).join('')}</div><div class="grid grid-cols-2 gap-3">${[1,2,3,4].map(()=>'<div class="aspect-square bg-[#F3F6FB] rounded-lg"></div>').join('')}</div></div></div></div></section>
+      <div class="max-w-7xl mx-auto px-4 py-16">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center sp-reveal"><div><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-6">${esc(s.subtitle)}</p>${ctas()}</div><div class="sp-card p-6 border-2 border-[#95BF47]/30"><div class="flex gap-3 mb-4">${['Home','Products','Cart'].map(t=>`<span class="text-sm ${t==='Products'?'accent-green font-semibold':'text-slate-400'}">${t}</span>`).join('')}</div><div class="grid grid-cols-2 gap-3">${[1,2,3,4].map(()=>'<div class="aspect-square bg-[#F3F6FB] rounded-lg"></div>').join('')}</div></div></div></div></section>
     <section class="py-20"><div class="max-w-7xl mx-auto px-4">${featureList(s.features)}</div></section>`,
 
   'enterprise-stats': (s) => `
-    <section class="pt-28 pb-20"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<h1 class="text-4xl sm:text-6xl font-bold text-[#0B1F3A] mb-4 sp-reveal">${esc(s.title)}</h1><p class="text-xl text-slate-500 max-w-2xl mb-12 sp-reveal sp-d1">${esc(s.subtitle)}</p>
+    <section class="pt-28 pb-20"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<h1 class="text-4xl sm:text-6xl font-bold text-[#002080] mb-4 sp-reveal">${esc(s.title)}</h1><p class="text-xl text-slate-500 max-w-2xl mb-12 sp-reveal sp-d1">${esc(s.subtitle)}</p>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">${[{n:'500+',l:'Enterprise clients'},{n:s.stat.n,l:s.stat.l},{n:'24/7',l:'Support SLA'},{n:'15+',l:'Years experience'}].map((st,i)=>`<div class="stat-block sp-card p-6 sp-reveal sp-d${i+1}"><p class="text-3xl font-bold text-[#2563EB]">${st.n}</p><p class="text-slate-500 text-sm mt-1">${st.l}</p></div>`).join('')}</div>${ctas()}</div></section>
-    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">${featureList(s.features)}<div class="sp-reveal sp-d2">${s.benefits.map(b=>`<div class="border-l-4 border-[#0B1F3A] pl-4 mb-6"><p class="font-semibold text-[#0B1F3A]">${esc(b)}</p></div>`).join('')}</div></div></section>`,
+    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">${featureList(s.features)}<div class="sp-reveal sp-d2">${s.benefits.map(b=>`<div class="border-l-4 border-[#002080] pl-4 mb-6"><p class="font-semibold text-[#002080]">${esc(b)}</p></div>`).join('')}</div></div></section>`,
 
   'wordpress-blocks': (s) => `
-    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="sp-reveal mb-12"><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500">${esc(s.subtitle)}</p></div>
-    <div class="grid lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="wp-block sp-card p-6 sp-reveal sp-d${(i%4)+1}"><h3 class="font-semibold text-[#0B1F3A] mb-2">${esc(f)}</h3><p class="text-slate-500 text-sm">${esc(s.benefits[i % s.benefits.length])}</p></div>`).join('')}</div><div class="mt-10">${ctas()}</div></div></section>`,
+    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="sp-reveal mb-12"><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500">${esc(s.subtitle)}</p></div>
+    <div class="grid lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="wp-block sp-card p-6 sp-reveal sp-d${(i%4)+1}"><h3 class="font-semibold text-[#002080] mb-2">${esc(f)}</h3><p class="text-slate-500 text-sm">${esc(s.benefits[i % s.benefits.length])}</p></div>`).join('')}</div><div class="mt-10">${ctas()}</div></div></section>`,
 
   'editorial-cms': (s) => `
-    <section class="pt-28 pb-12 bg-[#F3F6FB]"><div class="max-w-4xl mx-auto px-4 text-center sp-reveal">${breadcrumb(s.title)}<h1 class="text-4xl sm:text-5xl font-serif font-bold text-[#0B1F3A] mb-5" style="font-family:Georgia,serif">${esc(s.title)}</h1><p class="text-lg text-slate-600 italic mb-8">${esc(s.subtitle)}</p>${ctas()}</div></section>
-    <section class="py-20"><div class="max-w-4xl mx-auto px-4 editorial-col gap-8 sp-reveal">${s.features.map(f=>`<div class="sp-card p-5 mb-6 break-inside-avoid"><h3 class="font-semibold text-[#0B1F3A]">${esc(f)}</h3></div>`).join('')}</div></section>`,
+    <section class="pt-28 pb-12 bg-[#F3F6FB]"><div class="max-w-4xl mx-auto px-4 text-center sp-reveal">${breadcrumb(s.title)}<h1 class="text-4xl sm:text-5xl font-serif font-bold text-[#002080] mb-5" style="font-family:Georgia,serif">${esc(s.title)}</h1><p class="text-lg text-slate-600 italic mb-8">${esc(s.subtitle)}</p>${ctas()}</div></section>
+    <section class="py-20"><div class="max-w-4xl mx-auto px-4 editorial-col gap-8 sp-reveal">${s.features.map(f=>`<div class="sp-card p-5 mb-6 break-inside-avoid"><h3 class="font-semibold text-[#002080]">${esc(f)}</h3></div>`).join('')}</div></section>`,
 
   'blog-grid': (s) => `
-    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="grid lg:grid-cols-3 gap-8"><div class="lg:col-span-1 sp-reveal"><h1 class="text-3xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-6">${esc(s.subtitle)}</p>${ctas()}</div><div class="lg:col-span-2 grid sm:grid-cols-2 gap-4">${s.features.map((f,i)=>`<article class="sp-card p-5 sp-reveal sp-d${(i%4)+1}"><div class="h-24 bg-[#F3F6FB] rounded-lg mb-3"></div><h3 class="font-semibold text-[#0B1F3A] text-sm">${esc(f)}</h3></article>`).join('')}</div></div></div></section>`,
+    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="grid lg:grid-cols-3 gap-8"><div class="lg:col-span-1 sp-reveal"><h1 class="text-3xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-6">${esc(s.subtitle)}</p>${ctas()}</div><div class="lg:col-span-2 grid sm:grid-cols-2 gap-4">${s.features.map((f,i)=>`<article class="sp-card p-5 sp-reveal sp-d${(i%4)+1}"><div class="h-24 bg-[#F3F6FB] rounded-lg mb-3"></div><h3 class="font-semibold text-[#002080] text-sm">${esc(f)}</h3></article>`).join('')}</div></div></div></section>`,
 
   'builder-blocks': (s) => `
-    <section class="pt-28 pb-20 overflow-hidden"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div><div class="relative h-80 sp-reveal-right">${['Header','Hero','Gallery','Contact'].map((l,i)=>`<div class="drag-block absolute sp-card px-6 py-4 cursor-grab shadow-lg" style="top:${i*18}%;left:${i*12}%;transform:rotate(${(i-1.5)*3}deg)"><span class="text-xs text-slate-400">Block</span><p class="font-semibold text-[#0B1F3A]">${l}</p></div>`).join('')}</div></div></div></section>
+    <section class="pt-28 pb-20 overflow-hidden"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div><div class="relative h-80 sp-reveal-right">${['Header','Hero','Gallery','Contact'].map((l,i)=>`<div class="drag-block absolute sp-card px-6 py-4 cursor-grab shadow-lg" style="top:${i*18}%;left:${i*12}%;transform:rotate(${(i-1.5)*3}deg)"><span class="text-xs text-slate-400">Block</span><p class="font-semibold text-[#002080]">${l}</p></div>`).join('')}</div></div></div></section>
     <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4">${featureList(s.features)}</div></section>`,
 
   'institutional-banner': (s) => `
-    <section class="relative pt-28 pb-24 bg-[#0B1F3A] text-white overflow-hidden"><div class="banner-stripe"></div>
-      <div class="max-w-7xl mx-auto px-4 relative">${breadcrumb(s.title).replace(/text-slate-500/g,'text-white/50').replace(/hover:text-\[#0B1F3A\]/g,'hover:text-white').replace(/text-\[#2563EB\]/g,'text-cyan-400')}
+    <section class="relative pt-28 pb-24 bg-[#002080] text-white overflow-hidden"><div class="banner-stripe"></div>
+      <div class="max-w-7xl mx-auto px-4 relative">${breadcrumb(s.title).replace(/text-slate-500/g,'text-white/50').replace(/hover:text-\[#002080\]/g,'hover:text-white').replace(/text-\[#2563EB\]/g,'text-cyan-400')}
       <div class="max-w-3xl sp-reveal"><span class="sp-badge bg-white/10 text-cyan-400 mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-6xl font-bold mb-6">${esc(s.title)}</h1><p class="text-white/60 text-xl mb-10">${esc(s.subtitle)}</p>${ctas().replace('sp-btn-outline','border border-white/30 text-white px-7 py-3.5 rounded-xl inline-flex')}</div></div></section>
-    <section class="py-24 -mt-12 relative z-10"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">${s.benefits.map((b,i)=>`<div class="sp-card bg-white p-8 sp-reveal sp-d${i+1} shadow-xl"><p class="text-2xl font-bold text-[#2563EB] mb-2">${['Efficiency','Scale','Future-proof'][i]}</p><p class="text-[#0B1F3A] font-medium">${esc(b)}</p></div>`).join('')}</div></section>
+    <section class="py-24 -mt-12 relative z-10"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">${s.benefits.map((b,i)=>`<div class="sp-card bg-white p-8 sp-reveal sp-d${i+1} shadow-xl"><p class="text-2xl font-bold text-[#2563EB] mb-2">${['Efficiency','Scale','Future-proof'][i]}</p><p class="text-[#002080] font-medium">${esc(b)}</p></div>`).join('')}</div></section>
     <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4">${featureList(s.features)}</div></section>`,
 
   'flowchart-erp': (s) => `
-    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<h1 class="text-4xl font-bold text-[#0B1F3A] mb-4 sp-reveal">${esc(s.title)}</h1><p class="text-slate-500 mb-12 sp-reveal">${esc(s.subtitle)}</p>
-    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">${s.features.slice(0,4).map((f,i)=>`<div class="flow-node sp-card px-6 py-4 text-center min-w-[140px] sp-reveal sp-d${i+1}"><p class="font-semibold text-[#0B1F3A] text-sm">${esc(f)}</p>${i<3?'<div class="hidden md:block absolute">→</div>':''}</div>`).join('<span class="text-2xl text-[#2563EB] hidden md:block">→</span>')}</div>${ctas()}</div></section>
-    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-6">${s.features.slice(4).map(f=>`<div class="sp-card p-5 sp-reveal"><p class="font-medium text-[#0B1F3A]">${esc(f)}</p></div>`).join('')}${s.benefits.map(b=>`<div class="sp-card-navy p-5 sp-reveal text-white/90">${esc(b)}</div>`).join('')}</div></section>`,
+    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<h1 class="text-4xl font-bold text-[#002080] mb-4 sp-reveal">${esc(s.title)}</h1><p class="text-slate-500 mb-12 sp-reveal">${esc(s.subtitle)}</p>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-12">${s.features.slice(0,4).map((f,i)=>`<div class="flow-node sp-card px-6 py-4 text-center min-w-[140px] sp-reveal sp-d${i+1}"><p class="font-semibold text-[#002080] text-sm">${esc(f)}</p>${i<3?'<div class="hidden md:block absolute">→</div>':''}</div>`).join('<span class="text-2xl text-[#2563EB] hidden md:block">→</span>')}</div>${ctas()}</div></section>
+    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-6">${s.features.slice(4).map(f=>`<div class="sp-card p-5 sp-reveal"><p class="font-medium text-[#002080]">${esc(f)}</p></div>`).join('')}${s.benefits.map(b=>`<div class="sp-card-navy p-5 sp-reveal text-white/90">${esc(b)}</div>`).join('')}</div></section>`,
 
   'pipeline-crm': (s) => `
-    <section class="pt-28 pb-20 bg-gradient-to-b from-white to-[#F3F6FB]"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="sp-reveal mb-12"><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500">${esc(s.subtitle)}</p></div>
-    <div class="flex flex-col md:flex-row gap-3 mb-12">${['Leads','Qualified','Proposal','Closed'].map((stage,i)=>`<div class="pipeline-stage sp-card p-6 sp-reveal sp-d${i+1} bg-gradient-to-b from-white to-[#F3F6FB]"><p class="text-xs text-slate-400 uppercase tracking-wider mb-2">${stage}</p><p class="font-bold text-[#0B1F3A]">${esc(s.features[i] || stage)}</p><div class="mt-4 h-2 bg-slate-200 rounded-full"><div class="h-full bg-[#2563EB] rounded-full" style="width:${(i+1)*25}%"></div></div></div>`).join('')}</div>${ctas()}</div></section>
+    <section class="pt-28 pb-20 bg-gradient-to-b from-white to-[#F3F6FB]"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="sp-reveal mb-12"><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500">${esc(s.subtitle)}</p></div>
+    <div class="flex flex-col md:flex-row gap-3 mb-12">${['Leads','Qualified','Proposal','Closed'].map((stage,i)=>`<div class="pipeline-stage sp-card p-6 sp-reveal sp-d${i+1} bg-gradient-to-b from-white to-[#F3F6FB]"><p class="text-xs text-slate-400 uppercase tracking-wider mb-2">${stage}</p><p class="font-bold text-[#002080]">${esc(s.features[i] || stage)}</p><div class="mt-4 h-2 bg-slate-200 rounded-full"><div class="h-full bg-[#2563EB] rounded-full" style="width:${(i+1)*25}%"></div></div></div>`).join('')}</div>${ctas()}</div></section>
     <section class="py-20"><div class="max-w-7xl mx-auto px-4">${featureList(s.features)}</div></section>`,
 
   'workflow-nodes': (s) => `
-    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">${breadcrumb(s.title)}<div class="lg:col-span-2 grid lg:grid-cols-2 gap-12 -mt-6"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
-    <div class="relative sp-reveal-right"><svg id="workflow-svg" class="absolute inset-0 w-full h-full" viewBox="0 0 300 200"><path class="wf-connector" d="M50,100 L150,50 L250,100 L150,150 Z" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.3"/></svg>${s.features.slice(0,4).map((f,i)=>{const pos=[[20,40],[60,10],[60,70],[20,85]][i];return `<div class="absolute sp-card p-3 text-xs font-medium text-[#0B1F3A]" style="top:${pos[0]}%;left:${pos[1]}%">${esc(f.split(' ')[0])}</div>`}).join('')}</div></div></div></section>
-    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 gap-4">${s.benefits.map(b=>`<div class="sp-card p-6 sp-reveal"><p class="font-semibold text-[#0B1F3A]">${esc(b)}</p></div>`).join('')}</div></section>`,
+    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">${breadcrumb(s.title)}<div class="lg:col-span-2 grid lg:grid-cols-2 gap-12 -mt-6"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
+    <div class="relative sp-reveal-right"><svg id="workflow-svg" class="absolute inset-0 w-full h-full" viewBox="0 0 300 200"><path class="wf-connector" d="M50,100 L150,50 L250,100 L150,150 Z" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.3"/></svg>${s.features.slice(0,4).map((f,i)=>{const pos=[[20,40],[60,10],[60,70],[20,85]][i];return `<div class="absolute sp-card p-3 text-xs font-medium text-[#002080]" style="top:${pos[0]}%;left:${pos[1]}%">${esc(f.split(' ')[0])}</div>`}).join('')}</div></div></div></section>
+    <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 gap-4">${s.benefits.map(b=>`<div class="sp-card p-6 sp-reveal"><p class="font-semibold text-[#002080]">${esc(b)}</p></div>`).join('')}</div></section>`,
 
   'cloud-float': (s) => `
-    <section class="pt-28 pb-24 relative overflow-hidden"><div class="max-w-7xl mx-auto px-4 relative z-10">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl sm:text-5xl font-bold text-[#0B1F3A] mb-5">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div><div class="relative h-64 sp-reveal-right">${[0,1,2].map(i=>`<div class="cloud-icon absolute sp-card p-6 ${i===1?'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 shadow-xl':i===0?'top-4 left-8':'bottom-4 right-8'}"><svg class="w-10 h-10 text-[#2563EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg></div>`).join('')}</div></div></div></section>
+    <section class="pt-28 pb-24 relative overflow-hidden"><div class="max-w-7xl mx-auto px-4 relative z-10">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl sm:text-5xl font-bold text-[#002080] mb-5">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div><div class="relative h-64 sp-reveal-right">${[0,1,2].map(i=>`<div class="cloud-icon absolute sp-card p-6 ${i===1?'top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 shadow-xl':i===0?'top-4 left-8':'bottom-4 right-8'}"><svg class="w-10 h-10 text-[#2563EB]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg></div>`).join('')}</div></div></div></section>
     <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12"><div class="sp-reveal">${featureList(s.features)}</div><div class="sp-card-navy p-8 sp-reveal sp-d2"><p class="text-cyan-400 text-sm mb-2">${esc(s.stat.n)}</p><p class="text-3xl font-bold mb-4">${esc(s.stat.l)}</p><ul class="space-y-2 text-white/70 text-sm">${s.benefits.map(b=>`<li>• ${esc(b)}</li>`).join('')}</ul></div></div></section>`,
 
   'aws-architecture': (s) => `
-    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="sp-reveal mb-10"><span class="sp-badge bg-[#FFF4E5] accent-aws mb-4">AWS Partner</span><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500">${esc(s.subtitle)}</p></div>
-    <div class="space-y-4 mb-12">${['Application Layer','Compute & Storage','Database & Cache','Monitoring'].map((layer,i)=>`<div class="aws-layer sp-card p-5 sp-reveal sp-d${i+1}"><p class="text-xs accent-aws font-semibold uppercase mb-2">${layer}</p><p class="text-[#0B1F3A] font-medium">${esc(s.features[i])}</p></div>`).join('')}</div>${ctas()}</div></section>
+    <section class="pt-28 pb-16"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="sp-reveal mb-10"><span class="sp-badge bg-[#FFF4E5] accent-aws mb-4">AWS Partner</span><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500">${esc(s.subtitle)}</p></div>
+    <div class="space-y-4 mb-12">${['Application Layer','Compute & Storage','Database & Cache','Monitoring'].map((layer,i)=>`<div class="aws-layer sp-card p-5 sp-reveal sp-d${i+1}"><p class="text-xs accent-aws font-semibold uppercase mb-2">${layer}</p><p class="text-[#002080] font-medium">${esc(s.features[i])}</p></div>`).join('')}</div>${ctas()}</div></section>
     <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4">${featureList(s.features.slice(4))}</div></section>`,
 
   'azure-hex': (s) => `
-    <section class="pt-28 pb-20 azure-hex relative"><div class="max-w-7xl mx-auto px-4 relative">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div><div class="grid grid-cols-3 gap-3 sp-reveal-right">${s.features.slice(0,6).map(f=>`<div class="sp-card p-4 text-center aspect-square flex items-center justify-center"><p class="text-xs font-semibold text-[#0B1F3A]">${esc(f.split(' ')[0])}</p></div>`).join('')}</div></div></div></section>
-    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">${s.benefits.map(b=>`<div class="sp-card p-6 border-l-4 border-[#2563EB] sp-reveal"><p class="font-semibold text-[#0B1F3A]">${esc(b)}</p></div>`).join('')}</div></section>`,
+    <section class="pt-28 pb-20 azure-hex relative"><div class="max-w-7xl mx-auto px-4 relative">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div><div class="grid grid-cols-3 gap-3 sp-reveal-right">${s.features.slice(0,6).map(f=>`<div class="sp-card p-4 text-center aspect-square flex items-center justify-center"><p class="text-xs font-semibold text-[#002080]">${esc(f.split(' ')[0])}</p></div>`).join('')}</div></div></div></section>
+    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-8">${s.benefits.map(b=>`<div class="sp-card p-6 border-l-4 border-[#2563EB] sp-reveal"><p class="font-semibold text-[#002080]">${esc(b)}</p></div>`).join('')}</div></section>`,
 
   'subscription-tiers': (s) => `
-    <section class="pt-28 pb-12 text-center"><div class="max-w-7xl mx-auto px-4 sp-reveal">${breadcrumb(s.title)}<h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 max-w-2xl mx-auto mb-12">${esc(s.subtitle)}</p></div>
-    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-3 gap-6 items-end mb-12">${['Starter','Professional','Enterprise'].map((tier,i)=>`<div class="tier-card sp-card p-8 sp-reveal sp-d${i+1} ${i===1?'featured':''}"><p class="text-sm text-slate-400 mb-2">${tier}</p><p class="text-2xl font-bold text-[#0B1F3A] mb-4">${esc(s.features[i])}</p><p class="text-slate-500 text-sm">${esc(s.benefits[i % s.benefits.length])}</p></div>`).join('')}</div><div class="text-center">${ctas()}</div></section>
+    <section class="pt-28 pb-12 text-center"><div class="max-w-7xl mx-auto px-4 sp-reveal">${breadcrumb(s.title)}<h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 max-w-2xl mx-auto mb-12">${esc(s.subtitle)}</p></div>
+    <div class="max-w-5xl mx-auto px-4 grid md:grid-cols-3 gap-6 items-end mb-12">${['Starter','Professional','Enterprise'].map((tier,i)=>`<div class="tier-card sp-card p-8 sp-reveal sp-d${i+1} ${i===1?'featured':''}"><p class="text-sm text-slate-400 mb-2">${tier}</p><p class="text-2xl font-bold text-[#002080] mb-4">${esc(s.features[i])}</p><p class="text-slate-500 text-sm">${esc(s.benefits[i % s.benefits.length])}</p></div>`).join('')}</div><div class="text-center">${ctas()}</div></section>
     <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4">${featureList(s.features.slice(3))}</div></section>`,
 
   'chart-analytics': (s) => `
-    <section class="pt-28 pb-16 bg-[#0B1F3A] text-white"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title).replace(/text-slate-500/g,'text-white/50').replace(/hover:text-\[#0B1F3A\]/g,'hover:text-white')}
+    <section class="pt-28 pb-16 bg-[#002080] text-white"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title).replace(/text-slate-500/g,'text-white/50').replace(/hover:text-\[#002080\]/g,'hover:text-white')}
     <div class="grid lg:grid-cols-2 gap-12 items-center py-8"><div class="sp-reveal"><h1 class="text-4xl font-bold mb-4">${esc(s.title)}</h1><p class="text-white/60 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
     <div class="flex items-end gap-3 h-48 sp-reveal-right">${[45,70,55,90,65,80,50].map((h,i)=>`<div class="bar-animate flex-1 bg-gradient-to-t from-[#2563EB] to-cyan-400 rounded-t-lg" style="height:${h}%"></div>`).join('')}</div></div></div></section>
-    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="sp-card p-6 sp-reveal"><h3 class="font-semibold text-[#0B1F3A]">${esc(f)}</h3></div>`).join('')}</div></section>`,
+    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="sp-card p-6 sp-reveal"><h3 class="font-semibold text-[#002080]">${esc(f)}</h3></div>`).join('')}</div></section>`,
 
   'bi-dashboard': (s) => `
-    <section class="pt-28 pb-20"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
-    <div class="sp-card p-8 sp-reveal-right"><div class="flex items-center justify-center"><div class="donut-spin w-40 h-40 rounded-full border-[12px] border-[#F3F6FB] border-t-[#2563EB] border-r-cyan-400 flex items-center justify-center"><span class="text-2xl font-bold text-[#0B1F3A]">78%</span></div></div><div class="grid grid-cols-3 gap-2 mt-6">${['Sales','Ops','Marketing'].map(l=>`<div class="text-center"><p class="text-xs text-slate-400">${l}</p><p class="font-bold text-[#2563EB]">${Math.floor(Math.random()*40+30)}%</p></div>`).join('')}</div></div></div></div></section>
+    <section class="pt-28 pb-20"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
+    <div class="sp-card p-8 sp-reveal-right"><div class="flex items-center justify-center"><div class="donut-spin w-40 h-40 rounded-full border-[12px] border-[#F3F6FB] border-t-[#2563EB] border-r-cyan-400 flex items-center justify-center"><span class="text-2xl font-bold text-[#002080]">78%</span></div></div><div class="grid grid-cols-3 gap-2 mt-6">${['Sales','Ops','Marketing'].map(l=>`<div class="text-center"><p class="text-xs text-slate-400">${l}</p><p class="font-bold text-[#2563EB]">${Math.floor(Math.random()*40+30)}%</p></div>`).join('')}</div></div></div></div></section>
     <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4">${featureList(s.features)}</div></section>`,
 
   'crm-cloud': (s) => `
-    <section class="pt-28 pb-20 overflow-hidden"><div class="max-w-7xl mx-auto px-4 text-center sp-reveal">${breadcrumb(s.title)}<h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 max-w-2xl mx-auto mb-16">${esc(s.subtitle)}</p>
-    <div class="relative w-64 h-64 mx-auto mb-12"><div class="absolute inset-0 flex items-center justify-center"><div class="w-20 h-20 rounded-full bg-[#0B1F3A] text-white flex items-center justify-center font-bold z-10">CRM</div></div><div class="orbit-dot absolute top-1/2 left-1/2 w-4 h-4 -ml-2 -mt-2 rounded-full bg-[#2563EB]"></div></div>${ctas()}</div></section>
-    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="sp-card p-6 sp-reveal sp-d${(i%4)+1}"><h3 class="font-semibold text-[#0B1F3A]">${esc(f)}</h3></div>`).join('')}</div></section>`,
+    <section class="pt-28 pb-20 overflow-hidden"><div class="max-w-7xl mx-auto px-4 text-center sp-reveal">${breadcrumb(s.title)}<h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 max-w-2xl mx-auto mb-16">${esc(s.subtitle)}</p>
+    <div class="relative w-64 h-64 mx-auto mb-12"><div class="absolute inset-0 flex items-center justify-center"><div class="w-20 h-20 rounded-full bg-[#002080] text-white flex items-center justify-center font-bold z-10">CRM</div></div><div class="orbit-dot absolute top-1/2 left-1/2 w-4 h-4 -ml-2 -mt-2 rounded-full bg-[#2563EB]"></div></div>${ctas()}</div></section>
+    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="sp-card p-6 sp-reveal sp-d${(i%4)+1}"><h3 class="font-semibold text-[#002080]">${esc(f)}</h3></div>`).join('')}</div></section>`,
 
   'd365-grid': (s) => `
-    <section class="pt-28 pb-16 bg-[#F3F6FB]"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<h1 class="text-4xl font-bold text-[#0B1F3A] mb-4 sp-reveal">${esc(s.title)}</h1><p class="text-slate-500 mb-10 sp-reveal">${esc(s.subtitle)}</p>
-    <div class="grid grid-cols-3 md:grid-cols-6 gap-2 mb-12">${s.features.map((f,i)=>`<div class="module-cell sp-card flex items-center justify-center p-4 sp-reveal sp-d${(i%4)+1}"><p class="text-[10px] sm:text-xs font-semibold text-[#0B1F3A] text-center">${esc(f.split(' ')[0])}</p></div>`).join('')}</div>${ctas()}</div></section>
-    <section class="py-20"><div class="max-w-7xl mx-auto px-4">${s.benefits.map(b=>`<div class="sp-card p-5 mb-4 sp-reveal flex items-center gap-4"><div class="w-2 h-2 rounded-full bg-[#2563EB]"></div><p class="font-medium text-[#0B1F3A]">${esc(b)}</p></div>`).join('')}</div></section>`,
+    <section class="pt-28 pb-16 bg-[#F3F6FB]"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<h1 class="text-4xl font-bold text-[#002080] mb-4 sp-reveal">${esc(s.title)}</h1><p class="text-slate-500 mb-10 sp-reveal">${esc(s.subtitle)}</p>
+    <div class="grid grid-cols-3 md:grid-cols-6 gap-2 mb-12">${s.features.map((f,i)=>`<div class="module-cell sp-card flex items-center justify-center p-4 sp-reveal sp-d${(i%4)+1}"><p class="text-[10px] sm:text-xs font-semibold text-[#002080] text-center">${esc(f.split(' ')[0])}</p></div>`).join('')}</div>${ctas()}</div></section>
+    <section class="py-20"><div class="max-w-7xl mx-auto px-4">${s.benefits.map(b=>`<div class="sp-card p-5 mb-4 sp-reveal flex items-center gap-4"><div class="w-2 h-2 rounded-full bg-[#2563EB]"></div><p class="font-medium text-[#002080]">${esc(b)}</p></div>`).join('')}</div></section>`,
 
   'iot-network': (s) => `
-    <section class="pt-28 pb-20"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#0B1F3A] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
+    <section class="pt-28 pb-20"><div class="max-w-7xl mx-auto px-4">${breadcrumb(s.title)}<div class="grid lg:grid-cols-2 gap-12 items-center"><div class="sp-reveal"><h1 class="text-4xl font-bold text-[#002080] mb-4">${esc(s.title)}</h1><p class="text-slate-500 mb-8">${esc(s.subtitle)}</p>${ctas()}</div>
     <div class="relative h-72 bg-[#F3F6FB] rounded-2xl sp-reveal-right">${[[20,20],[70,15],[80,60],[30,70],[50,45]].map(([t,l],i)=>`<button class="iot-node absolute w-10 h-10 rounded-full bg-[#2563EB] text-white text-xs flex items-center justify-center shadow-lg cursor-pointer" style="top:${t}%;left:${l}%">${i+1}</button>`).join('')}<svg class="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100">${[[20,20,50,45],[70,15,50,45],[80,60,50,45],[30,70,50,45]].map(([x1,y1,x2,y2])=>`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="#2563EB" stroke-width="0.5" opacity="0.4"/>`).join('')}</svg></div></div></div></section>
     <section class="py-20 sp-section-gray"><div class="max-w-7xl mx-auto px-4">${featureList(s.features)}</div></section>`,
 
   'neural-ai': (s) => `
     <section class="pt-28 pb-16 neural-bg relative overflow-hidden"><canvas id="neural-canvas" class="absolute inset-0 w-full h-full opacity-40 pointer-events-none"></canvas>
-      <div class="max-w-7xl mx-auto px-4 relative z-10 text-center sp-reveal">${breadcrumb(s.title)}<span class="sp-badge bg-[#0B1F3A] text-cyan-400 mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-6xl font-bold text-[#0B1F3A] mb-5">${esc(s.title)}</h1><p class="text-slate-600 text-lg max-w-2xl mx-auto mb-10">${esc(s.subtitle)}</p>${ctas()}</div></section>
-    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="sp-card p-6 sp-reveal sp-d${(i%4)+1} border-t-2 border-[#2563EB]"><h3 class="font-semibold text-[#0B1F3A]">${esc(f)}</h3><p class="text-slate-500 text-sm mt-2">${esc(s.benefits[i % s.benefits.length])}</p></div>`).join('')}</div></section>`,
+      <div class="max-w-7xl mx-auto px-4 relative z-10 text-center sp-reveal">${breadcrumb(s.title)}<span class="sp-badge bg-[#002080] text-cyan-400 mb-6">${esc(s.personality)}</span><h1 class="text-4xl sm:text-6xl font-bold text-[#002080] mb-5">${esc(s.title)}</h1><p class="text-slate-600 text-lg max-w-2xl mx-auto mb-10">${esc(s.subtitle)}</p>${ctas()}</div></section>
+    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-6">${s.features.map((f,i)=>`<div class="sp-card p-6 sp-reveal sp-d${(i%4)+1} border-t-2 border-[#2563EB]"><h3 class="font-semibold text-[#002080]">${esc(f)}</h3><p class="text-slate-500 text-sm mt-2">${esc(s.benefits[i % s.benefits.length])}</p></div>`).join('')}</div></section>`,
 
   'data-streams': (s) => `
-    <section class="pt-28 pb-20 bg-[#0B1F3A] text-white relative overflow-hidden"><div class="stream-container absolute inset-0 overflow-hidden pointer-events-none"></div>
-      <div class="max-w-7xl mx-auto px-4 relative z-10">${breadcrumb(s.title).replace(/text-slate-500/g,'text-white/50').replace(/hover:text-\[#0B1F3A\]/g,'hover:text-white')}
+    <section class="pt-28 pb-20 bg-[#002080] text-white relative overflow-hidden"><div class="stream-container absolute inset-0 overflow-hidden pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto px-4 relative z-10">${breadcrumb(s.title).replace(/text-slate-500/g,'text-white/50').replace(/hover:text-\[#002080\]/g,'hover:text-white')}
       <div class="sp-reveal max-w-2xl"><h1 class="text-4xl sm:text-5xl font-bold mb-5">${esc(s.title)}</h1><p class="text-white/60 mb-8">${esc(s.subtitle)}</p><p class="text-4xl font-bold text-cyan-400 mb-8">${esc(s.stat.n)} <span class="text-lg font-normal text-white/50">${esc(s.stat.l)}</span></p>${ctas()}</div></div></section>
-    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12"><div class="sp-reveal">${featureList(s.features)}</div><div class="space-y-4 sp-reveal sp-d2">${s.benefits.map(b=>`<div class="sp-card p-6"><p class="font-semibold text-[#0B1F3A]">${esc(b)}</p></div>`).join('')}</div></div></section>`,
+    <section class="py-20"><div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12"><div class="sp-reveal">${featureList(s.features)}</div><div class="space-y-4 sp-reveal sp-d2">${s.benefits.map(b=>`<div class="sp-card p-6"><p class="font-semibold text-[#002080]">${esc(b)}</p></div>`).join('')}</div></div></section>`,
 };
 
 function buildPage(s) {
@@ -318,7 +318,7 @@ ${getSiteMetaBlock({ homeHref: '../../index.html', aboutHref: '../about.html' })
   <link rel="stylesheet" href="../../assets/css/styles.css">
   <link rel="stylesheet" href="../../assets/css/service-pages.css">
 </head>
-<body class="service-page layout-${s.layout} bg-white text-[#0B1F3A] antialiased" data-service="${s.slug}" data-layout="${s.layout}">
+<body class="service-page layout-${s.layout} bg-white text-[#002080] antialiased" data-service="${s.slug}" data-layout="${s.layout}">
   <a href="#main" class="skip-link">Skip to main content</a>
   <div id="header-placeholder"></div>
   <main id="main">

@@ -121,7 +121,7 @@ function heroSaasLightSection(p) {
     : 'block mt-2 hero-gradient-text hero-underline';
   const badgePing = isEnterprise ? 'bg-cyan-400' : 'bg-violet-400';
   const badgeDot = isEnterprise ? 'bg-cyan-600' : 'bg-violet-500';
-  const breadcrumbActive = isEnterprise ? 'text-[#0B1F3A] font-semibold' : 'text-violet-600 font-semibold';
+  const breadcrumbActive = isEnterprise ? 'text-[#002080] font-semibold' : 'text-violet-600 font-semibold';
   const aiHubCrumb = p.category === 'ai' && p.slug !== 'ai'
     ? `<a href="ai.html" class="hover:text-slate-800 transition-colors">AI &amp; Emerging Technologies</a><span class="mx-2 text-slate-300">/</span>`
     : '';

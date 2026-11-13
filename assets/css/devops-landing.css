@@ -1,16 +1,16 @@
 /* ═══ DevOps — Enterprise Landing ═══ */
 .slp-page[data-slp-prefix="dvo"] {
-  --slp-primary: #0B1F3A;
-  --slp-secondary: #0B1F3A;
+  --slp-primary: #002080;
+  --slp-secondary: #002080;
   --slp-accent: #FFFFFF;
-  --dvo-blue: #0B1F3A;
-  --dvo-cyan: #0B1F3A;
+  --dvo-blue: #002080;
+  --dvo-cyan: #002080;
   --dvo-dark: #0F172A;
   --dvo-light: #F8FAFC;
 }
 .dvo-display { font-family: var(--font-display); }
 .dvo-gradient-text {
-  background: linear-gradient(135deg, #60A5FA, #0B1F3A 50%, #0B1F3A);
+  background: linear-gradient(135deg, #60A5FA, #002080 50%, #002080);
   }
 .dvo-hero {
   position: relative; min-height: 100vh; min-height: 100dvh;
@@ -20,8 +20,8 @@
 .dvo-hero__mesh {
   position: absolute; inset: 0;
   background:
-    radial-gradient(ellipse 75% 65% at 18% 22%, rgba(11, 31, 58,0.32), transparent 55%),
-    radial-gradient(ellipse 55% 50% at 82% 28%, rgba(11, 31, 58,0.26), transparent 50%),
+    radial-gradient(ellipse 75% 65% at 18% 22%, rgba(0, 32, 128,0.32), transparent 55%),
+    radial-gradient(ellipse 55% 50% at 82% 28%, rgba(0, 32, 128,0.26), transparent 50%),
     radial-gradient(ellipse 50% 45% at 50% 100%, rgba(56,189,248,0.18), transparent 55%);
   animation: dvo-mesh 20s ease-in-out infinite alternate;
 }
@@ -38,7 +38,7 @@
   display: inline-flex; align-items: center; gap: 0.4rem;
   padding: 0.4rem 0.95rem; font-size: 0.72rem; font-weight: 800;
   letter-spacing: 0.08em; text-transform: uppercase; border-radius: 999px;
-  color: var(--dvo-cyan); background: rgba(11, 31, 58,0.1); border: 1px solid rgba(11, 31, 58,0.25);
+  color: var(--dvo-cyan); background: rgba(0, 32, 128,0.1); border: 1px solid rgba(0, 32, 128,0.25);
 }
 .dvo-section-head { text-align: center; max-width: 42rem; margin: 0 auto 3.5rem; }
 .dvo-wave { display: block; width: 100%; line-height: 0; margin-top: -1px; }
@@ -62,7 +62,7 @@
   transition: background 0.3s, color 0.3s;
 }
 .dvo-pipeline-hero__stage.is-active {
-  background: linear-gradient(135deg, rgba(11, 31, 58,0.5), rgba(11, 31, 58,0.4));
+  background: linear-gradient(135deg, rgba(0, 32, 128,0.5), rgba(0, 32, 128,0.4));
   color: #fff; border-color: rgba(56,189,248,0.4);
 }
 .dvo-pipeline-hero__stage i { display: block; font-size: 0.85rem; margin-bottom: 0.25rem; }
@@ -99,7 +99,7 @@
   color: #CBD5E1; font-size: 0.65rem; z-index: 2;
 }
 .dvo-stages__item:last-child::after { display: none; }
-.dvo-stages__item:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(11, 31, 58,0.1); border-color: rgba(11, 31, 58,0.3); }
+.dvo-stages__item:hover { transform: translateY(-5px); box-shadow: 0 16px 32px rgba(0, 32, 128,0.1); border-color: rgba(0, 32, 128,0.3); }
 .dvo-stages__icon {
   width: 2.75rem; height: 2.75rem; border-radius: 50%; margin: 0 auto 0.75rem;
   display: grid; place-items: center; color: #fff; font-size: 1rem;
@@ -160,7 +160,7 @@
   padding: 1.5rem; border-radius: 1.125rem; background: #fff; border: 1px solid #E2E8F0;
   transition: transform 0.35s, box-shadow 0.35s; height: 100%;
 }
-.dvo-feature:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(11, 31, 58,0.1); }
+.dvo-feature:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0, 32, 128,0.1); }
 .dvo-feature__icon {
   width: 2.75rem; height: 2.75rem; border-radius: 0.75rem;
   display: grid; place-items: center; font-size: 1.1rem; color: #fff; margin-bottom: 1rem;
@@ -182,9 +182,9 @@
   color: rgba(255,255,255,0.85);
 }
 .dvo-parallax .slp-parallax__overlay {
-  background: linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,58,95,0.6) 50%, rgba(11, 31, 58,0.45) 100%);
+  background: linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(30,58,95,0.6) 50%, rgba(0, 32, 128,0.45) 100%);
 }
-.slp-page[data-slp-prefix="dvo"] .slp-faq-item.is-open { border-color: rgba(11, 31, 58,0.35); }
+.slp-page[data-slp-prefix="dvo"] .slp-faq-item.is-open { border-color: rgba(0, 32, 128,0.35); }
 
 @media (prefers-reduced-motion: reduce) {
   .dvo-hero__mesh, .dvo-float, .dvo-monitor__bar { animation: none !important; }

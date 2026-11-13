@@ -1,9 +1,9 @@
 /* Our Work — enterprise case-study platform */
 
 .ow-page {
-  --ow-navy: #001F54;
-  --ow-navy-mid: #0b1f3a;
-  --ow-cyan: #0B1F3A;
+  --ow-navy: #002080;
+  --ow-navy-mid: #002080;
+  --ow-cyan: #002080;
   --ow-muted: #64748b;
   --ow-line: #e2e8f0;
   --ow-off: #f4f6f9;
@@ -21,7 +21,7 @@
 .ow-hero {
   position: relative;
   background: linear-gradient(165deg, #FAFBFC 0%, #F5F3FF 35%, #ECFDF5 70%, #F7F9FC 100%);
-  color: #0B1F3A;
+  color: #002080;
   overflow: hidden;
   padding: 7.5rem 0 5.25rem;
 }
@@ -51,14 +51,14 @@
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: #0B1F3A;
+  color: #002080;
   margin-bottom: 1.1rem;
 }
 .ow-eyebrow::before {
   content: "";
   width: 1.75rem;
   height: 1px;
-  background: #001F54;
+  background: #002080;
 }
 .ow-hero h1 {
   font-size: clamp(2.1rem, 4.6vw, 3.55rem);
@@ -87,11 +87,11 @@
   transition: transform 0.2s, background 0.2s, color 0.2s;
 }
 .ow-btn:hover { transform: translateY(-1px); }
-.ow-btn--primary { background: #001F54; color: #fff; }
+.ow-btn--primary { background: #002080; color: #fff; }
 .ow-btn--ghost { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.28); }
 .ow-btn--ghost:hover { background: rgba(255,255,255,0.08); }
-.ow-hero .ow-btn--ghost { color: var(--ow-navy); border-color: rgba(0, 31, 84, 0.22); }
-.ow-hero .ow-btn--ghost:hover { background: rgba(0, 31, 84, 0.05); }
+.ow-hero .ow-btn--ghost { color: var(--ow-navy); border-color: rgba(0, 32, 128, 0.22); }
+.ow-hero .ow-btn--ghost:hover { background: rgba(0, 32, 128, 0.05); }
 .ow-btn--navy { background: var(--ow-navy); color: #fff; }
 .ow-btn--line { background: #fff; color: var(--ow-navy); border: 1px solid var(--ow-line); }
 
@@ -128,7 +128,7 @@
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  background: rgba(0, 31, 84, 0.88);
+  background: rgba(0, 32, 128, 0.88);
   color: #fff;
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
@@ -166,7 +166,7 @@
   border: 1px solid var(--ow-line);
   border-radius: 1.15rem;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0, 31, 84, 0.08);
+  box-shadow: 0 20px 50px rgba(0, 32, 128, 0.08);
 }
 .ow-feature__media {
   display: block;
@@ -224,7 +224,7 @@
   border: 1px solid var(--ow-line);
   border-radius: 1.2rem;
   overflow: hidden;
-  box-shadow: 0 16px 40px rgba(0, 31, 84, 0.08);
+  box-shadow: 0 16px 40px rgba(0, 32, 128, 0.08);
 }
 .ow-live__browser { min-width: 0; }
 .ow-live__chrome {
@@ -367,11 +367,11 @@
   color: var(--ow-muted);
 }
 .ow-live__item.is-active {
-  border-color: #0B1F3A;
-  box-shadow: 0 0 0 3px rgba(11, 31, 58, 0.18);
+  border-color: #002080;
+  box-shadow: 0 0 0 3px rgba(0, 32, 128, 0.18);
 }
 .ow-live__item:focus-visible {
-  outline: 2px solid #0B1F3A;
+  outline: 2px solid #002080;
   outline-offset: 2px;
 }
 
@@ -461,7 +461,7 @@
   color: inherit;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.ow-card:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(0, 31, 84, 0.1); }
+.ow-card:hover { transform: translateY(-4px); box-shadow: 0 20px 44px rgba(0, 32, 128, 0.1); }
 .ow-card__media {
   position: relative;
   display: block;
@@ -488,7 +488,7 @@
 .ow-card:hover .ow-card__media img { transform: scale(1.04); }
 .ow-card__overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, transparent 45%, rgba(0, 31, 84, 0.45));
+  background: linear-gradient(180deg, transparent 45%, rgba(0, 32, 128, 0.45));
   opacity: 0; transition: opacity 0.3s;
 }
 .ow-card:hover .ow-card__overlay { opacity: 1; }
@@ -573,7 +573,7 @@
 .ow-industry::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(0,31,84,0.15), rgba(0,31,84,0.82));
+  background: linear-gradient(180deg, rgba(0, 32, 128,0.15), rgba(0, 32, 128,0.82));
 }
 .ow-industry:hover img { transform: scale(1.05); }
 .ow-industry h3, .ow-industry span { position: relative; z-index: 1; }
@@ -655,7 +655,7 @@
 .csd-hero img { object-fit: cover; object-position: top center; }
 .csd-hero__actions { position: relative; z-index: 2; margin-top: 1.25rem; }
 .csd-hero .ow-btn--ghost { color: #fff; border-color: rgba(255,255,255,0.35); }
-.csd-hero__veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,31,84,0.2) 0%, rgba(0,31,84,0.88) 100%); pointer-events: none; }
+.csd-hero__veil { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0, 32, 128,0.2) 0%, rgba(0, 32, 128,0.88) 100%); pointer-events: none; }
 .csd-hero__inner { position: relative; z-index: 1; max-width: 80rem; margin: 0 auto; padding: 8rem 1rem 3.25rem; width: 100%; }
 .csd-hero h1 { font-size: clamp(2rem, 4vw, 3.3rem); font-weight: 800; line-height: 1.1; margin: 0.5rem 0 0.75rem; }
 .csd-hero p { max-width: 40rem; color: rgba(255,255,255,0.82); font-size: 1.05rem; line-height: 1.65; }
@@ -807,7 +807,7 @@
   text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,0.35);
 }
-.owx-cinema__meta a:hover { border-bottom-color: #0B1F3A; color: #FFFFFF; }
+.owx-cinema__meta a:hover { border-bottom-color: #002080; color: #FFFFFF; }
 @keyframes owxCinemaLeft {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
@@ -860,7 +860,7 @@
 .owx-box__veil {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 50%, rgba(0, 31, 84, 0.4) 100%);
+  background: linear-gradient(180deg, transparent 50%, rgba(0, 32, 128, 0.4) 100%);
   opacity: 0;
   transition: opacity 0.35s ease;
 }
@@ -884,8 +884,8 @@
 .owx-box__links .ow-link { margin-top: 0; }
 @media (hover: hover) {
   .owx-box:hover {
-    border-color: rgba(11, 31, 58, 0.45);
-    box-shadow: 0 16px 36px rgba(0, 31, 84, 0.08);
+    border-color: rgba(0, 32, 128, 0.45);
+    box-shadow: 0 16px 36px rgba(0, 32, 128, 0.08);
     transform: translateY(-3px);
   }
   .owx-box:hover .owx-box__veil { opacity: 1; }
@@ -966,7 +966,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(180deg, #0d1830 0%, #001F54 100%);
+  background: linear-gradient(180deg, #0d1830 0%, #002080 100%);
   transform: translateY(14px);
   opacity: 0;
   transition: opacity 0.76s cubic-bezier(0.22, 1, 0.36, 1), transform 0.76s cubic-bezier(0.22, 1, 0.36, 1);
@@ -1017,7 +1017,7 @@
   display: block;
   height: 100%;
   width: 0;
-  background: #0B1F3A;
+  background: #002080;
   transform-origin: left center;
 }
 @keyframes owxProgress { from { width: 0; } to { width: 100%; } }
@@ -1034,11 +1034,11 @@
   height: 2.7rem;
   border-radius: 50%;
   border: 1px solid rgba(255,255,255,0.22);
-  background: rgba(0, 31, 84, 0.55);
+  background: rgba(0, 32, 128, 0.55);
   color: #fff;
   cursor: pointer;
 }
-.owx-slide__nav:hover { background: rgba(11, 31, 58, 0.28); }
+.owx-slide__nav:hover { background: rgba(0, 32, 128, 0.28); }
 .owx-slide__thumbs {
   display: none;
   position: absolute;
@@ -1060,7 +1060,7 @@
   opacity: 0.55;
   background: #09101c;
 }
-.owx-slide__thumbs button.is-active { opacity: 1; border-color: #0B1F3A; }
+.owx-slide__thumbs button.is-active { opacity: 1; border-color: #002080; }
 .owx-slide__thumbs img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 
 .owx-cats {
@@ -1132,7 +1132,7 @@
 .owx-card__veil {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 45%, rgba(0, 31, 84, 0.45) 100%);
+  background: linear-gradient(180deg, transparent 45%, rgba(0, 32, 128, 0.45) 100%);
   opacity: 0;
   transition: opacity 0.4s ease;
 }
@@ -1166,8 +1166,8 @@
 .ow-link i { transition: transform 0.3s ease; }
 @media (hover: hover) {
   .owx-card:hover {
-    border-color: rgba(11, 31, 58, 0.45);
-    box-shadow: 0 18px 40px rgba(0, 31, 84, 0.08);
+    border-color: rgba(0, 32, 128, 0.45);
+    box-shadow: 0 18px 40px rgba(0, 32, 128, 0.08);
   }
   .owx-card:hover .owx-card__media img { transform: scale(1.045); }
   .owx-card:hover .owx-card__veil { opacity: 1; }
@@ -1176,7 +1176,7 @@
 }
 
 .owx-spot {
-  background: #001F54;
+  background: #002080;
   color: #fff;
   padding: 4.75rem 0;
 }
@@ -1198,7 +1198,7 @@
 .owx-spot dl { display: grid; gap: 1rem; margin: 0 0 1.5rem; }
 .owx-spot dt { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #FFFFFF; margin-bottom: 0.3rem; }
 .owx-spot dd { margin: 0; color: rgba(255,255,255,0.8); line-height: 1.65; }
-.owx-spot .ow-btn--primary { background: #fff; color: #0B1F3A; }
+.owx-spot .ow-btn--primary { background: #fff; color: #002080; }
 .owx-spot .ow-btn--ghost { color: #fff; border-color: rgba(255,255,255,0.28); }
 .owx-spot__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 .owx-spot__media a { display: block; height: 100%; }
@@ -1230,7 +1230,7 @@
   color: inherit;
   transition: border-color 0.3s ease, transform 0.3s ease;
 }
-.owx-build a:hover { border-color: rgba(11, 31, 58,0.5); transform: translateY(-3px); }
+.owx-build a:hover { border-color: rgba(0, 32, 128,0.5); transform: translateY(-3px); }
 .owx-build i { color: var(--ow-cyan); margin-bottom: 0.7rem; }
 .owx-build h3 { font-size: 1.1rem; font-weight: 800; color: var(--ow-navy); margin: 0 0 0.45rem; }
 .owx-build p { color: var(--ow-muted); font-size: 0.92rem; line-height: 1.6; margin: 0; }
@@ -1255,7 +1255,7 @@
   color: inherit;
   transition: transform 0.35s ease, border-color 0.35s ease;
 }
-.owx-ind:hover { transform: translateY(-4px); border-color: rgba(11, 31, 58,0.45); }
+.owx-ind:hover { transform: translateY(-4px); border-color: rgba(0, 32, 128,0.45); }
 .owx-ind i { color: var(--ow-cyan); margin-bottom: 0.7rem; }
 .owx-ind strong { display: block; color: var(--ow-navy); font-size: 1.02rem; margin-bottom: 0.35rem; }
 .owx-ind span { color: var(--ow-muted); font-size: 0.88rem; line-height: 1.55; }
@@ -1316,7 +1316,7 @@
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .owx-meet__panel.is-in { opacity: 1; transform: none; }
-.owx-meet__panel--navy { background: #001F54; color: #fff; border-color: #0B1F3A; }
+.owx-meet__panel--navy { background: #002080; color: #fff; border-color: #002080; }
 .owx-meet__panel h3 { font-size: 1.6rem; font-weight: 800; margin: 0 0 1rem; }
 .owx-meet__panel--navy h3 { color: #fff; }
 .owx-meet__panel ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.55rem; }
@@ -1347,7 +1347,7 @@
   position: absolute;
   inset: 0;
   width: 100%;
-  background: #001F54;
+  background: #002080;
   color: #fff;
   clip-path: inset(0 50% 0 0);
 }
@@ -1356,7 +1356,7 @@
   top: 0; bottom: 0;
   left: 50%;
   width: 2px;
-  background: #0B1F3A;
+  background: #002080;
   transform: translateX(-50%);
   z-index: 2;
 }
@@ -1368,8 +1368,8 @@
   height: 2.6rem;
   border-radius: 50%;
   border: 0;
-  background: #0B1F3A;
-  color: #0B1F3A;
+  background: #002080;
+  color: #002080;
   transform: translate(-50%, -50%);
   cursor: ew-resize;
 }
@@ -1380,7 +1380,7 @@
   width: calc(100% - 2rem);
   margin: 0 1rem;
   z-index: 3;
-  accent-color: #0B1F3A;
+  accent-color: #002080;
 }
 
 .owx-action-sec { padding: 4.5rem 0; }
@@ -1404,7 +1404,7 @@
 .owx-goals .ow-lead { margin: 0 auto 1.5rem; }
 
 .owx-cta {
-  background: #001F54;
+  background: #002080;
   color: #fff;
   text-align: center;
   padding: 6.25rem 1.25rem 5.5rem;
@@ -1417,7 +1417,7 @@
   margin: 0 0 0.85rem;
   color: #fff;
 }
-.owx-cta .ow-btn--primary { background: #fff; color: #0B1F3A; }
+.owx-cta .ow-btn--primary { background: #fff; color: #002080; }
 .owx-cta p { max-width: 38rem; margin: 0 auto 1.6rem; color: rgba(255,255,255,0.78); line-height: 1.7; }
 .owx-cta__actions { display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; }
 .owx-cta .ow-btn--ghost { color: #fff; border-color: rgba(255,255,255,0.28); }

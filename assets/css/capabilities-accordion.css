@@ -19,8 +19,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.04) 1px, transparent 1px);
   background-size: 48px 48px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 10%, transparent 70%);
 }
@@ -42,8 +42,8 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #0369a1;
-  background: rgba(11, 31, 58, 0.1);
-  border: 1px solid rgba(11, 31, 58, 0.2);
+  background: rgba(0, 32, 128, 0.1);
+  border: 1px solid rgba(0, 32, 128, 0.2);
   margin-bottom: 1rem;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .cap-acc-head__title .cap-acc-accent {
-  color: #0B1F3A;
+  color: #002080;
 }
 
 .cap-acc-head__lead {
@@ -81,11 +81,11 @@
 }
 
 .cap-acc-item[open] {
-  border-color: rgba(11, 31, 58, 0.35);
+  border-color: rgba(0, 32, 128, 0.35);
   box-shadow:
     0 16px 40px rgba(15, 23, 42, 0.08),
-    0 0 0 1px rgba(11, 31, 58, 0.08),
-    0 0 32px rgba(11, 31, 58, 0.08);
+    0 0 0 1px rgba(0, 32, 128, 0.08),
+    0 0 32px rgba(0, 32, 128, 0.08);
 }
 
 .cap-acc-item__trigger {
@@ -102,7 +102,7 @@
 .cap-acc-item__trigger::-webkit-details-marker { display: none; }
 
 .cap-acc-item__trigger:focus-visible {
-  outline: 2px solid #0B1F3A;
+  outline: 2px solid #002080;
   outline-offset: -2px;
   border-radius: 1rem;
 }
@@ -122,8 +122,8 @@
   place-items: center;
   font-size: 1.05rem;
   color: #fff;
-  background: linear-gradient(135deg, #0B1F3A, #0B1F3A);
-  box-shadow: 0 8px 20px rgba(11, 31, 58, 0.28);
+  background: linear-gradient(135deg, #002080, #002080);
+  box-shadow: 0 8px 20px rgba(0, 32, 128, 0.28);
   flex-shrink: 0;
 }
 
@@ -140,7 +140,7 @@
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #0B1F3A;
+  color: #002080;
 }
 
 .cap-acc-item__title {
@@ -164,14 +164,14 @@
   display: grid;
   place-items: center;
   font-size: 0.75rem;
-  color: #0B1F3A;
-  background: rgba(11, 31, 58, 0.1);
+  color: #002080;
+  background: rgba(0, 32, 128, 0.1);
   transition: transform 0.35s ease, background 0.3s ease;
 }
 
 .cap-acc-item[open] .cap-acc-item__chevron {
   transform: rotate(180deg);
-  background: rgba(11, 31, 58, 0.16);
+  background: rgba(0, 32, 128, 0.16);
 }
 
 .cap-acc-item__panel {
@@ -212,8 +212,8 @@
   font-size: 0.68rem;
   font-weight: 700;
   color: #0369a1;
-  background: rgba(11, 31, 58, 0.1);
-  border: 1px solid rgba(11, 31, 58, 0.18);
+  background: rgba(0, 32, 128, 0.1);
+  border: 1px solid rgba(0, 32, 128, 0.18);
 }
 
 .cap-acc-item__points {
@@ -238,7 +238,7 @@
   flex-shrink: 0;
   margin-top: 0.2rem;
   font-size: 0.62rem;
-  color: #0B1F3A;
+  color: #002080;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -264,8 +264,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.035) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.035) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: radial-gradient(ellipse 85% 65% at 50% 20%, #000 15%, transparent 72%);
 }
@@ -297,10 +297,10 @@
 
 .cap-grid-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(11, 31, 58, 0.32);
+  border-color: rgba(0, 32, 128, 0.32);
   box-shadow:
     0 18px 40px rgba(15, 23, 42, 0.09),
-    0 0 24px rgba(11, 31, 58, 0.08);
+    0 0 24px rgba(0, 32, 128, 0.08);
 }
 
 .cap-grid-card__head {
@@ -327,8 +327,8 @@
   place-items: center;
   font-size: 1rem;
   color: #fff;
-  background: linear-gradient(135deg, #0B1F3A, #0B1F3A);
-  box-shadow: 0 8px 20px rgba(11, 31, 58, 0.26);
+  background: linear-gradient(135deg, #002080, #002080);
+  box-shadow: 0 8px 20px rgba(0, 32, 128, 0.26);
   flex-shrink: 0;
 }
 
@@ -340,7 +340,7 @@
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #0B1F3A;
+  color: #002080;
   margin-bottom: 0.15rem;
 }
 
@@ -381,8 +381,8 @@
   font-size: 0.68rem;
   font-weight: 700;
   color: #0369a1;
-  background: rgba(11, 31, 58, 0.1);
-  border: 1px solid rgba(11, 31, 58, 0.18);
+  background: rgba(0, 32, 128, 0.1);
+  border: 1px solid rgba(0, 32, 128, 0.18);
 }
 
 .cap-grid-card__points {
@@ -408,7 +408,7 @@
   flex-shrink: 0;
   margin-top: 0.18rem;
   font-size: 0.6rem;
-  color: #0B1F3A;
+  color: #002080;
 }
 
 @media (prefers-reduced-motion: reduce) {

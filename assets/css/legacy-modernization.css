@@ -1,9 +1,9 @@
 /* Legacy modernisation page — GUUDLE navy and aqua, scoped to .lm */
-.lm { color: #0B1F3A; background: #f7f9fc; }
+.lm { color: #002080; background: #f7f9fc; }
 .lm-wrap { width: min(74rem, calc(100% - 2rem)); margin-inline: auto; }
 .lm-kicker {
   margin: 0;
-  color: #0B1F3A;
+  color: #002080;
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -29,18 +29,18 @@
   min-height: 38rem;
   padding: 8.5rem 0 4rem;
   color: #fff;
-  background-color: #0B1F3A;
+  background-color: #002080;
   background-image:
-    linear-gradient(100deg, rgba(10, 37, 64, 0.94) 0%, rgba(10, 37, 64, 0.82) 46%, rgba(10, 37, 64, 0.55) 100%),
+    linear-gradient(100deg, rgba(0, 32, 128, 0.94) 0%, rgba(0, 32, 128, 0.82) 46%, rgba(0, 32, 128, 0.55) 100%),
     url("../images/solutions/security.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .guudle-site .lm-hero {
-  background-color: #0B1F3A !important;
+  background-color: #002080 !important;
   background-image:
-    linear-gradient(100deg, rgba(10, 37, 64, 0.94) 0%, rgba(10, 37, 64, 0.82) 46%, rgba(10, 37, 64, 0.55) 100%),
+    linear-gradient(100deg, rgba(0, 32, 128, 0.94) 0%, rgba(0, 32, 128, 0.82) 46%, rgba(0, 32, 128, 0.55) 100%),
     url("../images/solutions/security.jpg") !important;
   background-size: cover !important;
   background-position: center !important;
@@ -89,16 +89,16 @@
   text-decoration: none;
   transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
-.lm-btn--aqua { background: #0B1F3A; color: #fff; }
-.lm-btn--aqua:hover { background: #0B1F3A; }
-.lm-btn--light { background: #fff; color: #0B1F3A; }
+.lm-btn--aqua { background: #002080; color: #fff; }
+.lm-btn--aqua:hover { background: #002080; }
+.lm-btn--light { background: #fff; color: #002080; }
 .lm-btn--light:hover { background: #e0f2fe; }
 .lm-btn--ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, 0.55); }
 .lm-btn--ghost:hover { background: rgba(255, 255, 255, 0.1); }
-.lm-btn--navy { background: #0A2540; color: #fff; }
+.lm-btn--navy { background: #002080; color: #fff; }
 .lm-btn--navy:hover { background: #12375c; }
 .lm-btn:focus-visible, .lm-faq summary:focus-visible {
-  outline: 2px solid #0B1F3A;
+  outline: 2px solid #002080;
   outline-offset: 3px;
 }
 
@@ -110,7 +110,7 @@
   height: 22rem;
   object-fit: cover;
   border-radius: 1.15rem;
-  box-shadow: 0 18px 40px rgba(10, 37, 64, 0.12);
+  box-shadow: 0 18px 40px rgba(0, 32, 128, 0.12);
 }
 .lm-figure figcaption { margin-top: 0.45rem; color: #64748b; font-size: 0.75rem; }
 
@@ -123,10 +123,10 @@
   border: 1px solid #e2e8f0;
   border-radius: 1rem;
   background: #fff;
-  box-shadow: 0 10px 28px rgba(10, 37, 64, 0.04);
+  box-shadow: 0 10px 28px rgba(0, 32, 128, 0.04);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.lm-card:hover { transform: translateY(-3px); border-color: #0B1F3A; box-shadow: 0 16px 34px rgba(10, 37, 64, 0.08); }
+.lm-card:hover { transform: translateY(-3px); border-color: #002080; box-shadow: 0 16px 34px rgba(0, 32, 128, 0.08); }
 .lm-ico {
   display: inline-flex;
   align-items: center;
@@ -134,18 +134,18 @@
   width: 2.7rem;
   height: 2.7rem;
   border-radius: 0.8rem;
-  background: rgba(11, 31, 58, 0.12);
-  color: #0B1F3A;
+  background: rgba(0, 32, 128, 0.12);
+  color: #002080;
 }
 .lm-num {
-  color: #0B1F3A;
+  color: #002080;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
 }
 .lm-card h3, .lm-step h3 { margin: 0.15rem 0 0; font-size: 1.05rem; font-weight: 800; }
 .lm-card p, .lm-step p { margin: 0; color: #475569; font-size: 0.92rem; line-height: 1.55; }
-.lm-card a { margin-top: auto; color: #0B1F3A; font-weight: 700; font-size: 0.9rem; text-decoration: none; }
+.lm-card a { margin-top: auto; color: #002080; font-weight: 700; font-size: 0.9rem; text-decoration: none; }
 
 .lm-steps { display: grid; gap: 0.85rem; margin: 2rem 0 0; padding: 0; list-style: none; }
 .lm-step {
@@ -162,7 +162,7 @@
   width: 2.1rem;
   height: 2.1rem;
   border-radius: 50%;
-  background: #0A2540;
+  background: #002080;
   color: #fff;
   font-style: normal;
   font-weight: 800;
@@ -177,7 +177,7 @@
 .lm-cta {
   border-radius: 1.25rem;
   padding: 2.4rem 1.4rem;
-  background: #0A2540;
+  background: #002080;
   color: #fff;
   text-align: center;
 }

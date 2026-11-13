@@ -10,7 +10,7 @@ const TAILWIND = `tailwind.config = {
       theme: {
         extend: {
           colors: {
-            navy: { DEFAULT: '#0B1F3A', 50: '#F0F4F8', 100: '#D9E2EC', 200: '#BCCCDC', 600: '#0B1F3A', 700: '#081829', 800: '#061220', 900: '#040D18' },
+            navy: { DEFAULT: '#002080', 50: '#F0F4F8', 100: '#D9E2EC', 200: '#BCCCDC', 600: '#002080', 700: '#081829', 800: '#061220', 900: '#040D18' },
             teal: { 50: '#F0FDFA', 500: '#10A5F5', 600: '#10A5F5', 700: '#0F766E', 800: '#115E59' },
             'deep-blue': '#123D6A', 'royal-blue': '#2563EB', cyan: '#10A5F5', 'light-gray': '#F3F6FB',
           },
@@ -717,7 +717,7 @@ ${getSiteMetaBlock({ homeHref: '../../index.html', aboutHref: '../about.html' })
   <link rel="stylesheet" href="../../assets/css/styles.css">
   <link rel="stylesheet" href="../../assets/css/service-pages.css">
 </head>
-<body class="service-page layout-web-dev bg-white text-[#0B1F3A] antialiased" data-service="${p.slug}" data-layout="web-dev">
+<body class="service-page layout-web-dev bg-white text-[#002080] antialiased" data-service="${p.slug}" data-layout="web-dev">
   <a href="#main" class="skip-link">Skip to main content</a>
   <div id="header-placeholder"></div>
   <main id="main">

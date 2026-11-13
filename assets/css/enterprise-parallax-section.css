@@ -51,9 +51,9 @@
   inset: 0;
   background: linear-gradient(
     135deg,
-    rgba(11, 31, 58, 0.88) 0%,
-    rgba(11, 31, 58, 0.55) 45%,
-    rgba(11, 31, 58, 0.92) 100%
+    rgba(0, 32, 128, 0.88) 0%,
+    rgba(0, 32, 128, 0.55) 45%,
+    rgba(0, 32, 128, 0.92) 100%
   );
   z-index: 1;
 }
@@ -91,7 +91,7 @@
   color: rgba(255, 255, 255, 0.92);
   font-size: 0.75rem;
   font-weight: 600;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 0 24px rgba(11, 31, 58, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 0 24px rgba(0, 32, 128, 0.15);
   animation: ent-parallax-float 6s ease-in-out infinite;
 }
 
@@ -146,7 +146,7 @@
   box-shadow:
     0 24px 64px rgba(0, 0, 0, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.12),
-    0 0 48px rgba(11, 31, 58, 0.12);
+    0 0 48px rgba(0, 32, 128, 0.12);
   text-align: center;
   overflow: hidden;
 }
@@ -164,7 +164,7 @@
   transform: translateX(-50%);
   width: 120%;
   height: 80%;
-  background: radial-gradient(ellipse, rgba(11, 31, 58, 0.25) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0, 32, 128, 0.25) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -175,7 +175,7 @@
   padding: 0.4rem 1rem;
   margin-bottom: 1.25rem;
   border-radius: 999px;
-  background: rgba(11, 31, 58, 0.15);
+  background: rgba(0, 32, 128, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.35);
   color: #FFFFFF;
   font-size: 0.75rem;
@@ -194,7 +194,7 @@
 
 .ent-parallax__accent {
   background: linear-gradient(90deg, #FFFFFF, #FFFFFF, #FFFFFF);
-  color: #0B1F3A;
+  color: #002080;
 }
 
 .ent-parallax__lead {
@@ -224,14 +224,14 @@
 }
 
 .ent-parallax__btn--primary {
-  background: linear-gradient(135deg, #0B1F3A 0%, #142D4E 50%, #0B1F3A 100%);
+  background: linear-gradient(135deg, #002080 0%, #142D4E 50%, #002080 100%);
   color: #fff;
-  box-shadow: 0 8px 28px rgba(11, 31, 58, 0.45);
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.45);
 }
 
 .ent-parallax__btn--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 36px rgba(11, 31, 58, 0.55);
+  box-shadow: 0 12px 36px rgba(0, 32, 128, 0.55);
 }
 
 .ent-parallax__btn--ghost {

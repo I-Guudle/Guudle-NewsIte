@@ -1,6 +1,6 @@
 /* ─── Guudle Development Process — Journey Flow ─── */
 .devproc-section {
-  --devproc-cyan: #0A2540;
+  --devproc-cyan: #002080;
   --devproc-navy: #0F172A;
   --devproc-muted: #64748B;
   --devproc-ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -44,7 +44,7 @@
   height: 420px;
   top: -12%;
   right: -8%;
-  background: radial-gradient(circle, rgba(11, 31, 58, 0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 32, 128, 0.25), transparent 70%);
 }
 
 .devproc-flow-bg__blob--2 {
@@ -84,9 +84,9 @@
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #0B1F3A;
-  background: rgba(11, 31, 58, 0.1);
-  border: 1px solid rgba(11, 31, 58, 0.22);
+  color: #002080;
+  background: rgba(0, 32, 128, 0.1);
+  border: 1px solid rgba(0, 32, 128, 0.22);
   margin-bottom: 1rem;
 }
 
@@ -172,7 +172,7 @@
   background: linear-gradient(90deg, var(--devproc-cyan), #6366F1);
   border-radius: inherit;
   transition: width 0.7s var(--devproc-ease);
-  box-shadow: 0 0 12px rgba(11, 31, 58, 0.4);
+  box-shadow: 0 0 12px rgba(0, 32, 128, 0.4);
 }
 
 .devproc-journey__nodes {
@@ -227,7 +227,7 @@
   color: #fff;
   background: linear-gradient(135deg, var(--devproc-cyan), #081E33);
   border-color: transparent;
-  box-shadow: 0 6px 24px rgba(11, 31, 58, 0.35);
+  box-shadow: 0 6px 24px rgba(0, 32, 128, 0.35);
 }
 
 .devproc-journey__node.is-active .devproc-journey__dot {
@@ -287,7 +287,7 @@
 .devproc-card.is-inview {
   transform: translateY(-6px);
   box-shadow: 0 24px 56px rgba(15, 23, 42, 0.1);
-  border-color: rgba(11, 31, 58, 0.35);
+  border-color: rgba(0, 32, 128, 0.35);
 }
 
 .devproc-card__accent {
@@ -301,7 +301,7 @@
 
 .devproc-card--indigo .devproc-card__accent { background: linear-gradient(90deg, #6366F1, #818CF8); }
 .devproc-card--violet .devproc-card__accent { background: linear-gradient(90deg, #8B5CF6, #A78BFA); }
-.devproc-card--teal .devproc-card__accent { background: linear-gradient(90deg, #0B1F3A, #0B1F3A); }
+.devproc-card--teal .devproc-card__accent { background: linear-gradient(90deg, #002080, #002080); }
 .devproc-card--sky .devproc-card__accent { background: linear-gradient(90deg, #142D4E, #FFFFFF); }
 .devproc-card--emerald .devproc-card__accent { background: linear-gradient(90deg, #10B981, #34D399); }
 .devproc-card--amber .devproc-card__accent { background: linear-gradient(90deg, #F59E0B, #FBBF24); }
@@ -336,9 +336,9 @@
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  color: #0B1F3A;
-  background: rgba(11, 31, 58, 0.1);
-  border: 1px solid rgba(11, 31, 58, 0.18);
+  color: #002080;
+  background: rgba(0, 32, 128, 0.1);
+  border: 1px solid rgba(0, 32, 128, 0.18);
 }
 
 .devproc-card__duration {
@@ -387,7 +387,7 @@
   color: var(--devproc-muted);
   margin-bottom: 1rem;
   padding-left: 0.75rem;
-  border-left: 2px solid rgba(11, 31, 58, 0.35);
+  border-left: 2px solid rgba(0, 32, 128, 0.35);
 }
 
 .devproc-card__tags {
@@ -404,9 +404,9 @@
   border-radius: 9999px;
   font-size: 0.68rem;
   font-weight: 600;
-  color: #0B1F3A;
-  background: rgba(11, 31, 58, 0.08);
-  border: 1px solid rgba(11, 31, 58, 0.16);
+  color: #002080;
+  background: rgba(0, 32, 128, 0.08);
+  border: 1px solid rgba(0, 32, 128, 0.16);
 }
 
 .devproc-card__link {
@@ -416,7 +416,7 @@
   margin-top: auto;
   font-size: 0.8125rem;
   font-weight: 700;
-  color: #0B1F3A;
+  color: #002080;
   text-decoration: none;
   transition: gap 0.25s ease, color 0.25s ease;
 }
@@ -454,8 +454,8 @@
   align-items: center;
   justify-content: center;
   font-size: 1.1rem;
-  color: #0B1F3A;
-  background: rgba(11, 31, 58, 0.15);
+  color: #002080;
+  background: rgba(0, 32, 128, 0.15);
   flex-shrink: 0;
 }
 

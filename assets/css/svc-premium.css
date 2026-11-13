@@ -3,14 +3,14 @@
  */
 
 .pre-page {
-  --pre-navy: #0A2540;
+  --pre-navy: #002080;
   --pre-slate: #475569;
   --pre-muted: #64748b;
   --pre-border: #e2e8f0;
   --pre-surface: #f8fafc;
   --pre-white: #ffffff;
-  --pre-accent: #0A2540;
-  --pre-accent2: #0B1F3A;
+  --pre-accent: #002080;
+  --pre-accent2: #002080;
   --pre-violet: #8b5cf6;
   --pre-pink: #ec4899;
   --pre-radius: 1.25rem;
@@ -84,7 +84,7 @@
 }
 
 .pre-aurora--cta::after {
-  background: radial-gradient(circle, rgba(11, 31, 58, 0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 32, 128, 0.15), transparent 70%);
 }
 
 /* Typography utilities */
@@ -150,14 +150,14 @@
 
 .pre-btn--primary {
   color: #fff;
-  background: #0A2540;
-  box-shadow: 0 4px 14px rgba(10, 37, 64, 0.22);
+  background: #002080;
+  box-shadow: 0 4px 14px rgba(0, 32, 128, 0.22);
 }
 
 .pre-btn--primary:hover {
   transform: translateY(-2px);
   background: #081E33;
-  box-shadow: 0 8px 24px rgba(10, 37, 64, 0.32);
+  box-shadow: 0 8px 24px rgba(0, 32, 128, 0.32);
 }
 
 .pre-btn--ghost {
@@ -370,7 +370,7 @@
 }
 
 .pre-hero__float--badge i {
-  color: #0B1F3A;
+  color: #002080;
   font-size: 1.25rem;
 }
 
@@ -581,7 +581,7 @@
   border-radius: 0.85rem;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(11, 31, 58, 0.08));
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(0, 32, 128, 0.08));
   color: var(--pre-accent);
   font-size: 1.1rem;
   margin-bottom: 1rem;

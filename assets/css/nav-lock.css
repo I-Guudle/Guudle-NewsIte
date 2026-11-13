@@ -50,9 +50,9 @@
 
   -webkit-backdrop-filter: var(--nav-glass-blur, blur(20px) saturate(1.35)) !important;
 
-  border-bottom: 1px solid var(--nav-glass-border, rgba(10, 37, 64, 0.08)) !important;
+  border-bottom: 1px solid var(--nav-glass-border, rgba(0, 32, 128, 0.08)) !important;
 
-  box-shadow: var(--nav-glass-shadow, 0 8px 32px rgba(10, 37, 64, 0.08)) !important;
+  box-shadow: var(--nav-glass-shadow, 0 8px 32px rgba(0, 32, 128, 0.08)) !important;
 
 }
 
@@ -60,7 +60,7 @@
 
 #site-header.site-nav--split .nav-cta-btn--appointment {
 
-  background: var(--aqua-primary, #0B1F3A) !important;
+  background: #374151 !important;
 
   color: #fff !important;
 
@@ -70,7 +70,7 @@
 
 #site-header.site-nav--split .nav-cta-btn--appointment:hover {
 
-  background: var(--aqua-hover, #142D4E) !important;
+  background: #1f2937 !important;
 
 }
 

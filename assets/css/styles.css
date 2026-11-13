@@ -11,14 +11,14 @@
 :root {
   --navy: #37474F;
   --deep-blue: #455A64;
-  --royal-blue: #0B1F3A;
-  --cyan: #0B1F3A;
+  --royal-blue: #002080;
+  --cyan: #002080;
   --white: #FFFFFF;
   --light-gray: #F5F7FA;
   --glass-bg: rgba(18, 61, 106, 0.45);
   --glass-border: rgba(255, 255, 255, 0.08);
-  --gradient-brand: linear-gradient(135deg, #0B1F3A 0%, #0B1F3A 50%, #0B1F3A 100%);
-  --gradient-glow: radial-gradient(ellipse at center, rgba(11, 31, 58, 0.25) 0%, transparent 70%);
+  --gradient-brand: linear-gradient(135deg, #002080 0%, #002080 50%, #002080 100%);
+  --gradient-glow: radial-gradient(ellipse at center, rgba(0, 32, 128, 0.25) 0%, transparent 70%);
   --shadow-float: 0 24px 48px -12px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.05);
   --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.3);
   /* Sticky nav — premium grey enterprise palette (Front Page source of truth) */
@@ -34,14 +34,14 @@
   --nav-slate: var(--text-heading, #0F172A);
   --nav-slate-mid: var(--text-subheading, #334155);
   --nav-slate-light: #78909C;
-  --nav-accent: #001F54;
-  --nav-accent-soft: rgba(0, 31, 84, 0.08);
-  --nav-accent-border: rgba(0, 31, 84, 0.22);
-  --nav-cta-bg: #001F54;
-  --nav-cta-hover: #0B1F3A;
-  --nav-cta-shadow: 0 4px 14px rgba(0, 31, 84, 0.16);
-  --nav-cta-shadow-hover: 0 8px 24px rgba(0, 31, 84, 0.22);
-  --nav-gradient-accent: #001F54;
+  --nav-accent: #002080;
+  --nav-accent-soft: rgba(0, 32, 128, 0.08);
+  --nav-accent-border: rgba(0, 32, 128, 0.22);
+  --nav-cta-bg: #374151;
+  --nav-cta-hover: #1f2937;
+  --nav-cta-shadow: 0 4px 14px rgba(0, 32, 128, 0.16);
+  --nav-cta-shadow-hover: 0 8px 24px rgba(0, 32, 128, 0.22);
+  --nav-gradient-accent: #002080;
   --nav-gradient-icon: linear-gradient(135deg, var(--nav-slate-mid), var(--nav-slate));
   --nav-top-text: rgba(55, 71, 79, 0.92);
   --nav-top-border: rgba(55, 71, 79, 0.12);
@@ -80,8 +80,8 @@ body {
 
 .glass-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(11, 31, 58, 0.35);
-  box-shadow: 0 16px 40px rgba(55, 71, 79, 0.12), 0 0 0 1px rgba(11, 31, 58, 0.1);
+  border-color: rgba(0, 32, 128, 0.35);
+  box-shadow: 0 16px 40px rgba(55, 71, 79, 0.12), 0 0 0 1px rgba(0, 32, 128, 0.1);
 }
 
 .float-card {
@@ -103,7 +103,7 @@ body {
   }
 
 .text-glow {
-  text-shadow: 0 0 40px rgba(11, 31, 58, 0.4);
+  text-shadow: 0 0 40px rgba(0, 32, 128, 0.4);
 }
 
 /* ─── Hero ─── */
@@ -118,16 +118,16 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 70% 60% at 75% 20%, rgba(11, 31, 58, 0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(11, 31, 58, 0.1) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 60% at 75% 20%, rgba(0, 32, 128, 0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(0, 32, 128, 0.1) 0%, transparent 55%),
     radial-gradient(ellipse 40% 30% at 90% 70%, rgba(18, 61, 106, 0.8) 0%, transparent 50%);
   pointer-events: none;
 }
 
 .hero-grid {
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.04) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: radial-gradient(ellipse 80% 70% at 60% 40%, black 20%, transparent 75%);
 }
@@ -340,7 +340,7 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: var(--nav-accent, #0B1F3A);
+  color: var(--nav-accent, #002080);
   background: var(--nav-accent-soft);
   border: 1px solid var(--nav-accent-border);
   flex-shrink: 0;
@@ -473,7 +473,7 @@ body {
 }
 
 #site-header.site-nav--enterprise .nav-cta-btn--appointment {
-  background: var(--aqua-primary, #0B1F3A) !important;
+  background: #374151 !important;
   color: #fff !important;
   border: none;
   border-radius: 0.25rem;
@@ -482,12 +482,12 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  box-shadow: 0 4px 14px rgba(10, 37, 64, 0.22);
+  box-shadow: 0 4px 14px rgba(0, 32, 128, 0.22);
 }
 
 #site-header.site-nav--enterprise .nav-cta-btn--appointment:hover {
-  background: #081E33 !important;
-  box-shadow: 0 6px 18px rgba(10, 37, 64, 0.28);
+  background: #1f2937 !important;
+  box-shadow: 0 6px 18px rgba(0, 32, 128, 0.28);
 }
 
 #site-header.site-nav--enterprise .nav-cta-btn--appointment:active {
@@ -531,7 +531,7 @@ body {
 
 @media (max-width: 1279px) {
   #site-header.site-nav--enterprise.nav-scrolled {
-    border-bottom: 1px solid var(--nav-glass-border, rgba(10, 37, 64, 0.08)) !important;
+    border-bottom: 1px solid var(--nav-glass-border, rgba(0, 32, 128, 0.08)) !important;
   }
 
   #site-header.site-nav--enterprise .nav-icon-btn--menu {
@@ -893,7 +893,7 @@ body {
 #site-header.nav-at-top.nav-dark-top .nav-link:hover,
 #site-header.nav-at-top.nav-dark-top .nav-link.active {
   color: rgba(255, 255, 255, 0.95);
-  text-shadow: 0 0 20px rgba(11, 31, 58, 0.35);
+  text-shadow: 0 0 20px rgba(0, 32, 128, 0.35);
 }
 
 #site-header.nav-at-top.nav-light-top .nav-link:hover,
@@ -921,7 +921,7 @@ body {
 #site-header.nav-at-top.nav-dark-top .mega-trigger.active {
   color: #fff;
   background: var(--nav-accent-soft);
-  text-shadow: 0 0 20px rgba(11, 31, 58, 0.35);
+  text-shadow: 0 0 20px rgba(0, 32, 128, 0.35);
 }
 
 #site-header.nav-at-top.nav-light-top .mega-trigger.active {
@@ -986,7 +986,7 @@ body {
 #site-header.nav-at-top.nav-dark-top .nav-icon-btn:hover {
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
-  border-color: rgba(11, 31, 58, 0.35);
+  border-color: rgba(0, 32, 128, 0.35);
 }
 
 /* CTA button — grey enterprise (matches Front Page sticky nav) */
@@ -1323,7 +1323,7 @@ body {
   transform: translate(-50%, -50%);
   width: 60%;
   height: 60%;
-  background: radial-gradient(ellipse, rgba(11, 31, 58, 0.08) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(0, 32, 128, 0.08) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1361,20 +1361,20 @@ body {
 
 /* ─── Buttons ─── */
 .btn-primary {
-  background: var(--brand-cta-bg, #0B1F3A);
+  background: var(--brand-cta-bg, #002080);
   color: white;
   font-weight: 600;
   border-radius: 0.875rem;
   transition: background 0.2s ease, transform 0.25s ease, box-shadow 0.25s ease;
   position: relative;
   overflow: hidden;
-  box-shadow: var(--brand-cta-shadow, 0 4px 14px rgba(10, 37, 64, 0.22));
+  box-shadow: var(--brand-cta-shadow, 0 4px 14px rgba(0, 32, 128, 0.22));
 }
 
 .btn-primary:hover {
   background: var(--brand-cta-hover, #081E33);
   transform: translateY(-2px);
-  box-shadow: var(--brand-cta-shadow-hover, 0 8px 24px rgba(10, 37, 64, 0.32));
+  box-shadow: var(--brand-cta-shadow-hover, 0 8px 24px rgba(0, 32, 128, 0.32));
 }
 
 .btn-primary:active {
@@ -1391,7 +1391,7 @@ body {
 
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(11, 31, 58, 0.5);
+  border-color: rgba(0, 32, 128, 0.5);
 }
 
 /* ─── Accordion ─── */

@@ -3,8 +3,8 @@
  */
 
 .variety_section {
-  --v-navy: #0B1F3A;
-  --v-sky: #0B1F3A;
+  --v-navy: #002080;
+  --v-sky: #002080;
   --v-canvas: #F3F6FB;
   position: relative;
   padding: 4.5rem 0 5rem;
@@ -21,8 +21,8 @@
   font-family: Poppins, Inter, sans-serif;
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
   font-weight: 800;
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
   margin: 0 0 2rem;
   line-height: 1.2;
 }
@@ -52,8 +52,8 @@
   padding: 1rem 0.5rem;
   border-radius: 1rem;
   background: #fff;
-  border: 1px solid rgba(11, 31, 58, 0.1);
-  box-shadow: 0 10px 24px rgba(11, 31, 58, 0.06);
+  border: 1px solid rgba(0, 32, 128, 0.1);
+  box-shadow: 0 10px 24px rgba(0, 32, 128, 0.06);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
@@ -63,8 +63,8 @@
 
 .variety_three:hover {
   transform: translateY(-3px);
-  border-color: rgba(11, 31, 58, 0.4);
-  box-shadow: 0 14px 32px rgba(11, 31, 58, 0.14);
+  border-color: rgba(0, 32, 128, 0.4);
+  box-shadow: 0 14px 32px rgba(0, 32, 128, 0.14);
 }
 
 .variety_three img {
@@ -79,8 +79,8 @@
   font-size: 0.78rem;
   font-weight: 700;
   line-height: 1.3;
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .variety_section .slick-prev,
@@ -93,11 +93,11 @@
   margin-top: -1.25rem;
   border: 0;
   border-radius: 9999px;
-  background: linear-gradient(135deg, #123D6A, #0B1F3A);
-  color: #0B1F3A;
+  background: linear-gradient(135deg, #123D6A, #002080);
+  color: #002080;
   font-size: 0;
   cursor: pointer;
-  box-shadow: 0 8px 18px rgba(11, 31, 58, 0.3);
+  box-shadow: 0 8px 18px rgba(0, 32, 128, 0.3);
 }
 
 .variety_section .slick-prev { left: 0; }
@@ -139,14 +139,14 @@
   padding: 0;
   border: 0;
   border-radius: 9999px;
-  background: rgba(11, 31, 58, 0.2);
+  background: rgba(0, 32, 128, 0.2);
   font-size: 0;
-  color: #0B1F3A;
+  color: #002080;
   cursor: pointer;
 }
 
 .variety_section .slick-dots li.slick-active button {
-  background: #0B1F3A;
+  background: #002080;
   width: 1.35rem;
 }
 

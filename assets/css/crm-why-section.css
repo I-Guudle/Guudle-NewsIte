@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════════════════ */
 
 .crm-why {
-  --cw-teal: #0B1F3A;
+  --cw-teal: #002080;
   --cw-indigo: #6366F1;
   --cw-navy-deep: #041018;
   --cw-navy: #0A1628;
@@ -25,8 +25,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
   mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 20%, transparent 75%);
 }
@@ -43,15 +43,15 @@
   height: min(420px, 60vw);
   top: -10%;
   right: -6%;
-  background: radial-gradient(circle, rgba(11, 31, 58, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 32, 128, 0.18), transparent 70%);
 }
 
 .crm-why__grid-lines {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.08) 1px, transparent 1px);
   background-size: 48px 48px;
   opacity: 0.4;
 }
@@ -102,14 +102,14 @@
   text-transform: uppercase;
   color: var(--cw-teal);
   background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(11, 31, 58, 0.22);
+  border: 1px solid rgba(0, 32, 128, 0.22);
   box-shadow: 0 4px 16px rgba(10, 22, 40, 0.06);
 }
 
 .crm-why__eyebrow--dark {
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(11, 31, 58, 0.28);
+  border-color: rgba(0, 32, 128, 0.28);
 }
 
 .crm-why__title {
@@ -122,9 +122,9 @@
 }
 
 .crm-why__title--light {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
-  text-shadow: 0 2px 24px rgba(11, 31, 58, 0.35);
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
+  text-shadow: 0 2px 24px rgba(0, 32, 128, 0.35);
 }
 
 .crm-why__accent {
@@ -153,7 +153,7 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 800;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   margin: 0 0 1.35rem;
   letter-spacing: -0.01em;
 }
@@ -180,15 +180,15 @@
   padding: 1.25rem 1.15rem;
   border-radius: 0.95rem;
   background: rgba(4, 16, 24, 0.55);
-  border: 1px solid rgba(11, 31, 58, 0.28);
+  border: 1px solid rgba(0, 32, 128, 0.28);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .crm-why__benefit:hover {
   transform: translateY(-4px);
-  border-color: rgba(11, 31, 58, 0.45);
-  box-shadow: 0 8px 28px rgba(11, 31, 58, 0.15);
+  border-color: rgba(0, 32, 128, 0.45);
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.15);
 }
 
 .crm-why__benefit-icon {
@@ -200,16 +200,16 @@
   font-size: 0.95rem;
   color: #fff;
   background: linear-gradient(135deg, var(--cw-indigo), var(--cw-teal));
-  box-shadow: 0 0 16px rgba(11, 31, 58, 0.3);
+  box-shadow: 0 0 16px rgba(0, 32, 128, 0.3);
 }
 
 .crm-why__benefit-text {
   font-size: clamp(0.88rem, 1.5vw, 0.95rem);
   font-weight: 700;
   line-height: 1.55;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   margin: 0;
-  text-shadow: 0 1px 14px rgba(11, 31, 58, 0.25);
+  text-shadow: 0 1px 14px rgba(0, 32, 128, 0.25);
 }
 
 .crm-why__panel {
@@ -223,8 +223,8 @@
   padding: 2rem 1.5rem;
   border-radius: 1.15rem;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(11, 31, 58, 0.28);
-  box-shadow: 0 0 40px rgba(11, 31, 58, 0.12);
+  border: 1px solid rgba(0, 32, 128, 0.28);
+  box-shadow: 0 0 40px rgba(0, 32, 128, 0.12);
 }
 
 .crm-why__closing-glow {
@@ -232,7 +232,7 @@
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-  background: radial-gradient(ellipse 70% 55% at 50% 0%, rgba(11, 31, 58, 0.15), transparent 60%);
+  background: radial-gradient(ellipse 70% 55% at 50% 0%, rgba(0, 32, 128, 0.15), transparent 60%);
 }
 
 .crm-why__cta {
@@ -248,7 +248,7 @@
   color: #fff !important;
   background: linear-gradient(135deg, #8B5CF6, var(--cw-teal));
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 28px rgba(11, 31, 58, 0.35);
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.35);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   z-index: 1;
@@ -256,7 +256,7 @@
 
 .crm-why__cta:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 36px rgba(11, 31, 58, 0.4);
+  box-shadow: 0 14px 36px rgba(0, 32, 128, 0.4);
   color: #fff !important;
 }
 

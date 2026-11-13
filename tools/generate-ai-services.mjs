@@ -519,7 +519,7 @@ const PAGES = [
     title: 'Enterprise AI Solutions',
     badge: 'Enterprise AI',
     breadcrumb: 'Enterprise AI Solutions',
-    accent: '#0B1F3A',
+    accent: '#002080',
     layout: 'layout-institutional-banner',
     dataLayout: 'enterprise-ai',
     dataService: 'enterprise-ai',
@@ -539,7 +539,7 @@ const PAGES = [
     overviewBullets: ['Enterprise AI platform and model registry design', 'Multi-tenant architecture with cost allocation per BU', 'Compliance, audit trails, and responsible AI governance'],
     stats: [['Fortune 500', 'Clients served', 'navy'], ['10+', 'BUs on one platform', 'accent'], ['-40%', 'AI infra cost', 'blue'], ['99.99%', 'Platform uptime', 'teal']],
     capabilities: [
-      ['fa-server', 'AI Platform', 'Centralized model serving, feature store, and experiment tracking.', 'from-[#0B1F3A] to-[#2563EB]'],
+      ['fa-server', 'AI Platform', 'Centralized model serving, feature store, and experiment tracking.', 'from-[#002080] to-[#2563EB]'],
       ['fa-sitemap', 'Multi-Tenant Design', 'Isolated workloads with shared infrastructure and cost controls.', 'from-[#2563EB] to-[#10A5F5]'],
       ['fa-book', 'Model Registry', 'Versioning, approval workflows, and lineage for every model.', 'from-[#7C3AED] to-[#2563EB]'],
       ['fa-shield-halved', 'AI Governance', 'Policy enforcement, bias monitoring, and audit reporting.', 'from-[#10A5F5] to-[#22C55E]'],
@@ -724,7 +724,7 @@ function statColor(type, accent) {
 
 function heroSection(p) {
   const bc = `<nav class="text-sm text-slate-500 mb-8 sp-reveal" aria-label="Breadcrumb">
-    <a href="../../index.html" class="hover:text-[#0B1F3A]">Home</a><span class="mx-2">/</span><span>Services</span><span class="mx-2">/</span><span class="font-medium" style="color:${p.accent}">${esc(p.breadcrumb)}</span>
+    <a href="../../index.html" class="hover:text-[#002080]">Home</a><span class="mx-2">/</span><span>Services</span><span class="mx-2">/</span><span class="font-medium" style="color:${p.accent}">${esc(p.breadcrumb)}</span>
   </nav>`;
 
   const ctas = `<div class="flex flex-wrap gap-3 sp-reveal sp-d2">
@@ -733,8 +733,8 @@ function heroSection(p) {
   </div>`;
 
   if (p.heroStyle === 'dark' || p.heroStyle === 'dark-banner') {
-    const bcDark = bc.replace('text-slate-500', 'text-white/60').replace('hover:text-[#0B1F3A]', 'hover:text-white');
-    return `<section class="pt-28 pb-20 relative overflow-hidden" style="background:linear-gradient(150deg,#0B1F3A 0%,#1E1B4B 55%,${p.accent}22 100%);color:#fff;">
+    const bcDark = bc.replace('text-slate-500', 'text-white/60').replace('hover:text-[#002080]', 'hover:text-white');
+    return `<section class="pt-28 pb-20 relative overflow-hidden" style="background:linear-gradient(150deg,#002080 0%,#1E1B4B 55%,${p.accent}22 100%);color:#fff;">
       <div class="max-w-7xl mx-auto px-4">
         ${bcDark}
         <div class="text-center max-w-3xl mx-auto mb-10">
@@ -771,7 +771,7 @@ function heroSection(p) {
 
   if (p.heroVisual === 'flow' && p.flowSteps) {
     const steps = p.flowSteps.map((s, i) => {
-      const border = i === p.flowSteps.length - 1 ? ' border-2 border-[#0B1F3A]' : '';
+      const border = i === p.flowSteps.length - 1 ? ' border-2 border-[#002080]' : '';
       return `<div class="sp-card px-6 py-5 text-center min-w-[110px]${border}"><p class="font-bold text-sm">${esc(s)}</p></div>${i < p.flowSteps.length - 1 ? '<i class="fas fa-arrow-right hidden sm:block" style="color:' + p.accent + '"></i>' : ''}`;
     }).join('');
     return `<section class="pt-28 pb-20 bg-gradient-to-b from-[#F3F6FB] to-white">
@@ -887,11 +887,11 @@ ${getSiteMetaBlock({ homeHref: '../../index.html', aboutHref: '../about.html' })
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"><\/script>
-  <script>tailwind.config={theme:{extend:{colors:{navy:'#0B1F3A','deep-blue':'#123D6A','royal-blue':'#2563EB',cyan:'#10A5F5','light-gray':'#F3F6FB'}}}}<\/script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#002080','deep-blue':'#123D6A','royal-blue':'#2563EB',cyan:'#10A5F5','light-gray':'#F3F6FB'}}}}<\/script>
   <link rel="stylesheet" href="../../assets/css/styles.css">
   <link rel="stylesheet" href="../../assets/css/service-pages.css">
 </head>
-<body class="service-page ${p.layout} bg-white text-[#0B1F3A] antialiased" data-service="${p.dataService}" data-layout="${p.dataLayout}">
+<body class="service-page ${p.layout} bg-white text-[#002080] antialiased" data-service="${p.dataService}" data-layout="${p.dataLayout}">
   <a href="#main" class="skip-link">Skip to main content</a>
   <div id="header-placeholder"></div>
   <main id="main">

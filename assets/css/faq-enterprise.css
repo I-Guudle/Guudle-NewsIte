@@ -3,12 +3,12 @@
  */
 
 .ent-faq {
-  --ent-faq-navy: #0A2540;
+  --ent-faq-navy: #002080;
   --ent-faq-slate: #475569;
   --ent-faq-muted: #64748b;
   --ent-faq-border: #e2e8f0;
   --ent-faq-surface: #f8fafc;
-  --ent-faq-accent: #0A2540;
+  --ent-faq-accent: #002080;
   --ent-faq-accent-hover: #081E33;
   --ent-faq-radius: 1rem;
   --ent-faq-radius-lg: 1.25rem;
@@ -184,7 +184,7 @@
 }
 
 .ent-faq__support-card {
-  background: #0A2540;
+  background: #002080;
   color: #fff;
   border-radius: var(--ent-faq-radius-lg);
   padding: clamp(1.35rem, 3vw, 1.75rem);

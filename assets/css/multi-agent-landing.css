@@ -29,7 +29,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #0B1F3A;
+  background: #002080;
   margin-right: 6px;
   animation: ma-pulse 1.2s ease-in-out infinite;
 }
@@ -52,7 +52,7 @@
 .ma-preloader__bar-fill {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #0B1F3A, #0B1F3A);
+  background: linear-gradient(90deg, #002080, #002080);
   border-radius: inherit;
   transition: width 0.2s ease;
 }
@@ -93,8 +93,8 @@
 /* Hero shapes */
 .ma-grid-pattern {
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.06) 1px, transparent 1px);
   background-size: 48px 48px;
 }
 
@@ -115,7 +115,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent, #0B1F3A, transparent);
+  background: linear-gradient(180deg, transparent, #002080, transparent);
   animation: ma-line-move 2.5s ease-in-out infinite;
 }
 
@@ -161,7 +161,7 @@
   top: 0;
   height: 100%;
   width: 0;
-  background: #0B1F3A;
+  background: #002080;
   animation: ma-tab-progress var(--tab-duration, 6s) linear forwards;
 }
 
@@ -184,10 +184,10 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #0B1F3A;
+  background: #002080;
   color: #fff;
   border: none;
-  box-shadow: 0 8px 24px rgba(11, 31, 58, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 32, 128, 0.35);
   opacity: 0;
   visibility: hidden;
   transform: translateY(12px);
@@ -226,5 +226,5 @@
 
 /* Swiper pagination override */
 .ma-review-carousel .swiper-pagination-bullet-active {
-  background: #0B1F3A;
+  background: #002080;
 }

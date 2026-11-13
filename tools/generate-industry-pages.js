@@ -415,7 +415,7 @@ function pageHtml(ind) {
               <span class="mx-2 text-slate-300">/</span>
               <a href="../industries.html" class="hover:text-slate-800 transition-colors">Industries</a>
               <span class="mx-2 text-slate-300">/</span>
-              <span class="text-[#0B1F3A] font-semibold">${esc(ind.name)}</span>
+              <span class="text-[#002080] font-semibold">${esc(ind.name)}</span>
             </nav>
             <p class="gind-kicker">${esc(ind.eyebrow)}</p>
             <h1 id="gind-hero-heading" class="hero-title-navy font-display text-[2.15rem] sm:text-4xl xl:text-[3rem] font-extrabold leading-[1.08] mb-5">${esc(ind.headline)}</h1>
@@ -491,7 +491,7 @@ function pageHtml(ind) {
         </header>
         <div class="gind-others gind-grid gind-grid--3">${otherLinks}
         </div>
-        <p class="mt-8"><a href="../industries.html" class="gstory-inline" style="color:#001F54;font-weight:700;">View all industries <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
+        <p class="mt-8"><a href="../industries.html" class="gstory-inline" style="color:#002080;font-weight:700;">View all industries <i class="fas fa-arrow-right" aria-hidden="true"></i></a></p>
       </div>
     </section>
 

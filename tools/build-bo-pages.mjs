@@ -336,13 +336,13 @@ ${challenges}
         </header>
         <div class="bo-solution">
           <div class="bo-solution__panel" data-aos="fade-up">
-            <h3 class="font-display text-lg font-bold text-[#0B1F3A] mb-3">Platform Architecture</h3>
+            <h3 class="font-display text-lg font-bold text-[#002080] mb-3">Platform Architecture</h3>
             <div class="bo-arch">
 ${arch}
             </div>
           </div>
           <div class="bo-solution__panel" data-aos="fade-up" data-aos-delay="80">
-            <h3 class="font-display text-lg font-bold text-[#0B1F3A] mb-2">What Changes for the Business</h3>
+            <h3 class="font-display text-lg font-bold text-[#002080] mb-2">What Changes for the Business</h3>
             <p class="text-slate-600 text-sm leading-relaxed mb-2">Architecture, automation, integrations, scalability, governance, and security are engineered as one programme — so outcomes compound instead of fragmenting across vendors.</p>
             <ul class="bo-solution__list">
               ${p.solutionPoints.map((s) => `<li><i class="fas fa-check-circle" aria-hidden="true"></i><span>${esc(s)}</span></li>`).join('')}
@@ -454,7 +454,7 @@ ${why}
         </header>
         <div class="bo-kpi" data-aos="fade-up">
           <div class="bo-kpi__panel">
-            <h3 class="font-display text-base font-bold text-[#0B1F3A]">Performance Trends</h3>
+            <h3 class="font-display text-base font-bold text-[#002080]">Performance Trends</h3>
             <div class="bo-kpi__bars">
 ${bars}
             </div>

@@ -43,6 +43,9 @@
   const live = p.url
     ? `<a href="${esc(p.url)}" class="ow-btn ow-btn--ghost" target="_blank" rel="noopener noreferrer">Visit Live Site <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>`
     : '';
+  const demo = p.demo
+    ? `<a href="${esc(p.demo)}" class="ow-btn ow-btn--primary">Open the delivery app</a>`
+    : '';
 
   const approach = p.approach
     ? esc(p.approach)
@@ -70,7 +73,7 @@
         </div>
         <h1 id="csd-title" class="font-display">${esc(p.title)}</h1>
         <p>${esc(p.overview)}</p>
-        ${live ? `<div class="csd-hero__actions">${live}</div>` : ''}
+        ${(demo || live) ? `<div class="csd-hero__actions">${demo}${live}</div>` : ''}
       </div>
     </section>
 

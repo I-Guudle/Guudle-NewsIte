@@ -9,8 +9,8 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const BRAND = '#10A5F5';
-const BRAND_RGB = '16, 165, 245';
-const BRAND_RGB_COMPACT = '16,165,245';
+const BRAND_RGB = '0, 32, 128';
+const BRAND_RGB_COMPACT = '0, 32, 128';
 
 const REPLACEMENTS = [
   ['#10A5F5', BRAND],
@@ -25,9 +25,9 @@ const REPLACEMENTS = [
   ['#5BC4FA', '#5BC4FA'],
   ['#5BC4FA', '#5BC4FA'],
   ['#E6F4FE', '#E6F4FE'],
-  ['rgba(16, 165, 245', `rgba(${BRAND_RGB}`],
-  ['rgba(16,165,245', `rgba(${BRAND_RGB_COMPACT}`],
-  ['rgba(16, 165, 245', `rgba(${BRAND_RGB}`],
+  ['rgba(0, 32, 128', `rgba(${BRAND_RGB}`],
+  ['rgba(0, 32, 128', `rgba(${BRAND_RGB_COMPACT}`],
+  ['rgba(0, 32, 128', `rgba(${BRAND_RGB}`],
 ];
 
 const SKIP_DIRS = new Set(['node_modules', '.git', 'june2026', '222', '111']);

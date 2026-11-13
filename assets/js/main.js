@@ -393,7 +393,7 @@ function initParticles() {
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(11, 31, 58, ${p.opacity})`;
+      ctx.fillStyle = `rgba(0, 32, 128, ${p.opacity})`;
       ctx.fill();
 
       particles.slice(i + 1).forEach((p2) => {
@@ -519,7 +519,7 @@ function initChatbot() {
     div.className = 'flex gap-2' + (type === 'user' ? ' flex-row-reverse' : '');
     div.innerHTML = type === 'user'
       ? `<div class="bg-[#2563EB] rounded-2xl rounded-tr-sm px-3 py-2 text-sm text-white max-w-[80%]">${esc(text)}</div>`
-      : `<div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#2563EB] to-[#0B1F3A] flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold">AI</div>
+      : `<div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#2563EB] to-[#002080] flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold">AI</div>
          <div class="bg-white/8 border border-white/10 rounded-2xl rounded-tl-sm px-3 py-2 text-sm text-white/70 max-w-[80%]">${esc(text)}</div>`;
     messages?.appendChild(div);
     messages.scrollTop = messages.scrollHeight;

@@ -3,7 +3,7 @@
    ═══════════════════════════════════════════════════════════ */
 
 .erp-why {
-  --ew-teal: #0B1F3A;
+  --ew-teal: #002080;
   --ew-indigo: #6366F1;
   --ew-navy-deep: #041018;
   --ew-navy: #0A1628;
@@ -25,8 +25,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.05) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.05) 1px, transparent 1px);
   background-size: 40px 40px;
   mask-image: radial-gradient(ellipse 80% 70% at 50% 30%, #000 20%, transparent 75%);
 }
@@ -43,15 +43,15 @@
   height: min(420px, 60vw);
   top: -10%;
   right: -6%;
-  background: radial-gradient(circle, rgba(11, 31, 58, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(0, 32, 128, 0.18), transparent 70%);
 }
 
 .erp-why__grid-lines {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(11, 31, 58, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(11, 31, 58, 0.08) 1px, transparent 1px);
+    linear-gradient(rgba(0, 32, 128, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.08) 1px, transparent 1px);
   background-size: 48px 48px;
   opacity: 0.4;
 }
@@ -107,14 +107,14 @@
   text-transform: uppercase;
   color: var(--ew-teal);
   background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(11, 31, 58, 0.22);
+  border: 1px solid rgba(0, 32, 128, 0.22);
   box-shadow: 0 4px 16px rgba(10, 22, 40, 0.06);
 }
 
 .erp-why__eyebrow--dark {
   color: #FFFFFF;
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(11, 31, 58, 0.28);
+  border-color: rgba(0, 32, 128, 0.28);
 }
 
 .erp-why__title {
@@ -127,9 +127,9 @@
 }
 
 .erp-why__title--light {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A;
-  text-shadow: 0 2px 24px rgba(11, 31, 58, 0.35);
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080;
+  text-shadow: 0 2px 24px rgba(0, 32, 128, 0.35);
 }
 
 .erp-why__accent {
@@ -182,32 +182,32 @@
   color: #fff !important;
   background: linear-gradient(135deg, #8B5CF6, var(--ew-teal));
   border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 28px rgba(11, 31, 58, 0.35);
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.35);
 }
 
 .erp-why__cta--primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 36px rgba(11, 31, 58, 0.4);
+  box-shadow: 0 14px 36px rgba(0, 32, 128, 0.4);
   color: #fff !important;
 }
 
 .erp-why__cta--secondary {
   color: var(--ew-heading) !important;
   background: #fff;
-  border: 1px solid rgba(11, 31, 58, 0.25);
+  border: 1px solid rgba(0, 32, 128, 0.25);
   box-shadow: 0 4px 16px rgba(10, 22, 40, 0.08);
 }
 
 .erp-why__cta--secondary:hover {
   transform: translateY(-2px);
-  border-color: rgba(11, 31, 58, 0.45);
+  border-color: rgba(0, 32, 128, 0.45);
   color: var(--ew-heading) !important;
 }
 
 .erp-why__cta--secondary-dark {
   color: #fff !important;
   background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(11, 31, 58, 0.35);
+  border-color: rgba(0, 32, 128, 0.35);
 }
 
 .erp-why__cta--secondary-dark:hover {
@@ -219,7 +219,7 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 800;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   margin: 0 0 1.35rem;
   letter-spacing: -0.01em;
 }
@@ -246,15 +246,15 @@
   padding: 1.25rem 1.15rem;
   border-radius: 0.95rem;
   background: rgba(4, 16, 24, 0.55);
-  border: 1px solid rgba(11, 31, 58, 0.28);
+  border: 1px solid rgba(0, 32, 128, 0.28);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .erp-why__benefit:hover {
   transform: translateY(-4px);
-  border-color: rgba(11, 31, 58, 0.45);
-  box-shadow: 0 8px 28px rgba(11, 31, 58, 0.15);
+  border-color: rgba(0, 32, 128, 0.45);
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.15);
 }
 
 .erp-why__benefit-icon {
@@ -266,16 +266,16 @@
   font-size: 0.95rem;
   color: #fff;
   background: linear-gradient(135deg, var(--ew-indigo), var(--ew-teal));
-  box-shadow: 0 0 16px rgba(11, 31, 58, 0.3);
+  box-shadow: 0 0 16px rgba(0, 32, 128, 0.3);
 }
 
 .erp-why__benefit-text {
   font-size: clamp(0.88rem, 1.5vw, 0.95rem);
   font-weight: 700;
   line-height: 1.55;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   margin: 0;
-  text-shadow: 0 1px 14px rgba(11, 31, 58, 0.25);
+  text-shadow: 0 1px 14px rgba(0, 32, 128, 0.25);
 }
 
 .erp-why__pillars {
@@ -292,7 +292,7 @@
   padding: 1.75rem 1.5rem;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(11, 31, 58, 0.18);
+  border: 1px solid rgba(0, 32, 128, 0.18);
   box-shadow: 0 8px 32px rgba(10, 22, 40, 0.08);
 }
 
@@ -317,7 +317,7 @@
   font-size: 1.1rem;
   color: #fff;
   background: linear-gradient(135deg, var(--ew-teal), var(--ew-indigo));
-  box-shadow: 0 4px 16px rgba(11, 31, 58, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 32, 128, 0.3);
 }
 
 .erp-why__pillar-icon--security {
@@ -401,13 +401,13 @@
   padding: 1.35rem 1.15rem;
   border-radius: 0.95rem;
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(11, 31, 58, 0.25);
+  border: 1px solid rgba(0, 32, 128, 0.25);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .erp-why__tech-col:hover {
   transform: translateY(-3px);
-  border-color: rgba(11, 31, 58, 0.4);
+  border-color: rgba(0, 32, 128, 0.4);
 }
 
 .erp-why__tech-icon {
@@ -425,7 +425,7 @@
 .erp-why__tech-title {
   font-size: 0.95rem;
   font-weight: 800;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   margin: 0 0 0.75rem;
   letter-spacing: -0.01em;
 }
@@ -501,7 +501,7 @@
   padding: 0.85rem 1rem;
   border-radius: 0.75rem;
   background: rgba(255, 255, 255, 0.85);
-  border: 1px solid rgba(11, 31, 58, 0.15);
+  border: 1px solid rgba(0, 32, 128, 0.15);
   font-size: 0.88rem;
   font-weight: 700;
   line-height: 1.45;
@@ -538,13 +538,13 @@
   padding: 1.15rem 0.85rem;
   border-radius: 0.9rem;
   background: rgba(4, 16, 24, 0.5);
-  border: 1px solid rgba(11, 31, 58, 0.22);
+  border: 1px solid rgba(0, 32, 128, 0.22);
   transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
 .erp-why__why-item:hover {
   transform: translateY(-3px);
-  border-color: rgba(11, 31, 58, 0.4);
+  border-color: rgba(0, 32, 128, 0.4);
 }
 
 .erp-why__why-icon {
@@ -562,7 +562,7 @@
   font-size: 0.82rem;
   font-weight: 700;
   line-height: 1.45;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   margin: 0;
 }
 
@@ -571,8 +571,8 @@
   padding: 2rem 1.5rem;
   border-radius: 1.15rem;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(11, 31, 58, 0.28);
-  box-shadow: 0 0 40px rgba(11, 31, 58, 0.12);
+  border: 1px solid rgba(0, 32, 128, 0.28);
+  box-shadow: 0 0 40px rgba(0, 32, 128, 0.12);
 }
 
 .erp-why__closing-glow {
@@ -580,7 +580,7 @@
   inset: 0;
   border-radius: inherit;
   pointer-events: none;
-  background: radial-gradient(ellipse 70% 55% at 50% 0%, rgba(11, 31, 58, 0.15), transparent 60%);
+  background: radial-gradient(ellipse 70% 55% at 50% 0%, rgba(0, 32, 128, 0.15), transparent 60%);
 }
 
 @media (prefers-reduced-motion: reduce) {

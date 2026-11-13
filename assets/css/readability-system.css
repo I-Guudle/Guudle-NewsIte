@@ -7,14 +7,14 @@
   /* Overlay presets */
   --overlay-dark-hero: linear-gradient(
     135deg,
-    rgba(10, 37, 64, 0.72) 0%,
+    rgba(0, 32, 128, 0.72) 0%,
     rgba(10, 22, 40, 0.58) 45%,
-    rgba(10, 37, 64, 0.68) 100%
+    rgba(0, 32, 128, 0.68) 100%
   );
   --overlay-dark-strong: linear-gradient(
     180deg,
     rgba(10, 22, 40, 0.65) 0%,
-    rgba(10, 37, 64, 0.55) 50%,
+    rgba(0, 32, 128, 0.55) 50%,
     rgba(10, 22, 40, 0.62) 100%
   );
   --overlay-light-hero: linear-gradient(
@@ -277,7 +277,7 @@
 .guudle-site a:focus-visible,
 .guudle-site button:focus-visible,
 .guudle-site [tabindex]:focus-visible {
-  outline: 2px solid var(--text-link, #0A2540);
+  outline: 2px solid var(--text-link, #002080);
   outline-offset: 2px;
 }
 

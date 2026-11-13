@@ -634,7 +634,7 @@ function renderChatbot() {
         </div>
         <div id="chatbot-messages" class="p-4 h-60 overflow-y-auto space-y-3 bg-[#2E3440]">
           <div class="flex gap-2">
-            <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#2563EB] to-[#0B1F3A] flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold">AI</div>
+            <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#2563EB] to-[#002080] flex-shrink-0 flex items-center justify-center text-white text-[10px] font-bold">AI</div>
             <div class="bg-white/8 border border-white/10 rounded-2xl rounded-tl-sm px-3 py-2 text-sm text-white/70">Hello! How can I help with your technology needs today?</div>
           </div>
         </div>

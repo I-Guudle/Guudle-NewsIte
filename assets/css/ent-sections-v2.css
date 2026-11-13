@@ -5,7 +5,7 @@
 .svc-corpox-page {
   --cx2-purple: #7C3AED;
   --cx2-purple-soft: rgba(124, 58, 237, 0.12);
-  --cx2-navy: #0A2540;
+  --cx2-navy: #002080;
   --cx2-navy-deep: #061525;
   --cx2-teal: var(--aqua-primary);
   --cx2-muted: #64748B;
@@ -179,7 +179,7 @@
 
 .cx-cap-card:nth-child(2) .cx-cap-card__icon { background: linear-gradient(135deg, #3B82F6, #2563EB); }
 .cx-cap-card:nth-child(3) .cx-cap-card__icon { background: linear-gradient(135deg, #10B981, #059669); }
-.cx-cap-card:nth-child(4) .cx-cap-card__icon { background: linear-gradient(135deg, #0B1F3A, #0B1F3A); }
+.cx-cap-card:nth-child(4) .cx-cap-card__icon { background: linear-gradient(135deg, #002080, #002080); }
 .cx-cap-card:nth-child(5) .cx-cap-card__icon { background: linear-gradient(135deg, #F97316, #EA580C); }
 .cx-cap-card:nth-child(6) .cx-cap-card__icon { background: linear-gradient(135deg, #EC4899, #DB2777); }
 
@@ -222,7 +222,7 @@
   inset: 0;
   background:
     radial-gradient(ellipse 40% 60% at 10% 20%, rgba(124, 58, 237, 0.25), transparent 55%),
-    radial-gradient(ellipse 35% 50% at 90% 80%, rgba(11, 31, 58, 0.2), transparent 50%);
+    radial-gradient(ellipse 35% 50% at 90% 80%, rgba(0, 32, 128, 0.2), transparent 50%);
   pointer-events: none;
 }
 
@@ -234,7 +234,7 @@
 
 .cx-tech__head .cx-tag {
   color: var(--cx2-teal);
-  background: rgba(11, 31, 58, 0.15);
+  background: rgba(0, 32, 128, 0.15);
 }
 
 .cx-tech__head h2 {
@@ -270,7 +270,7 @@
 .cx-tech__chip:hover {
   transform: translateY(-4px);
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(11, 31, 58, 0.4);
+  border-color: rgba(0, 32, 128, 0.4);
 }
 
 .cx-tech__chip i {
@@ -424,7 +424,7 @@
   border: 1px solid var(--cx2-border);
   border-radius: 1.25rem;
   overflow: hidden;
-  box-shadow: 0 16px 48px rgba(10, 37, 64, 0.08);
+  box-shadow: 0 16px 48px rgba(0, 32, 128, 0.08);
 }
 
 @media (min-width: 900px) {
@@ -662,7 +662,7 @@
   overflow: hidden;
   background: #fff;
   border: 1px solid var(--cx2-border);
-  box-shadow: 0 8px 32px rgba(10, 37, 64, 0.06);
+  box-shadow: 0 8px 32px rgba(0, 32, 128, 0.06);
   transition: transform 0.35s var(--cx2-ease), box-shadow 0.35s ease;
 }
 
@@ -871,7 +871,7 @@
   border-radius: 1.25rem;
   background: #fff;
   border: 1px solid var(--cx2-border);
-  box-shadow: 0 12px 40px rgba(10, 37, 64, 0.07);
+  box-shadow: 0 12px 40px rgba(0, 32, 128, 0.07);
   position: relative;
 }
 

@@ -1,11 +1,11 @@
 /* ═══ Mobile Services Landing — 6 unique themes ═══ */
 .slp-page[data-slp-prefix="msl"] {
-  --msl-primary: #0B1F3A;
-  --msl-secondary: #0B1F3A;
-  --msl-accent: #0B1F3A;
+  --msl-primary: #002080;
+  --msl-secondary: #002080;
+  --msl-accent: #002080;
   --msl-light: #F7F9FC;
   --msl-hero-bg: linear-gradient(155deg, #042F2E 0%, #0F172A 40%, #164E63 100%);
-  --msl-glow: rgba(11, 31, 58, 0.3);
+  --msl-glow: rgba(0, 32, 128, 0.3);
   --slp-primary: var(--msl-primary);
   --slp-secondary: var(--msl-secondary);
   --slp-accent: var(--msl-accent);
@@ -13,8 +13,8 @@
   color: #0F172A;
 }
 .slp-page[data-msl-theme="custom"] {
-  --msl-primary: #0B1F3A; --msl-secondary: #0B1F3A; --msl-accent: #0B1F3A;
-  --msl-light: #F7F9FC; --msl-glow: rgba(11, 31, 58,0.35);
+  --msl-primary: #002080; --msl-secondary: #002080; --msl-accent: #002080;
+  --msl-light: #F7F9FC; --msl-glow: rgba(0, 32, 128,0.35);
   --msl-hero-bg: linear-gradient(155deg, #042F2E 0%, #0F172A 38%, #155E75 100%);
 }
 .slp-page[data-msl-theme="enterprise"] {
@@ -33,8 +33,8 @@
   --msl-hero-bg: linear-gradient(155deg, #1E1B4B 0%, #312E81 50%, #3730A3 100%);
 }
 .slp-page[data-msl-theme="consumer"] {
-  --msl-primary: #151B3B; --msl-secondary: #0B1026; --msl-accent: #0B1F3A;
-  --msl-light: #F8FAFC; --msl-glow: rgba(11, 31, 58, 0.32);
+  --msl-primary: #151B3B; --msl-secondary: #0B1026; --msl-accent: #002080;
+  --msl-light: #F8FAFC; --msl-glow: rgba(0, 32, 128, 0.32);
   --msl-hero-bg: linear-gradient(155deg, #0B1026 0%, #151B3B 42%, #0F2744 100%);
 }
 .slp-page[data-msl-theme="ondemand"] {

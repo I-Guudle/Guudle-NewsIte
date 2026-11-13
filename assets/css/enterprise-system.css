@@ -4,7 +4,7 @@
    ═══════════════════════════════════════════════════════════════════════════ */
 
 .guudle-site {
-  --primary-navy: #0B1F3A;
+  --primary-navy: #002080;
   --secondary-navy: #142D4E;
   --deep-navy: #071629;
   --primary-aqua: var(--primary-navy);
@@ -13,12 +13,12 @@
   --soft-white: #F7F9FC;
   --light-grey: #E8EDF3;
   --body-text: #46545B;
-  --dark-text: #0B1F3A;
+  --dark-text: #002080;
   --ent-navy: var(--primary-navy);
   --ent-deep: var(--secondary-navy);
   --ent-ink: var(--dark-text);
   --ent-muted: var(--body-text);
-  --ent-line: rgba(11, 31, 58, 0.18);
+  --ent-line: rgba(0, 32, 128, 0.18);
   --ent-off: var(--soft-white);
   --ent-white: #ffffff;
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -70,8 +70,8 @@
   background-image: none !important;
   -webkit-background-clip: unset !important;
   background-clip: unset !important;
-  -webkit-text-fill-color: #0B1F3A !important;
-  color: #0B1F3A !important;
+  -webkit-text-fill-color: #002080 !important;
+  color: #002080 !important;
   text-shadow: none !important;
   filter: none !important;
   animation: none !important;
@@ -95,9 +95,9 @@
 .guudle-site h2 span[style*="10A5F5"],
 .guudle-site h1 span[style*="10A5F5"],
 .guudle-site .cpox-accent {
-  color: #0B1F3A !important;
+  color: #002080 !important;
   background: none !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 /* ── Hide decorative effects (keep hero aurora / beam) ── */
@@ -115,8 +115,8 @@
 
 .guudle-site .hero-dot-grid {
   background-image:
-    linear-gradient(rgba(0, 31, 84, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 31, 84, 0.045) 1px, transparent 1px) !important;
+    linear-gradient(rgba(0, 32, 128, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 32, 128, 0.045) 1px, transparent 1px) !important;
   background-size: 48px 48px !important;
   opacity: 0.9;
   mask-image: radial-gradient(ellipse 80% 70% at 70% 40%, #000 20%, transparent 75%);
@@ -160,7 +160,7 @@ main > section:first-of-type::before {
   z-index: 0;
   background:
     radial-gradient(ellipse 520px 520px at 92% -8%, rgba(167, 139, 250, 0.38), transparent 70%),
-    radial-gradient(ellipse 420px 420px at 6% 108%, rgba(11, 31, 58, 0.32), transparent 70%),
+    radial-gradient(ellipse 420px 420px at 6% 108%, rgba(0, 32, 128, 0.32), transparent 70%),
     radial-gradient(ellipse 360px 360px at 42% 48%, rgba(244, 114, 182, 0.16), transparent 70%);
 }
 
@@ -190,14 +190,14 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .guudle-site .ct-hero,
 .guudle-site [data-svc-hero].saas-hero {
   background: var(--hero-wash) !important;
-  color: #0B1F3A;
+  color: #002080;
   min-height: unset;
 }
 
 .bo-hero,
 .ct-hero,
 .corp-hero {
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 .bo-hero h1,
@@ -211,8 +211,8 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .corp-hero h1,
 .corp-hero .corp-hero-title,
 .corp-hero .corp-hero-sub {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .bo-hero .bo-hero__lead,
@@ -234,8 +234,8 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .guudle-site .ft-hero h1,
 .guudle-site [data-svc-hero] h1 {
   font-family: var(--font-display) !important;
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 1.05;
@@ -244,7 +244,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 
 .guudle-site .hero-title-navy__line::after,
 .guudle-site .hero-underline::after {
-  background: #0B1F3A !important;
+  background: #002080 !important;
   background-image: none !important;
 }
 
@@ -258,7 +258,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   background: transparent !important;
   border: 0 !important;
   box-shadow: none !important;
-  color: #0B1F3A !important;
+  color: #002080 !important;
   font-size: 0.72rem !important;
   font-weight: 800 !important;
   letter-spacing: 0.16em !important;
@@ -274,7 +274,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   content: "";
   width: 1.6rem;
   height: 1px;
-  background: #0B1F3A;
+  background: #002080;
   display: inline-block;
 }
 
@@ -295,11 +295,11 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .guudle-site .home-parallax-immersive__btn--primary,
 .guudle-site a.hero-cta-navy-primary,
 .guudle-site button[type="submit"].hero-contact-submit {
-  background: #0B1F3A !important;
+  background: #374151 !important;
   background-image: none !important;
   color: #ffffff !important;
-  border: 1px solid #0B1F3A !important;
-  box-shadow: 0 8px 22px rgba(0, 31, 84, 0.16) !important;
+  border: 1px solid #374151 !important;
+  box-shadow: 0 8px 22px rgba(0, 32, 128, 0.16) !important;
   backdrop-filter: none !important;
 }
 
@@ -309,7 +309,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .guudle-site .svc-btn-primary:hover,
 .guudle-site .slp-btn-primary:hover,
 .guudle-site .hero-contact-submit:hover {
-  background: #0B1F3A !important;
+  background: #1f2937 !important;
   color: #ffffff !important;
 }
 
@@ -324,8 +324,8 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .guudle-site .home-parallax-immersive__btn--ghost {
   background: #ffffff !important;
   background-image: none !important;
-  color: #0B1F3A !important;
-  border: 1px solid rgba(0, 31, 84, 0.22) !important;
+  color: #002080 !important;
+  border: 1px solid rgba(0, 32, 128, 0.22) !important;
   box-shadow: none !important;
   backdrop-filter: none !important;
 }
@@ -333,13 +333,13 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .guudle-site .hero-cta-secondary:hover,
 .guudle-site .hero-cta-navy-secondary:hover {
   background: #f8fafc !important;
-  color: #0B1F3A !important;
-  border-color: rgba(0, 31, 84, 0.4) !important;
+  color: #002080 !important;
+  border-color: rgba(0, 32, 128, 0.4) !important;
 }
 
 .guudle-site .hero-cta-secondary i,
 .guudle-site .hero-cta-navy-secondary i {
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 /* ── Cards ── */
@@ -356,22 +356,22 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .guudle-site article.hero-enterprise-card {
   background: #ffffff !important;
   background-image: none !important;
-  border: 1px solid rgba(0, 31, 84, 0.1) !important;
-  box-shadow: 0 8px 24px rgba(0, 31, 84, 0.05) !important;
+  border: 1px solid rgba(0, 32, 128, 0.1) !important;
+  box-shadow: 0 8px 24px rgba(0, 32, 128, 0.05) !important;
   backdrop-filter: none !important;
   color: #0f172a;
 }
 
 .guudle-site .hero-enterprise-card__icon,
 .guudle-site .hero-feature__icon {
-  background: rgba(0, 31, 84, 0.06) !important;
-  color: #0B1F3A !important;
+  background: rgba(0, 32, 128, 0.06) !important;
+  color: #002080 !important;
   box-shadow: none !important;
 }
 
 .guudle-site .hero-enterprise-card__icon i,
 .guudle-site .hero-feature__icon i {
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 /* ── Section backgrounds: white / off-white only ── */
@@ -391,8 +391,8 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .guudle-site .erp-why__benefit-text,
 .guudle-site .erp-why__tech-title,
 .guudle-site .erp-why__why-item p {
-  color: #0B1F3A !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  color: #002080 !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .guudle-site .saas-plat__lead--light,
@@ -406,15 +406,15 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   background: #ffffff !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-  border: 1px solid rgba(0, 31, 84, 0.1) !important;
-  box-shadow: 0 18px 48px rgba(0, 31, 84, 0.1) !important;
+  border: 1px solid rgba(0, 32, 128, 0.1) !important;
+  box-shadow: 0 18px 48px rgba(0, 32, 128, 0.1) !important;
 }
 
 .guudle-site .mega-panel-heading,
 .guudle-site .mega-cat-title {
-  color: #0B1F3A !important;
+  color: #002080 !important;
   background: none !important;
-  -webkit-text-fill-color: #0B1F3A !important;
+  -webkit-text-fill-color: #002080 !important;
 }
 
 .guudle-site .site-nav .btn-primary,
@@ -436,10 +436,10 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .ent-stage {
   position: relative;
   min-height: 17rem;
-  border: 1px solid rgba(0, 31, 84, 0.1);
+  border: 1px solid rgba(0, 32, 128, 0.1);
   border-radius: 1rem;
   background: #fff;
-  box-shadow: 0 18px 40px rgba(0, 31, 84, 0.08);
+  box-shadow: 0 18px 40px rgba(0, 32, 128, 0.08);
   overflow: hidden;
 }
 
@@ -448,7 +448,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   align-items: center;
   gap: 0.4rem;
   padding: 0.7rem 0.9rem;
-  border-bottom: 1px solid rgba(0, 31, 84, 0.08);
+  border-bottom: 1px solid rgba(0, 32, 128, 0.08);
   background: #f7f8fb;
 }
 
@@ -456,7 +456,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 50%;
-  background: rgba(0, 31, 84, 0.18);
+  background: rgba(0, 32, 128, 0.18);
 }
 
 .ent-stage__url {
@@ -464,7 +464,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   height: 1.35rem;
   border-radius: 999px;
   background: #fff;
-  border: 1px solid rgba(0, 31, 84, 0.1);
+  border: 1px solid rgba(0, 32, 128, 0.1);
   font-size: 0.68rem;
   color: #64748b;
   display: flex;
@@ -479,7 +479,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 }
 
 .ent-stage__rail {
-  background: #0B1F3A;
+  background: #002080;
 }
 
 .ent-stage__main {
@@ -491,7 +491,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .ent-stage__row {
   height: 0.7rem;
   border-radius: 999px;
-  background: rgba(0, 31, 84, 0.08);
+  background: rgba(0, 32, 128, 0.08);
 }
 
 .ent-stage__row--wide { width: 88%; }
@@ -499,7 +499,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 .ent-stage__row--short { width: 42%; }
 
 .ent-stage__panel {
-  border: 1px solid rgba(0, 31, 84, 0.08);
+  border: 1px solid rgba(0, 32, 128, 0.08);
   border-radius: 0.6rem;
   min-height: 5.5rem;
   background: #f7f8fb;
@@ -527,8 +527,8 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #0B1F3A;
-  border: 1px solid rgba(0, 31, 84, 0.16);
+  color: #002080;
+  border: 1px solid rgba(0, 32, 128, 0.16);
   border-radius: 999px;
   padding: 0.28rem 0.6rem;
   background: #fff;
@@ -539,7 +539,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #0B1F3A;
+  color: #002080;
   margin: 0 0 0.55rem;
 }
 
@@ -575,7 +575,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 
 .guudle-site .home-parallax-immersive__title,
 .guudle-site .home-parallax-immersive__eyebrow {
-  color: #0B1F3A !important;
+  color: #002080 !important;
 }
 
 .guudle-site .home-parallax-immersive__lead {
@@ -584,8 +584,8 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 
 .guudle-site .home-parallax-immersive__card {
   background: #ffffff !important;
-  border: 1px solid rgba(0, 31, 84, 0.1) !important;
-  box-shadow: 0 12px 32px rgba(0, 31, 84, 0.06) !important;
+  border: 1px solid rgba(0, 32, 128, 0.1) !important;
+  box-shadow: 0 12px 32px rgba(0, 32, 128, 0.06) !important;
 }
 
 /* ── Motion ── */
@@ -615,7 +615,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 /* Hosting referral — keep the photo visible and the type white on aqua */
 .guudle-site .home-hosting.home-parallax-immersive .home-parallax-immersive__overlay {
   background:
-    linear-gradient(180deg, rgba(6, 24, 41, 0.55) 0%, rgba(10, 37, 64, 0.72) 48%, rgba(6, 24, 41, 0.84) 100%) !important;
+    linear-gradient(180deg, rgba(6, 24, 41, 0.55) 0%, rgba(0, 32, 128, 0.72) 48%, rgba(6, 24, 41, 0.84) 100%) !important;
 }
 
 .guudle-site .home-hosting .home-parallax-immersive__title {
@@ -636,8 +636,8 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
 }
 
 .guudle-site .home-hosting .home-hosting__btn {
-  background: #0B1F3A !important;
-  color: #041018 !important;
+  background: #374151 !important;
+  color: #ffffff !important;
 }
 
 .guudle-site .home-hosting .home-hosting__btn:hover,
@@ -652,7 +652,7 @@ main > section:first-of-type > *:not(.hero-aurora):not(.hero-beam):not(.hero-dot
   background: linear-gradient(
     165deg,
     rgba(6, 24, 41, 0.78) 0%,
-    rgba(10, 37, 64, 0.58) 46%,
+    rgba(0, 32, 128, 0.58) 46%,
     rgba(6, 24, 41, 0.84) 100%
   ) !important;
 }

@@ -7,7 +7,7 @@
   --cx-purple: #7C3AED;
   --cx-purple-soft: rgba(124, 58, 237, 0.1);
   --cx-purple-light: #EDE9FE;
-  --cx-navy: #0A2540;
+  --cx-navy: #002080;
   --cx-muted: #64748B;
   --cx-border: #E2E8F0;
   --cx-ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -238,7 +238,7 @@
   border: 1px solid var(--cx-border) !important;
   border-radius: 1rem !important;
   padding: 2rem 1.75rem !important;
-  box-shadow: 0 8px 32px rgba(10, 37, 64, 0.06) !important;
+  box-shadow: 0 8px 32px rgba(0, 32, 128, 0.06) !important;
   text-align: left !important;
   transition: transform 0.35s var(--cx-ease), box-shadow 0.35s ease, border-color 0.35s ease;
 }
@@ -328,7 +328,7 @@
   border: 1px solid var(--cx-border) !important;
   border-radius: 1rem !important;
   padding: 2rem 1.75rem !important;
-  box-shadow: 0 8px 28px rgba(10, 37, 64, 0.05) !important;
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.05) !important;
   text-align: left !important;
 }
 
@@ -348,7 +348,7 @@
 .svc-corpox-page .svc-feature:nth-child(1) .svc-feature__icon { background: linear-gradient(135deg, #A855F7, #7C3AED) !important; }
 .svc-corpox-page .svc-feature:nth-child(2) .svc-feature__icon { background: linear-gradient(135deg, #3B82F6, #2563EB) !important; }
 .svc-corpox-page .svc-feature:nth-child(3) .svc-feature__icon { background: linear-gradient(135deg, #10B981, #059669) !important; }
-.svc-corpox-page .svc-feature:nth-child(4) .svc-feature__icon { background: linear-gradient(135deg, #0B1F3A, #0B1F3A) !important; }
+.svc-corpox-page .svc-feature:nth-child(4) .svc-feature__icon { background: linear-gradient(135deg, #002080, #002080) !important; }
 .svc-corpox-page .svc-feature:nth-child(5) .svc-feature__icon { background: linear-gradient(135deg, #F97316, #EA580C) !important; }
 .svc-corpox-page .svc-feature:nth-child(6) .svc-feature__icon { background: linear-gradient(135deg, #EC4899, #DB2777) !important; }
 
@@ -397,7 +397,7 @@
   border-radius: 1rem !important;
   padding: 2rem 1.5rem !important;
   text-align: center !important;
-  box-shadow: 0 8px 28px rgba(10, 37, 64, 0.05) !important;
+  box-shadow: 0 8px 28px rgba(0, 32, 128, 0.05) !important;
 }
 
 .svc-corpox-page .svc-benefit__icon {
@@ -451,7 +451,7 @@
   border: 1px solid var(--cx-border) !important;
   border-radius: 1rem !important;
   overflow: hidden !important;
-  box-shadow: 0 12px 40px rgba(10, 37, 64, 0.08) !important;
+  box-shadow: 0 12px 40px rgba(0, 32, 128, 0.08) !important;
   padding: 0 !important;
 }
 
@@ -494,7 +494,7 @@
   background: #fff !important;
   border: 1px solid var(--cx-border) !important;
   border-radius: 0.875rem !important;
-  box-shadow: 0 4px 16px rgba(10, 37, 64, 0.04) !important;
+  box-shadow: 0 4px 16px rgba(0, 32, 128, 0.04) !important;
   transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
@@ -525,7 +525,7 @@
   background: #fff !important;
   border: 1px solid var(--cx-border) !important;
   border-radius: 1rem !important;
-  box-shadow: 0 8px 32px rgba(10, 37, 64, 0.06) !important;
+  box-shadow: 0 8px 32px rgba(0, 32, 128, 0.06) !important;
 }
 
 .svc-corpox-page .svc-testimonial__stars {
